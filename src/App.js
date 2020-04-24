@@ -51,7 +51,7 @@ class App extends React.Component {
         {/* <Home /> */}
         {/* <GridContainer /> */}
         {/* <ProductBox/> */}
-        {/* <SuggestedItemGallery/> */}
+        <SuggestedItemGallery/>
         {/* <Checkout/> */}
         {/* <PaymentGateway/> */}
         {/* <Stores/> */}
