@@ -6,6 +6,7 @@
   justify-content: center;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
 
   .suscribeInnerBox {
     width: 28vw;
@@ -16,7 +17,6 @@
     justify-content: space-around;
     text-align: right;
     margin-right: 6vw;
-    letter-spacing: 0.1em;
 
     .suscribeTitle {
       margin: 0;
@@ -28,24 +28,24 @@
     .suscribeInput {
       width: 90%;
       height: 6vh;
-      color: #212121;
-      font-size: 0.7em;
       padding: 0 5%;
       margin: 1vh 0;
+      color: #212121;
+      font-size: 0.7em;
       border: none;
       -webkit-appearance: none;
       border-radius: 0;
     }
     .btnSuscribe {
-      background-color: #484848;
       border: none;
       width: 100%;
       height: 6vh;
-      color: #ffffff;
-      font-size: 1em;
-      letter-spacing: 0.1em;
       padding: 0;
       margin: 1vh 0;
+      color: #ffffff;
+      background-color: #484848;
+      font-size: 1em;
+      letter-spacing: 0.1em;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
@@ -61,23 +61,19 @@
 @media all and (max-width: 1024px) and (orientation: landscape) {
   .suscribeBox {
     width: 50vw;
-
     .suscribeInnerBox {
       width: 36vw;
       height: 36vh;
       margin-right: 6vw;
-
       .suscribeInput {
         padding: 1vh 5%;
         font-size: 0.8em;
-        -webkit-appearance: none;
-        border-radius: 0;
       }
       .btnSuscribe {
         width: 100%;
-        font-size: 0.8em;
         padding: 1.5vh 0 3vh 0;
         margin: 1vh 0;
+        font-size: 0.8em;
       }
     }
   }
@@ -93,8 +89,6 @@
       .suscribeInput {
         padding: 1vh 5%;
         font-size: 0.8em;
-        -webkit-appearance: none;
-        border-radius: 0;
       }
       .btnSuscribe {
         width: 100%;
@@ -111,11 +105,11 @@
     .suscribeInnerBox {
       .suscribeInput {
         padding: 1.5vh 0vw 1.5vh 1vw;
-        font-size: 0.6em;
+        font-size: 0.8em;
       }
       .btnSuscribe {
         width: 100%;
-        font-size: 0.5em;
+        font-size: 0.8em;
         padding: 1.5vh 0 4vh 0;
         margin: 1vh 0;
       }
@@ -131,7 +125,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     .suscribeInnerBox {
       width: 80vw;
       height: 70vh;
@@ -141,11 +134,8 @@
       justify-content: space-around;
       text-align: right;
       margin-right: 0vw;
-      .suscribeTitle {
-        margin: 0;
-      }
       .suscribeinfoText {
-        font-size: 0.6em;
+        font-size: 0.7em;
       }
       .suscribeInput {
         padding: 0.5vh 5%;
