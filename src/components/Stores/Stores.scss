@@ -5,8 +5,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: red solid thin;
-
   h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
@@ -14,7 +12,6 @@
     line-height: 1em;
     letter-spacing: 0.2em;
   }
-
   .storePage {
     width: 80%;
     display: flex;
@@ -22,17 +19,12 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: lightblue solid thin;
-
     .storeListBox {
       width: 45%;
-      border: red solid thin;
     }
     .storeMapBox {
       width: 45%;
       height: 45vh;
-
-      border: blue solid thin;
     }
   }
 }
@@ -41,20 +33,14 @@
 @media all and (max-width: 768px) {
   .storePageBox {
     .storePage {
-      .searchStoresBox {
-        width: 100%;
-      }
       .storeListBox {
         width: 100%;
-
         margin-top: 5vh;
-        border: gold solid thin;
       }
       .storeMapBox {
         width: 100%;
         height: 50vh;
         margin-top: 5vh;
-        border: blue solid thin;
       }
     }
   }
@@ -63,10 +49,6 @@
 @media all and (max-width: 823px) and (orientation: landscape) {
     .storePageBox {
       .storePage {
-        .searchStoresBox {
-        }
-        .storeListBox {
-        }
         .storeMapBox {
           height: 100vh;
         }
