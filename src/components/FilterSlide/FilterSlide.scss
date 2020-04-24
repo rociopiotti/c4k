@@ -1,0 +1,111 @@
+.filterSlideBackground {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  border: red thin solid;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  font-size: 1em;
+  z-index: 999999999;
+
+  .filterSlideBackgroundBox {
+    position: absolute;
+    width: 30vw;
+    min-height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 1);
+    border: pink thin solid;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .filterSlideBox {
+      position: relative;
+      width: 80%;
+      border: yellow thin solid;
+      margin-top: 5vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .filterTitle {
+        position: relative;
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 400;
+        top: 0;
+        margin-top: 5vh;
+        letter-spacing: 0.1em;
+      }
+      .filterSlide {
+        position: relative;
+        width: 80%;
+        color: #ffffff;
+        border: green thin solid;
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        line-height: 3em;
+        margin: 0;
+        margin-top: 5vh;
+        padding: 0;
+
+        li button {
+          border: none;
+          background-color: transparent;
+          color: #fff;
+
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: 0.1em;
+          font-weight: 300;
+          cursor: pointer;
+        }
+        li button:hover {
+          color: #c7c7c7;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .filterSlideBackground {
+    .filterSlideBackgroundBox {
+      position: absolute;
+      width: 60vw;
+      min-height: 100vh;
+
+      .headerSlideCloseLeftBox {
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+}
+
+@media all and (max-width: 754px) and (orientation: landscape) {
+}
+
+@media all and (max-width: 754px) {
+  .filterSlideBackground {
+    .filterSlideBackgroundBox {
+      position: absolute;
+      width: 100vw;
+      min-height: 100vh;
+
+      .headerSlideCloseLeftBox {
+        width: 95%;
+      }
+    }
+  }
+}

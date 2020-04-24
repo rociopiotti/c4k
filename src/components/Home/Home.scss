@@ -1,0 +1,119 @@
+.home {
+  width: 100%;
+  height: 160vh;
+  background-color: #000;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
+  background-color: green;
+
+  .title {
+    position: absolute;
+    top: 40vh;
+    left: 5vw;
+    color: white;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    transform: rotate(-90deg);
+
+    /* Legacy vendor prefixes that you probably don't need... */
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
+@media all and (max-width: 1024px) and (orientation: landscape) {
+  .home {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 1024px) and (orientation: portrait) {
+  .home {
+    .title {
+      top: 30vh;
+      left: 8vw;      
+      font-size: 1.8em;
+    }
+
+    .btnShop {
+      position: absolute;
+      top: 50vh;
+      left: 7vw;
+      font-size: 1.2em;
+    }
+  }
+}
+@media all and (max-width: 768px) and (orientation: portrait){
+  .home {
+    width: 100%;
+    height: auto;
+
+    .title {
+      top: 30vh;
+      left: 10vw;      
+      font-size: 1.8em;
+    }
+
+    .btnShop {
+      position: absolute;
+      top: 50vh;
+      left: 7vw;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape){ 
+  .home {
+    width: 100%;
+    height: auto;
+
+    .title {
+      top: 25vh;
+      left: 10vw;      
+      font-size: 1em;
+    }
+
+    .btnShop {
+      position: absolute;
+      top: 60vh;
+      left: 8vw;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  .home {
+    width: 100%;
+    height: auto;
+
+    .title {
+      font-size: 1em;
+      top: 30vh;
+      left: 10vw;
+      font-size: 1.1em;
+    }
+
+    .btnShop {
+      position: absolute;
+      top: 50vh;
+      left: 7vw;
+      font-size: 0.8em;
+    }
+  }
+}

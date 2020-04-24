@@ -1,0 +1,108 @@
+.FaqBox {
+  width: 100%;
+  color: #fff;
+  border: greenyellow solid thin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+  }
+
+  .Faq {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    .FaqSearchBox {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .faqSearchBoxIcon {        
+        height: 3vh;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      span {
+        width: 5vw;
+        flex-grow: 1;
+      }
+      .searchFaq {
+        width: 100%;
+        height: 3vh;
+        border: none;
+        -webkit-appearance: none;
+        border-radius: 0;
+      }
+      .searchFaq::placeholder {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        margin: 0 5vw;
+        padding-left: 1vw;
+        color: #272727;
+        border: none;
+        padding-left: 1vh 0 1vw 0;
+      }
+    }
+
+    .questionAnswerBox {
+      h3 {
+        font-size: 1.3em;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        h4 {
+          font-weight: 400;
+        }
+      }
+      .answer {
+        p {
+          font-size: 1em;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    .btnBackToTop {
+      align-self: start;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .FaqBox {
+    .Faq {
+      width: 80%;
+    }
+  }
+}

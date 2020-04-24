@@ -1,0 +1,38 @@
+.btnShop {
+  position: absolute;
+  top: 80vh;
+  left: 4.8vw;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  transform: rotate(-90deg);
+  cursor: pointer;
+
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  border: none;
+}
+
+
+@media all and (max-width: 768px) {
+  .btnShop {
+    top: 80vh;
+    left: 10.8vw;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .btnShop {
+    top: 80vh;
+    left: 8.8vw;
+  }
+}

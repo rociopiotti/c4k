@@ -1,0 +1,88 @@
+.menuCategoriesBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: saddlebrown;
+
+  .menuCategories {
+    width: 70vw;
+    height: auto;
+    list-style: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: start;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+
+    
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+      li a:hover {
+        color: #c7c7c7;
+      }
+  }
+
+  
+}
+
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .menuCategoriesBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .menuCategories {
+      width: 82vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-self: start;
+      line-height: 3em;
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+  .menuCategoriesBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .menuCategories {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-self: start;
+      width: 76%;
+      line-height: 4em;
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  .menuCategoriesBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .menuCategories {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-self: start;
+      width: 76%;
+      line-height: 4em;
+    }
+  }
+}

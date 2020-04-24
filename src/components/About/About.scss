@@ -1,0 +1,144 @@
+.aboutBackground {
+  width: 100%;
+  border: solid thin lightblue;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+  .aboutBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    border: solid thin red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+    .aboutPhoto {
+      width: 65%;
+      position: relative;
+    }
+
+    .aboutText1 {
+      position: absolute;
+      width: 50vw;
+      top: 70vh;
+      left: -2vw;
+      font-size: 1.5em;
+    }
+
+    .aboutText2 {
+      position: absolute;
+      width: 50vw;
+      top: 85vh;
+      left: 70vw;      
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+
+@media all and (max-width: 768px) {
+  .aboutBackground {
+    width: 100%;
+    border: solid thin lightblue;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  
+    .aboutBox {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      border: solid thin red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+  
+      .aboutPhoto {
+        width: 100%;
+        position: relative;
+      }
+  
+      .aboutText1 {
+        position: absolute;
+        width: 70vw;
+        top: 30vh;
+        left: -2vw;
+        font-size: 0.8em;  
+      }
+      
+      .aboutText2 {
+        position: absolute;
+        width: 70vw;
+        top: 50vh;
+        left: 70vw;      
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+  .aboutBackground {
+    width: 100%;
+    border: solid thin lightblue;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  
+    .aboutBox {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      border: solid thin red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+  
+      .aboutPhoto {
+        width: 65%;
+        position: relative;
+      }
+  
+      .aboutText1 {
+        position: absolute;
+        width: 50vw;
+        top: 50vh;
+        left: -2vw;
+        font-size: 1em;
+  
+      }
+      .aboutText2 {
+        position: absolute;
+        width: 50vw;
+        top: 80vh;
+        left: 70vw;      
+        font-size: 1em;
+      }
+    }
+  }
+}

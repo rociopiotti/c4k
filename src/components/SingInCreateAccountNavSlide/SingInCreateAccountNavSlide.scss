@@ -1,0 +1,194 @@
+.singInCreateAccountBackground {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 0 0 0;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  min-height: 100vh;
+
+  .singInCreateAccountBoxBackground {
+    border: solid red thin;
+    z-index: 9;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+
+    .BtnCloseNav {
+      z-index: 99;
+      width: 3vw;
+      height: 3vw;
+      position: absolute;
+      border: none;
+      background-color: blue;
+      color: #fff;
+      top: 5vh;
+      left: 45vw;
+      cursor: pointer;
+    }
+    .headerSingInCreateAccount {
+      width: 55%;
+      height: 5vh;
+      border: solid #fff thin;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12vh;
+
+      .btnSingInSlide {
+        display: inline;
+        width: 128px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        h2 {
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.5em;
+          font-weight: 300;
+          text-decoration: underline;
+          letter-spacing: 0.1em;
+        }
+      }
+      .btnCreateAccountSlide {
+        display: inline;
+        width: 250px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        h2 {
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.5em;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    .singInCreateAccountBox {
+      position: relative;
+      width: 55%;
+      margin: 5vh 0;
+      border: solid salmon thin;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .singInCreateAccountBackground {
+    .singInCreateAccountBoxBackground {
+      width: 60vw;
+      .BtnCloseNav {
+        left: 52.5vw;
+      }
+      .headerSingInCreateAccount {
+        width: 70%;
+        .btnSingInSlide {
+          h2 {
+            font-size: 1em;
+          }
+        }
+        .btnCreateAccountSlide {
+          h2 {
+            font-size: 1em;
+          }
+        }
+      }
+      .singInCreateAccountBox {
+        width: 70%;
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .singInCreateAccountBackground {
+    .singInCreateAccountBoxBackground {
+      width: 60vw;
+      
+      .BtnCloseNav {
+        left: 52.5vw;
+      }
+      .headerSingInCreateAccount {
+        .btnSingInSlide {
+          width: 90px;
+          min-width: 90px;
+          h2 {
+            font-size: 1em;
+          }
+        }
+        .singInCreateAccountBox {
+        }
+        .btnCreateAccountSlide {
+          width: 150px;
+          min-width: 150px;
+          h2 {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+  .singInCreateAccountBackground {
+    .singInCreateAccountBoxBackground {
+      z-index: 9;
+      position: absolute;
+      width: 100vw;
+    }
+  }
+}
+
+@media all and (max-width: 754px) {
+  .singInCreateAccountBackground {
+    .singInCreateAccountBoxBackground {
+      width: 100vw;
+      height: auto;
+
+      .BtnCloseNav {
+        top:1vh;
+        left: 87.5vw;
+      }
+      .headerSingInCreateAccount {
+        margin-top: 5vh;
+        .btnSingInSlide {
+          h2 {
+            font-size: 0.8em;
+            font-weight: 400;
+          }
+        }
+        .btnCreateAccountSlide {
+          h2 {
+            font-size: 0.8em;
+            font-weight: 400;            
+            text-decoration: underline;
+          }
+        }
+      }
+      .singInCreateAccountBox {
+        margin-top: 2.5vh;
+      }
+    }
+  }
+}

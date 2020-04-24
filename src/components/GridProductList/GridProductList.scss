@@ -1,0 +1,41 @@
+.gridProductListBox {
+  width: 100%;
+  border: lightcoral thin solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .gridListBox {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .grisList {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .grisList li {
+        width: 50%;
+       
+      }
+      li a {
+        text-decoration: none;
+        color: #ffffff;
+   
+      }
+      li a:hover {
+        color: #c7c7c7;
+      }
+    }
+  }
+}

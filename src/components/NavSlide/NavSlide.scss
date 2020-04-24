@@ -1,0 +1,137 @@
+.backgroundSlide {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  margin: 0;
+  padding: 0 0 0 0;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  z-index: 99;
+
+  .navBox {
+    z-index: 9;
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: #000;
+
+    .BtnCloseNav {
+      z-index: 99;
+      position: relative;
+      width: 2vw;
+      height: 2vw;
+      top: 5vh;
+      left: 45vw;
+      border: none;
+      color: #fff;
+      background-color: blue;
+      cursor: pointer;
+    }
+    .nav {
+      position: relative;
+      margin-top: 7vh;
+      color: #fff;
+      line-height: 3em;
+
+      .list {
+        list-style: none;
+
+        .listItem a {
+          text-decoration: none;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .separationLine {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          width: 90%;
+          border: white solid thin;
+          margin: 6vh 0;
+        }
+
+        .searchNavIcon {
+          margin-left: 2vw;
+        }
+        .searchNavLink,
+        .singInNavLink,
+        .cartNavLink {
+          margin-left: 2vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) and (orientation:landscape){
+  
+}
+
+@media all and (max-width: 768px) {
+  .backgroundSlide {
+    
+  font-size: 0.8em;
+    .navBox {
+      width: 100%;
+      padding: 0 0 30vh 0;
+
+      .BtnCloseNav {
+        z-index: 99;
+        position: relative;
+        width: 8vw;
+        height: 8vw;
+        margin-left: 40vw;
+      }
+      .nav {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        margin: 0;
+
+        padding: 0;
+        top: 0;
+        left: 0;
+
+        .list {
+          margin-top: 10vh;
+          list-style: none;
+        }
+
+        .separationLine {
+          margin: 0;
+          padding: 0;
+          width: 80vw;
+          border: white solid thin;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+  .backgroundSlide {
+    .navBox {
+      width: 100%;
+      padding: 0 0 50vh 0;
+      .BtnCloseNav {
+        width: 4vw;
+        height: 4vw;
+        margin-left: 90vw;
+      }
+      .nav {
+        top: 20vh;
+      }
+    }
+  }
+}

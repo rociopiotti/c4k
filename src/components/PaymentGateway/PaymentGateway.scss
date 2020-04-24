@@ -1,0 +1,122 @@
+.paymentGatewayBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+  .paymentGateway {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: thin solid palevioletred;
+    margin-bottom: 5vh;
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      margin: 0;
+      text-align: center;
+    }
+
+    .orderSummaryBox,
+    .adressDataBox,
+    .paymentDataBox {
+      border: thin solid blueviolet;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 5vh;
+
+      .column1 {
+        width: 50%;
+        .cartItemListBox {
+          .cartItemList {
+            list-style: none;
+          }
+        }
+      }
+
+      .column2 {
+        width: 45%;
+        .btnPromoCodeBox {
+          margin: 0;
+          .promoCode {
+            display: none;
+          }
+        }
+        .btnPromoCodeBox:hover {
+          .promoCode {
+            display: flex;
+            width: 99%;
+          }
+        }
+
+  
+      }
+    }
+
+  }
+}
+
+@media all and (max-width: 768px) {
+  .paymentGatewayBox {
+    .paymentGateway {
+      h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        margin: 0;
+        text-align: center;
+      }
+
+      .orderSummaryBox,
+      .adressDataBox,
+      .paymentDataBox {
+        border: thin solid blueviolet;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .column1 {
+          width: 100%;
+          margin-top: 5vh;
+          .cartItemListBox {
+            .cartItemList {
+              list-style: none;
+            }
+          }
+        }
+
+        .column2 {
+          width: 100%;
+          .btnPromoCodeBox {
+            margin: 0;
+            .promoCode {
+              display: none;
+            }
+          }
+          .btnPromoCodeBox:hover {
+            .promoCode {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      .paymentDataBox {
+        .column2 {
+          order: -1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.productListItemBox {
+  width: 39vw;
+  border: lightcoral solid thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15vh;
+  .listItemImage {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    background-color: lightgreen;
+    .cartItemImg {
+      width: 100%;
+    }
+  }
+  .listItemDescription {
+    text-align: center;
+    
+    h3, p{
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+    }
+  }
+}
+@media all and (max-width: 823px) and (orientation: landscape) {
+}
+
+@media all and (max-width: 754px) and (orientation: landscape) {
+}
+
+@media all and (max-width: 754px) {
+  .productListItemBox {
+    .listItemImage {
+      width: 35vw;
+      height: 35vw;
+    }
+  }
+}

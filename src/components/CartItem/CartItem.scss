@@ -1,0 +1,159 @@
+.cartItemBox {
+  width: 100%;
+  border: solid thin red;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Open Sans", sans-serif;
+
+  .column1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: sandybrown solid thin;
+
+    .cartItemImgBox {
+      width: 130px;
+      height: 130px;
+      cursor: pointer;
+      .cartItemImg {
+        position: relative;
+        width: 100%;
+      }
+    }
+    .btnAddItemWishList {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
+  .column2 {
+    width: 45%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: seagreen solid thin;
+    position: relative;
+
+    .btnRemoveItem {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      top: 2%;
+      left: 88%;
+      -webkit-appearance: none;
+      border-radius: 0;
+      cursor: pointer;
+    }
+    .cartItemTitle {
+      color: #fff;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      text-align: left;
+    }
+    .cartItemDescription {
+      width: 100%;
+      color: #fff;
+      font-size: 0.7em;
+      align-items: flex-start;
+      justify-content: flex-start;
+      line-height: 0.2em;
+    }
+    .itemNumber,
+    .itemColor,
+    .itemSize,
+    .itemTotal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: space-between;
+      line-height: 0.3em;
+    }
+  }
+}
+
+.dropdownBoxCart {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.dropbtn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  line-height: 0.2em;
+}
+
+.dropdownContentSize {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 27px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+  color: #000;
+}
+
+.dropdownContentSize li {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+.dropdownContentSize button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  text-align: left;
+  padding: 5% 0% 5% 5%;
+}
+.dropdownContentSize li:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdownContentSize button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.dropdownBoxCart:hover .dropdownContentSize {
+  display: block;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+.dropdownBoxCart:hover .dropbtn p {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}

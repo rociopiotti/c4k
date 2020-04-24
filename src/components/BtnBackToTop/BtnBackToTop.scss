@@ -1,0 +1,16 @@
+.btnBackToTop {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-decoration: underline;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    margin-top: 15vh;
+    cursor: pointer;
+}
+.btnBackToTop:hover {
+    color: #c7c7c7;
+}

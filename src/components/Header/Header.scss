@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  height: 15vh;
+  overflow-x: hidden;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .burger {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+    margin: 0vh 5vw;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  span {
+    flex-grow: 1;
+  }
+  .logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .logo img {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .searchIcon {
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .singInIcon {
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cartIcon {
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 3vw 0 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/**************************************** MEDIA QUERIES ********************************************/
+
+/**************************************** MEDIA QUERIES 768px ********************************************/
+@media all and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 15vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    .icon {
+      margin-right: 5vw;
+    }
+    .burger {
+      margin: 0vh 1vw 0 10vw;
+    }
+    .logo {
+      width: 0vw;
+    }
+
+    .searchIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .singInIcon {
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+     .cartIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0vh 3vw 0 3vw;
+    }
+  }
+}
+
+@media all and (max-width: 755px) {
+  .header {
+    .logo {
+      width: 4vw;
+      height: 4vw;
+
+      img {
+        width: 4vw;
+        height: 4vw;
+      }
+    }
+  }
+}
+@media all and (max-width: 310px) {
+  .header {
+    min-width: 100vw;
+  }
+}

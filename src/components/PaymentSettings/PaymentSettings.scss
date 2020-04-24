@@ -1,0 +1,157 @@
+.paymentSettingsBox {
+  width: 100%;
+  border: thin solid seagreen;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+
+  h3 {
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+  hr {
+    border: thin solid #ffffff;
+    width: 98%;
+  }
+  .paymentSettingsImageBox {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: silver thin solid;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+
+    .paymentSettingsImage {
+      width: 120px;
+      height: 90px;
+      background-color: transparent;
+      margin-right: 5vw;
+      margin-bottom: 5vh;
+      border: none;
+      cursor: pointer;
+
+      .paymentMethImg {
+        width: 100%;
+      }
+    }
+    span {
+      flex-grow: 1;
+    }
+  }
+  .paymentSettingsInputBox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2.5vh 0;
+
+    label {
+      width: 30%;
+      margin-right: 2vw;
+      display: flex;
+    }
+
+    .paymentSettingsInput {
+      width: 64%;
+      border: none;
+      -webkit-appearance: none;
+      border-radius: 0;
+      padding: 1vh 0 1vh 2%;
+      color: #212121;
+      cursor: text;
+    }
+
+    .paymentSettingsInput::placeholder {
+      color: #212121;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.8em;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+    }
+    .smallInput {
+      width: 25%;
+      margin-right: 2vw;
+    }
+
+    .btnInfoCvvCode {
+      width: 33%;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 0.7em;
+      -webkit-appearance: none;
+      border-radius: 0;
+      text-decoration: underline;
+
+      .infoTextCvvCode {
+        position: absolute;
+        background-color: #000;
+        border: thin solid #fff;
+        border-radius: 10px;
+        width: 100%;
+
+        font-family: "Open Sans", sans-serif;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        line-height: 1.8em;
+        left: 0%;
+        top: -10vh;
+        display: none;
+      }
+    }
+
+    .btnInfoCvvCode:hover {
+      .infoTextCvvCode {
+        display: block;
+      }
+    }
+  }
+  .btnPayAndOrder {
+    width: 100%;
+    border: none;
+    color: #212121;
+    background-color: #fff;
+    font-size: 0.9em;
+    padding: 2vh 0;
+    letter-spacing: 0.1em;
+    -webkit-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 823px) and (orientation: landscape) {
+  .paymentSettingsBox {
+    .paymentSettingsInputBox {
+      .paymentSettingsInput {
+        padding: 2vh 0 2vh 2%;
+      }
+    }
+    .btnPayAndOrder {
+      padding: 4vh 0;
+    }
+  }
+}
+
+@media all and (max-width: 754px) {
+  .paymentSettingsBox {
+    .paymentSettingsImageBox {
+      width: 100%;
+    }
+
+    .paymentSettingsInputBox {
+      .btnInfoCvvCode {
+        .infoTextCvvCode {
+          top: -20vh;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.btnAddToBag {
+  width: 100%;
+  border: none;
+  color: #484848;
+  background-color: #fff;
+  font-size: 0.9em;
+  padding: 2vh 0;
+  letter-spacing: 0.1em;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #c7c7c7;
+  }
+}

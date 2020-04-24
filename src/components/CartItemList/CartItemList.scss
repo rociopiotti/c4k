@@ -1,0 +1,24 @@
+.cartItemListBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: thin solid white;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    .cartItemList {
+        position: relative;
+        width: 100%;
+        border: royalblue thin solid;
+        margin: 0;
+        padding: 0;
+
+        .cartItemElement {
+            margin-bottom: 15px;
+        }
+    }
+}

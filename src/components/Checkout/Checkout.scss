@@ -1,0 +1,131 @@
+.checkoutBox {
+  width: 100%;
+  color: #ffffff;
+  border: royalblue thin solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .checkout {      
+    width: 40%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .headerCheckoutBox {        
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Open Sans", sans-serif;
+      h2 {
+        margin-right: 2vw;
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        flex-grow:1 ;
+      }
+      .btnCloseCheckout {
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .separationLineCheckout {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vh;
+      .separationLine1 {
+        width: 40%;
+        border: thin solid #ffffff;
+      }
+      p {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+      }
+      .separationLine2 {
+        width: 40%;
+        border: thin solid #ffffff;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 768px) and (orientation:portrait) {
+
+    .checkoutBox {
+        
+        .checkout {
+            
+          width: 80%;
+        }
+    }
+}
+
+@media all and (max-width: 754px) {
+    .checkoutBox {
+        width: 100%;
+        color: #ffffff;
+        border: royalblue thin solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+        .checkout {
+            
+          width: 80%;
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      
+          .headerCheckoutBox {
+              width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: "Open Sans", sans-serif;
+            h2 {
+              margin-right: 2vw;
+              font-size: 0.9em;
+              font-weight: 400;
+              letter-spacing: 0.1em;
+              flex-grow: 1;
+            }
+          }
+          .separationLineCheckout {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5vh;
+            .separationLine1 {
+              width: 40%;
+              border: thin solid #ffffff;
+            }
+            p {
+              font-size: 0.7em;
+              letter-spacing: 0.1em;
+            }
+            .separationLine2 {
+              width: 40%;
+              border: thin solid #ffffff;
+            }
+          }
+        }
+      }
+      
+}
