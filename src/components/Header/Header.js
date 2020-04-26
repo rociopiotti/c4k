@@ -5,37 +5,37 @@ import Logo from "../Logo/Logo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class Header extends React.Component {
-   handleNavSlide (NavSlide)  {
-    console.log("Click en el boton que abre:", NavSlide)
+  handleNavSlide() {
+    this.props.onMenuClick("navSlide")
   }
 
-  handleHome (Home)  {
+  handleHome(Home) {
     console.log("Click en el boton que abre:", Home)
   }
 
-   handleSearchBox  (SearchBox)  {
+  handleSearchBox(SearchBox) {
     console.log("Click en el boton que abre:", SearchBox)
   }
 
-  handleSingInSlide (SinInSlide) {
+  handleSingInSlide(SinInSlide) {
     console.log("Click en el boton que abre:", SinInSlide)
   }
 
-  handleCartSlide (CartSlide)  {
-    console.log("Click en el boton que abre:", CartSlide)
+  handleCartSlide() {
+    this.props.onMenuClick("cartSlide")
   }
-  render() {
 
+  render() {
     return (
       <div className="header">
         <button
           onClick={() => {
-            this.handleNavSlide("NavSlide")
+            this.handleNavSlide()
           }}
           className="burger">
           <FontAwesomeIcon icon="bars" className="barsIcon" />
         </button>
-        <span></span>
+        <span className="spacer"></span>
         <button
           onClick={() => {
             this.handleHome("Home")
@@ -60,7 +60,7 @@ class Header extends React.Component {
         </button>
         <button
           onClick={() => {
-            this.handleCartSlide("CartSlide")
+            this.handleCartSlide()
           }}
           className="cartIcon">
           <Icon />

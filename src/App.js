@@ -30,31 +30,59 @@ import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy"
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions"
 
 class App extends React.Component {
+  state = {
+    currentSection: "home",
+    currentSlide: null,
+  }
+
+  handleHeaderClick(newSlide) {
+    console.log("CAMBIAR EL SLIDER POR: ", newSlide)
+
+    this.setState({
+      currentSlide: newSlide,
+    })
+  }
+
+  setSlide(slideType) {
+    let slide
+    switch (slideType) {
+      case "navSlide":
+        slide = <NavSlide onCloseClick={this.handleHeaderClick.bind(this)} />
+        break
+      case "cartSlide":
+        slide = <CartSlide onCloseClick={this.handleHeaderClick.bind(this)} />
+        break
+      default:
+        slide = null
+        break
+    }
+    return slide
+  }
+
   render() {
     library.add(fab, faSearch)
-
     library.add(fab, faBars)
+    // console.log("------> CURRENT SLIDE:", this.state.currentSlide)
+
     return (
       <div className="app">
-      
-        {/* <NavSlide/>  */}
-        {/* <CartSlide /> */}
+        {this.setSlide(this.state.currentSlide)}
+
         {/* <SearchBox/>  */}
         {/* <FilterSlide /> */}
         {/* <SortSlide /> */}
         {/* <SingInCreateAccountNavslide/> */}
         {/* <ForgotPasswordSlide/>  */}
         {/* <ForgotPasswordModal/> */}
-       
 
-        <Header />
-        {/* <Home /> */}
+        <Header onMenuClick={this.handleHeaderClick.bind(this)} />
+        <Home />
         {/* <GridContainer /> */}
         {/* <ProductBox/> */}
         {/* <SuggestedItemGallery/> */}
         {/* <Checkout/> */}
         {/* <PaymentGateway/> */}
-        <Stores/>
+        {/* <Stores/> */}
         {/* <Faq /> */}
         {/* <About/> */}
         {/* <PaymentConfirmation/> */}

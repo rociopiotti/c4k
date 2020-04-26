@@ -3,8 +3,8 @@ import "./NavSlide.scss"
 import Icon from "../Icon/Icon"
 
 class NavSlide extends React.Component {
-  clickCloseNav(CloseNav) {
-    console.log("Click en botón cierra nav:", CloseNav)
+  clickCloseNav() {
+    this.props.onCloseClick(null)
   }
   clickNavLinks(url) {
     console.log("Click en botón muestra página:", url)

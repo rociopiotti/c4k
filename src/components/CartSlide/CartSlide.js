@@ -10,12 +10,14 @@ class CartSlide extends React.Component {
   handleCheckoutPage(url) {
     console.log("Muestra página:", url)
   }
+
   render() {
     return (
       <div className="cartSlideBackground">
         <div className="cartSlide">
           <div className="cartSlideBox">
-            <HeaderSlideCloseLeft />
+            <HeaderSlideCloseLeft onCloseClick={this.props.onCloseClick} />
+
             <h2 className="cartSlideTitle">#MY BAG</h2>
             {/* <CartEmpty/> */}
             <CartItemList />

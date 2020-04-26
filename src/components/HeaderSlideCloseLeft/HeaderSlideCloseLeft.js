@@ -5,15 +5,17 @@ import Icon from "../Icon/Icon"
 import Logo from "../Logo/Logo"
 
 class HeaderSlideCloseLeft extends React.Component {
-  handleCloseCartSlide(CloseSlide) {
-    console.log("Click en botón:", CloseSlide)
-  }
+  // handleCloseCartSlide(CloseSlide) {
+  //   console.log("Click en botón:", CloseSlide)
+  // }
+
   render() {
     return (
       <div className="headerSlideCloseLeftBox">
         <button
           onClick={() => {
-            this.handleCloseCartSlide("CloseSlide")
+            // this.handleCloseCartSlide("CloseSlide")
+            this.props.onCloseClick(null)
           }}
           className="btnCloseCartSlide">
           <Icon className="iconBtnCloseCartSlide" />
