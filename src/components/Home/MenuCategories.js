@@ -1,11 +1,10 @@
 import React from "react"
 import "./MenuCategories.scss"
 
-class MenuCategories extends React.Component {
-  handleClickLink  (Value)  {
+const MenuCategories= (props) => {
+  const handleClickLink = (Value) => {
     console.log("Click en el boton lleva a:", Value)
   }
-  render() {
     
     return (
       <div className="menuCategoriesBox">
@@ -13,7 +12,7 @@ class MenuCategories extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.handleClickLink("TROUSERSPAGE")
+                handleClickLink("TROUSERSPAGE")
               }}
               href="#">
               #TROUSERS
@@ -22,7 +21,7 @@ class MenuCategories extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.handleClickLink("T-SHIRTSPAGE")
+               handleClickLink("T-SHIRTSPAGE")
               }}
               href="#">
               #T-SHIRTS
@@ -31,26 +30,26 @@ class MenuCategories extends React.Component {
           <li>
             <a
              onClick={() => {
-                this.handleClickLink("BAGPAGE")
+                handleClickLink("BAGPAGE")
               }}
              href="#">#BAG</a>
           </li>
           <li>
             <a  onClick={() => {
-                this.handleClickLink("SHOESPAGE")
+                handleClickLink("SHOESPAGE")
               }}
             href="#">#SHOES</a>
           </li>
           <li>
             <a  onClick={() => {
-                this.handleClickLink("NEW ARRIVALSPAGE")
+                handleClickLink("NEW ARRIVALSPAGE")
               }}
             href="#">#NEW ARRIVALS</a>
           </li>
         </ul>
       </div>
     )
-  }
+  
 }
 
 export default MenuCategories
