@@ -3,21 +3,20 @@ import "./FooterMenu.scss"
 
 import Logo from "../../Logo/Logo"
 
-class FooterMenu extends React.Component {
-  handleHome  (Home)  {
+const FooterMenu = (props) =>{
+ const handleHome =  (Home) => {
     console.log("Click en el boton que abre:", Home)
   }
 
-   handleClickLink (Value) {
+  const  handleClickLink = (Value)  => {
     console.log("Click en el boton que abre:", Value)
   }
-  render() {
       return (
       <div className="footerMenuBox">
         <div className="footerMenuInnerBox">
           <button
             onClick={() => {
-              this.handleHome("Home")
+              handleHome("Home")
             }}
             className="logoFooter">
             <Logo />
@@ -26,7 +25,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickLink("StorePage")
+                  handleClickLink("StorePage")
                 }}
                 href="#">
                 #CONTACT US
@@ -35,7 +34,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickLink("FaqPage")
+                 handleClickLink("FaqPage")
                 }}
                 href="#">
                 #HELP
@@ -44,7 +43,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickLink("AboutPage")
+                 handleClickLink("AboutPage")
                 }}
                 href="#">
                 #ABOUT
@@ -53,7 +52,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickLink("TermsOfUse")
+                  handleClickLink("TermsOfUse")
                 }}
                 href="#">
                 #TERMS OF USE
@@ -62,7 +61,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickLink("PrivacyPolicy")
+                 handleClickLink("PrivacyPolicy")
                 }}
                 href="#">
                 #PRIVACY POLICY
@@ -72,7 +71,7 @@ class FooterMenu extends React.Component {
         </div>
       </div>
     )
-  }
+  
 }
 
 export default FooterMenu
