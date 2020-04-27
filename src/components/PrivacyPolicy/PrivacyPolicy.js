@@ -1,8 +1,8 @@
 import React from "react"
 import "./PrivacyPolicy.scss"
 
-class PrivacyPolicy extends React.Component {
-  render() {
+const PrivacyPolicy = (props) => {
+ 
     return (
       <div className="privacyPolicyBox">
         <div className="privacyPolicy">
@@ -22,7 +22,7 @@ class PrivacyPolicy extends React.Component {
         </div>
       </div>
     )
-  }
+  
 }
 
 export default PrivacyPolicy
