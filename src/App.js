@@ -55,6 +55,9 @@ class App extends React.Component {
       case "singInSlide":        
         slide= <SingInCreateAccountNavslide onCloseClick={this.handleHeaderClick.bind(this)}/>
         break
+      case "SearchBox":
+        slide=  <SearchBox onCloseClick={this.handleHeaderClick.bind(this)}/> 
+      break
       default:
         slide = null
         break
@@ -69,9 +72,7 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        {this.setSlide(this.state.currentSlide)}
-
-        {/* <SearchBox/>  */}
+        {this.setSlide(this.state.currentSlide)}        
         {/* <FilterSlide /> */}
         {/* <SortSlide /> */}
         {/* <ForgotPasswordSlide/>  */}

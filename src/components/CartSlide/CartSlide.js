@@ -30,6 +30,7 @@ class CartSlide extends React.Component {
             <EstimatedTotal />
             <button
               onClick={() => {
+                this.props.onCloseClick(null)
                 this.handleCheckoutPage("checkout.html")
               }}
               className="btnCheckout">

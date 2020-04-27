@@ -6,8 +6,8 @@ class SearchBox extends React.Component {
   handleSearchContent(SearchInContent) {
     console.log("Click en el boton que:", SearchInContent)
   }
-  handleCloseSearchBox(CloseSearchBox) {
-    console.log("Click en el boton que:", CloseSearchBox)
+  handleCloseSearchBox() {
+    this.props.onCloseClick(null)
   }
   handleInputChange(event) {
     console.log("Ingreso texto")
@@ -32,7 +32,7 @@ class SearchBox extends React.Component {
           onChange={this.handleInputChange}></input>
         <button
           onClick={() => {
-            this.handleCloseSearchBox("CloseSearchBox")
+            this.handleCloseSearchBox("CloseNav")
           }}
           className="closeIcon">
           <Icon />

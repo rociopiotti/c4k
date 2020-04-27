@@ -13,8 +13,8 @@ class Header extends React.Component {
     console.log("Click en el boton que abre:", Home)
   }
 
-  handleSearchBox(SearchBox) {
-    console.log("Click en el boton que abre:", SearchBox)
+  handleSearchBox() {
+    this.props.onMenuClick("SearchBox")
   }
 
   handleSingInSlide() {
@@ -46,7 +46,7 @@ class Header extends React.Component {
         <span></span>
         <button
           onClick={() => {
-            this.handleSearchBox("SearchBox")
+            this.handleSearchBox()
           }}
           className="searchIcon">
           <Icon />
