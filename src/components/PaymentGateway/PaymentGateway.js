@@ -30,8 +30,7 @@ class PaymentGateway extends React.Component {
               <BillingAddress />
             </div>
             <div className="column2">
-              <DeliveryAddress />
-              
+              <DeliveryAddress />              
               <ShippingMethod/>
             </div>
           </div>

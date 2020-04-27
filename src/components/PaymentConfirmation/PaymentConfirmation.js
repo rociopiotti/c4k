@@ -1,8 +1,8 @@
 import React from "react"
 import "./PaymentConfirmation.scss"
 
-class PaymentConfirmation extends React.Component {
-  render() {
+const PaymentConfirmation = (props) => {
+  
     return (
       <div className="paymentConfirmationBox">
         <div className="paymentConfirmation">
@@ -16,6 +16,6 @@ class PaymentConfirmation extends React.Component {
       </div>
     )
   }
-}
+
 
 export default PaymentConfirmation
