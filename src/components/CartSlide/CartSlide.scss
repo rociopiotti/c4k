@@ -9,7 +9,12 @@
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
 
+  .cartCloseBackground {
+    flex-grow: 1;
+  }
   .cartSlide {
     position: absolute;
     width: 30vw;
@@ -57,9 +62,9 @@
       -webkit-appearance: none;
       border-radius: 0;
       cursor: pointer;
-    } 
-    
-    .btnCheckout:hover {      
+    }
+
+    .btnCheckout:hover {
       background-color: #c7c7c7;
     }
   }

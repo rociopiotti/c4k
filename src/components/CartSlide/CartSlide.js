@@ -14,6 +14,11 @@ class CartSlide extends React.Component {
   render() {
     return (
       <div className="cartSlideBackground">
+        <div
+          className="cartCloseBackground"
+          onClick={() => {
+            this.props.onCloseClick(null)
+          }}></div>
         <div className="cartSlide">
           <div className="cartSlideBox">
             <HeaderSlideCloseLeft onCloseClick={this.props.onCloseClick} />
