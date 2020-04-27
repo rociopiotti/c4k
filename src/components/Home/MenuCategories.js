@@ -1,7 +1,7 @@
 import React from "react"
 import "./MenuCategories.scss"
 
-const MenuCategories= (props) => {
+const MenuCategories = (props) => {
   const handleClickLink = (Value) => {
     console.log("Click en el boton lleva a:", Value)
   }

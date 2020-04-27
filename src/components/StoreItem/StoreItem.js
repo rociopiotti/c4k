@@ -1,8 +1,8 @@
 import React from "react"
 import "./StoreItem.scss"
 
-class StoreItem extends React.Component {
-  render() {
+const StoreItem= (props) => {
+
     return (
       <div className="storeItemBox">
         <h4>C4K</h4>
@@ -12,7 +12,7 @@ class StoreItem extends React.Component {
         <a href="#" className="phoneData">### ### ###</a>
       </div>
     )
-  }
+  
 }
 
 export default StoreItem
