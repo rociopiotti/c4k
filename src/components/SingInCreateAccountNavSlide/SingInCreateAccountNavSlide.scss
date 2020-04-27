@@ -13,7 +13,12 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 99;
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
 
+  .singInCreateAccountClosebackground{
+    flex-grow: 1;
+  }
   .singInCreateAccountBoxBackground {
     border: solid red thin;
     z-index: 9;
@@ -63,7 +68,7 @@
         h2 {
           color: #fff;
           font-family: "Open Sans", sans-serif;
-          font-size: 1.5em;
+          font-size: 1.3em;
           font-weight: 300;
           text-decoration: underline;
           letter-spacing: 0.1em;
@@ -79,7 +84,7 @@
         h2 {
           color: #fff;
           font-family: "Open Sans", sans-serif;
-          font-size: 1.5em;
+          font-size: 1.3em;
           font-weight: 300;
           letter-spacing: 0.1em;
         }

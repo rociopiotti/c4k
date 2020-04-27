@@ -20,7 +20,7 @@ class SingInCreateAccountNavslide extends React.Component {
         <div className="singInCreateAccountBoxBackground">
           <button
             onClick={() => {
-              this.handleCloseCartSlide("CloseSlide")
+              this.props.onCloseClick(null)
             }}
             className="BtnCloseNav">
             <Icon className="iconBtnCloseNav" />
@@ -45,6 +45,12 @@ class SingInCreateAccountNavslide extends React.Component {
             {/* <SingInSlide /> */}
             <CreateAnAccountSlide />
           </div>
+        </div>
+        <div
+          onClick={() => {
+            this.props.onCloseClick(null)
+          }}
+          className="singInCreateAccountClosebackground">
         </div>
       </div>
     )

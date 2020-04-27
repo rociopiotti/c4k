@@ -17,8 +17,8 @@ class Header extends React.Component {
     console.log("Click en el boton que abre:", SearchBox)
   }
 
-  handleSingInSlide(SinInSlide) {
-    console.log("Click en el boton que abre:", SinInSlide)
+  handleSingInSlide() {
+    this.props.onMenuClick("singInSlide")
   }
 
   handleCartSlide() {
@@ -53,7 +53,7 @@ class Header extends React.Component {
         </button>
         <button
           onClick={() => {
-            this.handleSingInSlide("SingInSlide")
+            this.handleSingInSlide()
           }}
           className="singInIcon">
           <Icon />
