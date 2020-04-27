@@ -2,11 +2,10 @@ import React from "react"
 import "./SocialLinksMenu.scss"
 import Icon from "../Icon/Icon"
 
-class SocialLinksMenu extends React.Component {
-  handleClickLink  (Value)  {
+const SocialLinksMenu  = (props) => {
+  const handleClickLink = (Value) =>  {
     console.log("Click en el boton que abre:", Value)
   }
-  render() {  
 
     return (
       <div className="socialLinkMenuBox">
@@ -14,7 +13,7 @@ class SocialLinksMenu extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.handleClickLink("InstagramPage")
+               handleClickLink("InstagramPage")
               }}
               href="#">
               <Icon />
@@ -23,7 +22,7 @@ class SocialLinksMenu extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.handleClickLink("FacebookPage")
+                handleClickLink("FacebookPage")
               }}
               href="#">
               <Icon />
@@ -32,7 +31,7 @@ class SocialLinksMenu extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.handleClickLink("LinkedinPage")
+                handleClickLink("LinkedinPage")
               }}
               href="#">
               <Icon />
@@ -42,6 +41,5 @@ class SocialLinksMenu extends React.Component {
       </div>
     )
   }
-}
 
 export default SocialLinksMenu
