@@ -25,7 +25,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("tshirt.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   #T-SHIRT
                 </a>
@@ -33,7 +33,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("trousers.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   #TROUSERS
                 </a>
@@ -41,7 +41,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("bags.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   #BAGS
                 </a>
@@ -49,7 +49,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("shoes.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   #SHOES
                 </a>
@@ -57,7 +57,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("newarrivals.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   #NEW ARRIVALS
                 </a>
@@ -66,7 +66,7 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("homeWithSearchComponent.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   <Icon className="searchNavIcon" />
                   SEARCH
@@ -75,7 +75,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("signInCreateAccount.html")
+                   
+                    this.clickCloseNav("CloseNav")
                   }}>
                   <Icon className="signInNavIcon" />
                   SING IN/ CREATE AN ACCOUNT
@@ -84,7 +85,7 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickNavLinks("cartSlide.html")
+                    this.clickCloseNav("CloseNav")
                   }}>
                   <Icon className="cartNavIcon" /> MY BAG
                 </a>
@@ -92,6 +93,12 @@ class NavSlide extends React.Component {
             </ul>
           </nav>
         </div>
+
+        <div
+          onClick={() => {
+            this.clickCloseNav("CloseNav")
+          }}
+          className="backgroundClose"></div>
       </div>
     )
   }
