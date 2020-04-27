@@ -1,7 +1,7 @@
 import React from "react"
 import "./StoreItem.scss"
 
-const StoreItem= (props) => {
+const StoreItem = (props) => {
 
     return (
       <div className="storeItemBox">

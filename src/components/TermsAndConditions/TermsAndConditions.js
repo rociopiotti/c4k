@@ -1,8 +1,8 @@
 import React from "react"
 import "./TermsAndConditions.scss"
 
-class TermsAndConditions extends React.Component {
-  render() {
+const TermsAndConditions = (props) =>{
+
     return (
       <div className="termsAndConditionBox">
         <div className="termsAndCondition">
@@ -22,7 +22,7 @@ class TermsAndConditions extends React.Component {
         </div>
       </div>
     )
-  }
+  
 }
 
 export default TermsAndConditions
