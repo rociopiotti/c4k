@@ -57,6 +57,10 @@ class FilterSlide extends React.Component {
             </ul>
           </div>
         </div>
+        
+      <div onClick={() => {
+            this.props.onCloseClick(null)
+          }} className="filterCloseBackground"></div>
       </div>
     )
   }

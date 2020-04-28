@@ -14,7 +14,7 @@ class Header extends React.Component {
   }
 
   handleSearchBox() {
-    this.props.onMenuClick("SearchBox")
+    this.props.onMenuClick("searchBox")
   }
 
   handleSingInSlide() {

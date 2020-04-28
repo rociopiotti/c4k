@@ -3,8 +3,9 @@ import "./GridProductList.scss"
 import ProductListItem from "../ProductListItem/ProductListItem"
 
 class GridProductList extends React.Component {
-   handleClickItem  (ItemPage)  {
-    console.log("Click en el boton que abre:", ItemPage)
+   handleClickItem  ()  {
+    // console.log("Click en el boton que abre:", ItemPage)
+    this.props.onProductClick("productDetails")
   }
   render() {
   
@@ -15,37 +16,37 @@ class GridProductList extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.handleClickItem("ItemPage")
+                  this.handleClickItem()
                 }}
                 href="#">
-                <ProductListItem />
+                <ProductListItem/>
               </a>
             </li>
             <li>
               <a
                 onClick={() => {
-                  this.handleClickItem("ItemPage")
+                  this.handleClickItem()
                 }}
                 href="#">
-                <ProductListItem />
+                <ProductListItem/>
               </a>
             </li>
             <li>
               <a
                 onClick={() => {
-                  this.handleClickItem("ItemPage")
+                  this.handleClickItem()
                 }}
                 href="#">
-                <ProductListItem />
+                <ProductListItem/>
               </a>
             </li>
             <li>
               <a
                 onClick={() => {
-                  this.handleClickItem("ItemPage")
+                  this.handleClickItem()
                 }}
                 href="#">
-                <ProductListItem />
+                <ProductListItem/>
               </a>
             </li>
           </ul>

@@ -7,8 +7,8 @@ class GridContainerHeader extends React.Component {
   handleFilterSlide  () {
     this.props.onGridFilter("filter")
   }
-  handleSortSlide  (SortSlide){
-    console.log("Click en el boton que abre:", SortSlide)
+  handleSortSlide  (){
+    this.props.onGridFilter("sort")
   }
   render() {
   
@@ -22,7 +22,7 @@ class GridContainerHeader extends React.Component {
             this.handleFilterSlide()
           }}
           className="gridFilter">
-          <GridFilter  onCloseClick={this.props.onCloseClick} />
+          <GridFilter />
         </button>
         <button
           onClick={() => {

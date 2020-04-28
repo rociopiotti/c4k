@@ -41,7 +41,12 @@ class App extends React.Component {
       currentSlide: newSlide,
     })
   }
-
+  handleGridFilter(newSlide) {
+    console.log("CAMBIAR EL SLIDER POR: ", newSlide)
+    this.setState({
+      currentSlide: newSlide,
+    })
+  }
   handleHomeClick(newSection) {
     console.log("CAMBIAR EL Section POR: ", newSection)
 
@@ -50,12 +55,6 @@ class App extends React.Component {
     })
   }
 
-  handleGridFilter(newSlide) {
-    console.log("CAMBIAR EL SLIDER POR: ", newSlide)
-    this.setState({
-      currentSlide: newSlide,
-    })
-  }
   setSlide(slideType) {
     let slide
     switch (slideType) {
@@ -72,11 +71,14 @@ class App extends React.Component {
           />
         )
         break
-      case "SearchBox":
+      case "searchBox":
         slide = <SearchBox onCloseClick={this.handleHeaderClick.bind(this)} />
         break
       case "filter":
-        slide = <FilterSlide  onCloseClick={this.handleHeaderClick.bind(this)} />
+        slide = <FilterSlide onCloseClick={this.handleHeaderClick.bind(this)} />
+        break
+      case "sort":
+        slide = <SortSlide onCloseClick={this.handleHeaderClick.bind(this)} />
         break
       default:
         slide = null
@@ -84,7 +86,6 @@ class App extends React.Component {
     }
     return slide
   }
-
   setSection(sectionType) {
     let section
     switch (sectionType) {
@@ -93,20 +94,61 @@ class App extends React.Component {
         break
       case "trousers":
         section = (
-          <GridContainer onGridFilter={this.handleGridFilter.bind(this)} />
+          <GridContainer
+            onGridFilter={this.handleGridFilter.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
         )
         break
       case "tshirts":
-        section = <GridContainer />
+        section = (
+          <GridContainer
+            onGridFilter={this.handleGridFilter.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
+        )
         break
       case "bags":
-        section = <GridContainer />
+        section = (
+          <GridContainer
+            onGridFilter={this.handleGridFilter.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
+        )
         break
       case "shoes":
-        section = <GridContainer />
+        section = (
+          <GridContainer
+            onGridFilter={this.handleGridFilter.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
+        )
         break
       case "newArrivals":
-        section = <GridContainer />
+        section = (
+          <GridContainer
+            onGridFilter={this.handleGridFilter.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
+        )
+        break
+      case "productDetails":
+        section = <ProductBox />
+        break
+      case "stores":
+        section = <Stores />
+        break
+      case "faq":
+        section = <Faq />
+        break
+      case "about":
+        section = <About />
+        break
+      case "termsAndCondition":
+        section = <TermsAndConditions />
+        break
+      case "privacyPloicy":
+        section = <PrivacyPolicy />
         break
       default:
         section = null
@@ -114,19 +156,16 @@ class App extends React.Component {
     }
     return section
   }
+
   render() {
     library.add(fab, faSearch)
     library.add(fab, faBars)
     // console.log("------> CURRENT SLIDE:", this.state.currentSlide)
-
+    // console.log("------> CURRENT SECTION:", this.state.currentSection)
     console.log("------> CURRENT SECTION:", this.state.currentSection)
-
     return (
       <div className="app">
         {this.setSlide(this.state.currentSlide)}
-
-        {/* <FilterSlide /> */}
-        {/* <SortSlide /> */}
         {/* <ForgotPasswordModal/> */}
 
         <Header
@@ -135,18 +174,12 @@ class App extends React.Component {
         />
         {this.setSection(this.state.currentSection)}
 
-        {/* <GridContainer /> */}
-        {/* <ProductBox/> */}
         {/* <SuggestedItemGallery/> */}
         {/* <Checkout/> */}
         {/* <PaymentGateway/> */}
-        {/* <Stores/> */}
-        {/* <Faq /> */}
-        {/* <About/> */}
         {/* <PaymentConfirmation/> */}
-        {/* <PrivacyPolicy/> */}
-        {/* <TermsAndConditions/> */}
-        <Footer />
+
+        <Footer onFooterMenuClick={this.handleHomeClick.bind(this)} />
       </div>
     )
   }

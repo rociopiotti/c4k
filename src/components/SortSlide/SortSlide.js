@@ -9,9 +9,10 @@ class SortSlide extends React.Component {
   render() {
     return (
       <div className="sortSlideBackground">
+     
         <div className="sortSlideBackgroundBox">
           <div className="sortSlideBox">
-            <HeaderSlideCloseLeft />
+            <HeaderSlideCloseLeft  onCloseClick={this.props.onCloseClick}/>
             <h2 className="sortTitle">#SORT</h2>
             <ul className="sortSlide">
               <li>
@@ -57,6 +58,9 @@ class SortSlide extends React.Component {
             </ul>
           </div>
         </div>
+        <div onClick={() => {
+            this.props.onCloseClick(null)
+          }} className="sortCloseBackground"></div>
       </div>
     )
   }

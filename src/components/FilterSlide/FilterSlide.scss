@@ -7,8 +7,12 @@
   top: 0;
   margin: 0;
   font-size: 1em;
-  z-index: 999999999;
-
+  z-index: 999999999;  
+  display: flex;
+  flex-direction: row;
+.filterCloseBackground {
+  flex-grow: 1;
+}
   .filterSlideBackgroundBox {
     position: absolute;
     width: 30vw;

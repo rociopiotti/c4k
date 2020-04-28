@@ -4,19 +4,21 @@ import "./FooterMenu.scss"
 import Logo from "../../Logo/Logo"
 
 const FooterMenu = (props) =>{
+
  const handleHome =  (Home) => {
     console.log("Click en el boton que abre:", Home)
   }
 
-  const  handleClickLink = (Value)  => {
-    console.log("Click en el boton que abre:", Value)
-  }
+  // const  handleClickLink = ()  => {
+  //   console.log("Click en el boton que abre:")
+  // }
+  
       return (
       <div className="footerMenuBox">
         <div className="footerMenuInnerBox">
           <button
             onClick={() => {
-              handleHome("Home")
+              handleHome("home")
             }}
             className="logoFooter">
             <Logo />
@@ -25,25 +27,25 @@ const FooterMenu = (props) =>{
             <li>
               <a
                 onClick={() => {
-                  handleClickLink("StorePage")
+                  props.onFooterMenuClick("stores")
                 }}
                 href="#">
-                #CONTACT US
+                #STORES
               </a>
             </li>
             <li>
               <a
                 onClick={() => {
-                 handleClickLink("FaqPage")
+                  props.onFooterMenuClick("faq")
                 }}
                 href="#">
-                #HELP
+                #FAQ
               </a>
             </li>
             <li>
               <a
                 onClick={() => {
-                 handleClickLink("AboutPage")
+                  props.onFooterMenuClick("about")
                 }}
                 href="#">
                 #ABOUT
@@ -52,7 +54,7 @@ const FooterMenu = (props) =>{
             <li>
               <a
                 onClick={() => {
-                  handleClickLink("TermsOfUse")
+                  props.onFooterMenuClick("termsAndCondition")
                 }}
                 href="#">
                 #TERMS OF USE
@@ -61,7 +63,7 @@ const FooterMenu = (props) =>{
             <li>
               <a
                 onClick={() => {
-                 handleClickLink("PrivacyPolicy")
+                  props.onFooterMenuClick("privacyPloicy")
                 }}
                 href="#">
                 #PRIVACY POLICY
