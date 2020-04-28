@@ -2,8 +2,10 @@ import React from "react"
 import "./MenuCategories.scss"
 
 const MenuCategories = (props) => {
-  const handleClickLink = (Value) => {
-    console.log("Click en el boton lleva a:", Value)
+
+  const handleClickLink = () => {
+    // console.log("Click en el boton lleva a:", Value)
+   
   }
     
     return (
@@ -12,7 +14,7 @@ const MenuCategories = (props) => {
           <li>
             <a
               onClick={() => {
-                handleClickLink("TROUSERSPAGE")
+                props.onHomeMenuClick("trousers")
               }}
               href="#">
               #TROUSERS
@@ -21,7 +23,7 @@ const MenuCategories = (props) => {
           <li>
             <a
               onClick={() => {
-               handleClickLink("T-SHIRTSPAGE")
+                props.onHomeMenuClick("tshirts")
               }}
               href="#">
               #T-SHIRTS
@@ -30,19 +32,19 @@ const MenuCategories = (props) => {
           <li>
             <a
              onClick={() => {
-                handleClickLink("BAGPAGE")
+              props.onHomeMenuClick("bags")
               }}
              href="#">#BAG</a>
           </li>
           <li>
             <a  onClick={() => {
-                handleClickLink("SHOESPAGE")
+                props.onHomeMenuClick("shoes")
               }}
             href="#">#SHOES</a>
           </li>
           <li>
             <a  onClick={() => {
-                handleClickLink("NEW ARRIVALSPAGE")
+                props.onHomeMenuClick("newArrivals")
               }}
             href="#">#NEW ARRIVALS</a>
           </li>

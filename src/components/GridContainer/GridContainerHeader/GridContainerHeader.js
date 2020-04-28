@@ -4,8 +4,8 @@ import GridFilter from "../../GridFilter/GridFliter"
 import GridSort from "../../GridSort/GridSort"
 
 class GridContainerHeader extends React.Component {
-  handleFilterSlide  (FilterSlide) {
-    console.log("Click en el boton que abre:", FilterSlide)
+  handleFilterSlide  () {
+    this.props.onGridFilter("filter")
   }
   handleSortSlide  (SortSlide){
     console.log("Click en el boton que abre:", SortSlide)
@@ -19,14 +19,14 @@ class GridContainerHeader extends React.Component {
         </div>
         <button
           onClick={() => {
-            this.handleFilterSlide("FilterSlide")
+            this.handleFilterSlide()
           }}
           className="gridFilter">
-          <GridFilter />
+          <GridFilter  onCloseClick={this.props.onCloseClick} />
         </button>
         <button
           onClick={() => {
-            this.handleSortSlide("SortSlide")
+            this.handleSortSlide()
           }}
           className="gridSort">
           <GridSort />

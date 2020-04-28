@@ -11,7 +11,7 @@ class FilterSlide extends React.Component {
       <div className="filterSlideBackground">
         <div className="filterSlideBackgroundBox">
           <div className="filterSlideBox">
-            <HeaderSlideCloseLeft />
+            <HeaderSlideCloseLeft onCloseClick={this.props.onCloseClick}/>
             <h2 className="filterTitle">#FILTER</h2>
             <ul className="filterSlide">
               <li>

@@ -9,7 +9,7 @@ class GridContainer extends React.Component {
   render() {
     return(  
     <div className="gridContainerBox">
-    <GridContainerHeader/>
+    <GridContainerHeader onGridFilter={this.props.onGridFilter}/>
     <GridProductList/>
     <BtnBackToTop className="btnBackToTopGrid"/>
     </div>)

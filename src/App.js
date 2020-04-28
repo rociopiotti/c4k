@@ -37,12 +37,25 @@ class App extends React.Component {
 
   handleHeaderClick(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide)
-
     this.setState({
       currentSlide: newSlide,
     })
   }
 
+  handleHomeClick(newSection) {
+    console.log("CAMBIAR EL Section POR: ", newSection)
+
+    this.setState({
+      currentSection: newSection,
+    })
+  }
+
+  handleGridFilter(newSlide) {
+    console.log("CAMBIAR EL SLIDER POR: ", newSlide)
+    this.setState({
+      currentSlide: newSlide,
+    })
+  }
   setSlide(slideType) {
     let slide
     switch (slideType) {
@@ -52,12 +65,19 @@ class App extends React.Component {
       case "cartSlide":
         slide = <CartSlide onCloseClick={this.handleHeaderClick.bind(this)} />
         break
-      case "singInSlide":        
-        slide= <SingInCreateAccountNavslide onCloseClick={this.handleHeaderClick.bind(this)}/>
+      case "singInSlide":
+        slide = (
+          <SingInCreateAccountNavslide
+            onCloseClick={this.handleHeaderClick.bind(this)}
+          />
+        )
         break
       case "SearchBox":
-        slide=  <SearchBox onCloseClick={this.handleHeaderClick.bind(this)}/> 
-      break
+        slide = <SearchBox onCloseClick={this.handleHeaderClick.bind(this)} />
+        break
+      case "filter":
+        slide = <FilterSlide  onCloseClick={this.handleHeaderClick.bind(this)} />
+        break
       default:
         slide = null
         break
@@ -65,21 +85,56 @@ class App extends React.Component {
     return slide
   }
 
+  setSection(sectionType) {
+    let section
+    switch (sectionType) {
+      case "home":
+        section = <Home onHomeMenuClick={this.handleHomeClick.bind(this)} />
+        break
+      case "trousers":
+        section = (
+          <GridContainer onGridFilter={this.handleGridFilter.bind(this)} />
+        )
+        break
+      case "tshirts":
+        section = <GridContainer />
+        break
+      case "bags":
+        section = <GridContainer />
+        break
+      case "shoes":
+        section = <GridContainer />
+        break
+      case "newArrivals":
+        section = <GridContainer />
+        break
+      default:
+        section = null
+        break
+    }
+    return section
+  }
   render() {
     library.add(fab, faSearch)
     library.add(fab, faBars)
     // console.log("------> CURRENT SLIDE:", this.state.currentSlide)
 
+    console.log("------> CURRENT SECTION:", this.state.currentSection)
+
     return (
       <div className="app">
-        {this.setSlide(this.state.currentSlide)}        
+        {this.setSlide(this.state.currentSlide)}
+
         {/* <FilterSlide /> */}
         {/* <SortSlide /> */}
-        {/* <ForgotPasswordSlide/>  */}
         {/* <ForgotPasswordModal/> */}
 
-        <Header onMenuClick={this.handleHeaderClick.bind(this)} />
-        <Home />
+        <Header
+          onMenuClick={this.handleHeaderClick.bind(this)}
+          onHomeMenuClick={this.handleHomeClick.bind(this)}
+        />
+        {this.setSection(this.state.currentSection)}
+
         {/* <GridContainer /> */}
         {/* <ProductBox/> */}
         {/* <SuggestedItemGallery/> */}

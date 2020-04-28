@@ -9,8 +9,8 @@ class Header extends React.Component {
     this.props.onMenuClick("navSlide")
   }
 
-  handleHome(Home) {
-    console.log("Click en el boton que abre:", Home)
+  handleHome() {
+    this.props.onHomeMenuClick("home")
   }
 
   handleSearchBox() {
@@ -38,7 +38,7 @@ class Header extends React.Component {
         <span className="spacer"></span>
         <button
           onClick={() => {
-            this.handleHome("Home")
+            this.handleHome()
           }}
           className="logo">
           <Logo />

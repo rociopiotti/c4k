@@ -42,8 +42,8 @@ class SingInCreateAccountNavslide extends React.Component {
             </button>
           </div>
           <div className="singInCreateAccountBox">
-            {/* <SingInSlide /> */}
-            <CreateAnAccountSlide />
+            <SingInSlide />
+            {/* <CreateAnAccountSlide /> */}
           </div>
         </div>
         <div
