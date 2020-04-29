@@ -21,6 +21,9 @@ class ProductDetails extends React.Component {
   setColor(colorType) {
     let itemColor
     switch (colorType) {
+      case "COLOR":
+        itemColor = "COLOR"
+        break
       case "OPTION A":
         itemColor = "OPTION A"
         break
@@ -41,6 +44,9 @@ class ProductDetails extends React.Component {
   setSize(sizeType) {
     let itemSize
     switch (sizeType) {
+      case "SIZE":
+        itemSize = "SIZE"
+        break
       case "SMALL":
         itemSize = "SMALL"
         break
