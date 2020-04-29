@@ -5,11 +5,15 @@ import itemImg from "../../img/trousers-white1.png"
 
 let itemSize = "SIZE"
 let itemQuantity = "1"
+
 class CartItem extends React.Component {
   state = {
     currentQuantity: "null",
     currentColor: "null",
     wishList: false,
+  }
+  handleSeeProductBox() {
+    console.log("Click en Imagen. Cerrar Nav. Mostrar Product Box")
   }
   handleAddToWishList() {
     this.setState({
@@ -96,7 +100,11 @@ class CartItem extends React.Component {
     return (
       <div className="cartItemBox">
         <div className="column1">
-          <a className="cartItemImgBox">
+          <a
+            onClick={() => {
+              this.handleSeeProductBox()
+            }}
+            className="cartItemImgBox">
             <img src={itemImg} alt="trousers item" className="cartItemImg" />
           </a>
           <button
@@ -130,7 +138,6 @@ class CartItem extends React.Component {
               Total: <span></span> €145
             </p>
           </div>
-
           <div className="dropdownBoxCart">
             <button className="dropbtn">
               <p>{itemSize}</p>
