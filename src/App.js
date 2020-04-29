@@ -62,7 +62,8 @@ class App extends React.Component {
         slide = (
           <NavSlide
             onCloseClick={this.handleHeaderClick.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
+            onNavItemClick={this.handleHomeClick.bind(this)}
+            onMenuNavClick={this.handleHeaderClick.bind(this)}
           />
         )
         break
@@ -184,7 +185,10 @@ class App extends React.Component {
         {/* <PaymentGateway/> */}
         {/* <PaymentConfirmation/> */}
 
-        <Footer onFooterMenuClick={this.handleHomeClick.bind(this)} />
+        <Footer
+          onFooterMenuClick={this.handleHomeClick.bind(this)}
+          onHomeMenuClick={this.handleHomeClick.bind(this)}
+        />
       </div>
     )
   }

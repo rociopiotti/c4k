@@ -6,10 +6,11 @@ class NavSlide extends React.Component {
   clickCloseNav() {
     this.props.onCloseClick(null)
   }
-
+  clickMenuNavLinks(value) {
+    this.props.onMenuNavClick(value)
+  }
   clickNavLinks(value) {
-    console.log("Click en botón muestra página:")
-    this.props.onProductClick(value)
+    this.props.onNavItemClick(value)
   }
   render() {
     return (
@@ -74,7 +75,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickCloseNav("CloseNav")
+                    this.clickCloseNav("CloseNav")                    
+                    this.clickMenuNavLinks("searchBox")
                   }}>
                   <Icon className="searchNavIcon" />
                   SEARCH
@@ -83,7 +85,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickCloseNav("CloseNav")
+                    this.clickCloseNav("CloseNav")                                     
+                    this.clickMenuNavLinks("singInSlide")
                   }}>
                   <Icon className="signInNavIcon" />
                   SING IN/ CREATE AN ACCOUNT
@@ -92,7 +95,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.clickCloseNav("CloseNav")
+                    this.clickCloseNav("CloseNav")                                     
+                    this.clickMenuNavLinks("cartSlide")
                   }}>
                   <Icon className="cartNavIcon" /> MY BAG
                 </a>

@@ -7,7 +7,10 @@ import SocialLinksMenu from "../SocialLinksMenu/SocialLinksMenu"
 const Footer = (props) => {
   return (
     <div className="footer">
-      <FooterMenu onFooterMenuClick={props.onFooterMenuClick}  />
+      <FooterMenu
+        onFooterMenuClick={props.onFooterMenuClick}
+        onHomeMenuClick={props.onHomeMenuClick}
+      />
       <SuscribeBox />
       <SocialLinksMenu />
     </div>
