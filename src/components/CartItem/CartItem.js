@@ -3,22 +3,96 @@ import "./CartItem.scss"
 import Icon from "../Icon/Icon"
 import itemImg from "../../img/trousers-white1.png"
 
+let itemSize = "SIZE"
+let itemQuantity = "1"
 class CartItem extends React.Component {
-  handleAddToWishList(AddToWishList) {
-    console.log("Click en el boton:", AddToWishList)
+  state = {
+    currentQuantity: "null",
+    currentColor: "null",
+    wishList: false,
+  }
+  handleAddToWishList() {
+    this.setState({
+      wishList: true,
+    })
   }
   handleRemoveFromCart(RemoveFromCartList) {
     console.log("Click en el boton:", RemoveFromCartList)
   }
 
-  handleClickOnDropdown(ClickDropdown) {
-    console.log("Click en el boton:", ClickDropdown)
+  handleDropwnSize(newSize) {
+    this.setState({
+      currentSize: newSize,
+    })
+  }
+  setSize(sizeType) {
+    switch (sizeType) {
+      case "SMALL":
+        itemSize = "SMALL"
+        break
+      case "MEDIUM":
+        itemSize = "MEDIUM"
+        break
+      case "LARGE":
+        itemSize = "LARGE"
+        break
+    }
+    return itemSize
   }
 
-  clickDropdownItem(id) {
-    console.log("Click en el boton:", id)
+  handleDropwnQuantity(newQuantity) {
+    this.setState({
+      currentQuantity: newQuantity,
+    })
+  }
+
+  setQuantity(quantityType) {
+    switch (quantityType) {
+      case "1":
+        itemQuantity = "1"
+        break
+      case "2":
+        itemQuantity = "2"
+        break
+      case "3":
+        itemQuantity = "3"
+        break
+      case "4":
+        itemQuantity = "4"
+        break
+      case "5":
+        itemQuantity = "5"
+        break
+      case "6":
+        itemQuantity = "6"
+        break
+      case "7":
+        itemQuantity = "7"
+        break
+      case "8":
+        itemQuantity = "8"
+        break
+      case "9":
+        itemQuantity = "9"
+        break
+      case "10":
+        itemQuantity = "10"
+        break
+    }
+    return itemSize
   }
   render() {
+    console.log("CURRENT SIZE:", this.state.currentSize)
+    console.log("CURRENT QUANTITY:", this.state.currentQuantity)
+    console.log("WISHLIST BTN", this.state.wishList)
+
+    {
+      this.setSize(this.state.currentSize)
+    }
+    {
+      this.setQuantity(this.state.currentQuantity)
+    }
+
     return (
       <div className="cartItemBox">
         <div className="column1">
@@ -27,7 +101,7 @@ class CartItem extends React.Component {
           </a>
           <button
             onClick={() => {
-              this.handleAddToWishList("AddToWishList")
+              this.handleAddToWishList()
             }}
             className="btnAddItemWishList">
             <Icon />
@@ -58,19 +132,15 @@ class CartItem extends React.Component {
           </div>
 
           <div className="dropdownBoxCart">
-            <button
-              onClick={() => {
-                this.handleClickOnDropdown("ClickDropdown")
-              }}
-              className="dropbtn">
-              <p>SIZE</p>
+            <button className="dropbtn">
+              <p>{itemSize}</p>
               <Icon className="dropDownIcon" />
             </button>
             <ul className="dropdownContentSize">
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("SMALL")
+                    this.handleDropwnSize("SMALL")
                   }}>
                   S
                 </button>
@@ -78,7 +148,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("MEDIUM")
+                    this.handleDropwnSize("MEDIUM")
                   }}>
                   M
                 </button>
@@ -86,7 +156,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("LARGE")
+                    this.handleDropwnSize("LARGE")
                   }}>
                   L
                 </button>
@@ -94,19 +164,23 @@ class CartItem extends React.Component {
             </ul>
           </div>
           <div className="dropdownBoxCart">
-            <button
-              onClick={() => {
-                this.handleClickOnDropdown("ClickDropdown")
-              }}
-              className="dropbtn">
-              <p>1</p>
+            <button className="dropbtn">
+              <p>{itemQuantity}</p>
               <Icon className="dropDownIcon" />
             </button>
             <ul className="dropdownContentSize">
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("2")
+                    this.handleDropwnQuantity("1")
+                  }}>
+                  1
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    this.handleDropwnQuantity("2")
                   }}>
                   2
                 </button>
@@ -114,7 +188,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("3")
+                    this.handleDropwnQuantity("3")
                   }}>
                   3
                 </button>
@@ -122,7 +196,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("4")
+                    this.handleDropwnQuantity("4")
                   }}>
                   4
                 </button>
@@ -130,7 +204,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("5")
+                    this.handleDropwnQuantity("5")
                   }}>
                   5
                 </button>
@@ -138,7 +212,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("6")
+                    this.handleDropwnQuantity("6")
                   }}>
                   6
                 </button>
@@ -146,7 +220,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("7")
+                    this.handleDropwnQuantity("7")
                   }}>
                   7
                 </button>
@@ -154,7 +228,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("8")
+                    this.handleDropwnQuantity("8")
                   }}>
                   8
                 </button>
@@ -162,7 +236,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("9")
+                    this.handleDropwnQuantity("9")
                   }}>
                   9
                 </button>
@@ -170,7 +244,7 @@ class CartItem extends React.Component {
               <li>
                 <button
                   onClick={() => {
-                    this.clickDropdownItem("10")
+                    this.handleDropwnQuantity("10")
                   }}>
                   10
                 </button>
