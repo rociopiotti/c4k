@@ -3,14 +3,12 @@ import "./CartItem.scss"
 import Icon from "../Icon/Icon"
 import itemImg from "../../img/trousers-white1.png"
 
-let itemSize = "SIZE"
-let itemQuantity = "1"
-
 class CartItem extends React.Component {
   state = {
-    currentQuantity: "null",
-    currentColor: "null",
+    currentSize: "SIZE",
+    currentQuantity: "1",
     wishList: false,
+    removeFromCart: false,
   }
   handleSeeProductBox() {
     console.log("Click en Imagen. Cerrar Nav. Mostrar Product Box")
@@ -20,17 +18,22 @@ class CartItem extends React.Component {
       wishList: true,
     })
   }
-  handleRemoveFromCart(RemoveFromCartList) {
-    console.log("Click en el boton:", RemoveFromCartList)
+  handleRemoveFromCart() {
+    this.setState({
+      removeFromCart: true,
+    })
   }
-
   handleDropwnSize(newSize) {
     this.setState({
       currentSize: newSize,
     })
   }
   setSize(sizeType) {
+    let itemSize
     switch (sizeType) {
+      case "SIZE":
+        itemSize = "SIZE"
+        break
       case "SMALL":
         itemSize = "SMALL"
         break
@@ -43,14 +46,13 @@ class CartItem extends React.Component {
     }
     return itemSize
   }
-
   handleDropwnQuantity(newQuantity) {
     this.setState({
       currentQuantity: newQuantity,
     })
   }
-
   setQuantity(quantityType) {
+    let itemQuantity
     switch (quantityType) {
       case "1":
         itemQuantity = "1"
@@ -83,20 +85,17 @@ class CartItem extends React.Component {
         itemQuantity = "10"
         break
     }
-    return itemSize
+    return itemQuantity
   }
   render() {
     console.log("CURRENT SIZE:", this.state.currentSize)
     console.log("CURRENT QUANTITY:", this.state.currentQuantity)
     console.log("WISHLIST BTN", this.state.wishList)
+    console.log("REMOVE FROM CART BTN", this.state.removeFromCart)
 
-    {
-      this.setSize(this.state.currentSize)
-    }
-    {
-      this.setQuantity(this.state.currentQuantity)
-    }
-
+    const itemSize = this.setSize(this.state.currentSize)
+    const itemQuantity =this.setQuantity(this.state.currentQuantity)
+    console.log(itemQuantity)
     return (
       <div className="cartItemBox">
         <div className="column1">
@@ -118,7 +117,7 @@ class CartItem extends React.Component {
         <div className="column2">
           <button
             onClick={() => {
-              this.handleRemoveFromCart("RemoveFromCartList")
+              this.handleRemoveFromCart()
             }}
             className="btnRemoveItem">
             <Icon />

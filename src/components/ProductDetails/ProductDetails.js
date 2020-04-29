@@ -3,12 +3,11 @@ import "./ProductDetails.scss"
 import Icon from "../Icon/Icon"
 
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag"
-let itemColor = "COLOR"
-let itemSize = "SIZE"
+
 class ProductDetails extends React.Component {
   state = {
-    currentColor: "null",
-    currentSize: "null",
+    currentColor: "COLOR",
+    currentSize: "SIZE",
     curretStateAddBtn: false,
   }
   clickOnDropdown(Dropdown) {
@@ -20,6 +19,7 @@ class ProductDetails extends React.Component {
     })
   }
   setColor(colorType) {
+    let itemColor
     switch (colorType) {
       case "OPTION A":
         itemColor = "OPTION A"
@@ -39,6 +39,7 @@ class ProductDetails extends React.Component {
     })
   }
   setSize(sizeType) {
+    let itemSize
     switch (sizeType) {
       case "SMALL":
         itemSize = "SMALL"
@@ -67,15 +68,13 @@ class ProductDetails extends React.Component {
     console.log("------> CURRENT COLOR:", this.state.currentColor)
     console.log("------> CURRENT SIZE:", this.state.currentSize)
     if (this.state.curretStateAddBtn) {
-      console.log("CLICK ADD TO BAG",this.state.curretStateAddBtn)
+      console.log("CLICK ADD TO BAG", this.state.curretStateAddBtn)
     }
-    {
-      this.setColor(this.state.currentColor)
-    }
-    {
-      this.setSize(this.state.currentSize)
-    }
+    const itemColor = this.setColor(this.state.currentColor)
+    const itemSize = this.setSize(this.state.currentSize)
+   
     return (
+    
       <div className="productDetailsBox">
         <div className="productDetails">
           <h3 className="titleProductDetails">#ITEM TITLE</h3>
