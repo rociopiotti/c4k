@@ -7,8 +7,8 @@ import BtnPromoCode from "../BtnPromoCode/BtnPromoCode"
 import CartEmpty from "../CartEmpty/CartEmpty"
 
 class CartSlide extends React.Component {
-  handleCheckoutPage(url) {
-    console.log("Muestra página:", url)
+  handleCheckoutPage(value) {
+    this.props.onCheckouBtn(value)
   }
 
   render() {
@@ -30,8 +30,8 @@ class CartSlide extends React.Component {
             <EstimatedTotal />
             <button
               onClick={() => {
-                this.props.onCloseClick(null)
-                this.handleCheckoutPage("checkout.html")
+                this.props.onCloseClick(null)              
+                this.handleCheckoutPage("checkout")
               }}
               className="btnCheckout">
               CHECKOUT

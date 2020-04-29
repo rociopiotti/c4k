@@ -88,14 +88,14 @@ class CartItem extends React.Component {
     return itemQuantity
   }
   render() {
-    console.log("CURRENT SIZE:", this.state.currentSize)
-    console.log("CURRENT QUANTITY:", this.state.currentQuantity)
-    console.log("WISHLIST BTN", this.state.wishList)
-    console.log("REMOVE FROM CART BTN", this.state.removeFromCart)
+    console.log("-->CURRENT SIZE:", this.state.currentSize)
+    console.log("--->CURRENT QUANTITY:", this.state.currentQuantity)
+    console.log("---->WISHLIST BTN", this.state.wishList)
+    console.log("----->REMOVE FROM CART BTN", this.state.removeFromCart)
 
     const itemSize = this.setSize(this.state.currentSize)
     const itemQuantity =this.setQuantity(this.state.currentQuantity)
-    console.log(itemQuantity)
+    
     return (
       <div className="cartItemBox">
         <div className="column1">

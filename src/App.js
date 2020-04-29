@@ -68,7 +68,12 @@ class App extends React.Component {
         )
         break
       case "cartSlide":
-        slide = <CartSlide onCloseClick={this.handleHeaderClick.bind(this)} />
+        slide = (
+          <CartSlide
+            onCloseClick={this.handleHeaderClick.bind(this)}
+            onCheckouBtn={this.handleHomeClick.bind(this)}
+          />
+        )
         break
       case "singInSlide":
         slide = (
@@ -141,6 +146,9 @@ class App extends React.Component {
       case "productDetails":
         section = <ProductBox />
         break
+      case "checkout":
+        section = <Checkout />
+        break
       case "stores":
         section = <Stores />
         break
@@ -181,7 +189,7 @@ class App extends React.Component {
         {this.setSection(this.state.currentSection)}
 
         {/* <SuggestedItemGallery/> */}
-        {/* <Checkout/> */}
+
         {/* <PaymentGateway/> */}
         {/* <PaymentConfirmation/> */}
 
