@@ -59,7 +59,12 @@ class App extends React.Component {
     let slide
     switch (slideType) {
       case "navSlide":
-        slide = <NavSlide onCloseClick={this.handleHeaderClick.bind(this)} />
+        slide = (
+          <NavSlide
+            onCloseClick={this.handleHeaderClick.bind(this)}
+            onProductClick={this.handleHomeClick.bind(this)}
+          />
+        )
         break
       case "cartSlide":
         slide = <CartSlide onCloseClick={this.handleHeaderClick.bind(this)} />

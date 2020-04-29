@@ -6,8 +6,10 @@ class NavSlide extends React.Component {
   clickCloseNav() {
     this.props.onCloseClick(null)
   }
-  clickNavLinks(url) {
-    console.log("Click en botón muestra página:", url)
+
+  clickNavLinks(value) {
+    console.log("Click en botón muestra página:")
+    this.props.onProductClick(value)
   }
   render() {
     return (
@@ -26,14 +28,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.clickCloseNav("CloseNav")
-                  }}>
-                  #T-SHIRT
-                </a>
-              </li>
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickCloseNav("CloseNav")
+                    this.clickNavLinks("trousers")
                   }}>
                   #TROUSERS
                 </a>
@@ -42,6 +37,17 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.clickCloseNav("CloseNav")
+                    this.clickNavLinks("tshirts")
+                  }}>
+                  #T-SHIRT
+                </a>
+              </li>
+
+              <li className="listItem">
+                <a
+                  onClick={() => {
+                    this.clickCloseNav("CloseNav")
+                    this.clickNavLinks("bags")
                   }}>
                   #BAGS
                 </a>
@@ -50,6 +56,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.clickCloseNav("CloseNav")
+                    this.clickNavLinks("shoes")
                   }}>
                   #SHOES
                 </a>
@@ -58,6 +65,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.clickCloseNav("CloseNav")
+                    this.clickNavLinks("newArrivals")
                   }}>
                   #NEW ARRIVALS
                 </a>
@@ -75,7 +83,6 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                   
                     this.clickCloseNav("CloseNav")
                   }}>
                   <Icon className="signInNavIcon" />
