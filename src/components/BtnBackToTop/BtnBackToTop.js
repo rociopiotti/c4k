@@ -2,15 +2,41 @@ import React from "react"
 import "./BtnBackToTop.scss"
 
 class BtnBackToTop extends React.Component {
- handleGoToTop (GoToTop){
+  state = {
+    is_visible: false,
+  }
+  handleGoToTop(GoToTop) {
     console.log("Click en el boton que muestra", GoToTop)
   }
+  componentDidMount() {
+    var scrollComponent = this
+    document.addEventListener("scroll", function (e) {
+      scrollComponent.toggleVisibility()
+    })
+  }
+  toggleVisibility() {
+    if (window.pageYOffset > 300) {
+      this.setState({
+        is_visible: true,
+      })
+    } else {
+      this.setState({
+        is_visible: false,
+      })
+    }
+  }
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
   render() {
-    
+    const { is_visible } = this.state
     return (
       <button
         onClick={() => {
-          this.handleGoToTop("GoToTop")
+          this.scrollToTop()
         }}
         className="btnBackToTop">
         BACK TO TOP

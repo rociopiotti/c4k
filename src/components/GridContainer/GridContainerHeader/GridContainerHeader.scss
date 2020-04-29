@@ -13,7 +13,6 @@
   letter-spacing: 0.1em;
 
   .gridTitle {
-
     border: lightgreen solid thin;
     position: relative;
     width: 100%;
@@ -32,16 +31,27 @@
   }
   .gridFilter {
     color: #ffffff;
-    width: 10%;
+    width: 15%;
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
   .gridSort {
     color: #ffffff;
-    width: 10%;
+    width: 15%;
     background-color: transparent;
-    border: none;    
+    border: none;
     cursor: pointer;
+  }
+}
+
+@media all and (max-width: 754px) {
+  .gridContainerHeaderBox {
+    .gridFilter {
+      width: 25%;
+    }
+    .gridSort {
+      width: 25%;
+    }
   }
 }

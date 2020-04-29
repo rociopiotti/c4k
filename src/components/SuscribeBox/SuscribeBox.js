@@ -2,11 +2,21 @@ import React from "react"
 import "./SuscribeBox.scss"
 
 class SuscribeBox extends React.Component {
-  handleSuscribe (Suscribe) {
-    console.log("Click en el boton que abre:", Suscribe)
+  state = {
+    suscribed: false,
   }
+  handleSuscribe() {
+    this.setState({
+      suscribed: true,
+    })
+  }
+
   render() {
-    
+    let text = "SUSCRIBE ME"
+    if (this.state.suscribed) {
+      text = "THANKS FOR SUSCRIBING!"
+    }
+
     return (
       <div className="suscribeBox">
         <div className="suscribeInnerBox">
@@ -25,10 +35,10 @@ class SuscribeBox extends React.Component {
           />
           <button
             onClick={() => {
-              this.handleSuscribe("Suscribe")
+              this.handleSuscribe()
             }}
             className="btnSuscribe">
-            SUSCRIBE ME
+            {text}
           </button>
           <p className="suscribeinfoText">
             TERMS AND CONDITIONS FOR MORE INFORMATION ON HOW C-4K COMMUNICATES
