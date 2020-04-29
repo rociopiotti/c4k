@@ -7,13 +7,14 @@ let itemColor = "COLOR"
 let itemSize = "SIZE"
 class ProductDetails extends React.Component {
   state = {
-    currentOption: "null",
+    currentColor: "null",
+    currentSize: "null",
+    curretStateAddBtn: false,
   }
-
   clickOnDropdown(Dropdown) {
     console.log("Abro o cierro", Dropdown)
   }
-  handleDropdown(newColor) {
+  handleDropdownColor(newColor) {
     this.setState({
       currentColor: newColor,
     })
@@ -29,8 +30,32 @@ class ProductDetails extends React.Component {
       case "OPTION C":
         itemColor = "OPTION C"
         break
-        return itemColor
     }
+    return itemColor
+  }
+  handleDropwnSize(newSize) {
+    this.setState({
+      currentSize: newSize,
+    })
+  }
+  setSize(sizeType) {
+    switch (sizeType) {
+      case "SMALL":
+        itemSize = "SMALL"
+        break
+      case "MEDIUM":
+        itemSize = "MEDIUM"
+        break
+      case "LARGE":
+        itemSize = "LARGE"
+        break
+    }
+    return itemSize
+  }
+  handleAddToBag() {
+    this.setState({
+      curretStateAddBtn: true,
+    })
   }
   handleFreeShippingModal(ModalFreeShipping) {
     console.log("Click en el botón que muestra", ModalFreeShipping)
@@ -40,16 +65,21 @@ class ProductDetails extends React.Component {
   }
   render() {
     console.log("------> CURRENT COLOR:", this.state.currentColor)
+    console.log("------> CURRENT SIZE:", this.state.currentSize)
+    if (this.state.curretStateAddBtn) {
+      console.log("CLICK ADD TO BAG",this.state.curretStateAddBtn)
+    }
     {
       this.setColor(this.state.currentColor)
+    }
+    {
+      this.setSize(this.state.currentSize)
     }
     return (
       <div className="productDetailsBox">
         <div className="productDetails">
           <h3 className="titleProductDetails">#ITEM TITLE</h3>
-
           <h4 className="priceProductDetails">PRICE</h4>
-
           <div className="dropdownsContainer">
             <div className="dropdownBox">
               <button
@@ -65,7 +95,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("OPTION A")
+                      this.handleDropdownColor("OPTION A")
                     }}>
                     OPTION A
                   </button>
@@ -73,7 +103,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("OPTION B")
+                      this.handleDropdownColor("OPTION B")
                     }}>
                     OPTION B
                   </button>
@@ -81,7 +111,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("OPTION C")
+                      this.handleDropdownColor("OPTION C")
                     }}>
                     OPTION C
                   </button>
@@ -94,14 +124,14 @@ class ProductDetails extends React.Component {
                   this.clickOnDropdown("Dropdown")
                 }}
                 className="dropbtn dropBtnSize">
-                <p>SIZE</p>
+                <p>{itemSize}</p>
                 <Icon className="dropDownIcon" />
               </button>
               <ul className="dropdownContentSize">
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("SMALL")
+                      this.handleDropwnSize("SMALL")
                     }}>
                     SMALL
                   </button>
@@ -109,7 +139,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("MEDIUM")
+                      this.handleDropwnSize("MEDIUM")
                     }}>
                     MEDIUM
                   </button>
@@ -117,7 +147,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleDropdown("LARGE")
+                      this.handleDropwnSize("LARGE")
                     }}>
                     LARGE
                   </button>
@@ -125,7 +155,7 @@ class ProductDetails extends React.Component {
               </ul>
             </div>
           </div>
-          <BtnAddToBag />
+          <BtnAddToBag clickAddToBag={this.handleAddToBag.bind(this)} />
           <button
             onClick={() => {
               this.handleFreeShippingModal("ModalFreeShipping")
