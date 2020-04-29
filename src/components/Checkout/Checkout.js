@@ -6,8 +6,8 @@ import SingIn from "../SingIn/SingIn"
 import BtnSingInGoogle from "../BtnSingInGoogle/BtnSingInGoogle"
 import BtnSingInFacebook from "../BtnSingInFacebook/BtnSingInFacebook"
 class Checkout extends React.Component {
-  handleCloseCheckout(CloseCheckout)  {
-    console.log("Click en botón:", CloseCheckout)
+  handleCloseCheckout()  {
+    this.props.onCloseCheckout("home")
   }
   render() {
     return (
@@ -16,7 +16,7 @@ class Checkout extends React.Component {
           <div className="headerCheckoutBox">
             <h2>#CHECKOUT </h2>
             <button onClick={() => {
-              this.handleCloseCheckout("CloseCheckout")
+              this.handleCloseCheckout()
             }} className="btnCloseCheckout"><Icon /></button>
           </div>
           <CheckoutGuest />

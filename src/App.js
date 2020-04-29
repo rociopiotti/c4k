@@ -147,7 +147,7 @@ class App extends React.Component {
         section = <ProductBox />
         break
       case "checkout":
-        section = <Checkout />
+        section = <Checkout onCloseCheckout={this.handleHomeClick.bind(this)}  />
         break
       case "stores":
         section = <Stores />
