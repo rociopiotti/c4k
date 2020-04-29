@@ -5,9 +5,6 @@ class BtnBackToTop extends React.Component {
   state = {
     is_visible: false,
   }
-  handleGoToTop(GoToTop) {
-    console.log("Click en el boton que muestra", GoToTop)
-  }
   componentDidMount() {
     var scrollComponent = this
     document.addEventListener("scroll", function (e) {

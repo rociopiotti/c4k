@@ -38,7 +38,7 @@
 
     .btnGallery {
       width: 50px;
-      height: 3px;
+      height: 7px;
       background-color: #ffffff;
       border: none;
       color: #212121;
@@ -61,8 +61,7 @@
     justify-content: center;
     overflow-x: hidden;
 
-    .imagesBox {
-      
+    .imagesBox {      
       width: 30vw;
       height: 30vw;
     }
@@ -103,16 +102,7 @@
       align-items: center;
       justify-content: space-evenly;
 
-      .btnGallery {
-        width: 50px;
-        height: 3px;
-        background-color: #ffffff;
-        border: none;
-        color: #212121;
-      }
-      .btnGallery:first-child {
-        background-color: #6b6b6b;
-      }
+    
     }
   }
 }
@@ -155,13 +145,7 @@
 
       .btnGallery {
         width: 50px;
-        height: 3px;
-        background-color: #ffffff;
-        border: none;
-        color: #212121;
-      }
-      .btnGallery:first-child {
-        background-color: #6b6b6b;
+        height: 5px;
       }
     }
   }

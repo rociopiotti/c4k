@@ -103,6 +103,13 @@
   .FaqBox {
     .Faq {
       width: 80%;
+      .FaqSearchBox { 
+        width: 100%;
+        
+      .searchFaq {
+        height: 7vh;
+      }
+      }
     }
   }
 }
