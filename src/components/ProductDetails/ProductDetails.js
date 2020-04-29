@@ -3,21 +3,46 @@ import "./ProductDetails.scss"
 import Icon from "../Icon/Icon"
 
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag"
-
+let itemColor = "COLOR"
+let itemSize = "SIZE"
 class ProductDetails extends React.Component {
-  handleChooseColor (Value)  {
-    console.log("Elijo color:", Value)
+  state = {
+    currentOption: "null",
   }
-  clickOnDropdown  (Dropdown)  {
+
+  clickOnDropdown(Dropdown) {
     console.log("Abro o cierro", Dropdown)
   }
-  handleFreeShippingModal  (ModalFreeShipping){
+  handleDropdown(newColor) {
+    this.setState({
+      currentColor: newColor,
+    })
+  }
+  setColor(colorType) {
+    switch (colorType) {
+      case "OPTION A":
+        itemColor = "OPTION A"
+        break
+      case "OPTION B":
+        itemColor = "OPTION B"
+        break
+      case "OPTION C":
+        itemColor = "OPTION C"
+        break
+        return itemColor
+    }
+  }
+  handleFreeShippingModal(ModalFreeShipping) {
     console.log("Click en el botón que muestra", ModalFreeShipping)
   }
-  handleSizeGuide  (SizeGuide)  {
+  handleSizeGuide(SizeGuide) {
     console.log("Click en el botón que muestra", SizeGuide)
   }
   render() {
+    console.log("------> CURRENT COLOR:", this.state.currentColor)
+    {
+      this.setColor(this.state.currentColor)
+    }
     return (
       <div className="productDetailsBox">
         <div className="productDetails">
@@ -33,14 +58,14 @@ class ProductDetails extends React.Component {
                 }}
                 className="dropbtn">
                 <div className="colorIcon"></div>
-                <p>COLOR</p>
+                <p>{itemColor}</p>
                 <Icon className="dropDownIcon" />
               </button>
               <ul className="dropdownContentSize">
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("OPTION A")
+                      this.handleDropdown("OPTION A")
                     }}>
                     OPTION A
                   </button>
@@ -48,7 +73,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("OPTION B")
+                      this.handleDropdown("OPTION B")
                     }}>
                     OPTION B
                   </button>
@@ -56,7 +81,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("OPTION C")
+                      this.handleDropdown("OPTION C")
                     }}>
                     OPTION C
                   </button>
@@ -76,7 +101,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("SMALL")
+                      this.handleDropdown("SMALL")
                     }}>
                     SMALL
                   </button>
@@ -84,7 +109,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("MEDIUM")
+                      this.handleDropdown("MEDIUM")
                     }}>
                     MEDIUM
                   </button>
@@ -92,7 +117,7 @@ class ProductDetails extends React.Component {
                 <li>
                   <button
                     onClick={() => {
-                      this.handleChooseColor("LARGE")
+                      this.handleDropdown("LARGE")
                     }}>
                     LARGE
                   </button>
