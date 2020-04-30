@@ -7,14 +7,13 @@ import StoreMap from "../StoreMap/StoreMap"
 class Stores extends React.Component {
   state = {
     currentMode: "storeAndMap",
+    currentSearchState: false
   }
 
   handleSearchStores(newState) {
-    console.log("click en:", newState)
     this.setState({
       currentMode: newState,
     })
-    console.log("Nuevo estado:", newState)
   }
   setMode(displayModeType) {
     let modeDisplay
@@ -46,9 +45,15 @@ class Stores extends React.Component {
     }
     return modeDisplay
   }
+  handleSearchBtnStores(newSearchState) {
+    this.setState({
+      currentSearchState: true,
+    })
+  }
   render() {
     console.log("----> CURRENT MODE:", this.state.currentMode)
     console.log("----> CURRENT DISPLAY:", this.state.displayMode)
+    console.log("-----> CURRENT STATE SEARCH:", this.state.currentSearchState)
 
     return (
       <div className="storePageBox">
@@ -56,6 +61,7 @@ class Stores extends React.Component {
         <div className="storePage">
           <SearchStore
             onSearchDisplayClick={this.handleSearchStores.bind(this)}
+            onSearcBtnClick={this.handleSearchBtnStores.bind(this)}
           />
           {this.setMode(this.state.currentMode)}
         </div>

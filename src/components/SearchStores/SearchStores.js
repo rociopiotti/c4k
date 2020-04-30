@@ -3,8 +3,8 @@ import "./SearchStores.scss"
 import Icon from "../Icon/Icon"
 
 class SearchStores extends React.Component {
-  handleSearchStore(Search) {
-    console.log("Click en el boton que busca la tienda:", Search)
+  handleSearchStore() {
+    this.props.onSearcBtnClick()
   }
   handleShowStoreList() {
     this.props.onSearchDisplayClick("storeList")
