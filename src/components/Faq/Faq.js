@@ -4,41 +4,55 @@ import Icon from "../Icon/Icon"
 import BtnBackToTop from "../BtnBackToTop/BtnBackToTop"
 
 class Faq extends React.Component {
-  handleAnwserClick(ShowAnswer) {
-    console.log("handleAnsWer Click", ShowAnswer)
+  state = {
+    currentState: false,
+    searchState: false
   }
-  handleSearchFaq(SearchInFaq) {
-    console.log("Click en el boton que:", SearchInFaq)
+  handleQuestionClick() {
+    this.setState({
+      currentState: true,
+    })
+  }
+  handleSearchFaq() {
+    this.setState({
+      searchState: true,
+    })
   }
   handleInputChange(event) {
     console.log("Ingreso texto")
   }
   render() {
+    console.log("-->CURRENT STATE QUESTION", this.state.currentState)
+    console.log(
+      "--->CURRENT STATE SEARCH FAQ",
+      this.state.searchState
+    )
+
     return (
       <div className="FaqBox">
         <h2>#FAQ</h2>
-  
+
         <div className="Faq">
-        <div className="FaqSearchBox">
-          <button
-            onClick={() => {
-              this.handleSearchFaq("SearchInFaq")
-            }}
-            className="faqSearchBoxIcon">
-            <Icon/>
-          </button>
-          <span></span>
-          <input
-            type="text"
-            placeholder="SEARCH FAQ"
-            className="searchFaq"
-            onChange={this.handleInputChange}></input>
-        </div>
+          <div className="FaqSearchBox">
+            <button
+              onClick={() => {
+                this.handleSearchFaq()
+              }}
+              className="faqSearchBoxIcon">
+              <Icon />
+            </button>
+            <span></span>
+            <input
+              type="text"
+              placeholder="SEARCH FAQ"
+              className="searchFaq"
+              onChange={this.handleInputChange}></input>
+          </div>
           <div className="questionAnswerBox">
             <h3>GENERAL</h3>
             <button
               onClick={() => {
-                this.handleAnwserClick("ShowAnswer")
+                this.handleQuestionClick()
               }}>
               <h4 className="question">
                 How can I contact a C4K?<span></span> <Icon />
