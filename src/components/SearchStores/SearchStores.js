@@ -6,11 +6,11 @@ class SearchStores extends React.Component {
   handleSearchStore(Search) {
     console.log("Click en el boton que busca la tienda:", Search)
   }
-  handleShowStoreList(List) {
-    console.log("Click en el boton que muestra en pantalla:", List)
+  handleShowStoreList() {
+    this.props.onSearchDisplayClick("storeList")
   }
-  handleShowStoreMap(Map) {
-    console.log("Click en el boton que muestra en pantalla:", Map)
+  handleShowStoreMap() {
+    this.props.onSearchDisplayClick("storeMap")
   }
   render() {
     return (
@@ -30,14 +30,14 @@ class SearchStores extends React.Component {
         />
         <button
           onClick={() => {
-            this.handleShowStoreList("List")
+            this.handleShowStoreList()
           }}
           className="btnListStores">
           <Icon />
         </button>
         <button
           onClick={() => {
-            this.handleShowStoreMap("Map")
+            this.handleShowStoreMap()
           }}
           className="btnMapStores">
           <Icon />

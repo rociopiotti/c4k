@@ -19,6 +19,33 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    .displayModeBox {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .displayListBox {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: red;
+    }
+    .displayMapBox {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: blue;
+
+    }
     .storeListBox {
       width: 45%;
     }
@@ -28,7 +55,6 @@
     }
   }
 }
-
 
 @media all and (max-width: 768px) {
   .storePageBox {
@@ -47,11 +73,11 @@
 }
 
 @media all and (max-width: 823px) and (orientation: landscape) {
-    .storePageBox {
-      .storePage {
-        .storeMapBox {
-          height: 100vh;
-        }
+  .storePageBox {
+    .storePage {
+      .storeMapBox {
+        height: 100vh;
       }
     }
   }
+}
