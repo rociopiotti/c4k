@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .displayModeBox {
       width: 100%;
       display: flex;
@@ -26,25 +27,27 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-top: 5vh;
     }
     .displayListBox {
       width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap;
       background-color: red;
+      margin-top: 5vh;
     }
     .displayMapBox {
       width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-wrap: wrap;
       background-color: blue;
-
+      margin-top: 5vh;
     }
     .storeListBox {
       width: 45%;
