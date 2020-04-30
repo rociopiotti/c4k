@@ -4,7 +4,6 @@ import Header from "./components/Header/Header.js"
 import Home from "./components/Home/Home"
 import Footer from "./components/Footer/Footer"
 import GridContainer from "./components/GridContainer/GridContainer"
-import SuggestedItemGallery from "./components/SuggestedItemGallery/SuggestedItemGallery"
 import ProductBox from "./components/ProductBox/ProductBox"
 import Checkout from "./components/Checkout/Checkout"
 import PaymentGateway from "./components/PaymentGateway/PaymentGateway"
@@ -12,6 +11,8 @@ import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirm
 import Stores from "./components/Stores/Stores"
 import Faq from "./components/Faq/Faq"
 import About from "./components/About/About"
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy"
+import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions"
 
 import SearchBox from "./components/SearchBox/SeachBox"
 import NavSlide from "./components/NavSlide/NavSlide"
@@ -26,15 +27,12 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy"
-import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions"
 
 class App extends React.Component {
   state = {
     currentSection: "home",
     currentSlide: null,
   }
-
   handleHeaderClick(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide)
     this.setState({
@@ -54,7 +52,6 @@ class App extends React.Component {
       currentSection: newSection,
     })
   }
-
   setSlide(slideType) {
     let slide
     switch (slideType) {
@@ -109,6 +106,7 @@ class App extends React.Component {
             onGridFilter={this.handleGridFilter.bind(this)}
             onProductClick={this.handleHomeClick.bind(this)}
           />
+          
         )
         break
       case "tshirts":
@@ -187,8 +185,6 @@ class App extends React.Component {
           onHomeMenuClick={this.handleHomeClick.bind(this)}
         />
         {this.setSection(this.state.currentSection)}
-
-        {/* <SuggestedItemGallery/> */}
 
         {/* <PaymentGateway/> */}
         {/* <PaymentConfirmation/> */}

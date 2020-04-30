@@ -6,8 +6,7 @@ class SuggestedItemGallery extends React.Component {
  clickSuggestedItem  (Index) {
     console.log("Click en suggested item:", Index)
   }
-  render() {
-    
+  render() {    
     return (
       <div className="suggestedItemGalleryBox">
         <h2 className="titleSuggestedItemGallery">#COMPLETE THE LOOK</h2>

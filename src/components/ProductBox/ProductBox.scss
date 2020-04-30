@@ -1,14 +1,4 @@
-.productBox {
-  width: 100%;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin:0 0 10vh 0;
-}
-
-@media all and (max-width: 768px) {
+.productBoxBox {
   .productBox {
     width: 100%;
     color: #ffffff;
@@ -16,6 +6,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+  }
+  .productBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 10vh 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .productBoxBox {
+    .productBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5vh;
+    }
   }
 }
