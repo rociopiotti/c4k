@@ -3,16 +3,14 @@ import "./BtnShop.scss"
 import Icon from "../Icon/Icon"
 
 class BtnShop extends React.Component {
-   handleShowMenuCategories  (MenuCategories)  {
-    console.log("Click en el boton que muestra", MenuCategories)
+  handleShowMenuCategories() {
+    this.props.onClickBtnShop()
   }
   render() {
-   
-
     return (
       <button
         onClick={() => {
-          this.handleShowMenuCategories("MenuCategories")
+          this.handleShowMenuCategories()
         }}
         className="btnShop">
         <Icon className="arrowIcon" /> SHOP

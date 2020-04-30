@@ -17,7 +17,7 @@ class SearchStores extends React.Component {
       <div className="searchStoresBox">
         <button
           onClick={() => {
-            this.handleSearchStore("Search")
+            this.handleSearchStore()
           }}
           className="btnSearchStores">
           <Icon />
