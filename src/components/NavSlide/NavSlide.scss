@@ -40,7 +40,7 @@
       left: 45vw;
       border: none;
       color: #fff;
-      background-color: blue;
+      background-color: transparent;
       cursor: pointer;
     }
     .nav {
@@ -56,6 +56,9 @@
           text-decoration: none;
           color: #fff;
           cursor: pointer;
+          .Icon {
+            margin-right: 2vw;
+          }
         }
 
         .separationLine {
@@ -65,15 +68,6 @@
           width: 90%;
           border: white solid thin;
           margin: 6vh 0;
-        }
-
-        .searchNavIcon {
-          margin-left: 2vw;
-        }
-        .searchNavLink,
-        .singInNavLink,
-        .cartNavLink {
-          margin-left: 2vw;
         }
       }
     }

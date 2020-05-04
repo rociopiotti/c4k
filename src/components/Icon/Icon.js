@@ -8,6 +8,7 @@ import {
   faShoppingBag,
   faSearch,
   faArrowLeft,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -30,6 +31,9 @@ const Icon = (props) => {
       break;
     case "arrowLeft":
       faIcon = faArrowLeft;
+      break;
+    case "arrowRight":
+      faIcon = faArrowRight;
       break;
   }
   return <FontAwesomeIcon className={"Icon "} icon={faIcon} />;
