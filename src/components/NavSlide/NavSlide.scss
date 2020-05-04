@@ -14,6 +14,7 @@
   z-index: 99;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 
   .backgroundClose {
     flex-grow: 1;
@@ -33,8 +34,8 @@
     .BtnCloseNav {
       z-index: 99;
       position: relative;
-      width: 2vw;
-      height: 2vw;
+      width: 3vw;
+      height: 3vw;
       top: 5vh;
       left: 45vw;
       border: none;

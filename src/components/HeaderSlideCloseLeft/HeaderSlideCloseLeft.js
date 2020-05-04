@@ -18,7 +18,7 @@ class HeaderSlideCloseLeft extends React.Component {
             this.props.onCloseClick(null)
           }}
           className="btnCloseCartSlide">
-          <Icon className="iconBtnCloseCartSlide" />
+          <Icon className="iconBtnCloseCartSlide" type="arrowLeft"/>
         </button>
         <span></span>
         <Logo className="logo" />

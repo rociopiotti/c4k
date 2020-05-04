@@ -5,16 +5,32 @@ import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide"
 import SingInSlide from "./SingInSlide/SingInSlide"
 
 class SingInCreateAccountNavslide extends React.Component {
-  handleCloseCartSlide(CloseSlide) {
-    console.log("Click en botón:", CloseSlide)
+  state = {
+    singinOption: "singIn",
   }
-  handleShowSingIn(SingIn) {
-    console.log("Click en botón que muestra:", SingIn)
+  handleSinginOption(newSinginOption) {
+    console.log("Click en botón que muestra:", newSinginOption)
+    this.setState({
+      singinOption: newSinginOption,
+    })
   }
-  handleShowCreateAccount(CreateAccount) {
-    console.log("Click en botón que muestra:", CreateAccount)
+  setSinginOption(optionType) {
+    let option
+    switch (optionType) {
+      case "singIn":
+        option = <SingInSlide />
+        break
+      case "createAccount":
+        option = <CreateAnAccountSlide />
+        break
+      default:
+        break
+    }
+    return option
   }
   render() {
+     console.log("------> CURRENT OPTION:", this.state.singinOption)
+
     return (
       <div className="singInCreateAccountBackground">
         <div className="singInCreateAccountBoxBackground">
@@ -28,30 +44,28 @@ class SingInCreateAccountNavslide extends React.Component {
           <div className="headerSingInCreateAccount">
             <button
               onClick={() => {
-                this.handleShowSingIn("SingIn")
+                this.handleSinginOption("singIn")
               }}
               className="btnSingInSlide">
               <h2>#SING IN /</h2>{" "}
             </button>
             <button
               onClick={() => {
-                this.handleShowCreateAccount("CreateAccount")
+                this.handleSinginOption("createAccount")
               }}
               className="btnCreateAccountSlide">
               <h2>CREATE AN ACCOUNT</h2>{" "}
             </button>
           </div>
           <div className="singInCreateAccountBox">
-            <SingInSlide />
-            {/* <CreateAnAccountSlide /> */}
+            {this.setSinginOption(this.state.singinOption)}
           </div>
         </div>
         <div
           onClick={() => {
             this.props.onCloseClick(null)
           }}
-          className="singInCreateAccountClosebackground">
-        </div>
+          className="singInCreateAccountClosebackground"></div>
       </div>
     )
   }

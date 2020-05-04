@@ -23,10 +23,10 @@ import SingInCreateAccountNavslide from "./components/SingInCreateAccountNavSlid
 import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide"
 import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+// import { library } from "@fortawesome/fontawesome-svg-core"
+// import { fab } from "@fortawesome/free-brands-svg-icons"
+// import { faSearch } from "@fortawesome/free-solid-svg-icons"
+// import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 class App extends React.Component {
   state = {
@@ -170,8 +170,8 @@ class App extends React.Component {
   }
 
   render() {
-    library.add(fab, faSearch)
-    library.add(fab, faBars)
+    // library.add(fab, faSearch)
+    // library.add(fab, faBars)
     // console.log("------> CURRENT SLIDE:", this.state.currentSlide)
     // console.log("------> CURRENT SECTION:", this.state.currentSection)
     console.log("------> CURRENT SECTION:", this.state.currentSection)

@@ -1,15 +1,38 @@
-import React from "react"
+import React from "react";
+import "./Icon.scss";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// FONT-AWESOME:
+import {
+  faBars,
+  faUser,
+  faShoppingBag,
+  faSearch,
+  faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const Icon = (props) => {
+  // DEFINIR ICONS:
+  let faIcon;
 
-class Icon extends React.Component {
-  render() {
-    return (
-      <FontAwesomeIcon icon="search" className="searchIcon" />
-     
-    )
+  switch (props.type) {
+    case "burger":
+      faIcon = faBars;
+      break;
+    case "singIn":
+      faIcon = faUser;
+      break;
+    case "myBag":
+      faIcon = faShoppingBag;
+      break;
+    case "search":
+      faIcon = faSearch;
+      break;
+    case "arrowLeft":
+      faIcon = faArrowLeft;
+      break;
   }
-}
+  return <FontAwesomeIcon className={"Icon "} icon={faIcon} />;
+};
 
-export default Icon
+export default Icon;

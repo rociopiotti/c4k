@@ -1,28 +1,28 @@
-import React from "react"
-import "./Header.scss"
-import Icon from "../Icon/Icon"
-import Logo from "../Logo/Logo"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import "./Header.scss";
+import Icon from "../Icon/Icon";
+import Logo from "../Logo/Logo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends React.Component {
   handleNavSlide() {
-    this.props.onMenuClick("navSlide")
+    this.props.onMenuClick("navSlide");
   }
 
   handleHome() {
-    this.props.onHomeMenuClick("home")
+    this.props.onHomeMenuClick("home");
   }
 
   handleSearchBox() {
-    this.props.onMenuClick("searchBox")
+    this.props.onMenuClick("searchBox");
   }
 
   handleSingInSlide() {
-    this.props.onMenuClick("singInSlide")
+    this.props.onMenuClick("singInSlide");
   }
 
   handleCartSlide() {
-    this.props.onMenuClick("cartSlide")
+    this.props.onMenuClick("cartSlide");
   }
 
   render() {
@@ -30,15 +30,15 @@ class Header extends React.Component {
       <div className="header">
         <button
           onClick={() => {
-            this.handleNavSlide()
+            this.handleNavSlide();
           }}
           className="burger">
-          <FontAwesomeIcon icon="bars" className="barsIcon" />
+          <Icon type="burger" />
         </button>
         <span className="spacer"></span>
         <button
           onClick={() => {
-            this.handleHome()
+            this.handleHome();
           }}
           className="logo">
           <Logo />
@@ -46,28 +46,28 @@ class Header extends React.Component {
         <span></span>
         <button
           onClick={() => {
-            this.handleSearchBox()
+            this.handleSearchBox();
           }}
           className="searchIcon">
-          <Icon />
+          <Icon type="search" />
         </button>
         <button
           onClick={() => {
-            this.handleSingInSlide()
+            this.handleSingInSlide();
           }}
           className="singInIcon">
-          <Icon />
+          <Icon type="singIn" />
         </button>
         <button
           onClick={() => {
-            this.handleCartSlide()
+            this.handleCartSlide();
           }}
           className="cartIcon">
-          <Icon />
+          <Icon type="myBag" />
         </button>
       </div>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
