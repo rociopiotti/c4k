@@ -21,7 +21,7 @@ class SearchBox extends React.Component {
             onClick={() => {
               this.handleSearchContent("SearchInContent")
             }}>
-            <Icon />
+            <Icon type="search"/>
           </button>
         </div>
 
@@ -35,7 +35,7 @@ class SearchBox extends React.Component {
             this.handleCloseSearchBox("CloseNav")
           }}
           className="closeIcon">
-          <Icon />
+          <Icon type="remove"/>
         </button>
       </div>
     )

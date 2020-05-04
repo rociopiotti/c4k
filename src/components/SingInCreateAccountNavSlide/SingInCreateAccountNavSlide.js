@@ -39,7 +39,7 @@ class SingInCreateAccountNavslide extends React.Component {
               this.props.onCloseClick(null)
             }}
             className="BtnCloseNav">
-            <Icon className="iconBtnCloseNav" />
+            <Icon className="iconBtnCloseNav" type="arrowRight" />
           </button>
           <div className="headerSingInCreateAccount">
             <button

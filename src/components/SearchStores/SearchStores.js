@@ -20,7 +20,7 @@ class SearchStores extends React.Component {
             this.handleSearchStore()
           }}
           className="btnSearchStores">
-          <Icon />
+          <Icon  type="search"/>
         </button>
         <input
           type="text"
@@ -33,14 +33,14 @@ class SearchStores extends React.Component {
             this.handleShowStoreList()
           }}
           className="btnListStores">
-          <Icon />
+          <Icon type="list" />
         </button>
         <button
           onClick={() => {
             this.handleShowStoreMap()
           }}
           className="btnMapStores">
-          <Icon />
+          <Icon type="map"/>
         </button>
       </div>
     )

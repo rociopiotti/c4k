@@ -6,7 +6,7 @@ class GridSort extends React.Component {
     render () {
         return(
             
-            <div><Icon/>SORT</div>
+            <div className="sortIcon"><Icon type="sort"/>SORT</div>
         )
     }
 }

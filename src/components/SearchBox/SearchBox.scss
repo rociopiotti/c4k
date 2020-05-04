@@ -13,17 +13,16 @@
   background-color: rgba(0, 0, 0, 1);
 
   .searchIcon {
-    color: red; 
-
-    button{
+    button {
       background-color: transparent;
       border: none;
       cursor: pointer;
+      color: white;
     }
   }
 
   .closeIcon {
-    color: red;
+    color: white;
     background-color: transparent;
     border: none;
     cursor: pointer;

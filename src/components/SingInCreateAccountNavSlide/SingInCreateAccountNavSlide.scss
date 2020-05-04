@@ -20,7 +20,7 @@
     flex-grow: 1;
   }
   .singInCreateAccountBoxBackground {
-    border: solid red thin;
+    // border: solid red thin;
     z-index: 9;
     position: relative;
     width: 50vw;
@@ -42,7 +42,7 @@
       height: 3vw;
       position: absolute;
       border: none;
-      background-color: blue;
+      background-color: transparent;
       color: #fff;
       top: 5vh;
       left: 45vw;

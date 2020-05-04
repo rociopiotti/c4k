@@ -6,7 +6,7 @@ import Icon from "../Icon/Icon"
 class GridFilter extends React.Component {
     render() {
         return (
-            <div><Icon/>FILTER</div>
+            <div className="filterIcon"><Icon  type="filter"/>FILTER</div>
         )
     }
 }

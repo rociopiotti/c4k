@@ -111,7 +111,7 @@ class CartItem extends React.Component {
               this.handleAddToWishList()
             }}
             className="btnAddItemWishList">
-            <Icon />
+            <Icon type="heart"/>
           </button>
         </div>
         <div className="column2">
@@ -120,7 +120,7 @@ class CartItem extends React.Component {
               this.handleRemoveFromCart()
             }}
             className="btnRemoveItem">
-            <Icon />
+            <Icon type="remove" />
           </button>
           <h3 className="cartItemTitle">#ITEM TITLE</h3>
           <div className="cartItemDescription">

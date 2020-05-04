@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends React.Component {
   handleNavSlide() {

@@ -9,6 +9,15 @@ import {
   faSearch,
   faArrowLeft,
   faArrowRight,
+  faSort,
+  faSlidersH,
+  faSortAlphaDown,
+  faSortAlphaUp,
+  faHeart,
+  faTimes,
+  faMap,
+  faListUl,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -35,8 +44,35 @@ const Icon = (props) => {
     case "arrowRight":
       faIcon = faArrowRight;
       break;
+    case "sort":
+      faIcon = faSort;
+      break;
+    case "sortAZ":
+      faIcon = faSortAlphaUp;
+      break;
+    case "sortZA":
+      faIcon = faSortAlphaDown;
+      break;
+    case "heart":
+      faIcon = faHeart;
+      break;
+    case "filter":
+      faIcon = faSlidersH;
+      break;
+    case "remove":
+      faIcon = faTimes;
+      break;
+    case "map":
+      faIcon = faMap;
+      break;
+    case "list":
+      faIcon = faListUl;
+      break;
+    case "arrowDown":
+      faIcon = faChevronDown;
+      break;
   }
-  return <FontAwesomeIcon className={"Icon "} icon={faIcon} />;
+  return <FontAwesomeIcon className={"Icon"} icon={faIcon} />;
 };
 
 export default Icon;

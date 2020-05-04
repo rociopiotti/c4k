@@ -73,6 +73,9 @@
           letter-spacing: 0.1em;
           font-weight: 300;
           cursor: pointer;
+          .Icon {
+            margin-right: 1vw;
+          }
         }
         li button:hover {
           color: #c7c7c7;
