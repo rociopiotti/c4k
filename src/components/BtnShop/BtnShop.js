@@ -13,7 +13,7 @@ class BtnShop extends React.Component {
           this.handleShowMenuCategories()
         }}
         className="btnShop">
-        <Icon className="arrowIcon" /> SHOP
+        <Icon type="arrowLeft" className="arrowIcon" /> SHOP
       </button>
     )
   }

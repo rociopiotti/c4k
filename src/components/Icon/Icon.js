@@ -18,7 +18,14 @@ import {
   faMap,
   faListUl,
   faChevronDown,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icon = (props) => {
@@ -70,6 +77,18 @@ const Icon = (props) => {
       break;
     case "arrowDown":
       faIcon = faChevronDown;
+      break;
+    case "arrowLeft":
+      faIcon = faChevronLeft;
+      break;
+    case "facebook":
+      faIcon = faFacebookF;
+      break;
+    case "instagram":
+      faIcon = faInstagram;
+      break;
+    case "linkedin":
+      faIcon = faLinkedin;
       break;
   }
   return <FontAwesomeIcon className={"Icon"} icon={faIcon} />;

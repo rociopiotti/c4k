@@ -3,12 +3,15 @@ import "./NavSlide.scss";
 import Icon from "../Icon/Icon";
 
 //ANMATION
+import { TweenLite } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 
 class NavSlide extends React.Component {
   constructor(props) {
     super(props);
     this.NavBox = null;
+    this.NavBackground = null;
+
     this.state = {
       mode: "CLOSE",
     };
@@ -17,7 +20,11 @@ class NavSlide extends React.Component {
   animationNav() {
     const { mode } = this.state;
     const tl = new Timeline();
-    tl.to(this.title, { y: 0, x: 0 }, 1);
+    tl.to(this.NavBox, { x: "-50vw" },0);
+    tl.to(this.NavBackground, { opacity: 0 }, 0);
+
+    console.clear();
+    console.log("cierra nav", this.state.mode);
   }
 
   clickCloseNav() {
@@ -32,10 +39,10 @@ class NavSlide extends React.Component {
   render() {
     return (
       <div className="backgroundSlide">
-        <div className="navBox">
+        <div className="navBox" ref={(div) => (this.NavBox = div)}>
           <button
             onClick={() => {
-              this.clickCloseNav("CloseNav");
+              this.animationNav("CloseNav");
             }}
             className="BtnCloseNav">
             <Icon type="arrowRight" />
@@ -123,6 +130,7 @@ class NavSlide extends React.Component {
         </div>
 
         <div
+          ref={(div) => (this.NavBackground = div)}
           onClick={() => {
             this.clickCloseNav("CloseNav");
           }}

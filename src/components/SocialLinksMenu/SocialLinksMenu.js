@@ -1,6 +1,6 @@
-import React from "react"
-import "./SocialLinksMenu.scss"
-import Icon from "../Icon/Icon"
+import React from "react";
+import "./SocialLinksMenu.scss";
+import Icon from "../Icon/Icon";
 
 const SocialLinksMenu = (props) => {
   return (
@@ -8,22 +8,22 @@ const SocialLinksMenu = (props) => {
       <ul className="socialLinkMenuList">
         <li>
           <a href="https://www.instagram.com/?hl=es" target="_blank">
-            <Icon />
+            <Icon type="instagram" />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/" target="_blank">
-            <Icon />
+            <Icon type="facebook" />
           </a>
         </li>
         <li>
           <a href="https://es.linkedin.com/" target="_blank">
-            <Icon />
+            <Icon type="linkedin" />
           </a>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default SocialLinksMenu
+export default SocialLinksMenu;

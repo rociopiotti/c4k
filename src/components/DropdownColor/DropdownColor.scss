@@ -1,0 +1,102 @@
+.dropdownBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 0%;
+    padding: 1vh 0;
+
+    .dropbtn {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      padding: 0vh;
+
+      .colorIcon {
+        width: 15px;
+        height: 15px;
+        border-radius: 30px;
+        background-color: #333333;
+      }
+    }
+
+    .dropBtnSize {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+      margin-top: 0vh;
+      margin-left: 0%;
+    }
+
+    .dropdownContentSize {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 5vh;
+      background-color: #f9f9f9;
+      z-index: 1;
+      left: 0;
+
+      li {
+        font-size: 0.7em;
+        width: 100%;
+        color: #333333;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        &:hover {
+          border: none;
+          color: #fff;
+          background-color: #000000;
+        }
+        button {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          color: #000;
+          margin: 0;
+          padding: 0;
+          padding: 5% 0% 5% 5%;
+          text-align: left;
+          cursor: pointer;
+          &:hover {
+            border: none;
+            color: #fff;
+            background-color: #000000;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .dropdownContentSize {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        margin: 0;
+        padding: 0;
+        left: 0vw;
+        top: 40px;
+      }
+      .dropbtn p {
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
