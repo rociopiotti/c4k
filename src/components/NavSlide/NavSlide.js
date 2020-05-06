@@ -18,7 +18,6 @@ class NavSlide extends React.Component {
   }
 
   animationNav() {
-    const { mode } = this.state;
     const tl = new Timeline();
     tl.to(this.NavBox, { x: "-50vw" },0);
     tl.to(this.NavBackground, { opacity: 0 }, 0);
