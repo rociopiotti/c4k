@@ -44,7 +44,7 @@ class DropdownColor extends React.Component {
           className="dropbtn">
           <div className="colorIcon"></div>
           <p>{itemColor}</p>
-          <Icon className="dropDownIcon" />
+          <Icon className="dropDownIcon" type="arrowDown"/>
         </button>
         <ul className="dropdownContentSize">
           <li>

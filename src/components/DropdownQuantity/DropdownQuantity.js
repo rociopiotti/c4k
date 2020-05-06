@@ -6,6 +6,9 @@ class DropdownQuantity extends React.Component {
   state = {
     currentQuantity: "1",
   };
+  clickOnDropdown(Dropdown) {
+    console.log("Abro o cierro", Dropdown);
+  }
   handleDropwnQuantity(newQuantity) {
     this.setState({
       currentQuantity: newQuantity,
@@ -52,7 +55,11 @@ class DropdownQuantity extends React.Component {
     const itemQuantity = this.setQuantity(this.state.currentQuantity);
     return (
       <div className="dropdownBoxCart">
-        <button className="dropbtn">
+        <button
+          onClick={() => {
+            this.clickOnDropdown("Dropdown");
+          }}
+          className="dropbtn">
           <p>{itemQuantity}</p>
           <Icon type="arrowDown" className="dropDownIcon" />
         </button>

@@ -6,6 +6,9 @@ class DropdownSize extends React.Component {
   state = {
     currentSize: "SIZE",
   };
+  clickOnDropdown(Dropdown) {
+    console.log("Abro o cierro", Dropdown);
+  }
   handleDropwnSize(newSize) {
     this.setState({
       currentSize: newSize,
@@ -35,7 +38,11 @@ class DropdownSize extends React.Component {
     const itemSize = this.setSize(this.state.currentSize);
     return (
       <div className="dropdownBoxCart">
-        <button className="dropbtn">
+        <button
+          onClick={() => {
+            this.clickOnDropdown("Dropdown");
+          }}
+          className="dropbtn">
           <p>{itemSize}</p>
           <Icon className="dropDownIcon" type="arrowDown" />
         </button>
