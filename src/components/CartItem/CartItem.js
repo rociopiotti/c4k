@@ -32,7 +32,7 @@ class CartItem extends React.Component {
       currentQuantity: newQuantity,
     });
   }
-  
+
   setQuantity(quantityType) {
     let itemQuantity;
     switch (quantityType) {
@@ -101,7 +101,6 @@ class CartItem extends React.Component {
           </button>
           <h3 className="cartItemTitle">#ITEM TITLE</h3>
           <div className="cartItemDescription">
-          
             <p className="itemNumber">
               Art N°: <span></span>14575
             </p>
@@ -117,7 +116,7 @@ class CartItem extends React.Component {
           </div>
           {/* TO DO: CORREGIR SUPERPOSICION DE DROPDOWNS */}
           <DropdownSize />
-          <DropdownSize />
+          <DropdownQuantity />
         </div>
       </div>
     );

@@ -1,4 +1,4 @@
-.dropdownBoxCart {
+.dropdownBoxCartSize {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -8,7 +8,7 @@
   margin-top: 20px;
   cursor: pointer;
 
-  .dropbtn {
+  .dropbtnSize {
     width: 100%;
     height: auto;
     display: flex;
@@ -25,7 +25,7 @@
     
   }
   .dropdownContentSize {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -37,18 +37,17 @@
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     color: #000;
-    z-index: 99999999;
+    z-index: 6;
     li {
       width: 100%;
       list-style: none;
       margin: 0;
       padding: 0;
       left: 0;
-      z-index: 9999999;
+      z-index: 7;
       &:hover {
         background-color: #000000;
         color: #fff;
-        z-index: 999999999999;
       }
       button {
         width: 100%;
@@ -56,12 +55,11 @@
         border: none;
         color: #000000;
         text-align: left;
-        padding: 5% 0% 5% 5%;
-        z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        padding: 8% 0% 8% 5%;
         &:hover {
           background-color: #000000;
           color: #fff;
-          z-index: 999999999999999999999999999999999999999999999999999999999;
+          z-index: 8;
         }
       }
     }

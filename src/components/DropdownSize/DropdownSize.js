@@ -25,12 +25,20 @@ class DropdownSize extends React.Component {
   clickOnDropdown() {
     const { mode } = this.state;
     const tl = new Timeline();
+    const zIndexContent =
+      mode === "OPEN" ? 0 : "26";
     const posContent = mode === "OPEN" ? "0" : "auto";
     const opacityContent = mode === "OPEN" ? 0 : 1;
+    const displayContent = mode === "OPEN" ? "none" : "flex";
 
     tl.to(
       this.dropdownContent,
-      { height: posContent, opacity: opacityContent },
+      {
+        height: posContent,
+        zIndex: zIndexContent,
+        opacity: opacityContent,
+        display: displayContent,
+      },
       0
     );
     tl.eventCallback("onComplete", () => {
@@ -68,12 +76,12 @@ class DropdownSize extends React.Component {
     const itemSize = this.setSize(this.state.currentSize);
 
     return (
-      <div className="dropdownBoxCart">
+      <div className="dropdownBoxCartSize">
         <button
           onClick={() => {
             this.clickOnDropdown();
           }}
-          className="dropbtn">
+          className="dropbtnSize">
           <p>{itemSize}</p>
           <Icon className="dropDownIcon" type="arrowDown" />
         </button>

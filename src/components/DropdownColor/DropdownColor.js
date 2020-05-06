@@ -27,10 +27,21 @@ class DropdownColor extends React.Component {
   clickOnDropdown() {
     const { mode } = this.state;
     const tl = new Timeline();
+    const zIndexContent = mode === "OPEN" ? 0 : "25";
     const posContent = mode === "OPEN" ? "0" : "auto";
     const opacityContent = mode === "OPEN" ? 0 : 1;
+    const displayContent = mode === "OPEN" ? "none" : "flex";
 
-    tl.to(this.dropdownContent, { height: posContent, opacity:opacityContent}, 0);
+    tl.to(
+      this.dropdownContent,
+      {
+        zIndex: zIndexContent,
+        height: posContent,
+        opacity: opacityContent,
+        display: displayContent,
+      },
+      0.1
+    );
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
@@ -65,19 +76,19 @@ class DropdownColor extends React.Component {
     console.log("------> CURRENT COLOR:", this.state.currentColor);
     const itemColor = this.setColor(this.state.currentColor);
     return (
-      <div className="dropdownBox">
+      <div className="dropdownColorBox">
         <button
           onClick={() => {
             this.clickOnDropdown("Dropdown");
           }}
-          className="dropbtn">
+          className="dropbtnColor">
           <div className="colorIcon"></div>
           <p>{itemColor}</p>
           <Icon className="dropDownIcon" type="arrowDown" />
         </button>
         <ul
           ref={(div) => (this.dropdownContent = div)}
-          className="dropdownContentSize">
+          className="dropdownContentSizeColor">
           <li>
             <button
               onClick={() => {

@@ -26,12 +26,19 @@ class DropdownQuantity extends React.Component {
   clickOnDropdown() {
     const { mode } = this.state;
     const tl = new Timeline();
+    const zIndexContent = mode === "OPEN" ? 0 : "27";
     const posContent = mode === "OPEN" ? "0" : "auto";
     const opacityContent = mode === "OPEN" ? 0 : 1;
+    const displayContent = mode === "OPEN" ? "none" : "flex";
 
     tl.to(
       this.dropdownContent,
-      { height: posContent, opacity: opacityContent },
+      {
+        height: posContent,
+        zIndex: zIndexContent,
+        opacity: opacityContent,
+        display: displayContent,
+      },
       0
     );
     tl.eventCallback("onComplete", () => {
@@ -83,21 +90,21 @@ class DropdownQuantity extends React.Component {
   }
   render() {
     // console.log("--->CURRENT QUANTITY:", this.state.currentQuantity);
-    
+
     const itemQuantity = this.setQuantity(this.state.currentQuantity);
     return (
-      <div className="dropdownBoxCart">
+      <div className="dropdownBoxCartQuantity">
         <button
           onClick={() => {
             this.clickOnDropdown();
           }}
-          className="dropbtn">
+          className="dropbtnQuantity">
           <p>{itemQuantity}</p>
           <Icon type="arrowDown" className="dropDownIcon" />
         </button>
         <ul
           ref={(div) => (this.dropdownContent = div)}
-          className="dropdownContentSize">
+          className="dropdownContentSizeQuatity">
           <li>
             <button
               onClick={() => {

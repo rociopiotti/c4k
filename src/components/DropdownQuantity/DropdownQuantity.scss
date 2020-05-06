@@ -1,4 +1,4 @@
-.dropdownBoxCart {
+.dropdownBoxCartQuantity {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -6,8 +6,8 @@
   width: 100%;
   height: auto;
   margin-top: 20px;
-  z-index: 99999999999999;
-  .dropbtn {
+  z-index: 4;
+  .dropbtnQuantity {
     width: 100%;
     height: auto;
     display: flex;
@@ -21,10 +21,10 @@
     letter-spacing: 0.1em;
     line-height: 0.2em;
     cursor: pointer;
-    z-index: 9999999999999;
+    z-index: 5;
   }
-  .dropdownContentSize {
-    display: flex;
+  .dropdownContentSizeQuatity {
+    display: none;
     flex-direction: column;
     position: absolute;
     opacity: 0;
@@ -33,7 +33,7 @@
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;    
+    background-color: #f9f9f9;
     color: #000;
     li {
       width: 100%;
@@ -58,16 +58,5 @@
         }
       }
     }
-
-    // &:hover .dropdownContentSize {
-    //   display: block;
-    //   margin: 0;
-    //   padding: 0;
-    //   left: 0;
-    // }
-    // &:hover .dropbtn p {
-    //   transition: all 0.2s ease-in-out;
-    //   transform: scale(1.1);
-    // }
   }
 }
