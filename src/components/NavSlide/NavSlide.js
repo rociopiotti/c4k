@@ -2,7 +2,24 @@ import React from "react";
 import "./NavSlide.scss";
 import Icon from "../Icon/Icon";
 
+//ANMATION
+import { Timeline } from "gsap/gsap-core";
+
 class NavSlide extends React.Component {
+  constructor(props) {
+    super(props);
+    this.NavBox = null;
+    this.state = {
+      mode: "CLOSE",
+    };
+  }
+
+  animationNav() {
+    const { mode } = this.state;
+    const tl = new Timeline();
+    tl.to(this.title, { y: 0, x: 0 }, 1);
+  }
+
   clickCloseNav() {
     this.props.onCloseClick(null);
   }
