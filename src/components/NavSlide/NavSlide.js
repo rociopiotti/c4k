@@ -25,42 +25,75 @@ class NavSlide extends React.Component {
     });
     console.log("TOGGLE", mode);
   }
-  clickCloseNav() {
-    this.props.onCloseClick(null);
-  }
 
   animationNav() {
+    console.log("Entro a Animation");
+
     const { mode } = this.state;
     const posNav = mode === "CLOSE" ? "-100vw" : "50vw";
     const visibilityNav = mode === "CLOSE" ? "hidden" : "visible";
     const opacityNav = mode === "CLOSE" ? 0 : 1;
+    console.log("Paso por condicionales",  posNav,
+    visibilityNav,
+    opacityNav);
 
     const tl = new Timeline();
     tl.to(this.NavBox, { x: posNav }, 0);
+    console.log("Paso por posicion nav");
+
     tl.to(this.NavBackground, { x: posNav, opacity: opacityNav }, 0);
-    tl.to(this.SlideBackground, { x: posNav, visibility: visibilityNav }, 0);
+    console.log("Paso por posiscion nac background");
+
+    tl.to(
+      this.SlideBackground,
+      { width: "+100vw", visibility: visibilityNav },
+      0
+    );
+    console.log("Paso por tñ.to posicion slide background");
+
+    tl.from(this.SlideBackground, {
+      width: "0vw",
+      visibility: "hidden",
+    });
+    console.log(
+      "Paso por posicion tl.from background",
+      posNav,
+      visibilityNav,
+      opacityNav
+    );
+
+    tl.reverse();
+    console.log("Paso por posicion reverse");
 
     tl.eventCallback("onComplete", () => {
+      console.log("Entro a final");
+
       this.toggle();
-
-      console.log("--------------------->Modo", mode);
-
-      console.log("visibility", visibilityNav);
-
-      console.log("opacity", opacityNav);
+      // console.log("--------------------->Modo", mode);
+      // console.log("visibility", visibilityNav);
+      // console.log("opacity", opacityNav);
+      console.log("Termino animar");
     });
+  }
+  clickCloseNav() {
+    console.log("entro a CLOSE");
+    this.props.onCloseClick(null);
+    console.log("SALGO DE CLOSE");
   }
 
   clickNavLinks(value) {
+    console.log("entro a Nav", value);
+
     this.props.onNavItemClick(value);
+    console.log("salgo de Nav", value);
   }
-  clickMenuNavLinks(value) {
-    this.props.onMenuNavClick(value);
+  clickMenuNavLinks() {
+    this.props.onMenuNavClick(null);
   }
 
   render() {
-    console.log("start");
-
+    // console.clear();
+    console.log("Empieza");
     return (
       <div
         className="backgroundSlide"
@@ -69,7 +102,7 @@ class NavSlide extends React.Component {
           <button
             onClick={() => {
               this.animationNav();
-              this.clickNavLinks();
+              this.clickCloseNav("home");
             }}
             className="BtnCloseNav">
             <Icon type="arrowRight" />
@@ -79,8 +112,9 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav("trousers");
+                    this.animationNav();
                     this.clickNavLinks("trousers");
+
                   }}>
                   #TROUSERS
                 </a>
@@ -107,7 +141,7 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav("CloseNav");
+                    this.animationNav();
                     this.clickNavLinks("shoes");
                   }}>
                   #SHOES
@@ -160,6 +194,8 @@ class NavSlide extends React.Component {
           ref={(div) => (this.NavBackground = div)}
           onClick={() => {
             this.animationNav();
+
+            this.clickCloseNav(null);
           }}
           className="backgroundClose"></div>
       </div>

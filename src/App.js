@@ -43,21 +43,12 @@ class App extends React.Component {
   //   currentSection: "home",
   //   currentSlide: null,
   // }
-  toggle() {
-    const { mode } = this.state;
-    const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
-    this.setState({
-      mode: newMode,
-    });
-    console.log("TOGLE", mode);
-  }
 
   handleHeaderClick(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide);
     this.setState({
       currentSlide: newSlide,
     });
-    this.toggle();
   }
   handleGridFilter(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide);
