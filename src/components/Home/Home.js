@@ -13,7 +13,7 @@ class Home extends React.Component {
     })
   }
   render() {
-    console.log("------> ESTADO BTN SHOP:", this.state.stateBtnShop)
+    // console.log("------> ESTADO BTN SHOP:", this.state.stateBtnShop)
     return (
       <div className="home">
       <h1 className="title">C-4K</h1>

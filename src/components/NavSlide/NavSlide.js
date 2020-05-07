@@ -10,97 +10,52 @@ class NavSlide extends React.Component {
   constructor(props) {
     super(props);
     this.NavBox = null;
-    this.NavBackground = null;
+    this.NavCloseBackground = null;
     this.SlideBackground = null;
 
     this.state = {
       mode: "CLOSE",
     };
   }
-  toggle() {
-    const { mode } = this.state;
-    const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
-    this.setState({
-      mode: newMode,
-    });
-    console.log("TOGGLE", mode);
-  }
-
-  animationNav() {
-    console.log("Entro a Animation");
-
-    const { mode } = this.state;
-    const posNav = mode === "CLOSE" ? "-100vw" : "50vw";
-    const visibilityNav = mode === "CLOSE" ? "hidden" : "visible";
-    const opacityNav = mode === "CLOSE" ? 0 : 1;
-    console.log("Paso por condicionales", posNav, visibilityNav, opacityNav);
-
-    const tl = new Timeline();
-    tl.to(this.NavBox, { x: posNav }, 0);
-    console.log("Paso por posicion nav");
-
-    tl.to(this.NavBackground, { x: posNav, opacity: opacityNav }, 0);
-    console.log("Paso por posiscion nac background");
-
-    tl.to(
-      this.SlideBackground,
-      { width: "+100vw", visibility: visibilityNav },
-      0
-    );
-    console.log("Paso por tl.to posicion slide background");
-
-    tl.from(this.SlideBackground, {
-      width: "0vw",
-      visibility: "hidden",
-    });
-    console.log(
-      "Paso por posicion tl.from background",
-      posNav,
-      visibilityNav,
-      opacityNav
-    );
-
-    tl.reverse();
-    console.log("Paso por posicion reverse");
-
-    tl.eventCallback("onComplete", () => {
-      console.log("Entro a final");
-
-      this.toggle();
-      // console.log("--------------------->Modo", mode);
-      // console.log("visibility", visibilityNav);
-      // console.log("opacity", opacityNav);
-      console.log("Termino animar");
-    });
-  }
 
   clickCloseNav() {
-    console.log("entro a CLOSE");
+    console.log("SALGO DE close");
     this.props.onCloseClick(null);
-    console.log("SALGO DE CLOSE");
   }
 
   clickNavLinks(value) {
-    console.log("entro a Nav");
     this.props.onNavItemClick(value);
-    console.log("salgo de Nav");
   }
-  clickMenuNavLinks() {
-    this.props.onMenuNavClick(null);
+
+  clickMenuNavLinks(value) {
+    this.props.onMenuNavClick(value);
+  }
+  animationNav(value) {
+    const { mode } = this.state;
+    const delayAnimation = 0;
+
+    const tl = new Timeline();
+
+    this.clickNavLinks(value);
+
+    tl.to(this.SlideBackground, { width: "-=100vw" }, delayAnimation);
+    tl.to(this.NavCloseBackground, { visibility: "hidden" });
+
+    tl.eventCallback("onComplete", () => {
+      this.clickMenuNavLinks(value);
+      console.log("SALGO DE ANIMATION");
+    });
   }
 
   render() {
-    // console.clear();
-    console.log("Empieza");
     return (
       <div
         className="backgroundSlide"
         ref={(div) => (this.SlideBackground = div)}>
-        <div className="navBox" ref={(div) => (this.NavBox = div)}>
+        <div className="navBox">
           <button
             onClick={() => {
-              this.animationNav();
-              this.clickCloseNav("home");
+              this.animationNav(null);
             }}
             className="BtnCloseNav">
             <Icon type="arrowRight" />
@@ -110,9 +65,9 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickCloseNav(); /*******************************VERLO CON MIGUEL*/
-                    this.clickNavLinks("trousers");
+                    this.animationNav("trousers");
+                    // this.clickCloseNav();
+                    // this.clickNavLinks("trousers");
                   }}>
                   #TROUSERS
                 </a>
@@ -120,10 +75,8 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
-                    this.clickNavLinks("tshirts");
-
+                    this.animationNav("tshirts");
+                    // this.clickNavLinks("tshirts");
                   }}>
                   #T-SHIRT
                 </a>
@@ -132,9 +85,8 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
-                    this.clickNavLinks("bags");
+                    this.animationNav("bags");
+                    // this.clickNavLinks("bags");
                   }}>
                   #BAGS
                 </a>
@@ -142,9 +94,8 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
-                    this.clickNavLinks("shoes");
+                    this.animationNav("shoes");
+                    // this.clickNavLinks("shoes");
                   }}>
                   #SHOES
                 </a>
@@ -152,9 +103,8 @@ class NavSlide extends React.Component {
               <li className="listItem">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
-                    this.clickNavLinks("newArrivals");
+                    this.animationNav("newArrivals");
+                    // this.clickNavLinks("newArrivals");
                   }}>
                   #NEW ARRIVALS
                 </a>
@@ -163,8 +113,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickMenuNavLinks("searchBox");
+                    this.animationNav("searchBox");
+                    // this.clickMenuNavLinks("searchBox");
                   }}>
                   <Icon type="search" />
                   SEARCH
@@ -173,8 +123,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickMenuNavLinks("singInSlide");
+                    this.animationNav("singInSlide");
+                    // this.clickMenuNavLinks("singInSlide");
                   }}>
                   <Icon type="singIn" />
                   SING IN/ CREATE AN ACCOUNT
@@ -183,8 +133,8 @@ class NavSlide extends React.Component {
               <li className="listItem ">
                 <a
                   onClick={() => {
-                    this.animationNav();
-                    this.clickMenuNavLinks("cartSlide");
+                    this.animationNav("cartSlide");
+                    // this.clickMenuNavLinks("cartSlide");
                   }}>
                   <Icon type="myBag" /> MY BAG
                 </a>
@@ -192,15 +142,12 @@ class NavSlide extends React.Component {
             </ul>
           </nav>
         </div>
-
         <div
-          ref={(div) => (this.NavBackground = div)}
+          className="backgroundClose"
+          ref={(div) => (this.NavCloseBackground = div)}
           onClick={() => {
-            this.animationNav();
-
-            this.clickCloseNav(null);
-          }}
-          className="backgroundClose"></div>
+            this.animationNav(null);
+          }}></div>
       </div>
     );
   }

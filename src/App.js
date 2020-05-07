@@ -186,9 +186,8 @@ class App extends React.Component {
   render() {
     // library.add(fab, faSearch)
     // library.add(fab, faBars)
-    // console.log("------> CURRENT SLIDE:", this.state.currentSlide)
-    // console.log("------> CURRENT SECTION:", this.state.currentSection)
-    console.log("------> CURRENT SECTION:", this.state.currentSection);
+    console.log("------> CURRENT SLIDE:", this.state.currentSlide)
+    console.log("------> CURRENT SECTION:", this.state.currentSection)
     return (
       <div className="app">
         {this.setSlide(this.state.currentSlide)}
