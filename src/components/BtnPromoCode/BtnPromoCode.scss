@@ -17,11 +17,12 @@
   }
   .promoCode {
     width: 100%;
+    opacity: 0;
+    height: auto;
     display: block;
     padding: 1vh 0 1vh 1vw;
     color: #212121;
     font-size: 0.7em;
-    margin-top: 2vh;
     -webkit-appearance: none;
     border-radius: 0;
     border: none;
