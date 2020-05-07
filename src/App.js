@@ -58,7 +58,6 @@ class App extends React.Component {
   }
   handleHomeClick(newSection) {
     console.log("CAMBIAR EL Section POR: ", newSection);
-
     this.setState({
       currentSection: newSection,
     });

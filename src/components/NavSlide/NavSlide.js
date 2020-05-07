@@ -33,9 +33,7 @@ class NavSlide extends React.Component {
     const posNav = mode === "CLOSE" ? "-100vw" : "50vw";
     const visibilityNav = mode === "CLOSE" ? "hidden" : "visible";
     const opacityNav = mode === "CLOSE" ? 0 : 1;
-    console.log("Paso por condicionales",  posNav,
-    visibilityNav,
-    opacityNav);
+    console.log("Paso por condicionales", posNav, visibilityNav, opacityNav);
 
     const tl = new Timeline();
     tl.to(this.NavBox, { x: posNav }, 0);
@@ -49,7 +47,7 @@ class NavSlide extends React.Component {
       { width: "+100vw", visibility: visibilityNav },
       0
     );
-    console.log("Paso por tñ.to posicion slide background");
+    console.log("Paso por tl.to posicion slide background");
 
     tl.from(this.SlideBackground, {
       width: "0vw",
@@ -75,6 +73,7 @@ class NavSlide extends React.Component {
       console.log("Termino animar");
     });
   }
+
   clickCloseNav() {
     console.log("entro a CLOSE");
     this.props.onCloseClick(null);
@@ -82,10 +81,9 @@ class NavSlide extends React.Component {
   }
 
   clickNavLinks(value) {
-    console.log("entro a Nav", value);
-
+    console.log("entro a Nav");
     this.props.onNavItemClick(value);
-    console.log("salgo de Nav", value);
+    console.log("salgo de Nav");
   }
   clickMenuNavLinks() {
     this.props.onMenuNavClick(null);
@@ -113,8 +111,8 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.animationNav();
+                    this.clickCloseNav(); /*******************************VERLO CON MIGUEL*/
                     this.clickNavLinks("trousers");
-
                   }}>
                   #TROUSERS
                 </a>
@@ -123,7 +121,9 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.animationNav();
+                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
                     this.clickNavLinks("tshirts");
+
                   }}>
                   #T-SHIRT
                 </a>
@@ -133,6 +133,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.animationNav();
+                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
                     this.clickNavLinks("bags");
                   }}>
                   #BAGS
@@ -142,6 +143,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.animationNav();
+                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
                     this.clickNavLinks("shoes");
                   }}>
                   #SHOES
@@ -151,6 +153,7 @@ class NavSlide extends React.Component {
                 <a
                   onClick={() => {
                     this.animationNav();
+                    this.clickCloseNav();/*******************************VERLO CON MIGUEL*/
                     this.clickNavLinks("newArrivals");
                   }}>
                   #NEW ARRIVALS
