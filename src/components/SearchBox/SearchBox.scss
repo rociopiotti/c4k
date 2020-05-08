@@ -2,7 +2,7 @@
   position: absolute;
   top: 5vh;
   right: 7vw;
-  width: 25vw;
+  width: 20vw;
   height: 5vh;
   overflow: hidden;
   // background-color: #000;
@@ -13,15 +13,16 @@
 
   .searchBox {
     position: relative;
-    width: 85%;
+    width: 100%;
     height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    left: 70%;
+    left: 75%;
     // background-color: blue;
 
+    background-color: #000;
     .searchIcon {
       width: 2vw;
       display: flex;
@@ -31,13 +32,13 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+      margin: 0 2%;
       button {
         color: white;
         background-color: transparent;
         border: none;
       }
     }
-
     .closeIcon {
       color: white;
       background-color: transparent;
@@ -45,11 +46,11 @@
       cursor: pointer;
     }
     .searchField {
-      width: 10vw;
+      width: 50%;
       height: 2vh;
       font-size: 0.5em;
       letter-spacing: 0.1em;
-      margin: 0 2vw;
+      margin: 0 5%;
       padding-left: 1vw;
       color: #272727;
       border: none;
@@ -59,79 +60,100 @@
     }
   }
 }
-
-/**************************************** MEDIA QUERIES ********************************************/
-
-/**************************************** MEDIA QUERIES 768px ********************************************/
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .searchBoxBackground {
-    position: absolute;
-    top: 0vh;
-    width: 70%;
-    height: 15vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
     .searchBox {
-      position: relative;
-      width: 100vw;
-      height: 15vh;
-      left: 75%;
-
+      left: 85%;
       .searchField {
-        width: 55vw;
-        height: 5vh;
-        font-size: 1em;
-        padding-left: 5vw;
-        margin: 0 5vw;
-        -webkit-appearance: none;
-        border-radius: 0;
-      }
-      .closeIcon {
-        margin-left: 1vw;
+        width: 68%;
       }
     }
   }
 }
-
-@media all and (max-width: 414px) {
+/**************************************** MEDIA QUERIES ********************************************/
+@media all and (max-width: 768px) {
   .searchBoxBackground {
-    position: absolute;
-    top: 0vh;
-    left: 0vw;
-    width: 90%;
+    width: 35%;
     height: 15vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+    top: 0;
     .searchBox {
       position: relative;
       width: 100%;
-      height: 5vh;
-      left: 95%;
+      height: 10vh;
+      left: 88%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #000;
+
+      .searchIcon {
+        font-size: 0.8em;
+        margin: 0;
+      }
+      .searchField {
+        width: 60vw;
+        height: 3vh;
+        font-size: 0.8em;
+        margin: 0 1vw;
+        padding-left: 2vw;
+        -webkit-appearance: none;
+        border-radius: 0;
+        &[type="text"] {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 752px) and (orientation: portrait) {
+  .searchBoxBackground {
+    width: 90%;
+    height: 15vh;
+    .searchBox {
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      left: 85%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       background-color: #000;
       .searchIcon {
-        color: white;
-        font-size: 0.85em;
+        font-size: 0.8em;
+        margin: 0 5%;
       }
       .searchField {
-        width: 50vw;
+        width: 60%;
         height: 4vh;
-        font-size: 0.5em;
         margin: 0 3vw;
         padding-left: 5vw;
         -webkit-appearance: none;
         border-radius: 0;
+      }
+    }
+  }
+}
+@media all and (max-width: 752px) and (orientation: landscape) {
+  .searchBoxBackground {
+    width: 35%;
+    height: 15vh;
+    .searchBox {
+      position: relative;
+      width: 100%;
+      height: 10vh;
+      left: 92%;
+      .searchField {
+        width: 60%;
+        height: 4vh;
+        margin: 0 1vw;        
+        font-size: 0.8em;        
+        padding-left: 1vw;
+        &::placeholder {           
+        padding-left: 0vw;
+        font-size: 0.8em;
+        }
       }
     }
   }
