@@ -26,21 +26,16 @@ class BtnPromoCode extends React.Component {
 
   clickPromoCode(PromoCode) {
     const { mode } = this.state;
-    const opacityInput = mode === "OPEN" ? "1" : "0";
-    const marginInput = mode === "OPEN" ? "2.5vh" : "1.5vh";
+    // const opacityInput = mode === "OPEN" ? "1" : "0";
+    const marginInput = mode === "OPEN" ? "+=7vh" : "-=7vh";
 
     const tl = new Timeline();
-    tl.to(
-      this.inputPromoCode,
-      { opacity: opacityInput,marginTop: marginInput },
-      0
-    );
-    
+    tl.to(this.inputPromoCode, { marginTop: marginInput }, 0);
 
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
-    console.log("Estado", mode, marginInput, opacityInput);
+    console.log("Estado", mode, marginInput);
   }
 
   render() {
@@ -53,12 +48,14 @@ class BtnPromoCode extends React.Component {
           className="btnPromoCode">
           DO YOU HAVE PROMO CODE?
         </button>
-        <input
-          ref={(div) => (this.inputPromoCode = div)}
-          type="text"
-          className="promoCode"
-          name="promoCode"
-          placeholder="ENTER CODE"></input>
+        <div className="promoCodeBox">
+          <input
+            ref={(div) => (this.inputPromoCode = div)}
+            type="text"
+            className="promoCode"
+            name="promoCode"
+            placeholder="ENTER CODE"></input>
+        </div>
       </div>
     );
   }

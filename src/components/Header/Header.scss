@@ -74,10 +74,8 @@
     color: white;
   }
 }
-
 /**************************************** MEDIA QUERIES ********************************************/
 
-/**************************************** MEDIA QUERIES 768px ********************************************/
 @media all and (max-width: 768px) {
   .header {
     width: 100%;
@@ -115,11 +113,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0vh 3vw 0 3vw;
+      margin: 0vh 3vw 0 6vw;
     }
   }
 }
-
 @media all and (max-width: 755px) {
   .header {
     .burger {

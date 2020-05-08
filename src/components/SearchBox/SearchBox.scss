@@ -58,6 +58,8 @@
     }
   }
 }
+
+/**************************************** MEDIA QUERIES ********************************************/
 @media all and (max-width: 1024px) {
   .searchBoxBackground {
     .searchBox {
@@ -68,7 +70,6 @@
     }
   }
 }
-/**************************************** MEDIA QUERIES ********************************************/
 @media all and (max-width: 768px) {
   .searchBoxBackground {
     width: 35%;
