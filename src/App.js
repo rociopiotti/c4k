@@ -90,7 +90,6 @@ class App extends React.Component {
           />
         );
         break;
-
       case "filter":
         slide = (
           <FilterSlide onCloseClick={this.handleHeaderClick.bind(this)} />

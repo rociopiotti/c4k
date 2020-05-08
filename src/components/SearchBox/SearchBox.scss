@@ -19,9 +19,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    left: 75%;
-    // background-color: blue;
-
+    left: 80%;
     background-color: #000;
     .searchIcon {
       width: 2vw;
@@ -108,7 +106,7 @@
 }
 @media all and (max-width: 752px) and (orientation: portrait) {
   .searchBoxBackground {
-    width: 90%;
+    width: 75%;
     height: 15vh;
     .searchBox {
       position: relative;

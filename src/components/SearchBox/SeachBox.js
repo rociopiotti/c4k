@@ -60,7 +60,6 @@ class SearchBox extends React.Component {
             className="searchIcon">
             <Icon type="search" />
           </button>
-
           <input
             type="text"
             placeholder="SEARCH PRODUCTS"

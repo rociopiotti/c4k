@@ -7,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  
+
   .burger {
     border: none;
     background-color: transparent;
@@ -92,6 +92,8 @@
       margin-right: 5vw;
     }
     .burger {
+      height: 5vw;
+
       margin: 0vh 1vw 0 10vw;
     }
     .logo {
@@ -120,6 +122,9 @@
 
 @media all and (max-width: 755px) {
   .header {
+    .burger {
+      height: 5vw;
+    }
     .logo {
       width: 4vw;
       height: 4vw;
