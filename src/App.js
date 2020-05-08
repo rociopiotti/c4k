@@ -155,7 +155,10 @@ class App extends React.Component {
         break;
       case "checkout":
         section = (
-          <Checkout onCloseCheckout={this.handleHomeClick.bind(this)} />
+          <Checkout
+            onCloseCheckout={this.handleHomeClick.bind(this)}
+            onBtnCheckout={this.handleHomeClick.bind(this)}
+          />
         );
         break;
       case "stores":

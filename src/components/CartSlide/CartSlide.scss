@@ -62,10 +62,9 @@
       -webkit-appearance: none;
       border-radius: 0;
       cursor: pointer;
-    }
-
-    .btnCheckout:hover {
-      background-color: #c7c7c7;
+      &:hover {
+        background-color: #c7c7c7;
+      }
     }
   }
 }
