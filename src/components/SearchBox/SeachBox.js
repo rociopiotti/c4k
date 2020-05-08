@@ -8,7 +8,9 @@ import { Timeline } from "gsap/gsap-core";
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);
-    this.inputSearchBox = null;
+    this.SearchBox = null;
+    this.myTween = null;
+
     this.state = {
       mode: "OPEN",
     };
@@ -16,48 +18,62 @@ class SearchBox extends React.Component {
 
   toggle() {
     const { mode } = this.state;
-
     const newMode = mode === "OPEN" ? "CLOSE" : "OPEN";
-
     this.setState({
       mode: newMode,
     });
   }
 
   handleSearchContent(SearchInContent) {
-    console.log("Click en el boton que:", SearchInContent);
+    const delayAnimation = window.innerWidth <= 800 ? 0.5 : 1.2;
+    const posAnimation =  "-85%";
+    console.log("-------------------->", delayAnimation, posAnimation);
+    this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
+      x: posAnimation,
+     
+    });
   }
+
   handleCloseSearchBox() {
-    this.props.onCloseClick(null);
+    const delayAnimation = window.innerWidth <= 800 ? 0.5 : 1.2;
+    const posAnimation = "+=85%";
+
+    console.log("-------------------->", delayAnimation, posAnimation);
+    this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
+      x: posAnimation,
+     
+    });
   }
+
   handleInputChange(event) {
     console.log("Ingreso texto");
   }
 
   render() {
     return (
-      <div className="searchBox">
-        <div className="searchIcon">
+      <div className="searchBoxBackground">
+        <div className="searchBox" ref={(div) => (this.SearchBox = div)}>
           <button
             onClick={() => {
               this.handleSearchContent("SearchInContent");
-            }}>
+            }}
+            className="searchIcon">
             <Icon type="search" />
           </button>
-        </div>
 
-        <input
-          type="text"
-          placeholder="SEARCH PRODUCTS"
-          className="searchField"
-          onChange={this.handleInputChange}></input>
-        <button
-          onClick={() => {
-            this.handleCloseSearchBox("CloseNav");
-          }}
-          className="closeIcon">
-          <Icon type="remove" />
-        </button>
+          <input
+            type="text"
+            placeholder="SEARCH PRODUCTS"
+            className="searchField"
+            onChange={this.handleInputChange}></input>
+          <button
+            onClick={() => {
+              this.handleCloseSearchBox(null);
+            }}
+            className="closeIcon">
+            <Icon type="remove" />
+          </button>
+        </div>
       </div>
     );
   }

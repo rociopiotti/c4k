@@ -90,9 +90,7 @@ class App extends React.Component {
           />
         );
         break;
-      case "searchBox":
-        slide = <SearchBox onCloseClick={this.handleHeaderClick.bind(this)} />;
-        break;
+
       case "filter":
         slide = (
           <FilterSlide onCloseClick={this.handleHeaderClick.bind(this)} />
@@ -186,8 +184,8 @@ class App extends React.Component {
   render() {
     // library.add(fab, faSearch)
     // library.add(fab, faBars)
-    console.log("------> CURRENT SLIDE:", this.state.currentSlide)
-    console.log("------> CURRENT SECTION:", this.state.currentSection)
+    console.log("------> CURRENT SLIDE:", this.state.currentSlide);
+    console.log("------> CURRENT SECTION:", this.state.currentSection);
     return (
       <div className="app">
         {this.setSlide(this.state.currentSlide)}

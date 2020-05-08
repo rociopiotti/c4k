@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
+import SearchBox from "../SearchBox/SeachBox";
 
 class Header extends React.Component {
   handleNavSlide() {
@@ -43,13 +44,7 @@ class Header extends React.Component {
           <Logo />
         </button>
         <span></span>
-        <button
-          onClick={() => {
-            this.handleSearchBox();
-          }}
-          className="searchIcon">
-          <Icon type="search" />
-        </button>
+        <SearchBox/>
         <button
           onClick={() => {
             this.handleSingInSlide();
