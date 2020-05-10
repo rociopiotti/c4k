@@ -5,9 +5,9 @@ import Icon from "../Icon/Icon"
 import Logo from "../Logo/Logo"
 
 class HeaderSlideCloseLeft extends React.Component {
-  // handleCloseCartSlide(CloseSlide) {
-  //   console.log("Click en botón:", CloseSlide)
-  // }
+  handleCloseCartSlide(CloseSlide) {
+    this.props.onCloseClick();
+  }
 
   render() {
     return (
@@ -15,7 +15,7 @@ class HeaderSlideCloseLeft extends React.Component {
         <button
           onClick={() => {
             // this.handleCloseCartSlide("CloseSlide")
-            this.props.onCloseClick(null)
+            this.handleCloseCartSlide()
           }}
           className="btnCloseCartSlide">
           <Icon className="iconBtnCloseCartSlide" type="arrowLeft"/>

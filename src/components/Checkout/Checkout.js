@@ -17,7 +17,7 @@ class Checkout extends React.Component {
             <h2>#CHECKOUT </h2>
             <button onClick={() => {
               this.handleCloseCheckout()
-            }} className="btnCloseCheckout"><Icon /></button>
+            }} className="btnCloseCheckout"><Icon type="arrowRight" /></button>
           </div>
           <CheckoutGuest />
           <SingIn />

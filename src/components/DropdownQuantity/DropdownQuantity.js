@@ -45,7 +45,7 @@ class DropdownQuantity extends React.Component {
       this.toggle();
     });
     console.clear();
-    console.log("ESTADO", mode);
+    // console.log("ESTADO", mode);
   }
   handleDropwnQuantity(newQuantity) {
     this.setState({

@@ -45,8 +45,8 @@ class DropdownColor extends React.Component {
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
-    console.clear();
-    console.log("ESTADO", mode);
+    // console.clear();
+    // console.log("ESTADO", mode);
   }
 
   handleDropdownColor(newColor) {
@@ -73,7 +73,7 @@ class DropdownColor extends React.Component {
     return itemColor;
   }
   render() {
-    console.log("------> CURRENT COLOR:", this.state.currentColor);
+    // console.log("------> CURRENT COLOR:", this.state.currentColor);
     const itemColor = this.setColor(this.state.currentColor);
     return (
       <div className="dropdownColorBox">

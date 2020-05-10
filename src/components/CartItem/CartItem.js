@@ -12,7 +12,7 @@ class CartItem extends React.Component {
   };
 
   handleSeeProductBox() {
-    console.log("Click en Imagen. Cerrar Nav. Mostrar Product Box");
+    // console.log("Click en Imagen. Cerrar Nav. Mostrar Product Box");
   }
 
   handleAddToWishList() {
@@ -70,8 +70,8 @@ class CartItem extends React.Component {
     return itemQuantity;
   }
   render() {
-    console.log("---->WISHLIST BTN", this.state.wishList);
-    console.log("----->REMOVE FROM CART BTN", this.state.removeFromCart);
+    // console.log("---->WISHLIST BTN", this.state.wishList);
+    // console.log("----->REMOVE FROM CART BTN", this.state.removeFromCart);
 
     return (
       <div className="cartItemBox">

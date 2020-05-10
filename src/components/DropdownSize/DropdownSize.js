@@ -45,7 +45,7 @@ class DropdownSize extends React.Component {
       this.toggle();
     });
     console.clear();
-    console.log("ESTADO", mode);
+    // console.log("ESTADO", mode);
   }
   handleDropwnSize(newSize) {
     this.setState({
@@ -71,7 +71,7 @@ class DropdownSize extends React.Component {
     return itemSize;
   }
   render() {
-    console.log("-->CURRENT SIZE:", this.state.currentSize);
+    // console.log("-->CURRENT SIZE:", this.state.currentSize);
 
     const itemSize = this.setSize(this.state.currentSize);
 

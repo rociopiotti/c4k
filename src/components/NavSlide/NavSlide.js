@@ -10,13 +10,9 @@ const ease =  Back.easeInOut;
 class NavSlide extends React.Component {
   constructor(props) {
     super(props);
-    this.NavBox = null;
     this.NavCloseBackground = null;
     this.SlideBackground = null;
-    this.myTween = null;
-    this.state = {
-      mode: "CLOSE",
-    };
+       
   }
 
   // --------------------------------------------------------

@@ -5,19 +5,20 @@
   margin: 0;
   padding: 0 0 0 0;
   top: 0;
-  left: 0;
+  left: -100vw;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   font-weight: 300;
-  letter-spacing: 0.1em;
-  background-color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.1em;;
   z-index: 19;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
 
   .singInCreateAccountClosebackground{
+    background-color: #000;
     flex-grow: 1;
+    opacity: 0;
   }
   .singInCreateAccountBoxBackground {
     // border: solid red thin;

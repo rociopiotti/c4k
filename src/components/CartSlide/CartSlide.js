@@ -1,27 +1,64 @@
-import React from "react"
-import "./CartSlide.scss"
-import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft"
-import EstimatedTotal from "../EstimatedTotal/EstimatedTotal"
-import CartItemList from "../CartItemList/CartItemList"
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode"
-import CartEmpty from "../CartEmpty/CartEmpty"
+import React from "react";
+import "./CartSlide.scss";
+import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
+import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
+import CartItemList from "../CartItemList/CartItemList";
+import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
+import CartEmpty from "../CartEmpty/CartEmpty";
+
+//ANMATION
+import { Timeline, Back } from "gsap/gsap-core";
+
+const ease = Back.easeInOut;
 
 class CartSlide extends React.Component {
-  handleCheckoutPage(value) {
-    this.props.onCheckouBtn(value)
+  constructor(props) {
+    super(props);
+    this.SlideBackground = null;
+    this.NavCloseBackground = null;
   }
 
+  // --------------------------------------------------------
+  executeAnimation(value, onCompleteHandler) {
+    const tl = new Timeline({
+      onComplete: () => onCompleteHandler(value),
+      ease: ease,
+    });
+    tl.to(this.NavCloseBackground, { opacity: 0 });
+    tl.to(this.SlideBackground, { left: "100vw" }, 0.4);
+  }
+  // --------------------------------------------------------
+
+  clickCloseNav() {
+    this.executeAnimation(null, this.props.onCloseClick);
+  }
+
+  handleCheckoutPage(value) {
+    this.executeAnimation(value, this.props.onCheckouBtn);
+  }
+
+  componentDidMount() {
+    console.log("->>>>>>>>>>>>>>>EMPIEZA");
+    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
+    tl.to(this.SlideBackground, { left: 0 });
+    tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
+  }
   render() {
     return (
-      <div className="cartSlideBackground">
+      <div
+        className="cartSlideBackground"
+        ref={(div) => (this.SlideBackground = div)}>
         <div
+          ref={(div) => (this.NavCloseBackground = div)}
           className="cartCloseBackground"
           onClick={() => {
-            this.props.onCloseClick(null)
+            this.clickCloseNav();
           }}></div>
         <div className="cartSlide">
           <div className="cartSlideBox">
-            <HeaderSlideCloseLeft onCloseClick={this.props.onCloseClick} />
+            <HeaderSlideCloseLeft
+              onCloseClick={this.clickCloseNav.bind(this)}
+            />
             <h2 className="cartSlideTitle">#MY BAG</h2>
             {/* <CartEmpty/> */}
             <CartItemList />
@@ -29,8 +66,7 @@ class CartSlide extends React.Component {
             <EstimatedTotal />
             <button
               onClick={() => {
-                this.props.onCloseClick(null)              
-                this.handleCheckoutPage("checkout")
+                this.handleCheckoutPage("checkout");
               }}
               className="btnCheckout">
               CHECKOUT
@@ -38,8 +74,8 @@ class CartSlide extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default CartSlide
+export default CartSlide;

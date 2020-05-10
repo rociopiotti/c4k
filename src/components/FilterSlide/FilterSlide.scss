@@ -1,23 +1,25 @@
 .filterSlideBackground {
   width: 100vw;
   min-height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.8);
-  border: red thin solid;
   position: absolute;
   top: 0;
+  left: 100vw;
   margin: 0;
   font-size: 1em;
-  z-index: 9;  
+  z-index: 9;
   display: flex;
   flex-direction: row;
-.filterCloseBackground {
-  flex-grow: 1;
-}
+  
+  .filterCloseBackground {
+    flex-grow: 1;
+    background-color: #000;
+    opacity: 0;
+  }
   .filterSlideBackgroundBox {
     position: absolute;
     width: 30vw;
     min-height: 100vh;
-    background-color: rgba($color: #000000, $alpha: 1);
+    background-color: #000;
     border: pink thin solid;
     right: 0;
     display: flex;
