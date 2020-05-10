@@ -37,7 +37,6 @@ class SearchBox extends React.Component {
   handleCloseSearchBox() {
     const delayAnimation = 0.3;
     const posAnimation = "+=86%";
-
     console.log("-------------------->", delayAnimation, posAnimation);
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
       x: posAnimation,

@@ -39,10 +39,6 @@ class App extends React.Component {
       mode: "CLOSE",
     };
   }
-  // state = {
-  //   currentSection: "home",
-  //   currentSlide: null,
-  // }
 
   handleHeaderClick(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide);
@@ -50,22 +46,13 @@ class App extends React.Component {
       currentSlide: newSlide,
     });
   }
-  handleGridFilter(newSlide) {
-    console.log("CAMBIAR EL SLIDER POR: ", newSlide);
-    this.setState({
-      currentSlide: newSlide,
-    });
-  }
-  handleHomeClick(newSection) {
-    console.log("CAMBIAR EL Section POR: ", newSection);
-    this.setState({
-      currentSection: newSection,
-    });
-  }
   setSlide(slideType) {
     let slide;
 
     switch (slideType) {
+      default:
+        slide = null;
+        break;
       case "navSlide":
         slide = (
           <NavSlide
@@ -75,6 +62,7 @@ class App extends React.Component {
           />
         );
         break;
+
       case "cartSlide":
         slide = (
           <CartSlide
@@ -98,12 +86,23 @@ class App extends React.Component {
       case "sort":
         slide = <SortSlide onCloseClick={this.handleHeaderClick.bind(this)} />;
         break;
-      default:
-        slide = null;
-        break;
     }
     return slide;
   }
+  handleGridFilter(newSlide) {
+    console.log("CAMBIAR EL SLIDER POR: ", newSlide);
+    this.setState({
+      currentSlide: newSlide,
+    });
+  }
+  handleHomeClick(newSection) {
+    console.log("CAMBIAR EL Section POR: ", newSection);
+    this.setState({
+      currentSection: newSection,
+      currentSlide: null,
+    });
+  }
+
   setSection(sectionType) {
     let section;
     switch (sectionType) {

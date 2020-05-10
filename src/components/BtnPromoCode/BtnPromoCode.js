@@ -24,7 +24,7 @@ class BtnPromoCode extends React.Component {
     console.log("TOGGLE", mode);
   }
 
-  clickPromoCode(PromoCode) {
+  clickPromoCode() {
     const { mode } = this.state;
     // const opacityInput = mode === "OPEN" ? "1" : "0";
     const marginInput = mode === "OPEN" ? "+=7vh" : "-=7vh";
@@ -43,7 +43,7 @@ class BtnPromoCode extends React.Component {
       <div className="btnPromoCodeBox">
         <button
           onClick={() => {
-            this.clickPromoCode("PromoCode");
+            this.clickPromoCode();
           }}
           className="btnPromoCode">
           DO YOU HAVE PROMO CODE?

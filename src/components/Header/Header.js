@@ -44,7 +44,7 @@ class Header extends React.Component {
           <Logo />
         </button>
         <span></span>
-        <SearchBox/>
+        <SearchBox />
         <button
           onClick={() => {
             this.handleSingInSlide();
