@@ -1,0 +1,52 @@
+.questionAnswerBox {
+  width: 100%;
+  overflow: hidden;
+
+  button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    height: auto;
+    &:focus {
+      border: none;
+      outline: transparent;
+    }
+    &:hover{
+        
+    color: #c7c7c7;
+    }
+    h4 {
+      font-weight: 400;
+    }
+  }
+  .answerBox {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .answer {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin-top: -11vh;
+
+      p {
+        height: auto;
+        font-size: 1em;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

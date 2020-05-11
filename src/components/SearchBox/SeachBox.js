@@ -4,7 +4,6 @@ import Icon from "../Icon/Icon";
 
 //ANMATION
 import { TweenLite } from "gsap";
-import { Timeline } from "gsap/gsap-core";
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +23,7 @@ class SearchBox extends React.Component {
     });
   }
 
-  handleSearchContent(SearchInContent) {
+  handleSearchContent() {
     const delayAnimation = 0.3;
     const posAnimation =  "-86%";
     console.log("-------------------->", delayAnimation, posAnimation);

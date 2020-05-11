@@ -27,48 +27,6 @@ class CartItem extends React.Component {
     });
   }
 
-  handleDropwnQuantity(newQuantity) {
-    this.setState({
-      currentQuantity: newQuantity,
-    });
-  }
-
-  setQuantity(quantityType) {
-    let itemQuantity;
-    switch (quantityType) {
-      case "1":
-        itemQuantity = "1";
-        break;
-      case "2":
-        itemQuantity = "2";
-        break;
-      case "3":
-        itemQuantity = "3";
-        break;
-      case "4":
-        itemQuantity = "4";
-        break;
-      case "5":
-        itemQuantity = "5";
-        break;
-      case "6":
-        itemQuantity = "6";
-        break;
-      case "7":
-        itemQuantity = "7";
-        break;
-      case "8":
-        itemQuantity = "8";
-        break;
-      case "9":
-        itemQuantity = "9";
-        break;
-      case "10":
-        itemQuantity = "10";
-        break;
-    }
-    return itemQuantity;
-  }
   render() {
     // console.log("---->WISHLIST BTN", this.state.wishList);
     // console.log("----->REMOVE FROM CART BTN", this.state.removeFromCart);

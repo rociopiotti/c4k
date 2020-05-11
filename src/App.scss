@@ -6,6 +6,15 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  button:focus {
+    border: none;
+    outline: transparent;
+  }
+  a:focus {
+    border: none;
+    outline: transparent;
+  }
 }
 
 @media all and (min-width: 414px) {
