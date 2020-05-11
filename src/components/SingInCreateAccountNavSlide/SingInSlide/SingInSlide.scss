@@ -7,6 +7,9 @@
       padding: 1.5vh 0;
       margin: 2.5vh 0vw 2.5vh 5%;
       cursor: pointer;
+      &:hover {
+        background-color: #c7c7c7;
+      }
     }
 
     .singIn .passSettingsBox .rememberMe input {
@@ -40,14 +43,18 @@
 
   .btnSingInGoogle {
     margin-top: 2.5vh;
-
     padding: 1.5vh 0;
     cursor: pointer;
+    &:hover {
+      background-color: #c7c7c7;
+    }
   }
   .btnSingInFacebook {
     margin-top: 2.5vh;
-
     padding: 1.5vh 0;
     cursor: pointer;
+    &:hover {
+      background-color: #c7c7c7;
+    }
   }
 }

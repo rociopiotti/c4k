@@ -18,6 +18,13 @@
     li a {
       color: #fff;
       text-decoration: none;
+      .Icon {
+        &:hover {
+          transform: scale(1.4);
+          transition: 0.1s ease-in;
+          color: #c7c7c7;
+        }
+      }
     }
   }
 }

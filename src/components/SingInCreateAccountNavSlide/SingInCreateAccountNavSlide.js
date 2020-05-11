@@ -17,8 +17,10 @@ class SingInCreateAccountNavslide extends React.Component {
 
     this.state = {
       singinOption: "singIn",
+      activeBtn: true,
     };
   }
+
   // --------------------------------------------------------
 
   executeAnimation(value, onCompleteHandler) {
@@ -30,7 +32,6 @@ class SingInCreateAccountNavslide extends React.Component {
     });
     tl.to(this.NavCloseBackground, { opacity: 0 });
     tl.to(this.SlideBackground, { left: "-100vw" }, 0.4);
-    
   }
   // --------------------------------------------------------
 
@@ -39,14 +40,13 @@ class SingInCreateAccountNavslide extends React.Component {
   }
 
   handleSinginOption(newSinginOption) {
-    console.log("Click en botón que muestra:", newSinginOption);
     this.setState({
       singinOption: newSinginOption,
+      activeBtn: !this.state.activeBtn,
     });
   }
 
   componentDidMount() {
-    console.log("->>>>>>>>>>>>>>>EMPIEZA");
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
@@ -67,8 +67,11 @@ class SingInCreateAccountNavslide extends React.Component {
     return option;
   }
   render() {
-    console.log("------> CURRENT OPTION:", this.state.singinOption);
+    let btn_class1 = this.state.activeBtn ? "underline" : "noneDecoration";
+    let btn_class2 = this.state.activeBtn ? "noneDecoration" : "underline";
 
+    
+    // console.log("------> CURRENT OPTION:", this.state.singinOption);
     return (
       <div
         ref={(div) => (this.SlideBackground = div)}
@@ -87,14 +90,14 @@ class SingInCreateAccountNavslide extends React.Component {
                 this.handleSinginOption("singIn");
               }}
               className="btnSingInSlide">
-              <h2>#SING IN /</h2>{" "}
+              <h2 className= {btn_class1} >#SING IN /</h2>
             </button>
             <button
               onClick={() => {
                 this.handleSinginOption("createAccount");
               }}
               className="btnCreateAccountSlide">
-              <h2>CREATE AN ACCOUNT</h2>{" "}
+              <h2 className= {btn_class2} >CREATE AN ACCOUNT</h2>
             </button>
           </div>
           <div className="singInCreateAccountBox">
@@ -102,7 +105,7 @@ class SingInCreateAccountNavslide extends React.Component {
           </div>
         </div>
         <div
-        ref={(div) => (this.NavCloseBackground = div)}
+          ref={(div) => (this.NavCloseBackground = div)}
           onClick={() => {
             this.clickCloseNav();
           }}

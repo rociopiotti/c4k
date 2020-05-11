@@ -29,9 +29,7 @@
     .sortSlideBox {
       position: relative;
       width: 80%;
-      border: yellow thin solid;
       margin-top: 5vh;
-
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -50,9 +48,7 @@
         position: relative;
         width: 80%;
         color: #ffffff;
-        border: green thin solid;
         list-style: none;
-
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -68,17 +64,16 @@
           border: none;
           background-color: transparent;
           color: #fff;
-
           font-family: "Open Sans", sans-serif;
           letter-spacing: 0.1em;
           font-weight: 300;
           cursor: pointer;
           .Icon {
             margin-right: 1vw;
+            &:hover {
+              color: #c7c7c7;
+            }
           }
-        }
-        li button:hover {
-          color: #c7c7c7;
         }
       }
     }

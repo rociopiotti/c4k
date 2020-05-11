@@ -66,7 +66,9 @@
         flex-direction: row;
         align-items: flex-start;
         cursor: pointer;
-
+        &:hover {
+          color: #c7c7c7;
+        }
         input {
           margin: 0 1vw;
           border: none;
@@ -96,13 +98,11 @@
   }
 }
 
-
 @media all and (max-width: 754px) {
   .signInBox {
     .singIn {
       .passSettingsBox {
         font-size: 0.5em;
-
       }
     }
   }
