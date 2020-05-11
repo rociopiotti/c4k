@@ -44,7 +44,6 @@ class Faq extends React.Component {
           
           <h3>SHIPPING</h3>
           <QuestionAnswerBox />
-
           <BtnBackToTop />
         </div>
       </div>

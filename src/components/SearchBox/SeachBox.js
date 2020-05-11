@@ -38,8 +38,7 @@ class SearchBox extends React.Component {
     const posAnimation = "+=86%";
     console.log("-------------------->", delayAnimation, posAnimation);
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
-      x: posAnimation,
-     
+      x: posAnimation,     
     });
   }
 

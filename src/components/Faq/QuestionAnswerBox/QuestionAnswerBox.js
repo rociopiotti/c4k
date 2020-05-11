@@ -8,37 +8,58 @@ import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 export class QuestionAnswerBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.FaqBox = null;
-    
-        this.state = {
-          searchState: false,
-          mode: "OPEN",
-        };
-      }
-    
-      toggle() {
-        const { mode } = this.state;
-        const newMode = mode === "OPEN" ? "CLOSE" : "OPEN";
-    
-        this.setState({
-          mode: newMode,
-        });
-        console.log("TOGGLE", mode);
-      }
-    
-      handleQuestionClick() {
-        const { mode } = this.state;
+  constructor(props) {
+    super(props);
+    this.FaqBox = null;
+
+    this.state = {
+      searchState: false,
+      mode: "OPEN",
+    };
+  }
+
+  toggle() {
+    const { mode } = this.state;
+    const newMode = mode === "OPEN" ? "CLOSE" : "OPEN";
+    this.setState({
+      mode: newMode,
+    });
+    console.log("TOGGLE", mode);
+  }
+
+  handleQuestionClick() {
+    let windowsWidth = window.innerWidth;
+    const { mode } = this.state;
+    if (windowsWidth > 850) {
+      {
         const marginInput = mode === "OPEN" ? "+=11vh" : "-=11vh";
-    
         const tl = new Timeline();
         tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-    
         tl.eventCallback("onComplete", () => {
           this.toggle();
         });
       }
+    }
+    if (windowsWidth > 754 && windowsWidth <= 800) {
+      const marginInput = mode === "OPEN" ? "+=30vh" : "-=30vh";
+      const tl = new Timeline();
+      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
+      tl.eventCallback("onComplete", () => {
+        this.toggle();
+      });
+    }
+    if (windowsWidth <= 754) {
+      {
+        const marginInput = mode === "OPEN" ? "+=45vh" : "-=45vh";
+        const tl = new Timeline();
+        tl.to(this.FaqBox, { marginTop: marginInput }, 0);
+        tl.eventCallback("onComplete", () => {
+          this.toggle();
+        });
+      }
+    }
+  }
+
   render() {
     return (
       <div className="questionAnswerBox">

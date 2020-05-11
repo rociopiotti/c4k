@@ -28,7 +28,7 @@
       width: 40%;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-start;
       .faqSearchBoxIcon {
         height: 3vh;
@@ -36,6 +36,8 @@
         color: #fff;
         border: none;
         cursor: pointer;
+  
+        font-size: 1em;
       }
       span {
         width: 5vw;

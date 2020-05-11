@@ -19,9 +19,8 @@
       border: none;
       outline: transparent;
     }
-    &:hover{
-        
-    color: #c7c7c7;
+    &:hover {
+      color: #c7c7c7;
     }
     h4 {
       font-weight: 400;
@@ -46,6 +45,26 @@
         font-size: 1em;
         font-weight: 300;
         letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .questionAnswerBox {
+    .answerBox {
+      .answer {
+        margin-top: -30vh;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 754px) {
+  .questionAnswerBox {
+    .answerBox {
+      .answer {
+        margin-top: -45vh;
       }
     }
   }

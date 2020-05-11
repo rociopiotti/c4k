@@ -102,7 +102,6 @@ class App extends React.Component {
       currentSlide: null,
     });
   }
-
   setSection(sectionType) {
     let section;
     switch (sectionType) {
@@ -183,10 +182,8 @@ class App extends React.Component {
   }
 
   render() {
-    // library.add(fab, faSearch)
-    // library.add(fab, faBars)
-    console.log("------> CURRENT SLIDE:", this.state.currentSlide);
-    console.log("------> CURRENT SECTION:", this.state.currentSection);
+    // console.log("------> CURRENT SLIDE:", this.state.currentSlide);
+    // console.log("------> CURRENT SECTION:", this.state.currentSection);
     return (
       <div className="app">
         {this.setSlide(this.state.currentSlide)}
