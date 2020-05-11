@@ -1,19 +1,16 @@
 .gridContainerHeaderBox {
   width: 100%;
-  border: yellow thin solid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 0.1em;
 
   .gridTitle {
-    border: lightgreen solid thin;
     position: relative;
     width: 100%;
     display: flex;

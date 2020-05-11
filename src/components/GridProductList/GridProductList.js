@@ -49,6 +49,24 @@ class GridProductList extends React.Component {
                 <ProductListItem/>
               </a>
             </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.handleClickItem()
+                }}
+                href="#">
+                <ProductListItem/>
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.handleClickItem()
+                }}
+                href="#">
+                <ProductListItem/>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

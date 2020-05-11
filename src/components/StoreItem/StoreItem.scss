@@ -9,4 +9,9 @@
   p {
     font-size: 0.8em;
   }
+  &:hover{          
+    color: #c7c7c7;
+    transform: scale(1.2);
+    transition: 0.1s ease-in;
+    }
 }

@@ -1,7 +1,5 @@
 .paymentSettingsBox {
   width: 100%;
-  border: thin solid seagreen;
-
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
   font-weight: 300;
@@ -23,7 +21,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: silver thin solid;
     flex-wrap: wrap;
     margin-top: 5vh;
 
@@ -38,6 +35,11 @@
 
       .paymentMethImg {
         width: 100%;
+        color: #ffffff;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.1s ease-in;
+        }
       }
     }
     span {
@@ -89,7 +91,9 @@
       -webkit-appearance: none;
       border-radius: 0;
       text-decoration: underline;
-
+      &:hover {
+        color: #c7c7c7;
+      }
       .infoTextCvvCode {
         position: absolute;
         background-color: #000;
@@ -104,6 +108,9 @@
         left: 0%;
         top: -10vh;
         display: none;
+        &:hover {
+          color: #c7c7c7;
+        }
       }
     }
 
@@ -124,6 +131,9 @@
     -webkit-appearance: none;
     border-radius: 0;
     cursor: pointer;
+    &:hover {
+      background-color: #c7c7c7;
+    }
   }
 }
 

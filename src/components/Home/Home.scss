@@ -15,21 +15,18 @@
     transform: rotate(-90deg);
 
     /* Legacy vendor prefixes that you probably don't need... */
-
     /* Safari */
     -webkit-transform: rotate(-90deg);
-
     /* Firefox */
     -moz-transform: rotate(-90deg);
-
     /* IE */
     -ms-transform: rotate(-90deg);
-
     /* Opera */
     -o-transform: rotate(-90deg);
 
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
   }
 }
 
@@ -44,7 +41,7 @@
   .home {
     .title {
       top: 30vh;
-      left: 8vw;      
+      left: 8vw;
       font-size: 1.8em;
     }
 
@@ -56,14 +53,14 @@
     }
   }
 }
-@media all and (max-width: 768px) and (orientation: portrait){
+@media all and (max-width: 768px) and (orientation: portrait) {
   .home {
     width: 100%;
     height: auto;
 
     .title {
       top: 30vh;
-      left: 10vw;      
+      left: 10vw;
       font-size: 1.8em;
     }
 
@@ -72,18 +69,19 @@
       top: 50vh;
       left: 7vw;
       font-size: 1.2em;
+     
     }
   }
 }
 
-@media all and (max-width: 823px) and (orientation: landscape){ 
+@media all and (max-width: 823px) and (orientation: landscape) {
   .home {
     width: 100%;
     height: auto;
 
     .title {
       top: 25vh;
-      left: 10vw;      
+      left: 10vw;
       font-size: 1em;
     }
 

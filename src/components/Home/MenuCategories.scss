@@ -18,17 +18,14 @@
     letter-spacing: 0.1em;
     font-weight: 300;
 
-    
-      li a {
-        text-decoration: none;
-        color: white;
-      }
-      li a:hover {
+    li a {
+      text-decoration: none;
+      color: white;
+      &:hover {
         color: #c7c7c7;
       }
+    }
   }
-
-  
 }
 
 @media all and (max-width: 768px) and (orientation: portrait) {

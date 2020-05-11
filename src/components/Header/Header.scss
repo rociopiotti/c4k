@@ -16,9 +16,14 @@
     align-items: center;
     width: 2vw;
     height: 2vw;
-    margin: 0vh 5vw;
+    margin: 0vh 0 0 5vw;
     color: #fff;
     cursor: pointer;
+    &:hover {
+      color: #c7c7c7;
+      transform: scale(1.2);
+      transition: 0.1s ease-in;
+    }
   }
 
   span {
@@ -34,6 +39,11 @@
     align-items: center;
     width: 2vw;
     height: 2vw;
+    &:hover {
+      color: #c7c7c7;
+      transform: scale(1.2);
+      transition: 0.1s ease-in;
+    }
   }
 
   .logo img {
@@ -50,6 +60,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    &:hover {
+      color: #c7c7c7;
+      transform: scale(1.2);
+      transition: 0.1s ease-in;
+    }
   }
   .singInIcon {
     width: 2vw;
@@ -60,6 +75,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    &:hover {
+      color: #c7c7c7;
+      transform: scale(1.2);
+      transition: 0.1s ease-in;
+    }
   }
 
   .cartIcon {
@@ -72,6 +92,11 @@
     border: none;
     cursor: pointer;
     color: white;
+    &:hover {
+      color: #c7c7c7;
+      transform: scale(1.2);
+      transition: 0.1s ease-in;
+    }
   }
 }
 /**************************************** MEDIA QUERIES ********************************************/

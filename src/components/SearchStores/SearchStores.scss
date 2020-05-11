@@ -20,6 +20,11 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    &:hover{
+      color: #c7c7c7;      
+      transform: scale(1.4);
+      transition: 0.1s ease-in;
+    }
   }
 }
 

@@ -38,13 +38,12 @@
       margin: 0;
       padding: 0;
 
-      a{
+      a {
         color: #fff;
         text-decoration: none;
-      }
-      
-      a:hover{
-        color: #c7c7c7;
+        &:hover {
+          color: #c7c7c7;
+        }
       }
     }
   }
@@ -87,7 +86,6 @@
         align-items: center;
         justify-content: center;
         margin-left: 0vw;
-        
       }
     }
   }

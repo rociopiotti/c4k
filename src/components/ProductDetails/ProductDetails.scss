@@ -60,19 +60,40 @@
       order: 2;
       margin-left: 0%;
 
-   
+      .dropdownBoxCartSize {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+        margin-left: 0%;
+        padding: 1vh 0;
+        .dropdownContentSize {
+          z-index:25 ;
+          top: 50px;
+        }
+      }
     }
 
     .btnFreeShipping {
       width: auto;
       position: absolute;
       top: 55vh;
-      left: 71.5vw;
+      left: 72.5vw;
       background-color: transparent;
       border: none;
       text-decoration: none;
       -webkit-appearance: none;
       border-radius: 0;
+      color: #ffffff;
+      letter-spacing: 0.1em;
+      font-size: 0.8em;
+      font-weight: 300;
+      &:hover {
+        color: #c7c7c7;
+      }
     }
     .descriptionProductDetail,
     .featuresProductDetail,
@@ -110,6 +131,9 @@
         margin: 0;
         -webkit-appearance: none;
         border-radius: 0;
+        &:hover {
+          color: #c7c7c7;
+        }
       }
     }
     .descriptionProductDetail {
@@ -168,7 +192,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     .productDetails {
       width: 100%;
       display: flex;
