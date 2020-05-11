@@ -39,9 +39,10 @@
     align-items: center;
     width: 2vw;
     height: 2vw;
+    z-index: 1;
     &:hover {
       color: #c7c7c7;
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition: 0.1s ease-in;
     }
   }
@@ -116,11 +117,10 @@
     }
     .burger {
       height: 5vw;
-
       margin: 0vh 1vw 0 10vw;
     }
     .logo {
-      width: 0vw;
+      width: 5vw;
     }
 
     .searchIcon {
@@ -138,7 +138,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0vh 3vw 0 6vw;
+      margin: 0vh 5vw 0 6vw;
     }
   }
 }

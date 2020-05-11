@@ -40,9 +40,21 @@
 
 @media all and (max-width: 754px) {
   .productListItemBox {
+    width: 30vw;
     .listItemImage {
       width: 35vw;
       height: 35vw;
+    }
+
+    .listItemDescription {
+      width: 100%;
+      h3,
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.9em;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+      }
     }
   }
 }
