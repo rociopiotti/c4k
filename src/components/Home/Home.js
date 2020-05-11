@@ -1,28 +1,52 @@
-import React from "react"
-import "./Home.scss"
-import MenuCategories from "./MenuCategories"
-import BackgroundImg from "./BackgroundImg"
-import BtnShop from "../BtnShop/BtnShop"
+import React from "react";
+import "./Home.scss";
+import MenuCategories from "./MenuCategories";
+import BackgroundImg from "./BackgroundImg";
+import BtnShop from "../BtnShop/BtnShop";
+
 class Home extends React.Component {
-  state = {
-    stateBtnShop: false
-  }
+
   handleBtnShop() {
-    this.setState  ({
-      stateBtnShop:true,
-    })
+    let windowsWidth = window.innerWidth;
+    if (windowsWidth > 850) {
+      window.scrollTo({
+        top: 2000,
+        behavior: "smooth",
+      });
+    }
+    if (windowsWidth > 800 && windowsWidth <= 1024) {
+      window.scrollTo({
+        top: 500,
+        behavior: "smooth",
+        
+      });
+    }
+    if (windowsWidth > 754 && windowsWidth <= 800) {
+      window.scrollTo({
+        top: 2000,
+        behavior: "smooth",
+      });
+    }
+    if (windowsWidth <= 754) {
+      window.scrollTo({
+        top: 1200,
+        behavior: "smooth",
+      });
+    }
+    console.clear();
   }
   render() {
-    // console.log("------> ESTADO BTN SHOP:", this.state.stateBtnShop)
     return (
       <div className="home">
-      <h1 className="title">C-4K</h1>
-        <BtnShop onClickBtnShop= {this.handleBtnShop.bind(this)} />      
-        <BackgroundImg/>
-        <MenuCategories onHomeMenuClick={this.props.onHomeMenuClick} />
+        <h1 className="title">C-4K</h1>
+        <BtnShop onClickBtnShop={this.handleBtnShop.bind(this)} />
+        <BackgroundImg />
+        <div>
+          <MenuCategories onHomeMenuClick={this.props.onHomeMenuClick} />
+        </div>
       </div>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

@@ -40,6 +40,14 @@ export class QuestionAnswerBox extends React.Component {
         });
       }
     }
+    if (windowsWidth > 800 && windowsWidth <= 1024) {
+      const marginInput = mode === "OPEN" ? "+=35vh" : "-=35vh";
+      const tl = new Timeline();
+      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
+      tl.eventCallback("onComplete", () => {
+        this.toggle();
+      });
+    }
     if (windowsWidth > 754 && windowsWidth <= 800) {
       const marginInput = mode === "OPEN" ? "+=30vh" : "-=30vh";
       const tl = new Timeline();

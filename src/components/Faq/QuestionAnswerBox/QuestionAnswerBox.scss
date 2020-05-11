@@ -50,6 +50,15 @@
   }
 }
 
+@media all and (max-width: 1024px) {
+  .questionAnswerBox {
+    .answerBox {
+      .answer {
+        margin-top: -35vh;
+      }
+    }
+  }
+}
 @media all and (max-width: 768px) {
   .questionAnswerBox {
     .answerBox {

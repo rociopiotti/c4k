@@ -4,7 +4,6 @@ import "./About.scss";
 import AboutPhoto from "../../img/aboutPhoto.png";
 
 //ANIMATION
-import { TweenMax } from "gsap";
 import { TimelineMax } from "gsap";
 
 class About extends React.Component {
@@ -12,7 +11,6 @@ class About extends React.Component {
     super(props);
     this.textAbout1 = null;
     this.textAbout2 = null;
-    this.myTween = null;
   }
 
   animation() {

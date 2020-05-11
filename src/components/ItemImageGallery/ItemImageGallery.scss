@@ -19,7 +19,7 @@
     .itemImage {
       width: 30vw;
       height: 30vw;
-      .galleryItemImg{
+      .galleryItemImg {
         width: 100%;
       }
     }
@@ -39,7 +39,7 @@
       background-color: #ffffff;
       border: none;
       color: #212121;
-      &:hover{  
+      &:hover {
         background-color: #c7c7c7;
       }
       cursor: pointer;
@@ -54,14 +54,13 @@
   .itemImageGalleryBox {
     width: 40%;
     height: auto;
-    border: skyblue thin solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
 
-    .imagesBox {      
+    .imagesBox {
       width: 30vw;
       height: 30vw;
     }
@@ -71,7 +70,6 @@
   .itemImageGalleryBox {
     width: 100%;
     height: auto;
-    border: skyblue thin solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +83,6 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-around;
-      border: thin solid yellow;
       overflow-x: hidden;
 
       .itemImage {
@@ -101,8 +98,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-
-    
     }
   }
 }
@@ -111,7 +106,6 @@
   .itemImageGalleryBox {
     width: 100%;
     height: auto;
-    border: skyblue thin solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,13 +119,11 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-around;
-      border: thin solid yellow;
       overflow-x: hidden;
 
       .itemImage {
         width: 80vw;
         height: 80vw;
-        background-color: springgreen;
       }
     }
 
