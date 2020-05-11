@@ -187,11 +187,13 @@
       height: auto;
 
       .BtnCloseNav {
-        top: 1vh;
+        top: 5vh;
         left: 87.5vw;
+        width: 5vw;
+        height: 5vw;
       }
       .headerSingInCreateAccount {
-        margin-top: 5vh;
+        margin-top: 10vh;
         .btnSingInSlide {
           h2 {
             font-size: 0.8em;
