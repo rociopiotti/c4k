@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  border: thin solid violet;
   background-color: #000000;
 
   .privacyPolicy {
@@ -14,10 +13,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: thin solid violet;
-
-    font-family: "Open Sans", sans-serif;    
-   
+    font-family: "Open Sans", sans-serif;      
     letter-spacing: 0.1em;
     h3 { font-weight: 300;
         font-size: 1.3em;
