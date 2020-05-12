@@ -14,7 +14,6 @@ import About from "./components/About/About";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
 
-import SearchBox from "./components/SearchBox/SeachBox";
 import NavSlide from "./components/NavSlide/NavSlide";
 import CartSlide from "./components/CartSlide/CartSlide";
 import FilterSlide from "./components/FilterSlide/FilterSlide";
@@ -22,6 +21,7 @@ import SortSlide from "./components/SortSlide/SortSlide";
 import SingInCreateAccountNavslide from "./components/SingInCreateAccountNavSlide/SingInCreateAccountNavSlide";
 import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
 import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
+import { SectionTransition } from "./components/SectionTransition/SectionTransition";
 
 // //ANMATION
 // import { TweenLite } from "gsap";
@@ -94,6 +94,9 @@ class App extends React.Component {
     this.setState({
       currentSlide: newSlide,
     });
+  }
+  handleEndAnimation() {
+    console.log("END");
   }
   handleHomeClick(newSection) {
     console.log("CAMBIAR EL Section POR: ", newSection);
@@ -193,7 +196,9 @@ class App extends React.Component {
           onMenuClick={this.handleHeaderClick.bind(this)}
           onHomeMenuClick={this.handleHomeClick.bind(this)}
         />
+
         {this.setSection(this.state.currentSection)}
+        {/* <SectionTransition onEndAnimation={this.handleEndAnimation} /> */}
 
         {/* <PaymentGateway/> */}
         {/* <PaymentConfirmation/> */}

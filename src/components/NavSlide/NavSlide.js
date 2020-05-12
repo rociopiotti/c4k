@@ -103,16 +103,7 @@ class NavSlide extends React.Component {
                 </a>
               </li>
               <hr className="separationLine"></hr>
-              <li className="listItem ">
-                <a
-                  onClick={() => {
-                    // this.clickNavLinks("searchBox");
-                    // this.clickMenuNavLinks("searchBox");
-                  }}>
-                  <Icon type="search" />
-                  SEARCH
-                </a>
-              </li>
+             
               <li className="listItem ">
                 <a
                   onClick={() => {

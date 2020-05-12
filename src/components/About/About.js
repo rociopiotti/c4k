@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 
 import AboutPhoto from "../../img/aboutPhoto.png";
+import SectionTransition from "../SectionTransition/SectionTransition";
 
 //ANIMATION
 import { TimelineMax } from "gsap";
@@ -28,6 +29,8 @@ class About extends React.Component {
   render() {
     return (
       <div className="aboutBackground">
+        <SectionTransition />
+
         <img src={AboutPhoto} alt="About photo" className="aboutPhoto" />
         <div className="aboutBox">
           <p className="aboutText1" ref={(p) => (this.textAbout1 = p)}>

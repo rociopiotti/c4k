@@ -7,7 +7,9 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-
+  .sectionTransition {
+    top: 0;
+  }
   .aboutPhoto {
     width: 65%;
     position: relative;
@@ -36,7 +38,7 @@
     .aboutText2 {
       position: absolute;
       width: 50vw;
-      top:65vh;
+      top: 65vh;
       left: -70vw;
       font-size: 1.5em;
     }

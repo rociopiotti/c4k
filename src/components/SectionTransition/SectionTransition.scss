@@ -1,0 +1,20 @@
+.sectionTransitionBox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9;
+
+  .sectionTransition {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 100%;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    pointer-events: none;
+  }
+}

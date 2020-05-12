@@ -3,6 +3,7 @@ import "./Faq.scss";
 import Icon from "../Icon/Icon";
 import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
 import { QuestionAnswerBox } from "./QuestionAnswerBox/QuestionAnswerBox";
+import SectionTransition from "../SectionTransition/SectionTransition";
 
 class Faq extends React.Component {
   handleSearchFaq() {
@@ -24,6 +25,8 @@ class Faq extends React.Component {
           this.handleSearchFaq();
         }}
         className="FaqBox">
+        <SectionTransition />
+        
         <h2>#FAQ</h2>
 
         <div className="Faq">

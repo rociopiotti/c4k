@@ -1,7 +1,45 @@
 import React from "react"
 import "./CreateAnAccoutSlide.scss"
 
+import { TweenLite } from "gsap";
 class CreateAnAccountSlide extends React.Component {
+  constructor(props) {
+    super(props);
+    // reference to the DOM node
+    this.myElement = null;
+    // reference to the animation
+    this.myTween = null;
+    this.state = {
+      mode: "CLOSE",
+    };
+  }
+  
+  toggle() {
+    let newMode;
+    let newOpacity;
+    if (this.state.mode === "CLOSE") {
+      newMode = "OPEN";
+    } else {
+      newMode = "CLOSE";
+    }
+    this.setState({
+      mode: newMode,
+    });
+  }
+  
+  componentDidMount() {
+    const { mode } = this.state;
+    const destY = mode === "CLOSE" ? 1 : 0;
+    this.myTween = TweenLite.to(this.myElement, 1, {
+      opacity: destY,
+    });
+    this.myTween.eventCallback("onComplete", () => {
+      this.toggle();
+      {
+        // this.props.onEndAnimation();
+      }
+    });
+  }
   handleCreateAccount(CreateAccount) {
     console.log("Click en botón que muestra:", CreateAccount)
   }
@@ -19,7 +57,8 @@ class CreateAnAccountSlide extends React.Component {
   }
   render() {
     return (
-      <div className="createAccountBox">
+      <div  ref={(div) => (this.myElement = div)}  className="createAccountBox">
+     
         <input
           type="text"
           id="email"

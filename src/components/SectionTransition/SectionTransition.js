@@ -1,14 +1,8 @@
-import React from "react"
-import "./SingInSlide.scss"
-import SingIn from "../../SingIn/SingIn"
-
-import BtnSingInGoogle from "../../BtnSingInGoogle/BtnSingInGoogle"
-import BtnSingInFacebook from "../../BtnSingInFacebook/BtnSingInFacebook"
-
+import React from "react";
+import "./SectionTransition.scss";
 
 import { TweenLite } from "gsap";
-
-class SingInSlide extends React.Component {
+class SectionTransition extends React.Component {
   constructor(props) {
     super(props);
     // reference to the DOM node
@@ -19,7 +13,6 @@ class SingInSlide extends React.Component {
       mode: "CLOSE",
     };
   }
-  
   toggle() {
     let newMode;
     let newOpacity;
@@ -35,7 +28,7 @@ class SingInSlide extends React.Component {
 
   componentDidMount() {
     const { mode } = this.state;
-    const destY = mode === "CLOSE" ? 1 : 0;
+    const destY = mode === "CLOSE" ? 0 : 1;
     this.myTween = TweenLite.to(this.myElement, 1, {
       opacity: destY,
     });
@@ -46,21 +39,15 @@ class SingInSlide extends React.Component {
       }
     });
   }
+
   render() {
     return (
-      <div 
-      ref={(div) => (this.myElement = div)} className="singInSlideBox">
-        <SingIn />
-        <div className="separationLineCheckout">
-          <hr className="separationLine1"></hr>
-          <p>OR </p>
-          <hr className="separationLine2"></hr>
-        </div>
-        <BtnSingInGoogle />
-        <BtnSingInFacebook />
+      <div
+        ref={(div) => (this.myElement = div)}
+        className="sectionTransitionBox">
+        <div className="sectionTransition"></div>
       </div>
-    )
+    );
   }
 }
-
-export default SingInSlide
+export default SectionTransition;

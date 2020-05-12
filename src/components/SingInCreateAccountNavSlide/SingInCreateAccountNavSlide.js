@@ -6,6 +6,7 @@ import SingInSlide from "./SingInSlide/SingInSlide";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
+import { TweenLite } from "gsap";
 
 const ease = Back.easeInOut;
 
@@ -18,8 +19,10 @@ class SingInCreateAccountNavslide extends React.Component {
     this.state = {
       singinOption: "singIn",
       activeBtn: true,
+    
     };
   }
+
 
   // --------------------------------------------------------
 

@@ -1,10 +1,13 @@
 import React from "react"
 import "./TermsAndConditions.scss"
+import SectionTransition from "../SectionTransition/SectionTransition";
 
 const TermsAndConditions = (props) =>{
 
     return (
       <div className="termsAndConditionBox">
+        <SectionTransition />
+
         <div className="termsAndCondition">
           <h2>TERMS & CONDITION</h2>
           <h3>LOREM IPMSUM</h3>

@@ -3,6 +3,7 @@ import "./Stores.scss"
 import SearchStore from "../SearchStores/SearchStores"
 import StoreListItem from "../StoreListItem/StoreListItem"
 import StoreMap from "../StoreMap/StoreMap"
+import SectionTransition from "../SectionTransition/SectionTransition";
 
 class Stores extends React.Component {
   state = {
@@ -57,6 +58,8 @@ class Stores extends React.Component {
 
     return (
       <div className="storePageBox">
+        <SectionTransition />
+
         <h2>#STORES</h2>
         <div className="storePage">
           <SearchStore

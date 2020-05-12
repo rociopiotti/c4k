@@ -1,10 +1,13 @@
 import React from "react"
 import "./PrivacyPolicy.scss"
+import SectionTransition from "../SectionTransition/SectionTransition";
 
 const PrivacyPolicy = (props) => {
  
     return (
       <div className="privacyPolicyBox">
+        <SectionTransition />
+
         <div className="privacyPolicy">
           <h2>PRIVACY POLICY</h2>
           <h3>LOREM IPMSUM</h3>
