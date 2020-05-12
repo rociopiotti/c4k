@@ -11,7 +11,6 @@ class ProductBox extends React.Component {
     return (
       <div className="productBoxBox">
         <SectionTransition />
-
         <div className="productBox">
           <ItemImageGallery />
           <ProductDetails />

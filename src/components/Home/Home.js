@@ -33,7 +33,7 @@ class Home extends React.Component {
         behavior: "smooth",
       });
     }
-    console.clear();
+    // console.clear();
   }
   render() {
     return (

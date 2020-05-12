@@ -44,7 +44,7 @@ class DropdownSize extends React.Component {
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
-    console.clear();
+    // console.clear();
     // console.log("ESTADO", mode);
   }
   handleDropwnSize(newSize) {

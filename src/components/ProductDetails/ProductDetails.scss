@@ -70,6 +70,7 @@
         margin-top: 2vh;
         margin-left: 0%;
         padding: 1vh 0;
+
         .dropdownContentSize {
           z-index:25 ;
           top: 50px;
@@ -156,6 +157,7 @@
         top: 55vh;
         left: 74vw;
       }
+      
       .dropdownsContainer {
         width: 50%;
         .dropdownBox {
@@ -173,6 +175,7 @@
 @media all and (max-width: 768px) and (orientation: landscape) {
   .productDetailsBox {
     .productDetails {
+     
       .dropdownBox {
         &:hover {
           .dropdownContentSize {
@@ -200,7 +203,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-
+      
       .btnFreeShipping {
         position: relative;
         top: 0vh;
@@ -214,11 +217,11 @@
         font-weight: 400;
         letter-spacing: 0.2em;
       }
-
-      /*TO DO hacer que quede pegado al pie mientras scroll en product box*/
       .btnAddToBag {
         width: 100%;
-        position: relative;
+        position: fixed;
+        bottom: 0;        
+        margin: 0;
       }
 
       .dropdownsContainer {
@@ -272,6 +275,12 @@
 @media all and (max-width: 414px) {
   .productDetailsBox {
     .productDetails {
+      .btnAddToBag {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+      }
       .dropdownsContainer {
         .dropdownBox {
           &:hover {

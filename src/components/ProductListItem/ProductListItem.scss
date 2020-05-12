@@ -10,8 +10,6 @@
   color: #fff;
   &:hover {
     color: #c7c7c7;
-    transform: scale(1.1);
-    transition: 0.1s ease-in;
   }
   .listItemImage {
     position: relative;
@@ -45,7 +43,6 @@
       width: 35vw;
       height: 35vw;
     }
-
     .listItemDescription {
       width: 100%;
       h3,

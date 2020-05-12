@@ -22,6 +22,8 @@ import SingInCreateAccountNavslide from "./components/SingInCreateAccountNavSlid
 import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
 import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
 import { SectionTransition } from "./components/SectionTransition/SectionTransition";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
+import SuggestedItemGallery from "./components/SuggestedItemGallery/SuggestedItemGallery";
 
 // //ANMATION
 // import { TweenLite } from "gsap";
