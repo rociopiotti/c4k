@@ -222,6 +222,7 @@
         position: fixed;
         bottom: 0;        
         margin: 0;
+        z-index: 0;
       }
 
       .dropdownsContainer {
@@ -274,7 +275,9 @@
 
 @media all and (max-width: 414px) {
   .productDetailsBox {
+    margin-bottom: 0;
     .productDetails {
+      margin-bottom: 0;
       .btnAddToBag {
         width: 100%;
         position: fixed;

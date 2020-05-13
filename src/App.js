@@ -1,33 +1,34 @@
 import React from "react";
 import "./App.scss";
+
+// CONTEXT
+import PageManagerContext from "./context/pageManager-context";
+
+// SECTIONS
 import Header from "./components/Header/Header.js";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import GridContainer from "./components/GridContainer/GridContainer";
 import ProductBox from "./components/ProductBox/ProductBox";
-import Checkout from "./components/Checkout/Checkout";
-import PaymentGateway from "./components/PaymentGateway/PaymentGateway";
-import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirmation";
 import Stores from "./components/Stores/Stores";
 import Faq from "./components/Faq/Faq";
 import About from "./components/About/About";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
+import Checkout from "./components/Checkout/Checkout";
+// import PaymentGateway from "./components/PaymentGateway/PaymentGateway";
+// import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirmation";
 
+// SLIDES
 import NavSlide from "./components/NavSlide/NavSlide";
 import CartSlide from "./components/CartSlide/CartSlide";
 import FilterSlide from "./components/FilterSlide/FilterSlide";
 import SortSlide from "./components/SortSlide/SortSlide";
 import SingInCreateAccountNavslide from "./components/SingInCreateAccountNavSlide/SingInCreateAccountNavSlide";
-import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
-import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
-import { SectionTransition } from "./components/SectionTransition/SectionTransition";
-import ProductDetails from "./components/ProductDetails/ProductDetails";
-import SuggestedItemGallery from "./components/SuggestedItemGallery/SuggestedItemGallery";
-
-// //ANMATION
-// import { TweenLite } from "gsap";
-// import { Timeline } from "gsap/gsap-core";
+// import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
+// import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
+// import ProductDetails from "./components/ProductDetails/ProductDetails";
+// import SuggestedItemGallery from "./components/SuggestedItemGallery/SuggestedItemGallery";
 
 class App extends React.Component {
   constructor(props) {
@@ -96,9 +97,6 @@ class App extends React.Component {
     this.setState({
       currentSlide: newSlide,
     });
-  }
-  handleEndAnimation() {
-    console.log("END");
   }
   handleHomeClick(newSection) {
     console.log("CAMBIAR EL Section POR: ", newSection);
@@ -170,6 +168,7 @@ class App extends React.Component {
       case "faq":
         section = <Faq />;
         break;
+
       case "about":
         section = <About />;
         break;
@@ -185,31 +184,31 @@ class App extends React.Component {
     }
     return section;
   }
-
+  // handleEndAnimation() {
+  //   console.log("END");
+  // }
   render() {
     // console.log("------> CURRENT SLIDE:", this.state.currentSlide);
     // console.log("------> CURRENT SECTION:", this.state.currentSection);
+
     return (
-      <div className="app">
-        {this.setSlide(this.state.currentSlide)}
-        {/* <ForgotPasswordModal/> */}
+      <PageManagerContext.Provider
+        value={{
+          onMenuClick: this.handleHeaderClick.bind(this),
+          onHomeMenuClick: this.handleHomeClick.bind(this),
+          onFooterMenuClick: this.handleHomeClick.bind(this),
+          onHomeMenuClick: this.handleHomeClick.bind(this),
+        }}>
+        <div className="app">
+          {this.setSlide(this.state.currentSlide)}
 
-        <Header
-          onMenuClick={this.handleHeaderClick.bind(this)}
-          onHomeMenuClick={this.handleHomeClick.bind(this)}
-        />
+          <Header />
 
-        {this.setSection(this.state.currentSection)}
-        {/* <SectionTransition onEndAnimation={this.handleEndAnimation} /> */}
+          {this.setSection(this.state.currentSection)}
 
-        {/* <PaymentGateway/> */}
-        {/* <PaymentConfirmation/> */}
-
-        <Footer
-          onFooterMenuClick={this.handleHomeClick.bind(this)}
-          onHomeMenuClick={this.handleHomeClick.bind(this)}
-        />
-      </div>
+          <Footer />
+        </div>
+      </PageManagerContext.Provider>
     );
   }
 }

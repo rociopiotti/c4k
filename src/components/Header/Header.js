@@ -3,26 +3,28 @@ import "./Header.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
 import SearchBox from "../SearchBox/SeachBox";
+import PageManagerContext from "../../context/pageManager-context";
 
 class Header extends React.Component {
+  static contextType = PageManagerContext;
   handleNavSlide() {
-    this.props.onMenuClick("navSlide");
+    this.context.onMenuClick("navSlide");
   }
 
   handleHome() {
-    this.props.onHomeMenuClick("home");
+    this.context.onHomeMenuClick("home");
   }
 
   handleSearchBox() {
-    this.props.onMenuClick("searchBox");
+    this.context.onMenuClick("searchBox");
   }
 
   handleSingInSlide() {
-    this.props.onMenuClick("singInSlide");
+    this.context.onMenuClick("singInSlide");
   }
 
   handleCartSlide() {
-    this.props.onMenuClick("cartSlide");
+    this.context.onMenuClick("cartSlide");
   }
 
   render() {

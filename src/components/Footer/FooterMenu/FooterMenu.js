@@ -1,72 +1,76 @@
-import React from "react"
-import "./FooterMenu.scss"
+import React from "react";
+import "./FooterMenu.scss";
+import Logo from "../../Logo/Logo";
+import PageManagerContext from "../../../context/pageManager-context";
 
-import Logo from "../../Logo/Logo"
+class FooterMenu extends React.Component {
+  static contextType = PageManagerContext;
 
-const FooterMenu = (props) => {
-  const handleHome = (Home) => {
-    props.onHomeMenuClick("home")
+  handleHome() {
+    this.context.onHomeMenuClick("home");
   }
-  return (
-    <div className="footerMenuBox">
-      <div className="footerMenuInnerBox">
-        <button
-          onClick={() => {
-            handleHome("home")
-          }}
-          className="logoFooter">
-          <Logo />
-        </button>
-        <ul className="footerMenu">
-          <li>
-            <a
-              onClick={() => {
-                props.onFooterMenuClick("stores")
-              }}
-              href="#">
-              #STORES
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                props.onFooterMenuClick("faq")
-              }}
-              href="#">
-              #FAQ
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                props.onFooterMenuClick("about")
-              }}
-              href="#">
-              #ABOUT
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                props.onFooterMenuClick("termsAndCondition")
-              }}
-              href="#">
-              #TERMS OF USE
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                props.onFooterMenuClick("privacyPloicy")
-              }}
-              href="#">
-              #PRIVACY POLICY
-            </a>
-          </li>
-        </ul>
+  render() {
+    return (
+      <div className="footerMenuBox">
+        <div className="footerMenuInnerBox">
+          <button
+            onClick={() => {
+              this.handleHome();
+            }}
+            className="logoFooter">
+            <Logo />
+          </button>
+          <ul className="footerMenu">
+            <li>
+              <a
+                onClick={() => {
+                  this.context.onFooterMenuClick("stores");
+                }}
+                href="#">
+                #STORES
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.context.onFooterMenuClick("faq");
+                }}
+                href="#">
+                #FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.context.onFooterMenuClick("about");
+                }}
+                href="#">
+                #ABOUT
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.context.onFooterMenuClick("termsAndCondition");
+                }}
+                href="#">
+                #TERMS OF USE
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  this.context.onFooterMenuClick("privacyPloicy");
+                }}
+                href="#">
+                #PRIVACY POLICY
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  )
+    );
+  }
 }
 
-export default FooterMenu
+export default FooterMenu;

@@ -42,8 +42,7 @@
 
 @media all and (max-width: 768px) and (orientation: portrait) {
   .suggestedItemGalleryBox {
-    
-  position: relative;
+    position: relative;
     background-color: #000;
     z-index: 50;
     color: #fff;
@@ -70,6 +69,7 @@
 @media all and (max-width: 754px) {
   .suggestedItemGalleryBox {
     color: #fff;
+    margin-bottom: 0;
     .titleSuggestedItemGallery {
       font-size: 1em;
     }
