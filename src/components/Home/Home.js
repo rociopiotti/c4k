@@ -4,8 +4,8 @@ import MenuCategories from "./MenuCategories";
 import BackgroundImg from "./BackgroundImg";
 import BtnShop from "../BtnShop/BtnShop";
 
+import SectionTransition from "../SectionTransition/SectionTransition";
 class Home extends React.Component {
-
   handleBtnShop() {
     let windowsWidth = window.innerWidth;
     if (windowsWidth > 850) {
@@ -18,7 +18,6 @@ class Home extends React.Component {
       window.scrollTo({
         top: 500,
         behavior: "smooth",
-        
       });
     }
     if (windowsWidth > 754 && windowsWidth <= 800) {
@@ -34,9 +33,11 @@ class Home extends React.Component {
       });
     }
   }
+
   render() {
     return (
       <div className="home">
+        <SectionTransition />
         <h1 className="title">C-4K</h1>
         <BtnShop onClickBtnShop={this.handleBtnShop.bind(this)} />
         <BackgroundImg />

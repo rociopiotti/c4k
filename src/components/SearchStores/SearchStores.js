@@ -2,15 +2,21 @@ import React from "react"
 import "./SearchStores.scss"
 import Icon from "../Icon/Icon"
 
+
+//CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
+
 class SearchStores extends React.Component {
+  static contextType = PageManagerContext;
+
   handleSearchStore() {
-    this.props.onSearcBtnClick()
+    this.context.onSearcBtnClick()
   }
   handleShowStoreList() {
-    this.props.onSearchDisplayClick("storeList")
+    this.context.onSearchDisplayClick("storeList")
   }
   handleShowStoreMap() {
-    this.props.onSearchDisplayClick("storeMap")
+    this.context.onSearchDisplayClick("storeMap")
   }
   render() {
     return (
