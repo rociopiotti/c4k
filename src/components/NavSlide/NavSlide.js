@@ -2,12 +2,16 @@ import React from "react";
 import "./NavSlide.scss";
 import Icon from "../Icon/Icon";
 
+import PageManagerContext from "../../context/pageManager-context";
+
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease =  Back.easeInOut;
 
 class NavSlide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.NavCloseBackground = null;
@@ -29,15 +33,15 @@ class NavSlide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.props.onCloseClick);
+    this.executeAnimation(null, this.context.onCloseClick);
   }
 
   clickNavLinks(value) {
-    this.executeAnimation(value, this.props.onNavItemClick);
+    this.executeAnimation(value, this.context.onNavItemClick);
   }
 
   clickMenuNavLinks(value) {
-    this.executeAnimation(value, this.props.onMenuNavClick);
+    this.executeAnimation(value, this.context.onMenuNavClick);
   }
 
   componentDidMount() {    

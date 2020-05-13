@@ -57,37 +57,20 @@ class App extends React.Component {
         slide = null;
         break;
       case "navSlide":
-        slide = (
-          <NavSlide
-            onCloseClick={this.handleHeaderClick.bind(this)}
-            onNavItemClick={this.handleHomeClick.bind(this)}
-            onMenuNavClick={this.handleHeaderClick.bind(this)}
-          />
-        );
+        slide = <NavSlide />;
         break;
 
       case "cartSlide":
-        slide = (
-          <CartSlide
-            onCloseClick={this.handleHeaderClick.bind(this)}
-            onCheckouBtn={this.handleHomeClick.bind(this)}
-          />
-        );
+        slide = <CartSlide  />;
         break;
       case "singInSlide":
-        slide = (
-          <SingInCreateAccountNavslide
-            onCloseClick={this.handleHeaderClick.bind(this)}
-          />
-        );
+        slide = <SingInCreateAccountNavslide />;
         break;
       case "filter":
-        slide = (
-          <FilterSlide onCloseClick={this.handleHeaderClick.bind(this)} />
-        );
+        slide = <FilterSlide />;
         break;
       case "sort":
-        slide = <SortSlide onCloseClick={this.handleHeaderClick.bind(this)} />;
+        slide = <SortSlide />;
         break;
     }
     return slide;
@@ -197,7 +180,13 @@ class App extends React.Component {
           onMenuClick: this.handleHeaderClick.bind(this),
           onHomeMenuClick: this.handleHomeClick.bind(this),
           onFooterMenuClick: this.handleHomeClick.bind(this),
-          onHomeMenuClick: this.handleHomeClick.bind(this),
+          onCloseClick: this.handleHeaderClick.bind(this),
+          
+
+          // TODO REFACTOR AFTER CONECTING - FUNCIONES REPETIDAS
+          onNavItemClick: this.handleHomeClick.bind(this),
+          onMenuNavClick: this.handleHeaderClick.bind(this),
+          onCheckouBtn: this.handleHomeClick.bind(this),
         }}>
         <div className="app">
           {this.setSlide(this.state.currentSlide)}
