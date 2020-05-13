@@ -3,7 +3,9 @@ import "./SearchBox.scss";
 import Icon from "../Icon/Icon";
 
 //ANMATION
-import { TweenLite } from "gsap";
+import { TweenLite, Back } from "gsap";
+
+const ease = Back.easeOut.config(1);
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);
@@ -25,20 +27,19 @@ class SearchBox extends React.Component {
 
   handleSearchContent() {
     const delayAnimation = 0.3;
-    const posAnimation =  "-86%";
-    // console.log("-------------------->", delayAnimation, posAnimation);
+    const posAnimation = "-86%";
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
+      ease: ease,
       x: posAnimation,
-     
     });
   }
 
   handleCloseSearchBox() {
     const delayAnimation = 0.3;
     const posAnimation = "+=86%";
-    // console.log("-------------------->", delayAnimation, posAnimation);
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
-      x: posAnimation,     
+      ease: ease,
+      x: posAnimation,
     });
   }
 

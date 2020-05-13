@@ -1,6 +1,8 @@
 import React from "react"
 import "./SuggestedItemGallery.scss"
 import ProductListItem from "../ProductListItem/ProductListItem"
+
+//CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 class SuggestedItemGallery extends React.Component {
