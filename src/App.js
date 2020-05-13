@@ -59,9 +59,8 @@ class App extends React.Component {
       case "navSlide":
         slide = <NavSlide />;
         break;
-
       case "cartSlide":
-        slide = <CartSlide  />;
+        slide = <CartSlide />;
         break;
       case "singInSlide":
         slide = <SingInCreateAccountNavslide />;
@@ -179,13 +178,13 @@ class App extends React.Component {
         value={{
           onMenuClick: this.handleHeaderClick.bind(this),
           onHomeMenuClick: this.handleHomeClick.bind(this),
-          onFooterMenuClick: this.handleHomeClick.bind(this),
-          onCloseClick: this.handleHeaderClick.bind(this),
-          
 
           // TODO REFACTOR AFTER CONECTING - FUNCIONES REPETIDAS
-          onNavItemClick: this.handleHomeClick.bind(this),
+          onCloseClick: this.handleHeaderClick.bind(this),
           onMenuNavClick: this.handleHeaderClick.bind(this),
+          
+          onFooterMenuClick: this.handleHomeClick.bind(this),
+          onNavItemClick: this.handleHomeClick.bind(this),
           onCheckouBtn: this.handleHomeClick.bind(this),
         }}>
         <div className="app">

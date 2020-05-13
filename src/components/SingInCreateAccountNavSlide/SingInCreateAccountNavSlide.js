@@ -4,13 +4,16 @@ import Icon from "../Icon/Icon";
 import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide";
 import SingInSlide from "./SingInSlide/SingInSlide";
 
+import PageManagerContext from "../../context/pageManager-context";
+
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
-import { TweenLite } from "gsap";
 
 const ease = Back.easeInOut;
 
 class SingInCreateAccountNavslide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.SlideBackground = null;
@@ -22,8 +25,6 @@ class SingInCreateAccountNavslide extends React.Component {
     
     };
   }
-
-
   // --------------------------------------------------------
 
   executeAnimation(value, onCompleteHandler) {
@@ -39,7 +40,7 @@ class SingInCreateAccountNavslide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.props.onCloseClick);
+    this.executeAnimation(null, this.context.onMenuClick);
   }
 
   handleSinginOption(newSinginOption) {
