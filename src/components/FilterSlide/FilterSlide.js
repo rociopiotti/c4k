@@ -2,12 +2,16 @@ import React from "react";
 import "./FilterSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 
+import PageManagerContext from "../../context/pageManager-context";
+
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
 class FilterSlide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.SlideBackground = null;
@@ -28,7 +32,7 @@ class FilterSlide extends React.Component {
   //-----------------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.props.onCloseClick);
+    this.executeAnimation(null, this.context.onCloseClick);
   }
   clickFilterLink(ID) {
     console.log("Click en botón de filtro:", ID);

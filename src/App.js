@@ -170,9 +170,6 @@ class App extends React.Component {
   //   console.log("END");
   // }
   render() {
-    // console.log("------> CURRENT SLIDE:", this.state.currentSlide);
-    // console.log("------> CURRENT SECTION:", this.state.currentSection);
-
     return (
       <PageManagerContext.Provider
         value={{
@@ -182,7 +179,7 @@ class App extends React.Component {
           // TODO REFACTOR AFTER CONECTING - FUNCIONES REPETIDAS
           onCloseClick: this.handleHeaderClick.bind(this),
           onMenuNavClick: this.handleHeaderClick.bind(this),
-          
+
           onFooterMenuClick: this.handleHomeClick.bind(this),
           onNavItemClick: this.handleHomeClick.bind(this),
           onCheckouBtn: this.handleHomeClick.bind(this),
