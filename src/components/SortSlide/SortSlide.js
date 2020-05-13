@@ -3,12 +3,16 @@ import "./SortSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import Icon from "../Icon/Icon";
 
+import PageManagerContext from "../../context/pageManager-context";
+
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
 class SortSlide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.SlideBackground = null;
@@ -29,7 +33,7 @@ class SortSlide extends React.Component {
   //--------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.props.onCloseClick);
+    this.executeAnimation(null, this.context.onCloseClick);
   }
 
   clickSortLink(ID) {
