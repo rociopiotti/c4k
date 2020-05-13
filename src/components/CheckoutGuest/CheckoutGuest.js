@@ -3,7 +3,7 @@ import "./CheckoutGuest.scss"
 
 class CheckoutGuest extends React.Component {
   handleCheckOutGuest(Checkout)  {
-    console.log("Click en botón:", Checkout)
+    // console.log("Click en botón:", Checkout)
   }
   render() {
    

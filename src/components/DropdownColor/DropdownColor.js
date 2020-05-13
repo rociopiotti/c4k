@@ -3,7 +3,6 @@ import "./DropdownColor.scss";
 import Icon from "../Icon/Icon";
 
 //ANIMATION
-import { TweenLite } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 
 class DropdownColor extends React.Component {
@@ -18,7 +17,7 @@ class DropdownColor extends React.Component {
   }
   toggle() {
     const { mode } = this.state;
-    const newMode = mode == "CLOSE" ? "OPEN" : "CLOSE";
+    const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
     this.setState({
       mode: newMode,
     });
@@ -68,6 +67,9 @@ class DropdownColor extends React.Component {
         break;
       case "OPTION C":
         itemColor = "OPTION C";
+        break;
+      default:
+        itemColor = null;
         break;
     }
     return itemColor;

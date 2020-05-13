@@ -3,7 +3,7 @@ import "./ShippingMethod.scss"
 
 class ShippingMethod extends React.Component {
   handleCheckboxChange() {
-    console.log("Checked")
+    // console.log("Checked")
   }
   render() {
     return (

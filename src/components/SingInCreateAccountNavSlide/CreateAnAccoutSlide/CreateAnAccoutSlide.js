@@ -16,7 +16,6 @@ class CreateAnAccountSlide extends React.Component {
   
   toggle() {
     let newMode;
-    let newOpacity;
     if (this.state.mode === "CLOSE") {
       newMode = "OPEN";
     } else {
@@ -35,25 +34,23 @@ class CreateAnAccountSlide extends React.Component {
     });
     this.myTween.eventCallback("onComplete", () => {
       this.toggle();
-      {
-        // this.props.onEndAnimation();
-      }
+     
     });
   }
   handleCreateAccount(CreateAccount) {
-    console.log("Click en botón que muestra:", CreateAccount)
+    // console.log("Click en botón que muestra:", CreateAccount)
   }
   handleSingInFacebook(SingInFacebook) {
-    console.log("Click en botón que va a API", SingInFacebook)
+    // console.log("Click en botón que va a API", SingInFacebook)
   }
   handleSingInGoogle(SingInGoogle) {
-    console.log("Click en botón que va a API", SingInGoogle)
+    // console.log("Click en botón que va a API", SingInGoogle)
   }
   handleInputChange(event) {
-    console.log("Ingreso texto")
+    // console.log("Ingreso texto")
   }
   handleCheckboxChange() {
-    console.log("Checked")
+    // console.log("Checked")
   }
   render() {
     return (

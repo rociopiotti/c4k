@@ -4,10 +4,10 @@ import Icon from "../Icon/Icon"
 
 class ForgotPasswordmodal extends React.Component {
   handleCloseSlide(SumbmitMailSlide) {
-    console.log("Click en botón que cierra slide", SumbmitMailSlide)
+    // console.log("Click en botón que cierra slide", SumbmitMailSlide)
   }
   handleSubmitMailSlide(SumbmitMailSlide) {
-    console.log("Click en botón que envia mail:", SumbmitMailSlide)
+    // console.log("Click en botón que envia mail:", SumbmitMailSlide)
   }
   render() {
     return (

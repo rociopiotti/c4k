@@ -9,16 +9,16 @@ import paypalImg from "../../img/paypal.svg"
 
 class PaymentSettings extends React.Component {
   handlePaymentMethod(ID) {
-    console.log(
-      "Click en el boton que selecciona metodo de pago con id n°:",
-      ID
-    )
+    // console.log(
+    //   "Click en el boton que selecciona metodo de pago con id n°:",
+    //   ID
+    // )
   }
   handleInfoCVV(InfoCVV) {
-    console.log("Click en el boton que muestra modal con:", InfoCVV)
+    // console.log("Click en el boton que muestra modal con:", InfoCVV)
   }
   handlePayment(OrderConfirmation) {
-    console.log("Click en el boton que muestra:", OrderConfirmation)
+    // console.log("Click en el boton que muestra:", OrderConfirmation)
   }
   render() {
     return (

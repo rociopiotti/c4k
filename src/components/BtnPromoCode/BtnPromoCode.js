@@ -2,7 +2,6 @@ import React from "react";
 import "./BtnPromoCode.scss";
 
 //ANMATION
-import { TweenLite } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 
 class BtnPromoCode extends React.Component {
@@ -21,7 +20,7 @@ class BtnPromoCode extends React.Component {
     this.setState({
       mode: newMode,
     });
-    console.log("TOGGLE", mode);
+    // console.log("TOGGLE", mode);
   }
 
   clickPromoCode() {
@@ -35,7 +34,7 @@ class BtnPromoCode extends React.Component {
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
-    console.log("Estado", mode, marginInput);
+    // console.log("Estado", mode, marginInput);
   }
 
   render() {

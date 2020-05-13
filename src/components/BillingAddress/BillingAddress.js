@@ -3,7 +3,7 @@ import "./BillingAddress.scss"
 
 class BillingAddress extends React.Component {
   handleCheckboxChange() {
-    console.log("Checked")
+    // console.log("Checked")
   }
   render() {
     return (

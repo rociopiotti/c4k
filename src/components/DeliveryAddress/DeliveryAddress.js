@@ -4,7 +4,7 @@ import BillingAddress from "../BillingAddress/BillingAddress"
 
 class DeliveryAddress extends React.Component {
   handleCheckboxChange() {
-    console.log("Checked")
+    // console.log("Checked")
   }
   render() {
     return (

@@ -35,7 +35,7 @@ class FilterSlide extends React.Component {
     this.executeAnimation(null, this.context.onSlideBtn);
   }
   clickFilterLink(ID) {
-    console.log("Click en botón de filtro:", ID);
+    // console.log("Click en botón de filtro:", ID);
   }
   componentDidMount() {
     const tl = new Timeline({ ease: ease });

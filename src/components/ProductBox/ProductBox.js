@@ -2,7 +2,6 @@ import React from "react"
 import "./ProductBox.scss"
 import ItemImageGallery from "../ItemImageGallery/ItemImageGallery"
 import ProductDetails from "../ProductDetails/ProductDetails"
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode"
 import SuggestedItemGallery from "../SuggestedItemGallery/SuggestedItemGallery"
 import SectionTransition from "../SectionTransition/SectionTransition"
 

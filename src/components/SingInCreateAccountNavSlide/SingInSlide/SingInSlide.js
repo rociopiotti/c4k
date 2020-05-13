@@ -22,7 +22,6 @@ class SingInSlide extends React.Component {
   
   toggle() {
     let newMode;
-    let newOpacity;
     if (this.state.mode === "CLOSE") {
       newMode = "OPEN";
     } else {
@@ -41,9 +40,7 @@ class SingInSlide extends React.Component {
     });
     this.myTween.eventCallback("onComplete", () => {
       this.toggle();
-      {
-        // this.props.onEndAnimation();
-      }
+     
     });
   }
   render() {

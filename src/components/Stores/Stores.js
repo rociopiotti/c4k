@@ -52,9 +52,9 @@ class Stores extends React.Component {
     })
   }
   render() {
-    console.log("----> CURRENT MODE:", this.state.currentMode)
-    console.log("----> CURRENT DISPLAY:", this.state.displayMode)
-    console.log("-----> CURRENT STATE SEARCH:", this.state.currentSearchState)
+    // console.log("----> CURRENT MODE:", this.state.currentMode)
+    // console.log("----> CURRENT DISPLAY:", this.state.displayMode)
+    // console.log("-----> CURRENT STATE SEARCH:", this.state.currentSearchState)
 
     return (
       <div className="storePageBox">

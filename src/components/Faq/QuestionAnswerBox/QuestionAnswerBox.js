@@ -24,21 +24,19 @@ export class QuestionAnswerBox extends React.Component {
     this.setState({
       mode: newMode,
     });
-    console.log("TOGGLE", mode);
+    // console.log("TOGGLE", mode);
   }
 
   handleQuestionClick() {
     let windowsWidth = window.innerWidth;
     const { mode } = this.state;
     if (windowsWidth > 850) {
-      {
-        const marginInput = mode === "OPEN" ? "+=11vh" : "-=11vh";
-        const tl = new Timeline();
-        tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-        tl.eventCallback("onComplete", () => {
-          this.toggle();
-        });
-      }
+      const marginInput = mode === "OPEN" ? "+=11vh" : "-=11vh";
+      const tl = new Timeline();
+      tl.to(this.FaqBox, { ease: ease, marginTop: marginInput }, 0);
+      tl.eventCallback("onComplete", () => {
+        this.toggle();
+      });
     }
     if (windowsWidth > 800 && windowsWidth <= 1024) {
       const marginInput = mode === "OPEN" ? "+=35vh" : "-=35vh";
@@ -57,14 +55,12 @@ export class QuestionAnswerBox extends React.Component {
       });
     }
     if (windowsWidth <= 754) {
-      {
-        const marginInput = mode === "OPEN" ? "+=45vh" : "-=45vh";
-        const tl = new Timeline();
-        tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-        tl.eventCallback("onComplete", () => {
-          this.toggle();
-        });
-      }
+      const marginInput = mode === "OPEN" ? "+=45vh" : "-=45vh";
+      const tl = new Timeline();
+      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
+      tl.eventCallback("onComplete", () => {
+        this.toggle();
+      });
     }
   }
 

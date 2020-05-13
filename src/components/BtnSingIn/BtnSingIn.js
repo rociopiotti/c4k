@@ -3,7 +3,7 @@ import "./BtnSingIn.scss"
 
 class BtnSingIn extends React.Component {
   handleSingIn (SingIn)  {
-    console.log("Click en botón:", SingIn)
+    // console.log("Click en botón:", SingIn)
   }
   render() {
    

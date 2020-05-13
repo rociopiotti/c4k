@@ -4,7 +4,7 @@ import StoreItem from "../StoreItem/StoreItem"
 
 class StoreListItem extends React.Component {
   handleShowStore (ID)  {
-    console.log("Click en el boton que muestra en mapa store con n°:", ID)
+    // console.log("Click en el boton que muestra en mapa store con n°:", ID)
   }
   render() {
     return (

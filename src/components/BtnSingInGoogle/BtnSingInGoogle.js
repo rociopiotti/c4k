@@ -3,7 +3,7 @@ import "./BtnSingInGoogle.scss"
 
 class BtnSingInGoogle extends React.Component {
    handleSingInGoogle  (url) {
-    console.log("Click en botón que lleva a:", url)
+    // console.log("Click en botón que lleva a:", url)
   }
   render() {
     

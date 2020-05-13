@@ -16,16 +16,16 @@ class ProductDetails extends React.Component {
   }
 
   handleFreeShippingModal(ModalFreeShipping) {
-    console.log("Click en el botón que muestra", ModalFreeShipping);
+    // console.log("Click en el botón que muestra", ModalFreeShipping);
   }
 
   handleSizeGuide(SizeGuide) {
-    console.log("Click en el botón que muestra", SizeGuide);
+    // console.log("Click en el botón que muestra", SizeGuide);
   }
   
   render() {
     if (this.state.curretStateAddBtn) {
-      console.log("CLICK ADD TO BAG", this.state.curretStateAddBtn);
+      // console.log("CLICK ADD TO BAG", this.state.curretStateAddBtn);
     }
     return (
       <div className="productDetailsBox">

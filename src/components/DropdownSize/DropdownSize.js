@@ -17,7 +17,7 @@ class DropdownSize extends React.Component {
   }
   toggle() {
     const { mode } = this.state;
-    const newMode = mode == "CLOSE" ? "OPEN" : "CLOSE";
+    const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
     this.setState({
       mode: newMode,
     });
@@ -25,8 +25,7 @@ class DropdownSize extends React.Component {
   clickOnDropdown() {
     const { mode } = this.state;
     const tl = new Timeline();
-    const zIndexContent =
-      mode === "OPEN" ? 0 : "26";
+    const zIndexContent = mode === "OPEN" ? 0 : "26";
     const posContent = mode === "OPEN" ? "0" : "auto";
     const opacityContent = mode === "OPEN" ? 0 : 1;
     const displayContent = mode === "OPEN" ? "none" : "flex";
@@ -66,6 +65,9 @@ class DropdownSize extends React.Component {
         break;
       case "LARGE":
         itemSize = "LARGE";
+        break;
+      default:
+        itemSize = null;
         break;
     }
     return itemSize;

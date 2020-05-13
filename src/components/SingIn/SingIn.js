@@ -4,14 +4,14 @@ import BtnSingIn from "../BtnSingIn/BtnSingIn"
 
 class SingIn extends React.Component {
   handleForgotPassword (ForgotPassword) {
-    console.log("Click en botón:", ForgotPassword)
+    // console.log("Click en botón:", ForgotPassword)
   }
   handleCheckboxChange() {
-    console.log("Checked")
+    // console.log("Checked")
   }
   
   handleInputChange(event) {
-    console.log("Ingreso texto")
+    // console.log("Ingreso texto")
   }
   render() {
    

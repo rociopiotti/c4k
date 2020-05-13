@@ -23,14 +23,14 @@ class ItemImageGallery extends React.Component {
       default:
         itemImage = null
         break
-        return itemImage
-    }
+      }
+      return itemImage
   }
   render() {
-    console.log("CURRENT IMAGE:", this.state.showImageState)
-    {
+    // console.log("CURRENT IMAGE:", this.state.showImageState)
+    
       this.setImage(this.state.showImageState)
-    }
+    
     return (
       <div className="itemImageGalleryBox">
         <div className="imagesBox">

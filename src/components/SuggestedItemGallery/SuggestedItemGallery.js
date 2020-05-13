@@ -4,7 +4,7 @@ import ProductListItem from "../ProductListItem/ProductListItem"
 
 class SuggestedItemGallery extends React.Component {
  clickSuggestedItem  (Index) {
-    console.log("Click en suggested item:", Index)
+    // console.log("Click en suggested item:", Index)
   }
   render() {    
     return (

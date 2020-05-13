@@ -3,7 +3,6 @@ import "./DropdownQuantity.scss";
 import Icon from "../Icon/Icon";
 
 //ANIMATION
-import { TweenLite } from "gsap";
 import { Timeline } from "gsap/gsap-core";
 
 class DropdownQuantity extends React.Component {
@@ -18,7 +17,7 @@ class DropdownQuantity extends React.Component {
   }
   toggle() {
     const { mode } = this.state;
-    const newMode = mode == "CLOSE" ? "OPEN" : "CLOSE";
+    const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
     this.setState({
       mode: newMode,
     });
@@ -84,6 +83,9 @@ class DropdownQuantity extends React.Component {
         break;
       case "10":
         itemQuantity = "10";
+        break;
+      default:
+        itemQuantity = null;
         break;
     }
     return itemQuantity;

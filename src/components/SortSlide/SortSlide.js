@@ -37,7 +37,7 @@ class SortSlide extends React.Component {
   }
 
   clickSortLink(ID) {
-    console.log("Click en botón que ordena:", ID);
+    // console.log("Click en botón que ordena:", ID);
   }
 
   componentDidMount() {

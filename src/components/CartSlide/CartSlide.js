@@ -4,7 +4,7 @@ import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import CartItemList from "../CartItemList/CartItemList";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
-import CartEmpty from "../CartEmpty/CartEmpty";
+// import CartEmpty from "../CartEmpty/CartEmpty";
 import PageManagerContext from "../../context/pageManager-context";
 
 
@@ -42,7 +42,7 @@ class CartSlide extends React.Component {
   }
 
   componentDidMount() {
-    console.log("->>>>>>>>>>>>>>>EMPIEZA");
+    // console.log("->>>>>>>>>>>>>>>EMPIEZA");
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);

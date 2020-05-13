@@ -31,7 +31,7 @@ class About extends React.Component {
       <div className="aboutBackground">
         <SectionTransition />
 
-        <img src={AboutPhoto} alt="About photo" className="aboutPhoto" />
+        <img src={AboutPhoto} alt="About" className="aboutPhoto" />
         <div className="aboutBox">
           <p className="aboutText1" ref={(p) => (this.textAbout1 = p)}>
             C4K IS POST ## CIBER <br></br>## PUNK ## NO GENDER CLOTHES<br></br> ## CRUELTY FREE

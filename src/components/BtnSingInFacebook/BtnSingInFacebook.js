@@ -3,7 +3,7 @@ import "./BtnSingInFacebook.scss"
 
 class BtnSingInFacebook extends React.Component {
   handleSingInFacebook  (url)  {
-    console.log("Click en botón que lleva a:", url)
+    // console.log("Click en botón que lleva a:", url)
   }
   render() {
  

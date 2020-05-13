@@ -33,6 +33,7 @@ const Icon = (props) => {
   let faIcon;
 
   switch (props.type) {
+    
     case "burger":
       faIcon = faBars;
       break;
@@ -78,9 +79,6 @@ const Icon = (props) => {
     case "arrowDown":
       faIcon = faChevronDown;
       break;
-    case "arrowLeft":
-      faIcon = faChevronLeft;
-      break;
     case "facebook":
       faIcon = faFacebookF;
       break;
@@ -89,6 +87,9 @@ const Icon = (props) => {
       break;
     case "linkedin":
       faIcon = faLinkedin;
+      break;
+      default:
+      faIcon = null;
       break;
   }
   return <FontAwesomeIcon className={"Icon"} icon={faIcon} />;

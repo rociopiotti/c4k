@@ -44,7 +44,6 @@ class App extends React.Component {
   }
 
   handleSlide(newSlide) {
-    console.log("CAMBIAR EL SLIDER POR: ", newSlide);
     this.setState({
       currentSlide: newSlide,
     });
@@ -75,7 +74,6 @@ class App extends React.Component {
     return slide;
   }
   handleSection(newSection) {
-    console.log("CAMBIAR EL Section POR: ", newSection);
     this.setState({
       currentSection: newSection,
       currentSlide: null,
