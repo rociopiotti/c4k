@@ -7,7 +7,12 @@ import visaImg from "../../img/visa.svg"
 import amexImg from "../../img/amex.svg"
 import paypalImg from "../../img/paypal.svg"
 
+// CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
+
 class PaymentSettings extends React.Component {
+  static contextType = PageManagerContext;
+
   handlePaymentMethod(ID) {
     // console.log(
     //   "Click en el boton que selecciona metodo de pago con id n°:",
@@ -17,8 +22,8 @@ class PaymentSettings extends React.Component {
   handleInfoCVV(InfoCVV) {
     // console.log("Click en el boton que muestra modal con:", InfoCVV)
   }
-  handlePayment(OrderConfirmation) {
-    // console.log("Click en el boton que muestra:", OrderConfirmation)
+  handlePayment() {
+    this.context.onSectionBtn("paymentConfirmation")
   }
   render() {
     return (
@@ -102,7 +107,7 @@ class PaymentSettings extends React.Component {
               this.handleInfoCVV("InfoCVV")
             }}
             className="btnInfoCvvCode">
-            WHAT IS THIS? <Icon />
+            WHAT IS THIS? <Icon type="info"/>
             <div className="infoTextCvvCode">
               <p>
                 The Security Code on your credit card or debit card is a 3 digit

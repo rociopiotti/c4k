@@ -4,15 +4,18 @@ import Icon from "../Icon/Icon";
 import DropdownSize from "../DropdownSize/DropdownSize";
 import itemImg from "../../img/trousers-white1.png";
 import DropdownQuantity from "../DropdownQuantity/DropdownQuantity";
+import PageManagerContext from "../../context/pageManager-context";
 
 class CartItem extends React.Component {
+  static contextType = PageManagerContext;
+
   state = {
     wishList: false,
     removeFromCart: false,
   };
 
   handleSeeProductBox() {
-    // console.log("Click en Imagen. Cerrar Nav. Mostrar Product Box");
+    this.context.onSectionBtn("productDetails")
   }
 
   handleAddToWishList() {

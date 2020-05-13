@@ -19,6 +19,7 @@ import {
   faListUl,
   faChevronDown,
   faChevronLeft,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -33,7 +34,6 @@ const Icon = (props) => {
   let faIcon;
 
   switch (props.type) {
-    
     case "burger":
       faIcon = faBars;
       break;
@@ -79,6 +79,9 @@ const Icon = (props) => {
     case "arrowDown":
       faIcon = faChevronDown;
       break;
+    case "arrowLeftChevron":
+      faIcon = faChevronLeft;
+      break;
     case "facebook":
       faIcon = faFacebookF;
       break;
@@ -88,7 +91,10 @@ const Icon = (props) => {
     case "linkedin":
       faIcon = faLinkedin;
       break;
-      default:
+      case "info":
+        faIcon = faInfoCircle;
+        break;
+    default:
       faIcon = null;
       break;
   }

@@ -1,9 +1,15 @@
 import React from "react"
 import "./CheckoutGuest.scss"
 
+// CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
+
 class CheckoutGuest extends React.Component {
-  handleCheckOutGuest(Checkout)  {
-    // console.log("Click en botón:", Checkout)
+  static contextType = PageManagerContext;
+  
+  handleCheckOutGuest()  {
+    this.context.onSectionBtn("paymentGateway")
+
   }
   render() {
    
@@ -18,7 +24,7 @@ class CheckoutGuest extends React.Component {
           </p>
           <button
             onClick={() => {
-              this.handleCheckOutGuest("Checkout")
+              this.handleCheckOutGuest()
             }}
             className="btnCheckoutGuest">
             CHECKOUT AS A GUEST

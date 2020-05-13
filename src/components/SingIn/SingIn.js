@@ -2,7 +2,12 @@ import React from "react"
 import "./SingIn.scss"
 import BtnSingIn from "../BtnSingIn/BtnSingIn"
 
+// CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
+
 class SingIn extends React.Component {
+  static contextType = PageManagerContext;
+
   handleForgotPassword (ForgotPassword) {
     // console.log("Click en botón:", ForgotPassword)
   }

@@ -16,8 +16,8 @@ import About from "./components/About/About";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
 import Checkout from "./components/Checkout/Checkout";
-// import PaymentGateway from "./components/PaymentGateway/PaymentGateway";
-// import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirmation";
+import PaymentGateway from "./components/PaymentGateway/PaymentGateway";
+import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirmation";
 
 // SLIDES
 import NavSlide from "./components/NavSlide/NavSlide";
@@ -41,6 +41,11 @@ class App extends React.Component {
       currentSlide: null,
       mode: "CLOSE",
     };
+  }
+  handleSingInBtn(newCurrentSingInState) {
+    this.setState({
+      currentSingInState: newCurrentSingInState,
+    });
   }
 
   handleSlide(newSlide) {
@@ -106,6 +111,12 @@ class App extends React.Component {
       case "checkout":
         section = <Checkout />;
         break;
+      case "paymentGateway":
+        section = <PaymentGateway />;
+        break;
+      case "paymentConfirmation":
+        section = <PaymentConfirmation />;
+        break;
       case "stores":
         section = <Stores />;
         break;
@@ -138,7 +149,6 @@ class App extends React.Component {
           {this.setSlide(this.state.currentSlide)}
 
           <Header />
-
           {this.setSection(this.state.currentSection)}
 
           <Footer />

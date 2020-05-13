@@ -1,10 +1,15 @@
 import React from "react"
 import "./SuggestedItemGallery.scss"
 import ProductListItem from "../ProductListItem/ProductListItem"
+import PageManagerContext from "../../context/pageManager-context";
 
 class SuggestedItemGallery extends React.Component {
- clickSuggestedItem  (Index) {
-    // console.log("Click en suggested item:", Index)
+  static contextType = PageManagerContext;
+ 
+  clickSuggestedItem  () {
+    this.context.onSectionBtn("productDetails");
+    // console.log("Click en Gallery Item");
+
   }
   render() {    
     return (
@@ -13,21 +18,21 @@ class SuggestedItemGallery extends React.Component {
         <div className="suggestedItemGallery">
           <button
             onClick={() => {
-              this.clickSuggestedItem("Index 1")
+              this.clickSuggestedItem()
             }}
             className="suggestedItem">
             <ProductListItem />
           </button>
           <button
             onClick={() => {
-              this.clickSuggestedItem("Index 2")
+              this.clickSuggestedItem()
             }}
             className="suggestedItem">
             <ProductListItem />
           </button>
           <button
             onClick={() => {
-              this.clickSuggestedItem("Index 3")
+              this.clickSuggestedItem()
             }}
             className="suggestedItem">
             <ProductListItem />

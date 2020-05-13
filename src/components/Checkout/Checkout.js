@@ -5,6 +5,7 @@ import CheckoutGuest from "../CheckoutGuest/CheckoutGuest"
 import SingIn from "../SingIn/SingIn"
 import BtnSingInGoogle from "../BtnSingInGoogle/BtnSingInGoogle"
 import BtnSingInFacebook from "../BtnSingInFacebook/BtnSingInFacebook"
+// CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 
@@ -15,6 +16,7 @@ class Checkout extends React.Component {
   handleCloseCheckout()  {
     this.context.onSectionBtn("home")
   }
+
   render() {
     return (
       <div className="checkoutBox">

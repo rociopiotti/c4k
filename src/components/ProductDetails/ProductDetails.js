@@ -3,18 +3,15 @@ import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
 import DropdownSize from "../DropdownSize/DropdownSize";
 import DropdownColor from "../DropdownColor/DropdownColor";
+import PageManagerContext from "../../context/pageManager-context";
 
 class ProductDetails extends React.Component {
-  state = {
-    curretStateAddBtn: false,
-  };
+  static contextType = PageManagerContext;
 
   handleAddToBag() {
-    this.setState({
-      curretStateAddBtn: true,
-    });
+    this.context.onSlideBtn("cartSlide");
   }
-
+  // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
   }
@@ -22,11 +19,8 @@ class ProductDetails extends React.Component {
   handleSizeGuide(SizeGuide) {
     // console.log("Click en el botón que muestra", SizeGuide);
   }
-  
+
   render() {
-    if (this.state.curretStateAddBtn) {
-      // console.log("CLICK ADD TO BAG", this.state.curretStateAddBtn);
-    }
     return (
       <div className="productDetailsBox">
         <div className="productDetails">
