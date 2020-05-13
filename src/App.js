@@ -91,7 +91,7 @@ class App extends React.Component {
     let section;
     switch (sectionType) {
       case "home":
-        section = <Home onHomeMenuClick={this.handleHomeClick.bind(this)} />;
+        section = <Home/>;
         break;
       case "trousers":
         section = (
@@ -175,14 +175,6 @@ class App extends React.Component {
         value={{
           onMenuClick: this.handleHeaderClick.bind(this),
           onHomeMenuClick: this.handleHomeClick.bind(this),
-
-          // TODO REFACTOR AFTER CONECTING - FUNCIONES REPETIDAS
-          onCloseClick: this.handleHeaderClick.bind(this),
-          onMenuNavClick: this.handleHeaderClick.bind(this),
-
-          onFooterMenuClick: this.handleHomeClick.bind(this),
-          onNavItemClick: this.handleHomeClick.bind(this),
-          onCheckouBtn: this.handleHomeClick.bind(this),
         }}>
         <div className="app">
           {this.setSlide(this.state.currentSlide)}

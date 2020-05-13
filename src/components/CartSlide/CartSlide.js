@@ -61,7 +61,6 @@ class CartSlide extends React.Component {
         <div className="cartSlide">
           <div className="cartSlideBox">
             <HeaderSlideCloseLeft
-              onCloseClick={this.clickCloseNav.bind(this)}
             />
             <h2 className="cartSlideTitle">#MY BAG</h2>
             {/* <CartEmpty/> */}

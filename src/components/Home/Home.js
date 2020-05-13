@@ -33,7 +33,6 @@ class Home extends React.Component {
         behavior: "smooth",
       });
     }
-    // console.clear();
   }
   render() {
     return (
@@ -42,7 +41,7 @@ class Home extends React.Component {
         <BtnShop onClickBtnShop={this.handleBtnShop.bind(this)} />
         <BackgroundImg />
         <div>
-          <MenuCategories onHomeMenuClick={this.props.onHomeMenuClick} />
+          <MenuCategories />
         </div>
       </div>
     );

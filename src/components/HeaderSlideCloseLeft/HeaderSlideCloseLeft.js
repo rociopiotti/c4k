@@ -1,12 +1,16 @@
-import React from "react"
-import "./HeaderSlideCloseLeft.scss"
-import Icon from "../Icon/Icon"
+import React from "react";
+import "./HeaderSlideCloseLeft.scss";
+import Icon from "../Icon/Icon";
 
-import Logo from "../Logo/Logo"
+import Logo from "../Logo/Logo";
+
+import PageManagerContext from "../../context/pageManager-context";
 
 class HeaderSlideCloseLeft extends React.Component {
+  static contextType = PageManagerContext;
+
   handleCloseCartSlide(CloseSlide) {
-    this.props.onCloseClick();
+    this.context.onMenuClick();
   }
 
   render() {
@@ -14,17 +18,16 @@ class HeaderSlideCloseLeft extends React.Component {
       <div className="headerSlideCloseLeftBox">
         <button
           onClick={() => {
-            // this.handleCloseCartSlide("CloseSlide")
-            this.handleCloseCartSlide()
+            this.handleCloseCartSlide();
           }}
           className="btnCloseCartSlide">
-          <Icon className="iconBtnCloseCartSlide" type="arrowLeft"/>
+          <Icon className="iconBtnCloseCartSlide" type="arrowLeft" />
         </button>
         <span></span>
         <Logo className="logo" />
       </div>
-    )
+    );
   }
 }
 
-export default HeaderSlideCloseLeft
+export default HeaderSlideCloseLeft;

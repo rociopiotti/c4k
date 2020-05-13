@@ -33,7 +33,7 @@ class SortSlide extends React.Component {
   //--------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onCloseClick);
+    this.executeAnimation(null, this.context.onMenuClick);
   }
 
   clickSortLink(ID) {
@@ -61,7 +61,7 @@ class SortSlide extends React.Component {
           className="sortCloseBackground"></div>
         <div className="sortSlideBackgroundBox">
           <div className="sortSlideBox">
-            <HeaderSlideCloseLeft onCloseClick={this.clickCloseNav.bind(this)} />
+            <HeaderSlideCloseLeft />
 
             <h2 className="sortTitle">#SORT</h2>
             <ul className="sortSlide">

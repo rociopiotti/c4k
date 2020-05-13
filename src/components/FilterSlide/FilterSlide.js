@@ -32,7 +32,7 @@ class FilterSlide extends React.Component {
   //-----------------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onCloseClick);
+    this.executeAnimation(null, this.context.onMenuClick);
   }
   clickFilterLink(ID) {
     console.log("Click en botón de filtro:", ID);
@@ -55,9 +55,7 @@ class FilterSlide extends React.Component {
           className="filterCloseBackground"></div>
         <div className="filterSlideBackgroundBox">
           <div className="filterSlideBox">
-            <HeaderSlideCloseLeft
-              onCloseClick={this.clickCloseNav.bind(this)}
-            />
+            <HeaderSlideCloseLeft />
             <h2 className="filterTitle">#FILTER</h2>
             <ul className="filterSlide">
               <li>
