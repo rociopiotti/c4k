@@ -40,10 +40,8 @@ class ForgotPasswordSlide extends React.Component {
     // console.log("Click en botón que envia mail:", SumbmitMailSlide)
   }
   componentDidMount() {
-    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
-    
+    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });    
     tl.to(this.ContentBackground, { opacity: "1" }, 0.4);
-
   }
 
   render() {

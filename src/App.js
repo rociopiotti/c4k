@@ -40,12 +40,6 @@ class App extends React.Component {
       mode: "CLOSE",
     };
   }
-  handleSingInBtn(newCurrentSingInState) {
-    this.setState({
-      currentSingInState: newCurrentSingInState,
-    });
-  }
-
   handleSlide(newSlide) {
     this.setState({
       currentSlide: newSlide,
@@ -76,6 +70,7 @@ class App extends React.Component {
       case "forgotPassworSlide":
         slide = <ForgotPasswordSlide />;
         break;
+      // TODO: HACER QUE APAREZCA CUANDO SING IN ESTA EN CHECKOUT
       case "forgotPassworModal":
         slide = <ForgotPasswordModal />;
         break;

@@ -1,13 +1,17 @@
 import React from "react"
 import "./CreateAnAccoutSlide.scss"
 
+// CONTEXT
+import PageManagerContext from "../../../context/pageManager-context";
+
+// ANIMATION
 import { TweenLite } from "gsap";
 class CreateAnAccountSlide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
-    // reference to the DOM node
     this.myElement = null;
-    // reference to the animation
     this.myTween = null;
     this.state = {
       mode: "CLOSE",
@@ -37,8 +41,8 @@ class CreateAnAccountSlide extends React.Component {
      
     });
   }
-  handleCreateAccount(CreateAccount) {
-    // console.log("Click en botón que muestra:", CreateAccount)
+  handleCreateAccount() {
+    this.context.onSectionBtn("home");
   }
   handleSingInFacebook(SingInFacebook) {
     // console.log("Click en botón que va a API", SingInFacebook)

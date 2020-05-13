@@ -9,6 +9,7 @@ class SingIn extends React.Component {
   static contextType = PageManagerContext;
 
   handleForgotPassword() {
+    /// TO DO: HACER QUE CUANDO SE ESTA EN CHECKOUT APAREZCA UN MODAL EN VEZ DEL SLIDE
     this.context.onSlideBtn("forgotPassworSlide");
   }
   handleCheckboxChange() {

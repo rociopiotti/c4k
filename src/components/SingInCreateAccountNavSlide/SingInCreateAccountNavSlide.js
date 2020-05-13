@@ -4,6 +4,7 @@ import Icon from "../Icon/Icon";
 import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide";
 import SingInSlide from "./SingInSlide/SingInSlide";
 
+//CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 //ANMATION
