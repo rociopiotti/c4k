@@ -5,6 +5,8 @@ import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import CartItemList from "../CartItemList/CartItemList";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 import CartEmpty from "../CartEmpty/CartEmpty";
+import PageManagerContext from "../../context/pageManager-context";
+
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
@@ -12,6 +14,8 @@ import { Timeline, Back } from "gsap/gsap-core";
 const ease = Back.easeInOut;
 
 class CartSlide extends React.Component {
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.SlideBackground = null;
@@ -30,11 +34,11 @@ class CartSlide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.props.onCloseClick);
+    this.executeAnimation(null, this.context.onMenuClick);
   }
 
   handleCheckoutPage(value) {
-    this.executeAnimation(value, this.props.onCheckouBtn);
+    this.executeAnimation(value, this.context.onHomeMenuClick);
   }
 
   componentDidMount() {

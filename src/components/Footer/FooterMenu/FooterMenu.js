@@ -24,7 +24,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onFooterMenuClick("stores");
+                  this.context.onHomeMenuClick("stores");
                 }}
                 href="#">
                 #STORES
@@ -33,7 +33,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onFooterMenuClick("faq");
+                  this.context.onHomeMenuClick("faq");
                 }}
                 href="#">
                 #FAQ
@@ -42,7 +42,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onFooterMenuClick("about");
+                  this.context.onHomeMenuClick("about");
                 }}
                 href="#">
                 #ABOUT
@@ -51,7 +51,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onFooterMenuClick("termsAndCondition");
+                  this.context.onHomeMenuClick("termsAndCondition");
                 }}
                 href="#">
                 #TERMS OF USE
@@ -60,7 +60,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onFooterMenuClick("privacyPloicy");
+                  this.context.onHomeMenuClick("privacyPloicy");
                 }}
                 href="#">
                 #PRIVACY POLICY

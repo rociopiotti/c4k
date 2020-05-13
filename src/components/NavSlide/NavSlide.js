@@ -33,15 +33,15 @@ class NavSlide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onCloseClick);
+    this.executeAnimation(null, this.context.onMenuClick);
   }
 
   clickNavLinks(value) {
-    this.executeAnimation(value, this.context.onNavItemClick);
+    this.executeAnimation(value, this.context.onHomeMenuClick);
   }
 
   clickMenuNavLinks(value) {
-    this.executeAnimation(value, this.context.onMenuNavClick);
+    this.executeAnimation(value, this.context.onMenuClick);
   }
 
   componentDidMount() {    
