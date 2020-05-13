@@ -25,10 +25,8 @@ import CartSlide from "./components/CartSlide/CartSlide";
 import FilterSlide from "./components/FilterSlide/FilterSlide";
 import SortSlide from "./components/SortSlide/SortSlide";
 import SingInCreateAccountNavslide from "./components/SingInCreateAccountNavSlide/SingInCreateAccountNavSlide";
-// import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
-// import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
-// import ProductDetails from "./components/ProductDetails/ProductDetails";
-// import SuggestedItemGallery from "./components/SuggestedItemGallery/SuggestedItemGallery";
+import ForgotPasswordSlide from "./components/ForgotPasswordSlide/ForgotPasswordSlide";
+import ForgotPasswordModal from "./components/ForgotPasswordModal/ForgotPasswordModal";
 
 class App extends React.Component {
   constructor(props) {
@@ -74,6 +72,12 @@ class App extends React.Component {
         break;
       case "sort":
         slide = <SortSlide />;
+        break;
+      case "forgotPassworSlide":
+        slide = <ForgotPasswordSlide />;
+        break;
+      case "forgotPassworModal":
+        slide = <ForgotPasswordModal />;
         break;
     }
     return slide;
