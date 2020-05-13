@@ -8,7 +8,7 @@ class GridProductList extends React.Component {
   static contextType = PageManagerContext;
 
    handleClickItem  ()  {
-    this.context.onHomeMenuClick("productDetails")
+    this.context.onSectionBtn("productDetails")
   }
   render() {
   

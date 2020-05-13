@@ -43,7 +43,7 @@ class App extends React.Component {
     };
   }
 
-  handleHeaderClick(newSlide) {
+  handleSlide(newSlide) {
     console.log("CAMBIAR EL SLIDER POR: ", newSlide);
     this.setState({
       currentSlide: newSlide,
@@ -74,12 +74,7 @@ class App extends React.Component {
     }
     return slide;
   }
-  handleGridFilter(newSlide) {
-    this.setState({
-      currentSlide: newSlide,
-    });
-  }
-  handleHomeClick(newSection) {
+  handleSection(newSection) {
     console.log("CAMBIAR EL Section POR: ", newSection);
     this.setState({
       currentSection: newSection,
@@ -119,7 +114,6 @@ class App extends React.Component {
       case "faq":
         section = <Faq />;
         break;
-
       case "about":
         section = <About />;
         break;
@@ -135,15 +129,12 @@ class App extends React.Component {
     }
     return section;
   }
-  // handleEndAnimation() {
-  //   console.log("END");
-  // }
   render() {
     return (
       <PageManagerContext.Provider
         value={{
-          onMenuClick: this.handleHeaderClick.bind(this),
-          onHomeMenuClick: this.handleHomeClick.bind(this),
+          onSlideBtn: this.handleSlide.bind(this),
+          onSectionBtn: this.handleSection.bind(this),
         }}>
         <div className="app">
           {this.setSlide(this.state.currentSlide)}

@@ -7,7 +7,7 @@ class FooterMenu extends React.Component {
   static contextType = PageManagerContext;
 
   handleHome() {
-    this.context.onHomeMenuClick("home");
+    this.context.onSectionBtn("home");
   }
   render() {
     return (
@@ -24,7 +24,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onHomeMenuClick("stores");
+                  this.context.onSectionBtn("stores");
                 }}
                 href="#">
                 #STORES
@@ -33,7 +33,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onHomeMenuClick("faq");
+                  this.context.onSectionBtn("faq");
                 }}
                 href="#">
                 #FAQ
@@ -42,7 +42,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onHomeMenuClick("about");
+                  this.context.onSectionBtn("about");
                 }}
                 href="#">
                 #ABOUT
@@ -51,7 +51,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onHomeMenuClick("termsAndCondition");
+                  this.context.onSectionBtn("termsAndCondition");
                 }}
                 href="#">
                 #TERMS OF USE
@@ -60,7 +60,7 @@ class FooterMenu extends React.Component {
             <li>
               <a
                 onClick={() => {
-                  this.context.onHomeMenuClick("privacyPloicy");
+                  this.context.onSectionBtn("privacyPloicy");
                 }}
                 href="#">
                 #PRIVACY POLICY

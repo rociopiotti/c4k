@@ -9,10 +9,10 @@ class GridContainerHeader extends React.Component {
   static contextType = PageManagerContext;
 
   handleFilterSlide  () {
-    this.context.onMenuClick("filter")
+    this.context.onSlideBtn("filter")
   }
   handleSortSlide  (){
-    this.context.onMenuClick("sort")
+    this.context.onSlideBtn("sort")
   }
   render() {
   

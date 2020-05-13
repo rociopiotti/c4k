@@ -8,23 +8,23 @@ import PageManagerContext from "../../context/pageManager-context";
 class Header extends React.Component {
   static contextType = PageManagerContext;
   handleNavSlide() {
-    this.context.onMenuClick("navSlide");
+    this.context.onSlideBtn("navSlide");
   }
 
   handleHome() {
-    this.context.onHomeMenuClick("home");
+    this.context.onSectionBtn("home");
   }
 
   handleSearchBox() {
-    this.context.onMenuClick("searchBox");
+    this.context.onSlideBtn("searchBox");
   }
 
   handleSingInSlide() {
-    this.context.onMenuClick("singInSlide");
+    this.context.onSlideBtn("singInSlide");
   }
 
   handleCartSlide() {
-    this.context.onMenuClick("cartSlide");
+    this.context.onSlideBtn("cartSlide");
   }
 
   render() {

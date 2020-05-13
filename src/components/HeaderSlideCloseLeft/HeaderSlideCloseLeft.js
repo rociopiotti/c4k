@@ -10,7 +10,7 @@ class HeaderSlideCloseLeft extends React.Component {
   static contextType = PageManagerContext;
 
   handleCloseCartSlide(CloseSlide) {
-    this.context.onMenuClick();
+    this.context.onSlideBtn();
   }
 
   render() {

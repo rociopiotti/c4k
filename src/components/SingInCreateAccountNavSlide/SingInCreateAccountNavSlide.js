@@ -40,7 +40,7 @@ class SingInCreateAccountNavslide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onMenuClick);
+    this.executeAnimation(null, this.context.onSlideBtn);
   }
 
   handleSinginOption(newSinginOption) {

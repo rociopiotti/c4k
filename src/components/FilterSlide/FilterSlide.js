@@ -32,7 +32,7 @@ class FilterSlide extends React.Component {
   //-----------------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onMenuClick);
+    this.executeAnimation(null, this.context.onSlideBtn);
   }
   clickFilterLink(ID) {
     console.log("Click en botón de filtro:", ID);

@@ -34,11 +34,11 @@ class CartSlide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onMenuClick);
+    this.executeAnimation(null, this.context.onSlideBtn);
   }
 
   handleCheckoutPage(value) {
-    this.executeAnimation(value, this.context.onHomeMenuClick);
+    this.executeAnimation(value, this.context.onSectionBtn);
   }
 
   componentDidMount() {

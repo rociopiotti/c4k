@@ -33,7 +33,7 @@ class SortSlide extends React.Component {
   //--------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onMenuClick);
+    this.executeAnimation(null, this.context.onSlideBtn);
   }
 
   clickSortLink(ID) {

@@ -12,7 +12,7 @@ const MenuCategories = (props) => {
             <li>
               <a
                 onClick={() => {
-                  context.onHomeMenuClick("trousers");
+                  context.onSectionBtn("trousers");
                 }}
                 href="#">
                 #TROUSERS
@@ -21,7 +21,7 @@ const MenuCategories = (props) => {
             <li>
               <a
                 onClick={() => {
-                  context.onHomeMenuClick("tshirts");
+                  context.onSectionBtn("tshirts");
                 }}
                 href="#">
                 #T-SHIRTS
@@ -30,7 +30,7 @@ const MenuCategories = (props) => {
             <li>
               <a
                 onClick={() => {
-                  context.onHomeMenuClick("bags");
+                  context.onSectionBtn("bags");
                 }}
                 href="#">
                 #BAG
@@ -39,7 +39,7 @@ const MenuCategories = (props) => {
             <li>
               <a
                 onClick={() => {
-                  context.onHomeMenuClick("shoes");
+                  context.onSectionBtn("shoes");
                 }}
                 href="#">
                 #SHOES
@@ -48,7 +48,7 @@ const MenuCategories = (props) => {
             <li>
               <a
                 onClick={() => {
-                  context.onHomeMenuClick("newArrivals");
+                  context.onSectionBtn("newArrivals");
                 }}
                 href="#">
                 #NEW ARRIVALS

@@ -13,7 +13,7 @@ class Checkout extends React.Component {
   static contextType = PageManagerContext;
 
   handleCloseCheckout()  {
-    this.context.onHomeMenuClick("home")
+    this.context.onSectionBtn("home")
   }
   render() {
     return (
