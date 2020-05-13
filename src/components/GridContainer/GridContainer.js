@@ -9,8 +9,8 @@ class GridContainer extends React.Component {
     return (
       <div className="gridContainerBox">
         <SectionTransition />
-        <GridContainerHeader onGridFilter={this.props.onGridFilter} />
-        <GridProductList onProductClick={this.props.onProductClick} />
+        <GridContainerHeader />
+        <GridProductList />
       </div>
     );
   }

@@ -3,12 +3,16 @@ import "./GridContainerHeader.scss"
 import GridFilter from "../../GridFilter/GridFliter"
 import GridSort from "../../GridSort/GridSort"
 
+import PageManagerContext from "../../../context/pageManager-context";
+
 class GridContainerHeader extends React.Component {
+  static contextType = PageManagerContext;
+
   handleFilterSlide  () {
-    this.props.onGridFilter("filter")
+    this.context.onMenuClick("filter")
   }
   handleSortSlide  (){
-    this.props.onGridFilter("sort")
+    this.context.onMenuClick("sort")
   }
   render() {
   

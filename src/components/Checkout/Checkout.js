@@ -5,9 +5,15 @@ import CheckoutGuest from "../CheckoutGuest/CheckoutGuest"
 import SingIn from "../SingIn/SingIn"
 import BtnSingInGoogle from "../BtnSingInGoogle/BtnSingInGoogle"
 import BtnSingInFacebook from "../BtnSingInFacebook/BtnSingInFacebook"
+import PageManagerContext from "../../context/pageManager-context";
+
+
 class Checkout extends React.Component {
+
+  static contextType = PageManagerContext;
+
   handleCloseCheckout()  {
-    this.props.onCloseCheckout("home")
+    this.context.onHomeMenuClick("home")
   }
   render() {
     return (

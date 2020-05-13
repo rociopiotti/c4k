@@ -75,7 +75,6 @@ class App extends React.Component {
     return slide;
   }
   handleGridFilter(newSlide) {
-    console.log("CAMBIAR EL SLIDER POR: ", newSlide);
     this.setState({
       currentSlide: newSlide,
     });
@@ -91,58 +90,28 @@ class App extends React.Component {
     let section;
     switch (sectionType) {
       case "home":
-        section = <Home/>;
+        section = <Home />;
         break;
       case "trousers":
-        section = (
-          <GridContainer
-            onGridFilter={this.handleGridFilter.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <GridContainer />;
         break;
       case "tshirts":
-        section = (
-          <GridContainer
-            onGridFilter={this.handleGridFilter.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <GridContainer />;
         break;
       case "bags":
-        section = (
-          <GridContainer
-            onGridFilter={this.handleGridFilter.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <GridContainer />;
         break;
       case "shoes":
-        section = (
-          <GridContainer
-            onGridFilter={this.handleGridFilter.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <GridContainer />;
         break;
       case "newArrivals":
-        section = (
-          <GridContainer
-            onGridFilter={this.handleGridFilter.bind(this)}
-            onProductClick={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <GridContainer />;
         break;
       case "productDetails":
         section = <ProductBox />;
         break;
       case "checkout":
-        section = (
-          <Checkout
-            onCloseCheckout={this.handleHomeClick.bind(this)}
-            onBtnCheckout={this.handleHomeClick.bind(this)}
-          />
-        );
+        section = <Checkout />;
         break;
       case "stores":
         section = <Stores />;

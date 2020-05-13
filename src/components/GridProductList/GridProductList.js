@@ -1,11 +1,14 @@
 import React from "react"
 import "./GridProductList.scss"
 import ProductListItem from "../ProductListItem/ProductListItem"
+import PageManagerContext from "../../context/pageManager-context";
+
 
 class GridProductList extends React.Component {
+  static contextType = PageManagerContext;
+
    handleClickItem  ()  {
-    // console.log("Click en el boton que abre:", ItemPage)
-    this.props.onProductClick("productDetails")
+    this.context.onHomeMenuClick("productDetails")
   }
   render() {
   
