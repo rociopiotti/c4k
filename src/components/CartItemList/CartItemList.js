@@ -10,9 +10,9 @@ class CartItemList extends React.Component {
           <li className="cartItemElement">
             <CartItem />
           </li>
-          <li className="cartItemElement">
+          {/* <li className="cartItemElement">
             <CartItem />
-          </li>
+          </li> */}
         </ul>
       </div>
     );

@@ -7,6 +7,7 @@ import { Timeline } from "gsap/gsap-core";
 
 //JSON
 const provider = [
+  { id: "0", label: "SIZE" },
   { id: "SMALL", label: "SMALL" },
   { id: "MEDIUM", label: "MEDIUM" },
   { id: "LARGE", label: "LARGE" },
@@ -17,7 +18,8 @@ class DropdownSize extends React.Component {
     this.dropdownContent = null;
 
     this.state = {
-      currentSize: "SIZE",
+      currentIndex: 0,
+      // currentSize: "SIZE",
       mode: "CLOSE",
     };
   }
@@ -50,42 +52,43 @@ class DropdownSize extends React.Component {
       this.toggle();
     });
   }
-  handleDropwnSize(newSize) {
+  handleDropwnSize(newIndex) {
     this.setState({
-      currentSize: newSize,
+      // currentSize: newSize,
+      currentIndex: newIndex,
     });
   }
-  setSize(sizeType) {
-    let itemSize;
-    switch (sizeType) {
-      case "SIZE":
-        itemSize = "SIZE";
-        break;
-      case "SMALL":
-        itemSize = "SMALL";
-        break;
-      case "MEDIUM":
-        itemSize = "MEDIUM";
-        break;
-      case "LARGE":
-        itemSize = "LARGE";
-        break;
-      default:
-        itemSize = null;
-        break;
-    }
-    return itemSize;
-  }
+  // setSize(sizeType) {
+  //   let itemSize;
+  //   switch (sizeType) {
+  //     case "SIZE":
+  //       itemSize = "SIZE";
+  //       break;
+  //     case "SMALL":
+  //       itemSize = "SMALL";
+  //       break;
+  //     case "MEDIUM":
+  //       itemSize = "MEDIUM";
+  //       break;
+  //     case "LARGE":
+  //       itemSize = "LARGE";
+  //       break;
+  //     default:
+  //       itemSize = null;
+  //       break;
+  //   }
+  //   return itemSize;
+  // }
 
   createList() {
-    return provider.map((element) => {
+    return provider.map((element, index) => {
       const { id, label } = element;
+      if (index === 0) return null;
       return (
         <li key={id}>
           <button
-            onClick={(e) => {
-              e.stopPropagation();  
-              this.handleDropwnSize(id);
+            onClick={() => {
+              this.handleDropwnSize(index);
             }}>
             {label}
           </button>
@@ -94,16 +97,16 @@ class DropdownSize extends React.Component {
     });
   }
   render() {
-    const itemSize = this.setSize(this.state.currentSize);
+    // const itemSize = this.setSize(this.state.currentSize);
+    const itemSize = provider[this.state.currentIndex].label;
 
     return (
-      <div
-        onClick={(e) => {
-          e.stopPropagation();  
-          this.clickOnDropdown();
-        }}
-        className="dropdownBoxCartSize">
-        <button className="dropbtnSize">
+      <div className="dropdownBoxCartSize">
+        <button
+          onClick={() => {
+            this.clickOnDropdown("Dropdown");
+          }}
+          className="dropbtnSize">
           <p>{itemSize}</p>
           <Icon className="dropDownIcon" type="arrowDown" />
         </button>

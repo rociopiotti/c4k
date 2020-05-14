@@ -102,7 +102,6 @@ class DropdownQuantity extends React.Component {
           <button
             onClick={(e) => {
               e.preventDefault();
-
               e.stopPropagation();
               this.handleDropwnQuantity(i.toString());
             }}>

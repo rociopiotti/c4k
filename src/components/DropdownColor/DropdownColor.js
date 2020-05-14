@@ -7,10 +7,10 @@ import { Timeline } from "gsap/gsap-core";
 
 //JSON
 const provider = [
-  { label: "COLOR" },
-  { label: "GREY" },
-  { label: "BLACK" },
-  { label: "WHITE" },
+  { id: "0", label: "COLOR" },
+  { id: "1", label: "GREY" },
+  { id: "2", label: "BLACK" },
+  { id: "3", label: "WHITE" },
 ];
 class DropdownColor extends React.Component {
   constructor(props) {
@@ -85,13 +85,7 @@ class DropdownColor extends React.Component {
     console.log(this.state.currentIndex);
     const itemColor = provider[this.state.currentIndex].label;
     return (
-      <div
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          this.clickOnDropdown();
-        }}
-        className="dropdownColorBox">
+      <div className="dropdownColorBox">
         <button
           onClick={() => {
             this.clickOnDropdown("Dropdown");
