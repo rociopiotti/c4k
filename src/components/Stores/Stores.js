@@ -13,7 +13,9 @@ class Stores extends React.Component {
     currentMode: "storeAndMap",
     currentSearchState: false,
   };
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   handleSearchStores(newState) {
     this.setState({
       currentMode: newState,

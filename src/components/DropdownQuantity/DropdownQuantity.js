@@ -54,6 +54,7 @@ class DropdownQuantity extends React.Component {
   setQuantity(quantityType) {
     let itemQuantity;
     switch (quantityType) {
+      
       case "1":
         itemQuantity = "1";
         break;
@@ -90,14 +91,40 @@ class DropdownQuantity extends React.Component {
     }
     return itemQuantity;
   }
-  render() {
-    // console.log("--->CURRENT QUANTITY:", this.state.currentQuantity);
+  createList() {
+    const _array = [];
 
+    //---------------------------
+    for (let i = 1; i < 10; i++) {
+      // _array.push(i);
+      _array.push(
+        <li key={i}>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+
+              e.stopPropagation();
+              this.handleDropwnQuantity(i.toString());
+            }}>
+            {i}
+          </button>
+        </li>
+      );
+    }
+    return _array;
+
+    //---------------------------
+  }
+
+  render() {
     const itemQuantity = this.setQuantity(this.state.currentQuantity);
     return (
       <div className="dropdownBoxCartQuantity">
         <button
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
+
+            e.stopPropagation();
             this.clickOnDropdown();
           }}
           className="dropbtnQuantity">
@@ -107,86 +134,7 @@ class DropdownQuantity extends React.Component {
         <ul
           ref={(div) => (this.dropdownContent = div)}
           className="dropdownContentSizeQuatity">
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("1");
-              }}>
-              1
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("2");
-              }}>
-              2
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("3");
-              }}>
-              3
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("4");
-              }}>
-              4
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("5");
-              }}>
-              5
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("6");
-              }}>
-              6
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("7");
-              }}>
-              7
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("8");
-              }}>
-              8
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("9");
-              }}>
-              9
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnQuantity("10");
-              }}>
-              10
-            </button>
-          </li>
+          {this.createList()}
         </ul>
       </div>
     );

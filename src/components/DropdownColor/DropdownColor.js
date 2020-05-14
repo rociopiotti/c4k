@@ -5,16 +5,24 @@ import Icon from "../Icon/Icon";
 //ANIMATION
 import { Timeline } from "gsap/gsap-core";
 
+//JSON
+const provider = [
+  { label: "COLOR" },
+  { label: "GREY" },
+  { label: "BLACK" },
+  { label: "WHITE" },
+];
 class DropdownColor extends React.Component {
   constructor(props) {
     super(props);
     this.dropdownContent = null;
 
     this.state = {
-      currentColor: "COLOR",
+      currentIndex: 0,
       mode: "CLOSE",
     };
   }
+
   toggle() {
     const { mode } = this.state;
     const newMode = mode === "CLOSE" ? "OPEN" : "CLOSE";
@@ -48,37 +56,42 @@ class DropdownColor extends React.Component {
     // console.log("ESTADO", mode);
   }
 
-  handleDropdownColor(newColor) {
+  handleDropdownColor(newIndex) {
     this.setState({
-      currentColor: newColor,
+      currentIndex: newIndex,
     });
   }
-  setColor(colorType) {
-    let itemColor;
-    switch (colorType) {
-      case "COLOR":
-        itemColor = "COLOR";
-        break;
-      case "OPTION A":
-        itemColor = "OPTION A";
-        break;
-      case "OPTION B":
-        itemColor = "OPTION B";
-        break;
-      case "OPTION C":
-        itemColor = "OPTION C";
-        break;
-      default:
-        itemColor = null;
-        break;
-    }
-    return itemColor;
+
+  createList() {
+    return provider.map((element, index) => {
+      const { id, label } = element;
+      if (index === 0) return null;
+
+      return (
+        <li key={id}>
+          <button
+            onClick={() => {
+              this.handleDropdownColor(index);
+            }}>
+            {label}
+          </button>
+        </li>
+      );
+    });
   }
+
+  setName() {}
   render() {
-    // console.log("------> CURRENT COLOR:", this.state.currentColor);
-    const itemColor = this.setColor(this.state.currentColor);
+    console.log(this.state.currentIndex);
+    const itemColor = provider[this.state.currentIndex].label;
     return (
-      <div className="dropdownColorBox">
+      <div
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          this.clickOnDropdown();
+        }}
+        className="dropdownColorBox">
         <button
           onClick={() => {
             this.clickOnDropdown("Dropdown");
@@ -91,30 +104,7 @@ class DropdownColor extends React.Component {
         <ul
           ref={(div) => (this.dropdownContent = div)}
           className="dropdownContentSizeColor">
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropdownColor("OPTION A");
-              }}>
-              OPTION A
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropdownColor("OPTION B");
-              }}>
-              OPTION B
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropdownColor("OPTION C");
-              }}>
-              OPTION C
-            </button>
-          </li>
+          {this.createList()}
         </ul>
       </div>
     );

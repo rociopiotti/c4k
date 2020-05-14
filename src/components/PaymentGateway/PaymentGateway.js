@@ -9,11 +9,16 @@ import PaymentSettings from "../PaymentSettings/PaymentSettings"
 import BillingSummary from "../BillingSummary/BillingSummary"
 import FooterLinks from "../FooterLinks/FooterLinks"
 import ShippingMethod from "../ShippingMethod/ShippingMethod"
+import SectionTransition from "../SectionTransition/SectionTransition"
 
 class PaymentGateway extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="paymentGatewayBox">
+      <SectionTransition/>
         <div className="paymentGateway">
           <h2>#ORDER SUMMARY</h2>
           <div className="orderSummaryBox">

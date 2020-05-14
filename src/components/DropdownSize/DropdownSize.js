@@ -3,8 +3,14 @@ import "./DropdownSize.scss";
 import Icon from "../Icon/Icon";
 
 //ANIMATION
-
 import { Timeline } from "gsap/gsap-core";
+
+//JSON
+const provider = [
+  { id: "SMALL", label: "SMALL" },
+  { id: "MEDIUM", label: "MEDIUM" },
+  { id: "LARGE", label: "LARGE" },
+];
 class DropdownSize extends React.Component {
   constructor(props) {
     super(props);
@@ -43,8 +49,6 @@ class DropdownSize extends React.Component {
     tl.eventCallback("onComplete", () => {
       this.toggle();
     });
-    // console.clear();
-    // console.log("ESTADO", mode);
   }
   handleDropwnSize(newSize) {
     this.setState({
@@ -72,48 +76,41 @@ class DropdownSize extends React.Component {
     }
     return itemSize;
   }
-  render() {
-    // console.log("-->CURRENT SIZE:", this.state.currentSize);
 
+  createList() {
+    return provider.map((element) => {
+      const { id, label } = element;
+      return (
+        <li key={id}>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();  
+              this.handleDropwnSize(id);
+            }}>
+            {label}
+          </button>
+        </li>
+      );
+    });
+  }
+  render() {
     const itemSize = this.setSize(this.state.currentSize);
 
     return (
-      <div className="dropdownBoxCartSize">
-        <button
-          onClick={() => {
-            this.clickOnDropdown();
-          }}
-          className="dropbtnSize">
+      <div
+        onClick={(e) => {
+          e.stopPropagation();  
+          this.clickOnDropdown();
+        }}
+        className="dropdownBoxCartSize">
+        <button className="dropbtnSize">
           <p>{itemSize}</p>
           <Icon className="dropDownIcon" type="arrowDown" />
         </button>
         <ul
           ref={(div) => (this.dropdownContent = div)}
           className="dropdownContentSize">
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnSize("SMALL");
-              }}>
-              S
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnSize("MEDIUM");
-              }}>
-              M
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => {
-                this.handleDropwnSize("LARGE");
-              }}>
-              L
-            </button>
-          </li>
+          {this.createList()}
         </ul>
       </div>
     );

@@ -6,6 +6,9 @@ import BtnShop from "../BtnShop/BtnShop";
 
 import SectionTransition from "../SectionTransition/SectionTransition";
 class Home extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   handleBtnShop() {
     let windowsWidth = window.innerWidth;
     if (windowsWidth > 850) {

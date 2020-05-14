@@ -7,6 +7,7 @@ import BtnSingInGoogle from "../BtnSingInGoogle/BtnSingInGoogle"
 import BtnSingInFacebook from "../BtnSingInFacebook/BtnSingInFacebook"
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
+import SectionTransition from "../SectionTransition/SectionTransition"
 
 
 class Checkout extends React.Component {
@@ -16,10 +17,13 @@ class Checkout extends React.Component {
   handleCloseCheckout()  {
     this.context.onSectionBtn("home")
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="checkoutBox">
+      <SectionTransition/>
         <div className="checkout">
           <div className="headerCheckoutBox">
             <h2>#CHECKOUT </h2>

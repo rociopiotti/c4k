@@ -1,9 +1,14 @@
-import React from "react"
-import "./FooterLinks.scss"
+import React from "react";
+import "./FooterLinks.scss";
+
+// import CartEmpty from "../CartEmpty/CartEmpty";
+import PageManagerContext from "../../context/pageManager-context";
 
 class FooterLinks extends React.Component {
-  clickFooterLinks  (url){
-    console.log("Click en el boton que lleva a:", url)
+  static contextType = PageManagerContext;
+
+  clickFooterLinks(ulr) {
+    this.context.onSectionBtn();
   }
   render() {
     return (
@@ -12,7 +17,7 @@ class FooterLinks extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.clickFooterLinks("About.html")
+                this.context.onSectionBtn("stores");
               }}>
               CONTACT |
             </a>
@@ -21,7 +26,7 @@ class FooterLinks extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.clickFooterLinks("Faq.html")
+                this.context.onSectionBtn("faq");
               }}>
               HELP |
             </a>
@@ -30,7 +35,7 @@ class FooterLinks extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.clickFooterLinks("TermsAndConditions.html")
+                this.context.onSectionBtn("termsAndCondition");
               }}>
               TERMS & CONDITIONS |
             </a>
@@ -39,15 +44,15 @@ class FooterLinks extends React.Component {
           <li>
             <a
               onClick={() => {
-                this.clickFooterLinks("PrivacyPolicy.html")
+                this.context.onSectionBtn("privacyPloicy");
               }}>
               PRIVACY POLICY
             </a>
           </li>
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default FooterLinks
+export default FooterLinks;

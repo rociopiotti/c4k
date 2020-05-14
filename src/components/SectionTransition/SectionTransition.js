@@ -1,13 +1,12 @@
 import React from "react";
 import "./SectionTransition.scss";
 
+//ANIMATION
 import { TweenLite } from "gsap";
 class SectionTransition extends React.Component {
   constructor(props) {
     super(props);
-    // reference to the DOM node
     this.myElement = null;
-    // reference to the animation
     this.myTween = null;
     this.state = {
       mode: "CLOSE",
@@ -33,7 +32,6 @@ class SectionTransition extends React.Component {
     });
     this.myTween.eventCallback("onComplete", () => {
       this.toggle();
-      
     });
   }
 

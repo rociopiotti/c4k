@@ -1,6 +1,6 @@
-import React from "react"
-import "./CartItemList.scss"
-import CartItem from "../CartItem/CartItem"
+import React from "react";
+import "./CartItemList.scss";
+import CartItem from "../CartItem/CartItem";
 
 class CartItemList extends React.Component {
   render() {
@@ -13,11 +13,10 @@ class CartItemList extends React.Component {
           <li className="cartItemElement">
             <CartItem />
           </li>
-         
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default CartItemList
+export default CartItemList;

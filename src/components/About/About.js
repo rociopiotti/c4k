@@ -5,9 +5,8 @@ import AboutPhoto from "../../img/aboutPhoto.png";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
 //ANIMATION
-import { TimelineMax,  Power2 } from "gsap";
+import { TimelineMax } from "gsap";
 
-const ease = Power2.easeOut;
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -18,13 +17,14 @@ class About extends React.Component {
   animation() {
     const myTween = new TimelineMax({ repeat: -1 });
     myTween
-      .from(this.textAbout1, 0, { ease: ease, x: "0vw" }, 0)
-      .to(this.textAbout1, 35, { ease: ease, x: "120vw" }, 0)
-      .from(this.textAbout2, 0, { ease: ease, x: "-150vw" }, 5)
-      .to(this.textAbout2, 45, { ease: ease, x: "150vw" }, 5);
+      .from(this.textAbout1, 0, { x: "0vw" }, 0)
+      .to(this.textAbout1, 35, { x: "120vw" }, 0)
+      .from(this.textAbout2, 0, { x: "-150vw" }, 5)
+      .to(this.textAbout2, 45, { x: "150vw" }, 5);
   }
-
+  
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.animation();
   }
   render() {

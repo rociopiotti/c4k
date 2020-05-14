@@ -1,9 +1,12 @@
-import React from "react"
-import "./PrivacyPolicy.scss"
+import React from "react";
+import "./PrivacyPolicy.scss";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-const PrivacyPolicy = (props) => {
- 
+class PrivacyPolicy extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  render() {
     return (
       <div className="privacyPolicyBox">
         <SectionTransition />
@@ -24,8 +27,8 @@ const PrivacyPolicy = (props) => {
           </p>
         </div>
       </div>
-    )
-  
+    );
+  }
 }
 
-export default PrivacyPolicy
+export default PrivacyPolicy;

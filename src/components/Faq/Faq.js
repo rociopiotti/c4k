@@ -11,7 +11,9 @@ class Faq extends React.Component {
       searchState: true,
     });
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   handleInputChange(event) {
     // console.log("Ingreso texto");
   }

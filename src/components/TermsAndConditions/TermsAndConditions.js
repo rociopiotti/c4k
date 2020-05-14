@@ -1,9 +1,12 @@
-import React from "react"
-import "./TermsAndConditions.scss"
+import React from "react";
+import "./TermsAndConditions.scss";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-const TermsAndConditions = (props) =>{
-
+class TermsAndConditions extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  render() {
     return (
       <div className="termsAndConditionBox">
         <SectionTransition />
@@ -24,8 +27,8 @@ const TermsAndConditions = (props) =>{
           </p>
         </div>
       </div>
-    )
-  
+    );
+  }
 }
 
-export default TermsAndConditions
+export default TermsAndConditions;

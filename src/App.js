@@ -40,6 +40,7 @@ class App extends React.Component {
       mode: "CLOSE",
     };
   }
+
   handleSlide(newSlide) {
     this.setState({
       currentSlide: newSlide,
@@ -136,6 +137,9 @@ class App extends React.Component {
         break;
     }
     return section;
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
   render() {
     return (

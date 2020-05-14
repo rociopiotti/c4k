@@ -1,12 +1,11 @@
-import React from "react"
-import "./StoreMap.scss"
+import React from "react";
+import "./StoreMap.scss";
 
 class StoreMap extends React.Component {
-    render() {
-        return (
-            <div className="storeMapBox">MAP IMAGE</div>
-        )
-    }
+
+  render() {
+    return <div className="storeMapBox">MAP IMAGE</div>;
+  }
 }
 
-export default StoreMap
+export default StoreMap;

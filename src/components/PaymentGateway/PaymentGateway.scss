@@ -37,12 +37,15 @@
         .cartItemListBox {
           .cartItemList {
             list-style: none;
+            .column2 {    width: 30%;
+            }
           }
         }
       }
 
       .column2 {
         width: 45%;
+
         .btnPromoCodeBox {
           margin: 0;
           .promoCode {
@@ -55,11 +58,8 @@
             width: 99%;
           }
         }
-
-  
       }
     }
-
   }
 }
 
@@ -89,6 +89,8 @@
           .cartItemListBox {
             .cartItemList {
               list-style: none;
+              .column2 {    width: 100%;
+              }
             }
           }
         }
