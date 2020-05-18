@@ -3,58 +3,37 @@ import "./MenuCategories.scss";
 
 import PageManagerContext from "../../context/pageManager-context";
 
+//JSON
+const menuCategories = [
+  { id: "0", name: "TROUSERS", label: "trousers" },
+  { id: "1", name: "T-SHIRT", label: "tshirts" },
+  { id: "2", name: "BAGS", label: "bags" },
+  { id: "3", name: "SHOES", label: "shoes" },
+  { id: "4", name: "NEW ARRIVALS", label: "newArrivals" },
+];
+
 const MenuCategories = (props) => {
+  const createList = (context) => {
+    return menuCategories.map((element, index) => {
+      const { id, name, label } = element;
+
+      return (
+        <li className="listItem" key={id}>
+          <a
+            onClick={() => {
+              context.onSectionBtn(label);
+            }}>
+            {name}
+          </a>
+        </li>
+      );
+    });
+  };
   return (
     <PageManagerContext.Consumer>
-      {context => (
+      {(context) => (
         <div className="menuCategoriesBox">
-          <ul className="menuCategories">
-            <li>
-              <a
-                onClick={() => {
-                  context.onSectionBtn("trousers");
-                }}
-                href="#">
-                #TROUSERS
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => {
-                  context.onSectionBtn("tshirts");
-                }}
-                href="#">
-                #T-SHIRTS
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => {
-                  context.onSectionBtn("bags");
-                }}
-                href="#">
-                #BAG
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => {
-                  context.onSectionBtn("shoes");
-                }}
-                href="#">
-                #SHOES
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => {
-                  context.onSectionBtn("newArrivals");
-                }}
-                href="#">
-                #NEW ARRIVALS
-              </a>
-            </li>
-          </ul>
+          <ul className="menuCategories">{createList(context)}</ul>
         </div>
       )}
     </PageManagerContext.Consumer>
