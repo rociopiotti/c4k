@@ -126,11 +126,11 @@ class App extends React.Component {
       case "about":
         section = <About />;
         break;
+      case "privacyPolicy":
+        section = <PrivacyPolicy />;
+        break;
       case "termsAndCondition":
         section = <TermsAndConditions />;
-        break;
-      case "privacyPloicy":
-        section = <PrivacyPolicy />;
         break;
       default:
         section = null;
@@ -138,8 +138,9 @@ class App extends React.Component {
     }
     return section;
   }
-  
+
   render() {
+    console.log("CURRENT SECTION", this.state.currentSection);
     return (
       <PageManagerContext.Provider
         value={{
@@ -149,7 +150,6 @@ class App extends React.Component {
           onSectionBtn: this.handleSection.bind(this),
         }}>
         <div className="app">
-
           {/******************************* SETS SLIDE BASED IN CURRENT SLIDE STATE **************************/}
           {this.setSlide(this.state.currentSlide)}
 

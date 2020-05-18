@@ -8,10 +8,10 @@ class PrivacyPolicy extends React.Component {
   }
   render() {
     return (
-      <div className="privacyPolicyBox">
+      <div className="termsAndConditionBox">
         <SectionTransition />
 
-        <div className="privacyPolicy">
+        <div className="termsAndCondition">
           <h2>PRIVACY POLICY</h2>
           <h3>LOREM IPMSUM</h3>
 
