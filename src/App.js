@@ -138,20 +138,23 @@ class App extends React.Component {
     }
     return section;
   }
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+  
   render() {
     return (
       <PageManagerContext.Provider
         value={{
+          //SETS STATE CURRENT SLIDE
           onSlideBtn: this.handleSlide.bind(this),
+          //SETS STATE CURRENT SECTION
           onSectionBtn: this.handleSection.bind(this),
         }}>
         <div className="app">
+
+          {/******************************* SETS SLIDE BASED IN CURRENT SLIDE STATE **************************/}
           {this.setSlide(this.state.currentSlide)}
 
           <Header />
+          {/******************************* SETS SECTION BASED IN CURRENT SECTION STATE **************************/}
           {this.setSection(this.state.currentSection)}
 
           <Footer />

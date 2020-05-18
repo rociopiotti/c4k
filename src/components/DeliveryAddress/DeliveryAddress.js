@@ -1,6 +1,5 @@
 import React from "react"
 import "./DeliveryAddress.scss"
-import BillingAddress from "../BillingAddress/BillingAddress"
 
 class DeliveryAddress extends React.Component {
   handleCheckboxChange() {
@@ -21,7 +20,6 @@ class DeliveryAddress extends React.Component {
             <input onChange={this.handleCheckboxChange} type="checkbox"></input> Add an alternative delivery address
           </label>
           {/*DISPLAYS WHEN CHECKBOX IS CLICKED*/}
-          {/* <BillingAddress/> */}
         </div>
       </div>
     )

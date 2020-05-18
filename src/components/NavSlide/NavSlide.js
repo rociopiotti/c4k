@@ -7,8 +7,19 @@ import PageManagerContext from "../../context/pageManager-context";
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
-const ease =  Back.easeInOut;
-
+const ease = Back.easeInOut;
+//JSON
+const navList = [
+  { id: "0", name: "TROUSERS", label: "trousers" },
+  { id: "1", name: "T-SHIRT", label: "t-shirts" },
+  { id: "2", name: "BAGS", label: "bags" },
+  { id: "3", name: "SHOES", label: "shoes" },
+  { id: "4", name: "NEW ARRIVALS", label: "newArrivals" },
+];
+const menu = [
+  { id: "0", name: "SING IN / CREATE ACCOUNT", label: "singInSlide" },
+  { id: "1", name: "MY BAG", label: "cartSlide" },
+];
 class NavSlide extends React.Component {
   static contextType = PageManagerContext;
 
@@ -16,9 +27,7 @@ class NavSlide extends React.Component {
     super(props);
     this.NavCloseBackground = null;
     this.SlideBackground = null;
-       
   }
-
   // --------------------------------------------------------
   executeAnimation(value, onCompleteHandler) {
     const tl = new Timeline({
@@ -27,11 +36,10 @@ class NavSlide extends React.Component {
       repeatDelay: 0,
       ease: ease,
     });
-    tl.to(this.NavCloseBackground, {opacity: 0 });
+    tl.to(this.NavCloseBackground, { opacity: 0 });
     tl.to(this.SlideBackground, { left: "-100vw" }, 0.4);
   }
   // --------------------------------------------------------
-
   clickCloseNav() {
     this.executeAnimation(null, this.context.onSlideBtn);
   }
@@ -44,10 +52,43 @@ class NavSlide extends React.Component {
     this.executeAnimation(value, this.context.onSlideBtn);
   }
 
-  componentDidMount() {    
+  componentDidMount() {
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
+  }
+
+  createList() {
+    return navList.map((element, index) => {
+      const { id, name, label } = element;
+
+      return (
+        <li className="listItem" key={id}>
+          <a
+            onClick={() => {
+              this.clickNavLinks(label);
+            }}>
+            {name}
+          </a>
+        </li>
+      );
+    });
+  }
+
+  createMenuList() {
+    return menu.map((element, index) => {
+      const { id, name, label } = element;
+      return (
+        <li className="listItem" key={id}>
+          <a
+            onClick={() => {
+              this.clickMenuNavLinks(label);
+            }}>
+            {name}
+          </a>
+        </li>
+      );
+    });
   }
 
   render() {
@@ -64,68 +105,9 @@ class NavSlide extends React.Component {
             <Icon type="arrowRight" />
           </button>
           <nav className="nav">
-            <ul className="list">
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickNavLinks("trousers");
-                  }}>
-                  #TROUSERS
-                </a>
-              </li>
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickNavLinks("tshirts");
-                  }}>
-                  #T-SHIRT
-                </a>
-              </li>
-
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickNavLinks("bags");
-                  }}>
-                  #BAGS
-                </a>
-              </li>
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickNavLinks("shoes");
-                  }}>
-                  #SHOES
-                </a>
-              </li>
-              <li className="listItem">
-                <a
-                  onClick={() => {
-                    this.clickNavLinks("newArrivals");
-                  }}>
-                  #NEW ARRIVALS
-                </a>
-              </li>
-              <hr className="separationLine"></hr>
-             
-              <li className="listItem ">
-                <a
-                  onClick={() => {
-                    this.clickMenuNavLinks("singInSlide");
-                  }}>
-                  <Icon type="singIn" />
-                  SING IN/ CREATE AN ACCOUNT
-                </a>
-              </li>
-              <li className="listItem ">
-                <a
-                  onClick={() => {
-                    this.clickMenuNavLinks("cartSlide");
-                  }}>
-                  <Icon type="myBag" /> MY BAG
-                </a>
-              </li>
-            </ul>
+            <ul className="list">{this.createList()}</ul>
+            <hr className="separationLine"></hr>
+            <ul className="list">{this.createMenuList()}</ul>
           </nav>
         </div>
         <div
