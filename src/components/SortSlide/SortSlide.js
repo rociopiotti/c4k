@@ -9,7 +9,24 @@ import PageManagerContext from "../../context/pageManager-context";
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
-
+//JSON
+const sortList = [
+  { id: "0", name: "NAME [A-Z]", icon: "sortAZ", label: "NAME [A-Z]" },
+  { id: "1", name: "NAME [Z-A]", icon: "sortZA", label: "NAME [Z-A]" },
+  {
+    id: "2",
+    name: "PRICE LOW TO HIGH",
+    icon: "sort",
+    label: "PRICE LOW TO HIGH",
+  },
+  {
+    id: "3",
+    name: "PRICE HIGH TO LOW",
+    icon: "sort",
+    label: "PRICE HIGH TO LOW",
+  },
+  { id: "4", name: "POPULAR", icon: "heart", label: "POPULAR" },
+];
 class SortSlide extends React.Component {
   static contextType = PageManagerContext;
 
@@ -37,7 +54,7 @@ class SortSlide extends React.Component {
   }
 
   clickSortLink(ID) {
-    // console.log("Click en botón que ordena:", ID);
+    console.log("Click en botón que ordena:", ID);
   }
 
   componentDidMount() {
@@ -47,7 +64,23 @@ class SortSlide extends React.Component {
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
   }
+  createList() {
+    return sortList.map((element, index) => {
+      const { id, name, icon, label } = element;
 
+      return (
+        <li className="listItem" key={id}>
+          <button
+            onClick={() => {
+              this.clickSortLink(label);
+            }}>
+            <Icon type={icon} />
+            {name}
+          </button>
+        </li>
+      );
+    });
+  }
   render() {
     return (
       <div
@@ -62,55 +95,8 @@ class SortSlide extends React.Component {
         <div className="sortSlideBackgroundBox">
           <div className="sortSlideBox">
             <HeaderSlideCloseLeft />
-
             <h2 className="sortTitle">#SORT</h2>
-            <ul className="sortSlide">
-              <li>
-                <button
-                  onClick={() => {
-                    this.clickSortLink("NAME [A-Z]");
-                  }}>
-                  <Icon type="sortAZ" />
-                  NAME [A-Z]
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    this.clickSortLink("NAME [Z-A]");
-                  }}>
-                  <Icon type="sortZA" />
-                  NAME [Z-A]
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    this.clickSortLink("PRICE LOW TO HIGH");
-                  }}>
-                  <Icon type="sort" />
-                  PRICE LOW TO HIGH
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    this.clickSortLink("PRICE HIGH TO LOW");
-                  }}>
-                  <Icon type="sort" />
-                  PRICE HIGH TO LOW
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    this.clickSortLink("POPULAR");
-                  }}>
-                  <Icon type="heart" />
-                  POPULAR
-                </button>
-              </li>
-            </ul>
+            <ul className="sortSlide">{this.createList()}</ul>
           </div>
         </div>
       </div>
