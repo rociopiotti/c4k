@@ -1,15 +1,15 @@
-import React from "react"
-import "./Logo.scss"
-import logo from '../../img/logo.svg'; 
+import React from "react";
+import "./Logo.scss";
+import logo from "../../img/logo.svg";
 
 class Logo extends React.Component {
   render() {
     return (
-      <a className="logo">
-         <img src={logo} alt="Logo" />
-      </a>
-    )
+      <div  className="logo" >
+        <img src={logo} alt="Logo"/>
+      </div>
+    );
   }
 }
 
-export default Logo
+export default Logo;

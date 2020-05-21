@@ -2,6 +2,9 @@ import React from "react";
 import "./FooterMenu.scss";
 import Logo from "../../Logo/Logo";
 import PageManagerContext from "../../../context/pageManager-context";
+
+import { Link } from "react-router-dom";
+
 //JSON
 const footerMenu = [
   { id: "0", name: "STORES", label: "stores" },
@@ -36,6 +39,7 @@ class FooterMenu extends React.Component {
     return (
       <div className="footerMenuBox">
         <div className="footerMenuInnerBox">
+        
           <button
             onClick={() => {
               this.handleHome();

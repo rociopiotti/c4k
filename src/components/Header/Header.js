@@ -3,10 +3,17 @@ import "./Header.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
 import SearchBox from "../SearchBox/SeachBox";
+
+// CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
+// ROUTER
+import { Link } from "react-router-dom";
+
 class Header extends React.Component {
+
   static contextType = PageManagerContext;
+
   handleNavSlide() {
     this.context.onSlideBtn("navSlide");
   }
@@ -29,37 +36,41 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="header">
+      <div className='header'>
         <button
           onClick={() => {
             this.handleNavSlide();
           }}
-          className="burger">
-          <Icon type="burger" />
+          className='burger'>
+          <Icon type='burger' />
         </button>
-        <span className="spacer"></span>
-        <button
-          onClick={() => {
-            this.handleHome();
-          }}
-          className="logo">
-          <Logo />
-        </button>
+        <span className='spacer'></span>
+        
+        <Link to='/'>
+          <button
+            // onClick={() => {
+            //   this.handleHome();
+            // }}
+            className='logo'>
+            <Logo />
+          </button>
+        </Link>
+
         <span></span>
         <SearchBox />
         <button
           onClick={() => {
             this.handleSingInSlide();
           }}
-          className="singInIcon">
-          <Icon type="singIn" />
+          className='singInIcon'>
+          <Icon type='singIn' />
         </button>
         <button
           onClick={() => {
             this.handleCartSlide();
           }}
-          className="cartIcon">
-          <Icon type="myBag" />
+          className='cartIcon'>
+          <Icon type='myBag' />
         </button>
       </div>
     );

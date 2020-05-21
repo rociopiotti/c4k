@@ -1,7 +1,11 @@
 import React from "react";
 import "./MenuCategories.scss";
 
+//CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
+
+// ROUTER
+import { BrowserRouter, Link } from "react-router-dom";
 
 //JSON
 const menuCategories = [
@@ -13,12 +17,12 @@ const menuCategories = [
 ];
 
 const MenuCategories = (props) => {
+  console.log(props);
   const createList = (context) => {
     return menuCategories.map((element, index) => {
       const { id, name, label } = element;
-
       return (
-        <li className="listItem" key={id}>
+        <li className='listItem' key={id}>
           <a
             onClick={() => {
               context.onSectionBtn(label);
@@ -32,8 +36,8 @@ const MenuCategories = (props) => {
   return (
     <PageManagerContext.Consumer>
       {(context) => (
-        <div className="menuCategoriesBox">
-          <ul className="menuCategories">{createList(context)}</ul>
+        <div className='menuCategoriesBox'>
+          <ul className='menuCategories'>{createList(context)}</ul>
         </div>
       )}
     </PageManagerContext.Consumer>

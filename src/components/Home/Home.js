@@ -4,7 +4,9 @@ import MenuCategories from "./MenuCategories";
 import BackgroundImg from "./BackgroundImg";
 import BtnShop from "../BtnShop/BtnShop";
 
+// TRANSITION COMPONENT
 import SectionTransition from "../SectionTransition/SectionTransition";
+
 class Home extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -39,9 +41,9 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home">
+      <div className='home'>
         <SectionTransition />
-        <h1 className="title">C-4K</h1>
+        <h1 className='title'>C-4K</h1>
         <BtnShop onClickBtnShop={this.handleBtnShop.bind(this)} />
         <BackgroundImg />
         <div>

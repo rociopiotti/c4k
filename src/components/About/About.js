@@ -1,7 +1,10 @@
 import React from "react";
 import "./About.scss";
 
+// IMG
 import AboutPhoto from "../../img/aboutPhoto.png";
+
+// TRANSITION COMPONENT
 import SectionTransition from "../SectionTransition/SectionTransition";
 
 //ANIMATION

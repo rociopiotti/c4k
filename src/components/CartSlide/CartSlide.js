@@ -5,12 +5,14 @@ import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import CartItemList from "../CartItemList/CartItemList";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 // import CartEmpty from "../CartEmpty/CartEmpty";
-import PageManagerContext from "../../context/pageManager-context";
 
+//CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
+// EASING
 const ease = Back.easeInOut;
 
 class CartSlide extends React.Component {
@@ -50,19 +52,18 @@ class CartSlide extends React.Component {
   render() {
     return (
       <div
-        className="cartSlideBackground"
+        className='cartSlideBackground'
         ref={(div) => (this.SlideBackground = div)}>
         <div
           ref={(div) => (this.NavCloseBackground = div)}
-          className="cartCloseBackground"
+          className='cartCloseBackground'
           onClick={() => {
             this.clickCloseNav();
           }}></div>
-        <div className="cartSlide">
-          <div className="cartSlideBox">
-            <HeaderSlideCloseLeft
-            />
-            <h2 className="cartSlideTitle">#MY BAG</h2>
+        <div className='cartSlide'>
+          <div className='cartSlideBox'>
+            <HeaderSlideCloseLeft />
+            <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
             <CartItemList />
             <BtnPromoCode />
@@ -71,7 +72,7 @@ class CartSlide extends React.Component {
               onClick={() => {
                 this.handleCheckoutPage("checkout");
               }}
-              className="btnCheckout">
+              className='btnCheckout'>
               CHECKOUT
             </button>
           </div>

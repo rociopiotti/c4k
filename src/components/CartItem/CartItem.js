@@ -2,7 +2,7 @@ import React from "react";
 import "./CartItem.scss";
 import Icon from "../Icon/Icon";
 import DropdownSize from "../DropdownSize/DropdownSize";
-import itemImg from "../../img/trousers-white1.png";
+import itemImg from "../../img/NIN EX4.png";
 import DropdownQuantity from "../DropdownQuantity/DropdownQuantity";
 import PageManagerContext from "../../context/pageManager-context";
 

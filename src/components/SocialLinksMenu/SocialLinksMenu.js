@@ -38,33 +38,7 @@ const SocialLinksMenu = (props) => {
   };
   return (
     <div className="socialLinkMenuBox">
-      <ul className="socialLinkMenuList">
-        {createList()}
-        {/* <li>
-          <a
-            href="https://www.instagram.com/?hl=es"
-            target="_blank"
-            rel="noopener noreferrer">
-            <Icon type="instagram" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <Icon type="facebook" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://es.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <Icon type="linkedin" />
-          </a>
-        </li> */}
-      </ul>
+      <ul className="socialLinkMenuList">{createList()}</ul>
     </div>
   );
 };

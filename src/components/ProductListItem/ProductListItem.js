@@ -1,7 +1,7 @@
 import React from "react"
 import "./ProductListItem.scss"
 
-import itemImg from "../../img/trousers-white1.png"
+import itemImg from "../../img/NIN EX4.png"
 
 class ProductListItem extends React.Component {
     render () { 

@@ -3,14 +3,9 @@ import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
 import DropdownSize from "../DropdownSize/DropdownSize";
 import DropdownColor from "../DropdownColor/DropdownColor";
-import PageManagerContext from "../../context/pageManager-context";
 
 class ProductDetails extends React.Component {
-  static contextType = PageManagerContext;
 
-  handleAddToBag() {
-    this.context.onSlideBtn("cartSlide");
-  }
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
@@ -30,7 +25,7 @@ class ProductDetails extends React.Component {
             <DropdownColor />
             <DropdownSize />
           </div>
-          <BtnAddToBag clickAddToBag={this.handleAddToBag.bind(this)} />
+          <BtnAddToBag/>
           <button
             onClick={() => {
               this.handleFreeShippingModal("ModalFreeShipping");

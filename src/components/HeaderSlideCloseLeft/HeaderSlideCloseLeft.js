@@ -1,9 +1,9 @@
 import React from "react";
 import "./HeaderSlideCloseLeft.scss";
 import Icon from "../Icon/Icon";
-
 import Logo from "../Logo/Logo";
 
+// CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 class HeaderSlideCloseLeft extends React.Component {
@@ -15,16 +15,16 @@ class HeaderSlideCloseLeft extends React.Component {
 
   render() {
     return (
-      <div className="headerSlideCloseLeftBox">
+      <div className='headerSlideCloseLeftBox'>
         <button
           onClick={() => {
             this.handleCloseCartSlide();
           }}
-          className="btnCloseCartSlide">
-          <Icon className="iconBtnCloseCartSlide" type="arrowLeft" />
+          className='btnCloseCartSlide'>
+          <Icon className='iconBtnCloseCartSlide' type='arrowLeft' />
         </button>
         <span></span>
-        <Logo className="logo" />
+        <Logo className='logo' />
       </div>
     );
   }

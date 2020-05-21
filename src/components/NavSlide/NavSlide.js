@@ -2,13 +2,19 @@ import React from "react";
 import "./NavSlide.scss";
 import Icon from "../Icon/Icon";
 
+// CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
+
+// ROUTER
+import { BrowserRouter, Link } from "react-router-dom";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
+// EASING
 const ease = Back.easeInOut;
-//JSON
+
+//JSONS
 const navList = [
   { id: "0", name: "TROUSERS", label: "trousers" },
   { id: "1", name: "T-SHIRT", label: "t-shirts" },
@@ -20,6 +26,7 @@ const menu = [
   { id: "0", name: "SING IN / CREATE ACCOUNT", label: "singInSlide" },
   { id: "1", name: "MY BAG", label: "cartSlide" },
 ];
+
 class NavSlide extends React.Component {
   static contextType = PageManagerContext;
 
@@ -58,28 +65,45 @@ class NavSlide extends React.Component {
     tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
   }
 
+  ////////////////////////////////////////////////////// ROUTER
   createList() {
-    return navList.map((element, index) => {
+    return navList.map((element, i) => {
       const { id, name, label } = element;
-
       return (
-        <li className="listItem" key={id}>
-          <a
-            onClick={() => {
-              this.clickNavLinks(label);
-            }}>
-            {name}
-          </a>
-        </li>
+        <BrowserRouter key={i}>
+          <li key={i} className='listItem'>
+            <Link key={i} to={`/products/${label}`}>
+              {name}
+            </Link>
+          </li>
+        </BrowserRouter>
       );
     });
   }
 
+  ////////////////////////////////////////////////////// ANTERIOR CON SWITCH
+  // createList() {
+  //   return navList.map((element, index) => {
+  //     const { id, name, label } = element;
+
+  //     return (
+  //       <li className="listItem" key={id}>
+  //         {/* <Link to="/products/:productItem">{name}</Link> */}
+  //         <a
+  //           onClick={() => {
+  //             this.clickNavLinks(label);
+  //           }}>
+  //           {name}
+  //         </a>
+  //       </li>
+  //     );
+  //   });
+  // }
   createMenuList() {
     return menu.map((element, index) => {
       const { id, name, label } = element;
       return (
-        <li className="listItem" key={id}>
+        <li className='listItem' key={id}>
           <a
             onClick={() => {
               this.clickMenuNavLinks(label);
@@ -94,24 +118,30 @@ class NavSlide extends React.Component {
   render() {
     return (
       <div
-        className="backgroundSlide"
+        className='backgroundSlide'
         ref={(div) => (this.SlideBackground = div)}>
-        <div className="navBox">
+        <div className='navBox'>
           <button
             onClick={() => {
               this.clickCloseNav();
             }}
-            className="BtnCloseNav">
-            <Icon type="arrowRight" />
+            className='BtnCloseNav'>
+            <Icon type='arrowRight' />
           </button>
-          <nav className="nav">
-            <ul className="list">{this.createList()}</ul>
-            <hr className="separationLine"></hr>
-            <ul className="list">{this.createMenuList()}</ul>
+          <nav className='nav'>
+
+            {/*/////////////////////////////////////////////////// ANTERIOR
+            <ul className="list">{this.createList()}</ul> 
+            //////////////////////////////////////////////////////*/}
+            
+            <ul className='list'>{this.createList()}</ul>
+
+            <hr className='separationLine'></hr>
+            <ul className='list'>{this.createMenuList()}</ul>
           </nav>
         </div>
         <div
-          className="backgroundClose"
+          className='backgroundClose'
           ref={(div) => (this.NavCloseBackground = div)}
           onClick={() => {
             this.clickCloseNav();

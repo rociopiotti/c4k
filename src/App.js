@@ -4,10 +4,13 @@ import "./App.scss";
 // CONTEXT
 import PageManagerContext from "./context/pageManager-context";
 
+// ROUTES
+import Routes from "./router/Routes";
+
 // SECTIONS
-import Header from "./components/Header/Header.js";
+// import Header from "./components/Header/Header.js";
+// import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
 import GridContainer from "./components/GridContainer/GridContainer";
 import ProductBox from "./components/ProductBox/ProductBox";
 import Stores from "./components/Stores/Stores";
@@ -149,15 +152,19 @@ class App extends React.Component {
           //SETS STATE CURRENT SECTION
           onSectionBtn: this.handleSection.bind(this),
         }}>
+        
         <div className="app">
           {/******************************* SETS SLIDE BASED IN CURRENT SLIDE STATE **************************/}
           {this.setSlide(this.state.currentSlide)}
 
-          <Header />
-          {/******************************* SETS SECTION BASED IN CURRENT SECTION STATE **************************/}
-          {this.setSection(this.state.currentSection)}
+          {/* <Header /> */}
 
-          <Footer />
+          {/******************************* SETS SECTION BASED IN CURRENT SECTION STATE **************************/}
+          {/* {this.setSection(this.state.currentSection)} */}
+
+          <Routes></Routes>
+
+          {/* <Footer /> */}
         </div>
       </PageManagerContext.Provider>
     );

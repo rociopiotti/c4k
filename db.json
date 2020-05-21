@@ -1,0 +1,395 @@
+{
+  "categories": [
+    {
+      "id": "0",
+      "name": "TROUSERS",
+      "label": "trousers"
+    },
+    {
+      "id": "1",
+      "name": "T-SHIRT",
+      "label": "t-shirts"
+    },
+    {
+      "id": "2",
+      "name": "BAGS",
+      "label": "bags"
+    },
+    {
+      "id": "3",
+      "name": "SHOES",
+      "label": "shoes"
+    },
+    {
+      "id": "4",
+      "name": "NEW ARRIVALS",
+      "label": "newArrivals"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "NIN EX4",
+      "article-number": "11111",
+      "price": "€145",
+      "category": "trousers",
+      "newArrival": true,
+      "colors": [
+        {
+          "colorId": "acolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "acolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "acolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "axxs",
+          "size": "XXS"
+        },
+        {
+          "sizeId": "axs",
+          "size": "XS"
+        },
+        {
+          "sizeId": "as",
+          "size": "S"
+        },
+        {
+          "sizeId": "am",
+          "size": "M"
+        },
+        {
+          "sizeId": "al",
+          "size": "L"
+        },
+        {
+          "sizeId": "axl",
+          "size": "XL"
+        },
+        {
+          "sizeId": "axxl",
+          "size": "XXL"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "TRASH ASH",
+      "article-number": "11112",
+      "price": "€204",
+      "category": "trousers",
+      "newArrival": false,
+      "colors": [
+        {
+          "colorId": "bcolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "bcolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "bcolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "bxxs",
+          "size": "XXS"
+        },
+        {
+          "sizeId": "bxs",
+          "size": "XS"
+        },
+        {
+          "sizeId": "bs",
+          "size": "S"
+        },
+        {
+          "sizeId": "bm",
+          "size": "M"
+        },
+        {
+          "sizeId": "bl",
+          "size": "L"
+        },
+        {
+          "sizeId": "bxl",
+          "size": "XL"
+        },
+        {
+          "sizeId": "bxxl",
+          "size": "XXL"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SHOUT T",
+      "article-number": "11113",
+      "price": "€150",
+      "category": "tshirts",
+      "newArrival": true,
+      "colors": [
+        {
+          "colorId": "ccolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "ccolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "ccolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "cxxs",
+          "size": "XXS"
+        },
+        {
+          "sizeId": "cxs",
+          "size": "XS"
+        },
+        {
+          "sizeId": "cs",
+          "size": "S"
+        },
+        {
+          "sizeId": "cm",
+          "size": "M"
+        },
+        {
+          "sizeId": "cl",
+          "size": "L"
+        },
+        {
+          "sizeId": "cxl",
+          "size": "XL"
+        },
+        {
+          "sizeId": "cxxl",
+          "size": "XXL"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "PEACYL",
+      "article-number": "11114",
+      "price": "€180",
+      "category": "tshirts",
+      "newArrival": false,
+      "colors": [
+        {
+          "colorId": "dcolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "dcolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "dcolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "dxxs",
+          "size": "XXS"
+        },
+        {
+          "sizeId": "dxs",
+          "size": "XS"
+        },
+        {
+          "sizeId": "ds",
+          "size": "S"
+        },
+        {
+          "sizeId": "dm",
+          "size": "M"
+        },
+        {
+          "sizeId": "dl",
+          "size": "L"
+        },
+        {
+          "sizeId": "dxl",
+          "size": "XL"
+        },
+        {
+          "sizeId": "dxxl",
+          "size": "XXL"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "RUNNN",
+      "article-number": "11115",
+      "price": "€505",
+      "category": "bags",
+      "newArrival": true,
+      "colors": [
+        {
+          "colorId": "ecolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "ecolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        }
+      ],
+      "sizes": []
+    },
+    {
+      "id": 6,
+      "name": "KITTY",
+      "article-number": "11116",
+      "price": "€445",
+      "category": "bags",
+      "newArrival": false,
+      "colors": [
+        {
+          "colorId": "fcolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "fcolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        }
+      ],
+      "sizes": []
+    },
+    {
+      "id": 7,
+      "name": "BBOOGG",
+      "article-number": "11117",
+      "price": "€545",
+      "category": "shoes",
+      "newArrival": true,
+      "colors": [
+        {
+          "colorId": "gcolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "gcolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "gcolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "g35",
+          "size": "35"
+        },
+        {
+          "sizeId": "g36",
+          "size": "36"
+        },
+        {
+          "sizeId": "g37",
+          "size": "37"
+        },
+        {
+          "sizeId": "g38",
+          "size": "38"
+        },
+        {
+          "sizeId": "g39",
+          "size": "39"
+        },
+        {
+          "sizeId": "g40",
+          "size": "40"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "PUNC CUNP",
+      "article-number": "11148",
+      "price": "€204",
+      "category": "shoes",
+      "newArrival": false,
+      "colors": [
+        {
+          "colorId": "hcolor1",
+          "name": "BLACK",
+          "HEX": "#000"
+        },
+        {
+          "colorId": "hcolor2",
+          "name": "GREY",
+          "HEX": "#3c3c3d"
+        },
+        {
+          "colorId": "hcolor3",
+          "name": "BLUE NAVY",
+          "HEX": "#070733"
+        }
+      ],
+      "sizes": [
+        {
+          "sizeId": "g35",
+          "size": "35"
+        },
+        {
+          "sizeId": "g36",
+          "size": "36"
+        },
+        {
+          "sizeId": "g37",
+          "size": "37"
+        },
+        {
+          "sizeId": "g38",
+          "size": "38"
+        },
+        {
+          "sizeId": "g39",
+          "size": "39"
+        },
+        {
+          "sizeId": "g40",
+          "size": "40"
+        }
+      ]
+    }
+  ]
+}
