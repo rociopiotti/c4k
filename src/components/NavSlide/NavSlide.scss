@@ -1,6 +1,6 @@
 .backgroundSlide {
   width: 100%;
-  height: 100%;  
+  height: 100%;
   position: absolute;
   margin: 0;
   padding: 0 0 0 0;
@@ -13,9 +13,11 @@
   z-index: 15;
   display: flex;
   flex-direction: row;
+  pointer-events: all;
+
   .backgroundClose {
     flex-grow: 1;
-    background-color:#000;
+    background-color: #000;
     opacity: 0;
   }
   .navBox {
@@ -40,7 +42,7 @@
       color: #fff;
       background-color: transparent;
       cursor: pointer;
-      &:hover{  
+      &:hover {
         color: #c7c7c7;
         transform: scale(1.2);
         transition: 0.1s ease-in;
@@ -59,12 +61,12 @@
           text-decoration: none;
           color: #fff;
           cursor: pointer;
-          &:hover{  
+          &:hover {
             color: #c7c7c7;
           }
           .Icon {
             margin-right: 2vw;
-            &:hover{  
+            &:hover {
               color: #c7c7c7;
             }
           }

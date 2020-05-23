@@ -35,10 +35,11 @@ class NavSlide extends React.Component {
     this.NavCloseBackground = null;
     this.SlideBackground = null;
   }
+
   // --------------------------------------------------------
-  executeAnimation(value, onCompleteHandler) {
+  executeAnimation(value) {
     const tl = new Timeline({
-      onComplete: () => onCompleteHandler(value),
+      onComplete: () => this.context.onSlideBtn(value),
       repeat: 0,
       repeatDelay: 0,
       ease: ease,
@@ -46,17 +47,15 @@ class NavSlide extends React.Component {
     tl.to(this.NavCloseBackground, { opacity: 0 });
     tl.to(this.SlideBackground, { left: "-100vw" }, 0.4);
   }
-  // --------------------------------------------------------
-  clickCloseNav() {
-    this.executeAnimation(null, this.context.onSlideBtn);
-  }
 
-  clickNavLinks(value) {
-    this.executeAnimation(value, this.context.onSectionBtn);
+  // --------------------------------------------------------
+
+  clickChangeSection() {
+    this.executeAnimation(null);
   }
 
   clickMenuNavLinks(value) {
-    this.executeAnimation(value, this.context.onSlideBtn);
+    this.executeAnimation(value);
   }
 
   componentDidMount() {
@@ -70,35 +69,20 @@ class NavSlide extends React.Component {
     return navList.map((element, i) => {
       const { id, name, label } = element;
       return (
-        <BrowserRouter key={i}>
-          <li key={i} className='listItem'>
-            <Link key={i} to={`/products/${label}`}>
-              {name}
-            </Link>
-          </li>
-        </BrowserRouter>
+        <li key={i} className='listItem'>
+          <Link
+            key={i}
+            to={`/products/${label}`}
+            onClick={() => {
+              this.clickChangeSection(label);
+            }}>
+            {name}
+          </Link>
+        </li>
       );
     });
   }
 
-  ////////////////////////////////////////////////////// ANTERIOR CON SWITCH
-  // createList() {
-  //   return navList.map((element, index) => {
-  //     const { id, name, label } = element;
-
-  //     return (
-  //       <li className="listItem" key={id}>
-  //         {/* <Link to="/products/:productItem">{name}</Link> */}
-  //         <a
-  //           onClick={() => {
-  //             this.clickNavLinks(label);
-  //           }}>
-  //           {name}
-  //         </a>
-  //       </li>
-  //     );
-  //   });
-  // }
   createMenuList() {
     return menu.map((element, index) => {
       const { id, name, label } = element;
@@ -129,11 +113,10 @@ class NavSlide extends React.Component {
             <Icon type='arrowRight' />
           </button>
           <nav className='nav'>
-
             {/*/////////////////////////////////////////////////// ANTERIOR
             <ul className="list">{this.createList()}</ul> 
             //////////////////////////////////////////////////////*/}
-            
+
             <ul className='list'>{this.createList()}</ul>
 
             <hr className='separationLine'></hr>

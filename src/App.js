@@ -8,19 +8,6 @@ import PageManagerContext from "./context/pageManager-context";
 import Routes from "./router/Routes";
 
 // SECTIONS
-// import Header from "./components/Header/Header.js";
-// import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home";
-import GridContainer from "./components/GridContainer/GridContainer";
-import ProductBox from "./components/ProductBox/ProductBox";
-import Stores from "./components/Stores/Stores";
-import Faq from "./components/Faq/Faq";
-import About from "./components/About/About";
-import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
-import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
-import Checkout from "./components/Checkout/Checkout";
-import PaymentGateway from "./components/PaymentGateway/PaymentGateway";
-import PaymentConfirmation from "./components/PaymentConfirmation/PaymentConfirmation";
 
 // SLIDES
 import NavSlide from "./components/NavSlide/NavSlide";
@@ -49,98 +36,6 @@ class App extends React.Component {
       currentSlide: newSlide,
     });
   }
-  setSlide(slideType) {
-    let slide;
-
-    switch (slideType) {
-      default:
-        slide = null;
-        break;
-      case "navSlide":
-        slide = <NavSlide />;
-        break;
-      case "cartSlide":
-        slide = <CartSlide />;
-        break;
-      case "singInSlide":
-        slide = <SingInCreateAccountNavslide />;
-        break;
-      case "filter":
-        slide = <FilterSlide />;
-        break;
-      case "sort":
-        slide = <SortSlide />;
-        break;
-      case "forgotPassworSlide":
-        slide = <ForgotPasswordSlide />;
-        break;
-      // TODO: HACER QUE APAREZCA CUANDO SING IN ESTA EN CHECKOUT
-      case "forgotPassworModal":
-        slide = <ForgotPasswordModal />;
-        break;
-    }
-    return slide;
-  }
-  handleSection(newSection) {
-    this.setState({
-      currentSection: newSection,
-      currentSlide: null,
-    });
-  }
-  setSection(sectionType) {
-    let section;
-    switch (sectionType) {
-      case "home":
-        section = <Home />;
-        break;
-      case "trousers":
-        section = <GridContainer />;
-        break;
-      case "tshirts":
-        section = <GridContainer />;
-        break;
-      case "bags":
-        section = <GridContainer />;
-        break;
-      case "shoes":
-        section = <GridContainer />;
-        break;
-      case "newArrivals":
-        section = <GridContainer />;
-        break;
-      case "productDetails":
-        section = <ProductBox />;
-        break;
-      case "checkout":
-        section = <Checkout />;
-        break;
-      case "paymentGateway":
-        section = <PaymentGateway />;
-        break;
-      case "paymentConfirmation":
-        section = <PaymentConfirmation />;
-        break;
-      case "stores":
-        section = <Stores />;
-        break;
-      case "faq":
-        section = <Faq />;
-        break;
-      case "about":
-        section = <About />;
-        break;
-      case "privacyPolicy":
-        section = <PrivacyPolicy />;
-        break;
-      case "termsAndCondition":
-        section = <TermsAndConditions />;
-        break;
-      default:
-        section = null;
-        break;
-    }
-    return section;
-  }
 
   render() {
     console.log("CURRENT SECTION", this.state.currentSection);
@@ -149,22 +44,10 @@ class App extends React.Component {
         value={{
           //SETS STATE CURRENT SLIDE
           onSlideBtn: this.handleSlide.bind(this),
-          //SETS STATE CURRENT SECTION
-          onSectionBtn: this.handleSection.bind(this),
+          currentSlide: this.state.currentSlide,
         }}>
-        
-        <div className="app">
-          {/******************************* SETS SLIDE BASED IN CURRENT SLIDE STATE **************************/}
-          {this.setSlide(this.state.currentSlide)}
-
-          {/* <Header /> */}
-
-          {/******************************* SETS SECTION BASED IN CURRENT SECTION STATE **************************/}
-          {/* {this.setSection(this.state.currentSection)} */}
-
+        <div className='app'>
           <Routes></Routes>
-
-          {/* <Footer /> */}
         </div>
       </PageManagerContext.Provider>
     );

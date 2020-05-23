@@ -1,0 +1,50 @@
+{
+  "bags": [
+    {
+      "id": "1",
+      "image": "kitty.png",
+      "category": "bags"
+    },
+    {
+      "id": "2",
+      "image": "runnn.png",
+      "category": "bags"
+    }
+  ],
+  "trousers": [
+    {
+      "id": "1",
+      "image": "ninex4.png",
+      "category": "trousers"
+    },
+    {
+      "id": "2",
+      "image": "ninex4blue.png",
+      "category": "trousers"
+    }
+  ],
+  "shoes": [
+    {
+      "id": "1",
+      "image": "bboogg.png",
+      "category": "shoes"
+    },
+    {
+      "id": "2",
+      "image": "punccunp.png",
+      "category": "shoes"
+    }
+  ],
+  "tshirts": [
+    {
+      "id": "1",
+      "image": "peacyl.png",
+      "category": "tshirts"
+    },
+    {
+      "id": "2",
+      "image": "shoutt.png",
+      "category": "tshirts"
+    }
+  ]
+}

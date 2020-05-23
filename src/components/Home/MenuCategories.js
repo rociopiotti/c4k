@@ -18,17 +18,21 @@ const menuCategories = [
 
 const MenuCategories = (props) => {
   console.log(props);
+ 
   const createList = (context) => {
     return menuCategories.map((element, index) => {
       const { id, name, label } = element;
       return (
         <li className='listItem' key={id}>
-          <a
+          <Link to={`/products/${label}`}>
+            {name}
+          </Link>
+          {/* <a
             onClick={() => {
               context.onSectionBtn(label);
             }}>
             {name}
-          </a>
+          </a> */}
         </li>
       );
     });

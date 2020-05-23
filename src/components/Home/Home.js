@@ -46,9 +46,7 @@ class Home extends React.Component {
         <h1 className='title'>C-4K</h1>
         <BtnShop onClickBtnShop={this.handleBtnShop.bind(this)} />
         <BackgroundImg />
-        <div>
-          <MenuCategories />
-        </div>
+        <MenuCategories />
       </div>
     );
   }

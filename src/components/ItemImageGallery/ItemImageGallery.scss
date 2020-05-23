@@ -6,7 +6,39 @@
   align-items: flex-start;
   justify-content: center;
   overflow-x: hidden;
-
+  .slick-slider {
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    .slick-dots {
+      width: 100% !important;
+      position: relative !important;
+      bottom: 0 !important;
+      color: #ffffff;
+      background-color: #000;
+      li {
+        background-color: #000;
+        button {
+          background-color: #000 !important;
+          &::before {
+            color: #ffffff;
+          }
+        
+        }
+      }
+      
+    }
+    .slick-list {
+      width: 125%;
+      padding: 0px 0px !important;
+      .slick-slide {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .imagesBox {
     width: 49vw;
     height: auto;

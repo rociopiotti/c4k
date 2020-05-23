@@ -19,12 +19,14 @@ import Checkout from "../components/Checkout/Checkout";
 import PaymentGateway from "../components/PaymentGateway/PaymentGateway";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import SlideManager from "../components/SlideManager/SlideManager"
 
 const Routes = () => {
   return (
     <PageManagerContext.Consumer>
       {(context) => (
         <BrowserRouter>
+          <SlideManager />
           <Header />
           <Switch>
             <Route path='/products/:category/:name' component={ProductBox} />

@@ -1,27 +1,27 @@
 {
   "categories": [
     {
-      "id": "0",
+      "id": "1",
       "name": "TROUSERS",
       "label": "trousers"
     },
     {
-      "id": "1",
+      "id": "2",
       "name": "T-SHIRT",
       "label": "t-shirts"
     },
     {
-      "id": "2",
+      "id": "3",
       "name": "BAGS",
       "label": "bags"
     },
     {
-      "id": "3",
+      "id": "4",
       "name": "SHOES",
       "label": "shoes"
     },
     {
-      "id": "4",
+      "id": "5",
       "name": "NEW ARRIVALS",
       "label": "newArrivals"
     }
@@ -30,6 +30,7 @@
     {
       "id": 1,
       "name": "NIN EX4",
+      "product-image": "ninex4.png",
       "article-number": "11111",
       "price": "€145",
       "category": "trousers",
@@ -85,6 +86,7 @@
     {
       "id": 2,
       "name": "TRASH ASH",
+      "product-image": "trashash.png",
       "article-number": "11112",
       "price": "€204",
       "category": "trousers",
@@ -139,7 +141,8 @@
     },
     {
       "id": 3,
-      "name": "SHOUT T",
+      "name": "SHOUT T",      
+      "product-image": "shoutt.png",      
       "article-number": "11113",
       "price": "€150",
       "category": "tshirts",
@@ -195,6 +198,7 @@
     {
       "id": 4,
       "name": "PEACYL",
+      "product-image": "peacyl.png",   
       "article-number": "11114",
       "price": "€180",
       "category": "tshirts",
@@ -250,6 +254,7 @@
     {
       "id": 5,
       "name": "RUNNN",
+      "product-image": "runnn.png",
       "article-number": "11115",
       "price": "€505",
       "category": "bags",
@@ -271,6 +276,7 @@
     {
       "id": 6,
       "name": "KITTY",
+      "product-image": "kitty.png",
       "article-number": "11116",
       "price": "€445",
       "category": "bags",
@@ -291,7 +297,8 @@
     },
     {
       "id": 7,
-      "name": "BBOOGG",
+      "name": "BBOOGG",      
+      "product-image": "bboogg.png",
       "article-number": "11117",
       "price": "€545",
       "category": "shoes",
@@ -343,6 +350,7 @@
     {
       "id": 8,
       "name": "PUNC CUNP",
+      "product-image": "punccunp.png",
       "article-number": "11148",
       "price": "€204",
       "category": "shoes",
