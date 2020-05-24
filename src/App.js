@@ -19,11 +19,13 @@ class App extends React.Component {
 
     this.state = {
       currentSlide: null,
+     
     };
 
     this.handleSlide = this.handleSlide.bind(this);
   }
 
+  
   //--------LEFT SLIDE ANIMATION EXIT
   leftSlideOutAnimation(refs, onComplete) {
     const { backgroundRef, wrapperRef } = refs;
@@ -34,7 +36,6 @@ class App extends React.Component {
     tl.to(backgroundRef, { opacity: 0 });
     tl.to(wrapperRef, { left: "100vw" }, 0.4);
   }
-
 
   //--------RIGHT SLIDE ANIMATION EXIT
   RightSlideOutAnimation(refs, onComplete, newSlide) {
@@ -48,11 +49,13 @@ class App extends React.Component {
   }
 
   //--------- CHANGES SLIDE STATE
-  handleSlide(newSlide) {
+  handleSlide(newSlide, newMode) {
     console.log("handleSlide");
 
     this.setState({
       currentSlide: newSlide,
+     
+
     });
   }
 
@@ -68,8 +71,7 @@ class App extends React.Component {
           // Dispara la animación de salida del Slide:
           leftSlideOutAnimation: this.leftSlideOutAnimation,
           RightSlideOutAnimation: this.RightSlideOutAnimation,
-          // Dispara animacion de entrada Slide:
-          RightSlideInAnimation: this.RightSlideInAnimation,
+        
         }}>
         <div className='app'>
           <Routes></Routes>

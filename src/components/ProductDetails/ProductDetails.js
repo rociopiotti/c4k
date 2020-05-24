@@ -3,9 +3,10 @@ import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
 import DropdownSize from "../DropdownSize/DropdownSize";
 import DropdownColor from "../DropdownColor/DropdownColor";
+import DropDown from "../DropDown/DropDown";
+import Dropdown from "../DropDown/DropDown";
 
 class ProductDetails extends React.Component {
-
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
@@ -17,37 +18,38 @@ class ProductDetails extends React.Component {
 
   render() {
     return (
-      <div className="productDetailsBox">
-        <div className="productDetails">
-          <h3 className="titleProductDetails">#ITEM TITLE</h3>
-          <h4 className="priceProductDetails">PRICE</h4>
-          <div className="dropdownsContainer">
+      <div className='productDetailsBox'>
+        <div className='productDetails'>
+          <h3 className='titleProductDetails'>#ITEM TITLE</h3>
+          <h4 className='priceProductDetails'>PRICE</h4>
+          <div className='dropdownsContainer'>
+            <Dropdown />
             <DropdownColor />
             <DropdownSize />
           </div>
-          <BtnAddToBag/>
+          <BtnAddToBag />
           <button
             onClick={() => {
               this.handleFreeShippingModal("ModalFreeShipping");
             }}
-            className="btnFreeShipping">
+            className='btnFreeShipping'>
             Free shipping on all orders €170
           </button>
-          <div className="descriptionProductDetail">
+          <div className='descriptionProductDetail'>
             <h4>DESCRIPTION</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has.
             </p>
           </div>
-          <div className="featuresProductDetail">
+          <div className='featuresProductDetail'>
             <h4>FEATURES</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has.
             </p>
           </div>
-          <div className="sizeProductDetail">
+          <div className='sizeProductDetail'>
             <h4>SIZE</h4>
             <p>
               Height 5'11", <br></br>
@@ -60,7 +62,7 @@ class ProductDetails extends React.Component {
               onClick={() => {
                 this.handleSizeGuide("SizeGuide");
               }}
-              className="btnSizeGuide">
+              className='btnSizeGuide'>
               Size Guide
             </button>
           </div>

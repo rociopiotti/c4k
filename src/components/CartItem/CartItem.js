@@ -8,6 +8,8 @@ import PageManagerContext from "../../context/pageManager-context";
 
 //ROUTER
 import { Link } from "react-router-dom";
+import Dropdown from "../DropDown/DropDown";
+
 class CartItem extends React.Component {
   static contextType = PageManagerContext;
 
@@ -15,7 +17,6 @@ class CartItem extends React.Component {
     wishList: false,
     removeFromCart: false,
   };
-
 
   handleSeeProductBox() {
     this.context.onSlideBtn();
@@ -75,6 +76,7 @@ class CartItem extends React.Component {
             </p>
           </div>
           {/* TO DO: CORREGIR SUPERPOSICION DE DROPDOWNS */}
+          <Dropdown />
           <DropdownSize />
           <DropdownQuantity />
         </div>

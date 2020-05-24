@@ -83,7 +83,6 @@ class DropdownColor extends React.Component {
     });
   }
 
-  setName() {}
   render() {
     // console.log(this.state.currentIndex);
     const itemColor = provider[this.state.currentIndex].label;

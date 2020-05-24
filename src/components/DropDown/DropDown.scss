@@ -1,0 +1,44 @@
+.dropDownBox {
+  width: 100%;
+  overflow: hidden;
+  .dropdownColorBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 0%;
+    padding: 1vh 0;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    border-radius: none;
+    &:focus {
+      border: transparent;
+    }
+    option {
+      color: #fff;
+      border: none;
+      background-color: #000;
+      padding: 2px;
+      border-bottom: 0;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+      &:focus {
+        border: transparent;
+      }
+      &::after {
+        background-color: #fff;
+        color: #000;
+        &:focus {
+          border: transparent;
+        }
+      }
+    }
+  }
+}

@@ -37,7 +37,8 @@ class CartSlide extends React.Component {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,
       },
-      this.context.onSlideBtn
+      this.context.onSlideBtn,
+    
     );
   }
 
