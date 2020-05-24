@@ -19,29 +19,20 @@ class SingInCreateAccountNavslide extends React.Component {
     super(props);
     this.SlideBackground = null;
     this.NavCloseBackground = null;
-
+    this.executeAnimation = this.executeAnimation.bind(this);
     this.state = {
       singinOption: "singIn",
       activeBtn: true,
-    
     };
   }
-  // --------------------------------------------------------
-
-  executeAnimation(value) {
-    const tl = new Timeline({
-      onComplete: () => this.context.onSlideBtn(value),
-      repeat: 0,
-      repeatDelay: 0,
-      ease: ease,
-    });
-    tl.to(this.NavCloseBackground, { opacity: 0 });
-    tl.to(this.SlideBackground, { left: "-100vw" }, 0.4);
-  }
-  // --------------------------------------------------------
-
-  clickCloseNav() {
-    this.executeAnimation(null);
+  executeAnimation() {
+    this.context.RightSlideOutAnimation(
+      {
+        backgroundRef: this.NavCloseBackground,
+        wrapperRef: this.SlideBackground,
+      },
+      this.context.onSlideBtn
+    );
   }
 
   handleSinginOption(newSinginOption) {
@@ -75,45 +66,38 @@ class SingInCreateAccountNavslide extends React.Component {
     let btn_class1 = this.state.activeBtn ? "underline" : "noneDecoration";
     let btn_class2 = this.state.activeBtn ? "noneDecoration" : "underline";
 
-    
     return (
       <div
         ref={(div) => (this.SlideBackground = div)}
-        className="singInCreateAccountBackground">
-        <div className="singInCreateAccountBoxBackground">
-          <button
-            onClick={() => {
-              this.clickCloseNav();
-            }}
-            className="BtnCloseNav">
-            <Icon className="iconBtnCloseNav" type="arrowRight" />
+        className='singInCreateAccountBackground'>
+        <div className='singInCreateAccountBoxBackground'>
+          <button onClick={this.executeAnimation} className='BtnCloseNav'>
+            <Icon className='iconBtnCloseNav' type='arrowRight' />
           </button>
-          <div className="headerSingInCreateAccount">
+          <div className='headerSingInCreateAccount'>
             <button
               onClick={() => {
                 this.handleSinginOption("singIn");
               }}
-              className="btnSingInSlide">
-              <h2 className= {btn_class1} >#SING IN /</h2>
+              className='btnSingInSlide'>
+              <h2 className={btn_class1}>#SING IN /</h2>
             </button>
             <button
               onClick={() => {
                 this.handleSinginOption("createAccount");
               }}
-              className="btnCreateAccountSlide">
-              <h2 className= {btn_class2} >CREATE AN ACCOUNT</h2>
+              className='btnCreateAccountSlide'>
+              <h2 className={btn_class2}>CREATE AN ACCOUNT</h2>
             </button>
           </div>
-          <div className="singInCreateAccountBox">
+          <div className='singInCreateAccountBox'>
             {this.setSinginOption(this.state.singinOption)}
           </div>
         </div>
         <div
           ref={(div) => (this.NavCloseBackground = div)}
-          onClick={() => {
-            this.clickCloseNav();
-          }}
-          className="singInCreateAccountClosebackground"></div>
+          onClick={this.executeAnimation}
+          className='singInCreateAccountClosebackground'></div>
       </div>
     );
   }

@@ -3,8 +3,8 @@ import "./CartSlide.scss";
 import CartItem from "../CartItem/CartItem";
 
 // COMPONENTS
-import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 // import CartEmpty from "../CartEmpty/CartEmpty";
+import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 
@@ -73,7 +73,7 @@ class CartSlide extends React.Component {
           onClick={this.executeAnimation}></div>
         <div className='cartSlide'>
           <div className='cartSlideBox'>
-            <HeaderSlideCloseLeft  onCloseArrow={this.executeAnimation} />
+            <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
 

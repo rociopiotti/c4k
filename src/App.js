@@ -24,6 +24,8 @@ class App extends React.Component {
     this.handleSlide = this.handleSlide.bind(this);
   }
 
+
+  //--------LEFT SLIDE ANIMATION
   leftSlideOutAnimation(refs, onComplete) {
     const { backgroundRef, wrapperRef } = refs;
     const tl = new Timeline({
@@ -32,6 +34,17 @@ class App extends React.Component {
     });
     tl.to(backgroundRef, { opacity: 0 });
     tl.to(wrapperRef, { left: "100vw" }, 0.4);
+  }
+
+  //--------LEFT SLIDE ANIMATION
+  RightSlideOutAnimation(refs, onComplete) {
+    const { backgroundRef, wrapperRef } = refs;
+    const tl = new Timeline({
+      onComplete,
+      ease: ease,
+    });
+    tl.to(backgroundRef, { opacity: 0 });
+    tl.to(wrapperRef, {  left: "-100vw"}, 0.4);
   }
 
   //--------- CHANGES SLIDE STATE
@@ -54,6 +67,8 @@ class App extends React.Component {
           //
           // Dispara la animación de salida del Slide:
           leftSlideOutAnimation: this.leftSlideOutAnimation,
+          RightSlideOutAnimation: this.RightSlideOutAnimation,
+
         }}>
         <div className='app'>
           <Routes></Routes>
