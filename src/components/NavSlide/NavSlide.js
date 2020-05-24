@@ -34,32 +34,22 @@ class NavSlide extends React.Component {
     super(props);
     this.NavCloseBackground = null;
     this.SlideBackground = null;
+    this.executeAnimation = this.executeAnimation.bind(this);
   }
 
-  // --------------------------------------------------------
-
-  executeAnimation(value) {
-    const tl = new Timeline({
-      onComplete: () => this.context.onSlideBtn(value),
-      repeat: 0,
-      repeatDelay: 0,
-      ease: ease,
-    });
-    tl.to(this.NavCloseBackground, { opacity: 0 });
-    tl.to(this.SlideBackground, { left: "-100vw" }, 0.4);
-  }
-
-  // --------------------------------------------------------
-
-  clickChangeSection() {
-    this.executeAnimation(null);
-  }
-
-  clickMenuNavLinks(value) {
-    this.executeAnimation(value);
+  executeAnimation(nextSlide) {
+    this.context.RightSlideOutAnimation(
+      {
+        backgroundRef: this.NavCloseBackground,
+        wrapperRef: this.SlideBackground,
+      },
+      this.context.onSlideBtn,
+      nextSlide
+    );
   }
 
   componentDidMount() {
+
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
@@ -73,9 +63,7 @@ class NavSlide extends React.Component {
           <Link
             key={i}
             to={`/products/${label}`}
-            onClick={() => {
-              this.clickChangeSection(label);
-            }}>
+            onClick={() => this.executeAnimation(null)}>
             {name}
           </Link>
         </li>
@@ -88,12 +76,7 @@ class NavSlide extends React.Component {
       const { id, name, label } = element;
       return (
         <li className='listItem' key={id}>
-          <a
-            onClick={() => {
-              this.clickMenuNavLinks(label);
-            }}>
-            {name}
-          </a>
+          <a onClick={() => this.executeAnimation(label)}>{name}</a>
         </li>
       );
     });
@@ -106,16 +89,12 @@ class NavSlide extends React.Component {
         ref={(div) => (this.SlideBackground = div)}>
         <div className='navBox'>
           <button
-            onClick={() => {
-              this.clickChangeSection();
-            }}
+            onClick={() => this.executeAnimation(null)}
             className='BtnCloseNav'>
             <Icon type='arrowRight' />
           </button>
           <nav className='nav'>
-
             <ul className='list'>{this.createList()}</ul>
-
             <hr className='separationLine'></hr>
             <ul className='list'>{this.createMenuList()}</ul>
           </nav>
@@ -123,9 +102,7 @@ class NavSlide extends React.Component {
         <div
           className='backgroundClose'
           ref={(div) => (this.NavCloseBackground = div)}
-          onClick={() => {
-            this.clickChangeSection();
-          }}></div>
+          onClick={() => this.executeAnimation(null)}></div>
       </div>
     );
   }
