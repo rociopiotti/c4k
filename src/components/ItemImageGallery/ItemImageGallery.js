@@ -67,18 +67,6 @@ class ItemImageGallery extends React.Component {
     });
   }
 
-  setImage(indexImage) {
-    let itemImage;
-    switch (indexImage) {
-      case "indexImage1":
-        itemImage = "indexImage1";
-        break;
-      default:
-        itemImage = null;
-        break;
-    }
-    return itemImage;
-  }
   render() {
     return (
       <div className='itemImageGalleryBox'>

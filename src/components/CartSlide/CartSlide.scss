@@ -10,7 +10,7 @@
   left: 100vw;
   display: flex;
   flex-direction: row;
-
+  pointer-events: all;
   .cartCloseBackground {
     background-color: #000;
     flex-grow: 1;
@@ -63,6 +63,9 @@
       -webkit-appearance: none;
       border-radius: 0;
       cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+
       &:hover {
         background-color: #c7c7c7;
       }

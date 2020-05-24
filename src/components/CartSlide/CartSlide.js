@@ -1,5 +1,7 @@
 import React from "react";
 import "./CartSlide.scss";
+
+// COMPONENTS
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import CartItemList from "../CartItemList/CartItemList";
@@ -11,6 +13,7 @@ import PageManagerContext from "../../context/pageManager-context";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
+import { Link } from "react-router-dom";
 
 // EASING
 const ease = Back.easeInOut;
@@ -24,7 +27,7 @@ class CartSlide extends React.Component {
     this.NavCloseBackground = null;
   }
 
-  // --------------------------------------------------------
+  // ANIMATION -----------------------------------------------
   executeAnimation(value, onCompleteHandler) {
     const tl = new Timeline({
       onComplete: () => onCompleteHandler(value),
@@ -33,22 +36,19 @@ class CartSlide extends React.Component {
     tl.to(this.NavCloseBackground, { opacity: 0 });
     tl.to(this.SlideBackground, { left: "100vw" }, 0.4);
   }
-  // --------------------------------------------------------
 
-  clickCloseNav() {
+  // ANIMATION -----------------------------------------------
+
+  clickChangeSection() {
     this.executeAnimation(null, this.context.onSlideBtn);
   }
 
-  handleCheckoutPage(value) {
-    this.executeAnimation(value, this.context.onSectionBtn);
-  }
-
   componentDidMount() {
-    // console.log("->>>>>>>>>>>>>>>EMPIEZA");
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
   }
+
   render() {
     return (
       <div
@@ -58,7 +58,7 @@ class CartSlide extends React.Component {
           ref={(div) => (this.NavCloseBackground = div)}
           className='cartCloseBackground'
           onClick={() => {
-            this.clickCloseNav();
+            this.clickChangeSection();
           }}></div>
         <div className='cartSlide'>
           <div className='cartSlideBox'>
@@ -68,13 +68,14 @@ class CartSlide extends React.Component {
             <CartItemList />
             <BtnPromoCode />
             <EstimatedTotal />
-            <button
+            <Link 
+              to='/checkout' 
+              className='btnCheckout'
               onClick={() => {
-                this.handleCheckoutPage("checkout");
-              }}
-              className='btnCheckout'>
+              this.clickChangeSection();
+            }}>
               CHECKOUT
-            </button>
+            </Link>
           </div>
         </div>
       </div>

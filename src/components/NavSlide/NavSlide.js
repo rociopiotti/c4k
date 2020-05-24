@@ -6,7 +6,7 @@ import Icon from "../Icon/Icon";
 import PageManagerContext from "../../context/pageManager-context";
 
 // ROUTER
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
@@ -37,6 +37,7 @@ class NavSlide extends React.Component {
   }
 
   // --------------------------------------------------------
+
   executeAnimation(value) {
     const tl = new Timeline({
       onComplete: () => this.context.onSlideBtn(value),
@@ -64,7 +65,6 @@ class NavSlide extends React.Component {
     tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
   }
 
-  ////////////////////////////////////////////////////// ROUTER
   createList() {
     return navList.map((element, i) => {
       const { id, name, label } = element;
@@ -107,7 +107,7 @@ class NavSlide extends React.Component {
         <div className='navBox'>
           <button
             onClick={() => {
-              this.clickCloseNav();
+              this.clickChangeSection();
             }}
             className='BtnCloseNav'>
             <Icon type='arrowRight' />
@@ -127,7 +127,7 @@ class NavSlide extends React.Component {
           className='backgroundClose'
           ref={(div) => (this.NavCloseBackground = div)}
           onClick={() => {
-            this.clickCloseNav();
+            this.clickChangeSection();
           }}></div>
       </div>
     );
