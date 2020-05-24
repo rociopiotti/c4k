@@ -113,9 +113,6 @@ class NavSlide extends React.Component {
             <Icon type='arrowRight' />
           </button>
           <nav className='nav'>
-            {/*/////////////////////////////////////////////////// ANTERIOR
-            <ul className="list">{this.createList()}</ul> 
-            //////////////////////////////////////////////////////*/}
 
             <ul className='list'>{this.createList()}</ul>
 

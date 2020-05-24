@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 //JSON
 const footerMenu = [
   { id: "0", name: "STORES", label: "stores" },
-  { id: "1", name: "HELP", label: "faq" },
+  { id: "1", name: "HELP", label: "help" },
   { id: "2", name: "ABOUT", label: "about" },
-  { id: "3", name: "TERMS AND CONDITIONS", label: "termsAndCondition" },
+  { id: "3", name: "TERMS AND CONDITIONS", label: "termsandconditions" },
   { id: "4", name: "PRIVACY POLICY", label: "privacyPolicy" },
 ];
 class FooterMenu extends React.Component {
@@ -24,30 +24,24 @@ class FooterMenu extends React.Component {
       const { id, name, label } = element;
 
       return (
-        <li className="listItem" key={id}>
-          <a
-            onClick={() => {
-              this.context.onSectionBtn(label);
-            }}>
-            {name}
-          </a>
+        <li className='listItem' key={id}>
+          <Link to={`/${element.label}`}>{element.name}</Link>
         </li>
       );
     });
   }
   render() {
     return (
-      <div className="footerMenuBox">
-        <div className="footerMenuInnerBox">
-        
+      <div className='footerMenuBox'>
+        <div className='footerMenuInnerBox'>
           <button
             onClick={() => {
               this.handleHome();
             }}
-            className="logoFooter">
+            className='logoFooter'>
             <Logo />
           </button>
-          <ul className="footerMenu">{this.createList()}</ul>
+          <ul className='footerMenu'>{this.createList()}</ul>
         </div>
       </div>
     );

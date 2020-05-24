@@ -26,7 +26,7 @@ class CartSlide extends React.Component {
     this.SlideBackground = null;
     this.NavCloseBackground = null;
 
-    this.onClickChangeSection = this.onClickChangeSection.bind(this);
+    // this.onClickChangeSection = this.onClickChangeSection.bind(this);
   }
 
   // ANIMATION -----------------------------------------------
@@ -67,7 +67,7 @@ class CartSlide extends React.Component {
             <HeaderSlideCloseLeft />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
-            <CartItemList animateExit = {this.onClickChangeSection}  />
+            <CartItemList onChangeSection = {this.onClickChangeSection}  />
             <BtnPromoCode />
             <EstimatedTotal />
             <Link 

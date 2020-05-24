@@ -1,6 +1,6 @@
 import React from "react";
-import "./ItemImageGallery.scss";
 
+import "./ItemImageGallery.scss";
 // DATABASE
 import { URL_PRODUCTS } from "../../utils/path";
 import { URL_TROUSERS } from "../../utils/path";

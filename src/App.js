@@ -7,15 +7,19 @@ import PageManagerContext from "./context/pageManager-context";
 // ROUTES
 import Routes from "./router/Routes";
 
+//ANMATION
+import { Timeline, Back } from "gsap/gsap-core";
+
+// EASING
+const ease = Back.easeInOut;
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      currentSection: "home",
       currentSlide: null,
-      
+
     };
   }
 
@@ -26,9 +30,7 @@ class App extends React.Component {
     });
   }
 
-  
   render() {
- 
     return (
       <PageManagerContext.Provider
         value={{
@@ -36,6 +38,7 @@ class App extends React.Component {
           onSlideBtn: this.handleSlide.bind(this),
           // PASSES STATE CURRENT SLIDE
           currentSlide: this.state.currentSlide,
+       
         }}>
         <div className='app'>
           <Routes></Routes>

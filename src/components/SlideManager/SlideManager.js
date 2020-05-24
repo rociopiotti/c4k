@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SlideManager.scss";
+
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 

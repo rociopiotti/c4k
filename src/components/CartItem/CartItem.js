@@ -30,13 +30,17 @@ class CartItem extends React.Component {
       removeFromCart: true,
     });
   }
-  
 
   render() {
+    console.log(this.props.onChangeSection)
     return (
       <div className='cartItemBox'>
         <div className='column1'>
-          <Link to='/products/trousers/1' className='cartItemImgBox'>
+          <Link
+            to='/products/trousers/1'
+            className='cartItemImgBox'
+            onClick={
+              this.props.onChangeSection}>
             <img src={itemImg} alt='trousers item' className='cartItemImg' />
           </Link>
           <button

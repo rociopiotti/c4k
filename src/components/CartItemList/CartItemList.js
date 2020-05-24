@@ -8,7 +8,7 @@ class CartItemList extends React.Component {
       <div className="cartItemListBox">
         <ul className="cartItemList">
           <li className="cartItemElement">
-            <CartItem />
+            <CartItem onChangeSection = {this.props.onChangeSection} />
           </li>
           {/* <li className="cartItemElement">
             <CartItem />
