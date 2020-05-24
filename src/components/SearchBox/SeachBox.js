@@ -6,6 +6,7 @@ import Icon from "../Icon/Icon";
 import { TweenLite, Back } from "gsap";
 
 const ease = Back.easeOut.config(1);
+
 class SearchBox extends React.Component {
   constructor(props) {
     super(props);

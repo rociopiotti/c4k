@@ -11,7 +11,6 @@ import PageManagerContext from "../../context/pageManager-context";
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {
-
   static contextType = PageManagerContext;
 
   handleNavSlide() {
@@ -45,13 +44,9 @@ class Header extends React.Component {
           <Icon type='burger' />
         </button>
         <span className='spacer'></span>
-        
+
         <Link to='/'>
-          <button
-            // onClick={() => {
-            //   this.handleHome();
-            // }}
-            className='logo'>
+          <button className='logo'>
             <Logo />
           </button>
         </Link>

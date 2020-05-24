@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./SlideManager.scss";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
@@ -15,10 +15,11 @@ import ForgotPasswordModal from "../ForgotPasswordModal/ForgotPasswordModal";
 class SlideManager extends Component {
   static contextType = PageManagerContext;
 
+  // RECEIVES FUNCTION
   handleSlide() {
     this.context.onSlideBtn();
   }
-
+  // SETS SLIDE TYPE
   setSlide(slideType) {
     let slide;
 
@@ -53,19 +54,12 @@ class SlideManager extends Component {
   }
 
   render() {
+    /// CHECK CUREENT SLIDE STATE
     console.clear();
     console.log(">SlideManager:", this.context.currentSlide);
 
     return (
-      <div
-        style={{
-          background: "rgba(255,0,0,0.5)",
-          color: "white",
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          pointerEvents: "none",
-        }}>
+      <div className='slideManagerBox'>
         {this.setSlide(this.context.currentSlide)}
       </div>
     );

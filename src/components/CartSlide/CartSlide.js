@@ -25,6 +25,8 @@ class CartSlide extends React.Component {
     super(props);
     this.SlideBackground = null;
     this.NavCloseBackground = null;
+
+    this.onClickChangeSection = this.onClickChangeSection.bind(this);
   }
 
   // ANIMATION -----------------------------------------------
@@ -39,7 +41,7 @@ class CartSlide extends React.Component {
 
   // ANIMATION -----------------------------------------------
 
-  clickChangeSection() {
+  onClickChangeSection() {
     this.executeAnimation(null, this.context.onSlideBtn);
   }
 
@@ -48,7 +50,7 @@ class CartSlide extends React.Component {
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
   }
-
+ 
   render() {
     return (
       <div
@@ -58,21 +60,21 @@ class CartSlide extends React.Component {
           ref={(div) => (this.NavCloseBackground = div)}
           className='cartCloseBackground'
           onClick={() => {
-            this.clickChangeSection();
+            this.onClickChangeSection();
           }}></div>
         <div className='cartSlide'>
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
-            <CartItemList />
+            <CartItemList animateExit = {this.onClickChangeSection}  />
             <BtnPromoCode />
             <EstimatedTotal />
             <Link 
               to='/checkout' 
               className='btnCheckout'
               onClick={() => {
-              this.clickChangeSection();
+              this.onClickChangeSection();
             }}>
               CHECKOUT
             </Link>

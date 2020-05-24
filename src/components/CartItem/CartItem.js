@@ -6,7 +6,7 @@ import itemImg from "../../img/NIN EX4.png";
 import DropdownQuantity from "../DropdownQuantity/DropdownQuantity";
 import PageManagerContext from "../../context/pageManager-context";
 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 class CartItem extends React.Component {
   static contextType = PageManagerContext;
 
@@ -16,7 +16,7 @@ class CartItem extends React.Component {
   };
 
   handleSeeProductBox() {
-    this.context.onSectionBtn("productDetails")
+    this.context.onSectionBtn("productDetails");
   }
 
   handleAddToWishList() {
@@ -30,47 +30,43 @@ class CartItem extends React.Component {
       removeFromCart: true,
     });
   }
+  
 
   render() {
-    // console.log("---->WISHLIST BTN", this.state.wishList);
-    // console.log("----->REMOVE FROM CART BTN", this.state.removeFromCart);
-
     return (
-      <div className="cartItemBox">
-        <div className="column1">
-          <Link
-            to="/products/trousers/1"
-            className="cartItemImgBox">
-            <img src={itemImg} alt="trousers item" className="cartItemImg" />
+      <div className='cartItemBox'>
+        <div className='column1'>
+          <Link to='/products/trousers/1' className='cartItemImgBox'>
+            <img src={itemImg} alt='trousers item' className='cartItemImg' />
           </Link>
           <button
             onClick={() => {
               this.handleAddToWishList();
             }}
-            className="btnAddItemWishList">
-            <Icon type="heart" />
+            className='btnAddItemWishList'>
+            <Icon type='heart' />
           </button>
         </div>
-        <div className="column2">
+        <div className='column2'>
           <button
             onClick={() => {
               this.handleRemoveFromCart();
             }}
-            className="btnRemoveItem">
-            <Icon type="remove" />
+            className='btnRemoveItem'>
+            <Icon type='remove' />
           </button>
-          <h3 className="cartItemTitle">#ITEM TITLE</h3>
-          <div className="cartItemDescription">
-            <p className="itemNumber">
+          <h3 className='cartItemTitle'>#ITEM TITLE</h3>
+          <div className='cartItemDescription'>
+            <p className='itemNumber'>
               Art N°: <span></span>14575
             </p>
-            <p className="itemColor">
+            <p className='itemColor'>
               Color: <span></span> Grey
             </p>
-            <p className="itemSize">
+            <p className='itemSize'>
               Size: <span></span> M
             </p>
-            <p className="itemTotal">
+            <p className='itemTotal'>
               Total: <span></span> €145
             </p>
           </div>
