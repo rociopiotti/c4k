@@ -76,17 +76,13 @@ class CartSlide extends React.Component {
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
-
             {this.createList()}
-
             <BtnPromoCode />
             <EstimatedTotal />
             <Link
               to='/checkout'
               className='btnCheckout'
-              onClick={() => {
-                this.onClickChangeSection();
-              }}>
+              onClick={this.executeAnimation}>
               CHECKOUT
             </Link>
           </div>
