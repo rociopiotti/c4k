@@ -2,6 +2,7 @@ import React from "react";
 import "./FilterSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 
+//CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 //ANMATION
@@ -26,23 +27,19 @@ class FilterSlide extends React.Component {
     this.SlideBackground = null;
     this.NavCloseBackground = null;
     this.state = {};
+    this.executeAnimation = this.executeAnimation.bind(this);
   }
 
-  //-----------------------------------------------------------------
-
-  executeAnimation(value, onCompleteHandler) {
-    const tl = new Timeline({
-      onComplete: () => onCompleteHandler(value),
-      ease: ease,
-    });
-    tl.to(this.NavCloseBackground, { opacity: 0 });
-    tl.to(this.SlideBackground, { left: "100vw" }, 0.4);
+  executeAnimation() {
+    this.context.leftSlideOutAnimation(
+      {
+        backgroundRef: this.NavCloseBackground,
+        wrapperRef: this.SlideBackground,
+      },
+      this.context.onSlideBtn
+    );
   }
-  //-----------------------------------------------------------------
 
-  clickCloseNav() {
-    this.executeAnimation(null, this.context.onSlideBtn);
-  }
   clickFilterLink(ID) {
     console.log("Click en botón de filtro:", ID);
   }
@@ -57,7 +54,7 @@ class FilterSlide extends React.Component {
       const { id, name, label } = element;
 
       return (
-        <li className="listItem" key={id}>
+        <li className='listItem' key={id}>
           <button
             onClick={() => {
               this.clickFilterLink(label);
@@ -71,19 +68,17 @@ class FilterSlide extends React.Component {
   render() {
     return (
       <div
-        className="filterSlideBackground"
+        className='filterSlideBackground'
         ref={(div) => (this.SlideBackground = div)}>
         <div
           ref={(div) => (this.NavCloseBackground = div)}
-          onClick={() => {
-            this.clickCloseNav();
-          }}
-          className="filterCloseBackground"></div>
-        <div className="filterSlideBackgroundBox">
-          <div className="filterSlideBox">
-            <HeaderSlideCloseLeft />
-            <h2 className="filterTitle">#FILTER</h2>
-            <ul className="filterSlide">{this.createList()}</ul>
+          onClick={this.executeAnimation}
+          className='filterCloseBackground'></div>
+        <div className='filterSlideBackgroundBox'>
+          <div className='filterSlideBox'>
+            <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
+            <h2 className='filterTitle'>#FILTER</h2>
+            <ul className='filterSlide'>{this.createList()}</ul>
           </div>
         </div>
       </div>

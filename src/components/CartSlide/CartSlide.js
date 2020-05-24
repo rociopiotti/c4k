@@ -1,18 +1,20 @@
 import React from "react";
 import "./CartSlide.scss";
+import CartItem from "../CartItem/CartItem";
 
 // COMPONENTS
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
-import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
-import CartItemList from "../CartItemList/CartItemList";
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 // import CartEmpty from "../CartEmpty/CartEmpty";
+import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
+import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-//ANMATION
+//ANIMATION
 import { Timeline, Back } from "gsap/gsap-core";
+
+//ROUTER
 import { Link } from "react-router-dom";
 
 // EASING
@@ -26,23 +28,17 @@ class CartSlide extends React.Component {
     this.SlideBackground = null;
     this.NavCloseBackground = null;
 
-    // this.onClickChangeSection = this.onClickChangeSection.bind(this);
+    this.executeAnimation = this.executeAnimation.bind(this);
   }
 
-  // ANIMATION -----------------------------------------------
-  executeAnimation(value, onCompleteHandler) {
-    const tl = new Timeline({
-      onComplete: () => onCompleteHandler(value),
-      ease: ease,
-    });
-    tl.to(this.NavCloseBackground, { opacity: 0 });
-    tl.to(this.SlideBackground, { left: "100vw" }, 0.4);
-  }
-
-  // ANIMATION -----------------------------------------------
-
-  onClickChangeSection() {
-    this.executeAnimation(null, this.context.onSlideBtn);
+  executeAnimation() {
+    this.context.leftSlideOutAnimation(
+      {
+        backgroundRef: this.NavCloseBackground,
+        wrapperRef: this.SlideBackground,
+      },
+      this.context.onSlideBtn
+    );
   }
 
   componentDidMount() {
@@ -50,7 +46,22 @@ class CartSlide extends React.Component {
     tl.to(this.SlideBackground, { left: 0 });
     tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
   }
- 
+
+  createList() {
+    return (
+      <div className='cartItemListBox'>
+        <ul className='cartItemList'>
+          <li className='cartItemElement'>
+            <CartItem onCartItemClick={this.executeAnimation} />
+          </li>
+          {/* <li className="cartItemElement">
+            <CartItem />
+          </li> */}
+        </ul>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div
@@ -59,23 +70,23 @@ class CartSlide extends React.Component {
         <div
           ref={(div) => (this.NavCloseBackground = div)}
           className='cartCloseBackground'
-          onClick={() => {
-            this.onClickChangeSection();
-          }}></div>
+          onClick={this.executeAnimation}></div>
         <div className='cartSlide'>
           <div className='cartSlideBox'>
-            <HeaderSlideCloseLeft />
+            <HeaderSlideCloseLeft  onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             {/* <CartEmpty/> */}
-            <CartItemList onChangeSection = {this.onClickChangeSection}  />
+
+            {this.createList()}
+
             <BtnPromoCode />
             <EstimatedTotal />
-            <Link 
-              to='/checkout' 
+            <Link
+              to='/checkout'
               className='btnCheckout'
               onClick={() => {
-              this.onClickChangeSection();
-            }}>
+                this.onClickChangeSection();
+              }}>
               CHECKOUT
             </Link>
           </div>

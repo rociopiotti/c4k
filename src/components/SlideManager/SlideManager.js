@@ -56,8 +56,8 @@ class SlideManager extends Component {
 
   render() {
     /// CHECK CUREENT SLIDE STATE
-    console.clear();
-    console.log(">SlideManager:", this.context.currentSlide);
+    // console.clear();
+    // console.log(">SlideManager:", this.context.currentSlide);
 
     return (
       <div className='slideManagerBox'>

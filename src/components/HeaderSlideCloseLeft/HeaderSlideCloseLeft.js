@@ -9,18 +9,14 @@ import PageManagerContext from "../../context/pageManager-context";
 class HeaderSlideCloseLeft extends React.Component {
   static contextType = PageManagerContext;
 
-  handleCloseCartSlide(CloseSlide) {
-    this.context.onSlideBtn();
-  }
+  // handleCloseCartSlide() {
+  //   this.props.onCloseArrow;
+  // }
 
   render() {
     return (
       <div className='headerSlideCloseLeftBox'>
-        <button
-          onClick={() => {
-            this.handleCloseCartSlide();
-          }}
-          className='btnCloseCartSlide'>
+        <button onClick={this.props.onCloseArrow} className='btnCloseCartSlide'>
           <Icon className='iconBtnCloseCartSlide' type='arrowLeft' />
         </button>
         <span></span>

@@ -3,6 +3,7 @@ import "./SortSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import Icon from "../Icon/Icon";
 
+// CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
 //ANMATION
@@ -34,23 +35,17 @@ class SortSlide extends React.Component {
     super(props);
     this.SlideBackground = null;
     this.NavCloseBackgroun = null;
-
     this.state = {};
+    this.executeAnimation = this.executeAnimation.bind(this);
   }
-
-  //--------------------------------------------------------
-  executeAnimation(value, onCompleteHandler) {
-    const tl = new Timeline({
-      onComplete: () => onCompleteHandler(value),
-      ease: ease,
-    });
-    tl.to(this.NavCloseBackground, { opacity: 0 });
-    tl.to(this.SlideBackground, { left: "100vw" }, 0.4);
-  }
-  //--------------------------------------------------------
-
-  clickCloseNav() {
-    this.executeAnimation(null, this.context.onSlideBtn);
+  executeAnimation() {
+    this.context.leftSlideOutAnimation(
+      {
+        backgroundRef: this.NavCloseBackground,
+        wrapperRef: this.SlideBackground,
+      },
+      this.context.onSlideBtn
+    );
   }
 
   clickSortLink(ID) {
@@ -69,7 +64,7 @@ class SortSlide extends React.Component {
       const { id, name, icon, label } = element;
 
       return (
-        <li className="listItem" key={id}>
+        <li className='listItem' key={id}>
           <button
             onClick={() => {
               this.clickSortLink(label);
@@ -84,19 +79,17 @@ class SortSlide extends React.Component {
   render() {
     return (
       <div
-        className="sortSlideBackground"
+        className='sortSlideBackground'
         ref={(div) => (this.SlideBackground = div)}>
         <div
           ref={(div) => (this.NavCloseBackground = div)}
-          onClick={() => {
-            this.clickCloseNav();
-          }}
-          className="sortCloseBackground"></div>
-        <div className="sortSlideBackgroundBox">
-          <div className="sortSlideBox">
-            <HeaderSlideCloseLeft />
-            <h2 className="sortTitle">#SORT</h2>
-            <ul className="sortSlide">{this.createList()}</ul>
+          onClick={this.executeAnimation}
+          className='sortCloseBackground'></div>
+        <div className='sortSlideBackgroundBox'>
+          <div className='sortSlideBox'>
+            <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
+            <h2 className='sortTitle'>#SORT</h2>
+            <ul className='sortSlide'>{this.createList()}</ul>
           </div>
         </div>
       </div>

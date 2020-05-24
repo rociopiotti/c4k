@@ -4,6 +4,9 @@ import "./BtnSingIn.scss";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
+// ROUTER
+import { Link } from "react-router-dom";
+
 class BtnSingIn extends React.Component {
   static contextType = PageManagerContext;
 
@@ -14,13 +17,12 @@ class BtnSingIn extends React.Component {
   }
   render() {
     return (
-      <button
-        onClick={() => {
-          this.handleSingIn();
-        }}
-        className="btnSingIn">
+      <div className='btnSingIn'>
+        <Link to={`/paymentgateway`} >
         SING IN
-      </button>
+      </Link>
+      </div>
+      
     );
   }
 }

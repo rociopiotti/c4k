@@ -9,6 +9,7 @@
   z-index: 23;
   display: flex;
   flex-direction: row;
+  pointer-events: all;
 
   .sortCloseBackground {
     flex-grow: 1;

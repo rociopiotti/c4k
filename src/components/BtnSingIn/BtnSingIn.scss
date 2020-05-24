@@ -1,15 +1,21 @@
-.btnSingIn {    
-    width: 90%;
-    background-color: #ffffff;
-    border: none;
+.btnSingIn {
+  width: 90%;
+  background-color: #ffffff;
+  border: none;
+  color: #484848;
+  font-size: 0.9em;
+  padding: 3vh 0;
+  letter-spacing: 0.1em;
+  -webkit-appearance: none;
+  border-radius: 0;
+  margin: 5vh 0vw 5vh 5%;
+  text-decoration: none;
+  text-align: center;
+  a {
     color: #484848;
-    font-size: 0.9em;
-    padding: 3vh 0;
-    letter-spacing: 0.1em;
-    -webkit-appearance: none;
-    border-radius: 0;
-    margin: 5vh 0vw 5vh 5%;
+    text-decoration: none;
+  }
 }
-.btnSingIn:hover {    
-    background-color: #c7c7c7;
+.btnSingIn:hover {
+  background-color: #c7c7c7;
 }

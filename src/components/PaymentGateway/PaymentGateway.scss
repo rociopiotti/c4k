@@ -34,10 +34,29 @@
 
       .column1 {
         width: 50%;
+
         .cartItemListBox {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+          top: 0;
+          left: 0;
           .cartItemList {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             list-style: none;
-            .column2 {    width: 30%;
+            .cartItemElement {
+              margin-bottom: 15px;
+            }
+            .column2 {
+              width: 30%;
             }
           }
         }
@@ -89,7 +108,8 @@
           .cartItemListBox {
             .cartItemList {
               list-style: none;
-              .column2 {    width: 100%;
+              .column2 {
+                width: 100%;
               }
             }
           }

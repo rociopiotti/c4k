@@ -6,6 +6,7 @@ import itemImg from "../../img/NIN EX4.png";
 import DropdownQuantity from "../DropdownQuantity/DropdownQuantity";
 import PageManagerContext from "../../context/pageManager-context";
 
+//ROUTER
 import { Link } from "react-router-dom";
 class CartItem extends React.Component {
   static contextType = PageManagerContext;
@@ -15,8 +16,9 @@ class CartItem extends React.Component {
     removeFromCart: false,
   };
 
+
   handleSeeProductBox() {
-    this.context.onSectionBtn("productDetails");
+    this.context.onSlideBtn();
   }
 
   handleAddToWishList() {
@@ -32,15 +34,13 @@ class CartItem extends React.Component {
   }
 
   render() {
-    console.log(this.props.onChangeSection)
     return (
       <div className='cartItemBox'>
         <div className='column1'>
           <Link
             to='/products/trousers/1'
             className='cartItemImgBox'
-            onClick={
-              this.props.onChangeSection}>
+            onClick={this.props.onCartItemClick}>
             <img src={itemImg} alt='trousers item' className='cartItemImg' />
           </Link>
           <button
