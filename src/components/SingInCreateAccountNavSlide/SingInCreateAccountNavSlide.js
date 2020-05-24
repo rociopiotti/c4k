@@ -28,9 +28,9 @@ class SingInCreateAccountNavslide extends React.Component {
   }
   // --------------------------------------------------------
 
-  executeAnimation(value, onCompleteHandler) {
+  executeAnimation(value) {
     const tl = new Timeline({
-      onComplete: () => onCompleteHandler(value),
+      onComplete: () => this.context.onSlideBtn(value),
       repeat: 0,
       repeatDelay: 0,
       ease: ease,
@@ -41,7 +41,7 @@ class SingInCreateAccountNavslide extends React.Component {
   // --------------------------------------------------------
 
   clickCloseNav() {
-    this.executeAnimation(null, this.context.onSlideBtn);
+    this.executeAnimation(null);
   }
 
   handleSinginOption(newSinginOption) {
@@ -76,7 +76,6 @@ class SingInCreateAccountNavslide extends React.Component {
     let btn_class2 = this.state.activeBtn ? "noneDecoration" : "underline";
 
     
-    // console.log("------> CURRENT OPTION:", this.state.singinOption);
     return (
       <div
         ref={(div) => (this.SlideBackground = div)}

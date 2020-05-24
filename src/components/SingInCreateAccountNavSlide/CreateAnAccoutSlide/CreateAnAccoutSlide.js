@@ -41,8 +41,8 @@ class CreateAnAccountSlide extends React.Component {
      
     });
   }
-  handleCreateAccount() {
-    this.context.onSectionBtn("home");
+  handleCreateAccount(value) {
+    this.context.onSlideBtn(value);
   }
   handleSingInFacebook(SingInFacebook) {
     // console.log("Click en botón que va a API", SingInFacebook)
@@ -128,7 +128,7 @@ class CreateAnAccountSlide extends React.Component {
         </label>
         <button
           onClick={() => {
-            this.handleCreateAccount("CreateAccount")
+            this.handleCreateAccount(null)
           }}
           className="btnCreateAccount">
           CREATE AN ACCOUNT
