@@ -4,13 +4,17 @@ import "./FooterLinks.scss";
 // import CartEmpty from "../CartEmpty/CartEmpty";
 import PageManagerContext from "../../context/pageManager-context";
 
+// ROUTER
+
+import { Link } from "react-router-dom";
 //JSON
 const footerMenu = [
   { id: "0", name: "STORES", label: "stores" },
-  { id: "1", name: "HELP", label: "faq" },
-  { id: "2", name: "TERMS AND CONDITIONS", label: "termsAndCondition" },
-  { id: "3", name: "PRIVACY POLICY", label: "privacyPolicy" },
+  { id: "1", name: "HELP", label: "help" },
+  { id: "2", name: "TERMS AND CONDITIONS", label: "termsandconditions" },
+  { id: "3", name: "PRIVACY POLICY", label: "privacypolicy" },
 ];
+
 class FooterLinks extends React.Component {
   static contextType = PageManagerContext;
   createList() {
@@ -18,13 +22,8 @@ class FooterLinks extends React.Component {
       const { id, name, label } = element;
 
       return (
-        <li className="listItem" key={id}>
-          <a
-            onClick={() => {
-              this.context.onSectionBtn(label);
-            }}>
-            {name}
-          </a>
+        <li className='listItem' key={id}>
+          <Link to={`${element.label}`}>{name}</Link>
         </li>
       );
     });
@@ -32,8 +31,8 @@ class FooterLinks extends React.Component {
 
   render() {
     return (
-      <div className="footerLinksBox">
-        <ul className="footerLinksList">{this.createList()}</ul>
+      <div className='footerLinksBox'>
+        <ul className='footerLinksList'>{this.createList()}</ul>
       </div>
     );
   }
