@@ -49,10 +49,10 @@ class NavSlide extends React.Component {
   }
 
   componentDidMount() {
-
-    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
-    tl.to(this.SlideBackground, { left: 0 });
-    tl.to(this.NavCloseBackground, { opacity: "0.8" }, 0.4);
+    this.context.leftSlideInAnimation({
+      backgroundRef: this.NavCloseBackground,
+      wrapperRef: this.SlideBackground,
+    });
   }
 
   createList() {

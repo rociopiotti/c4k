@@ -19,16 +19,13 @@ class App extends React.Component {
 
     this.state = {
       currentSlide: null,
-     
     };
 
     this.handleSlide = this.handleSlide.bind(this);
   }
 
-
-  //--------LEFT SLIDE ANIMATION EXIT
+  //--------RIGHT SLIDE ANIMATION EXIT
   rightSlideOutAnimation(refs, onComplete) {
-    
     const { backgroundRef, wrapperRef } = refs;
     const tl = new Timeline({
       onComplete,
@@ -37,8 +34,8 @@ class App extends React.Component {
     tl.to(backgroundRef, { opacity: 0 });
     tl.to(wrapperRef, { left: "100vw" }, 0.4);
   }
-  
-  // //--------RIGHT SLIDE ANIMATION EXIT
+
+  //--------LEFT SLIDE ANIMATION EXIT
   leftSlideOutAnimation(refs, onComplete, newSlide) {
     const { backgroundRef, wrapperRef } = refs;
     const tl = new Timeline({
@@ -49,14 +46,19 @@ class App extends React.Component {
     tl.to(wrapperRef, { left: "-100vw" }, 0.4);
   }
 
-  //--------- CHANGES SLIDE STATE
-  handleSlide(newSlide, newMode) {
-    console.log("handleSlide");
+  //--------LEFT SLIDE ANIMATION ENTER
+  leftSlideInAnimation(refs) {
+    const { backgroundRef, wrapperRef } = refs;
+    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
+    tl.to(wrapperRef, { left: 0 });
+    tl.to(backgroundRef, { opacity: "0.8" }, 0.4);
+  }
 
+  //--------- CHANGES SLIDE STATE
+  handleSlide(newSlide) {
+    console.log("handleSlide");
     this.setState({
       currentSlide: newSlide,
-     
-
     });
   }
 
@@ -64,15 +66,15 @@ class App extends React.Component {
     return (
       <PageManagerContext.Provider
         value={{
-          //SETS STATE CURRENT SLIDE
+          // SETS STATE CURRENT SLIDE
           onSlideBtn: this.handleSlide.bind(this),
           // PASSES STATE CURRENT SLIDE
           currentSlide: this.state.currentSlide,
-          //
-          // Dispara la animación de salida del Slide:
-          rightSlideOutAnimation: this.rightSlideOutAnimation,
+
+          // ANIMATION SLIDE EXIT
           leftSlideOutAnimation: this.leftSlideOutAnimation,
-        
+          rightSlideOutAnimation: this.rightSlideOutAnimation,
+          leftSlideInAnimation: this.leftSlideInAnimation,
         }}>
         <div className='app'>
           <Routes></Routes>

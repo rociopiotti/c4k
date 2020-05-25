@@ -17,7 +17,7 @@ const menuCategories = [
 ];
 
 const MenuCategories = (props) => {
-  console.log(props);
+  // console.log(props);
 
   const createList = (context) => {
     return menuCategories.map((element, index) => {
