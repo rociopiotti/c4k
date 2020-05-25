@@ -31,7 +31,7 @@ class FilterSlide extends React.Component {
   }
 
   executeAnimation() {
-    this.context.leftSlideOutAnimation(
+    this.context.rightSlideOutAnimation(
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,

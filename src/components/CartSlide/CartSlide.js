@@ -32,13 +32,12 @@ class CartSlide extends React.Component {
   }
 
   executeAnimation() {
-    this.context.leftSlideOutAnimation(
+    this.context.rightSlideOutAnimation(
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,
       },
-      this.context.onSlideBtn,
-    
+      this.context.onSlideBtn
     );
   }
 

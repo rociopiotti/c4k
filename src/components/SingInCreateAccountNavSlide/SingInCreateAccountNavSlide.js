@@ -26,7 +26,7 @@ class SingInCreateAccountNavslide extends React.Component {
     };
   }
   executeAnimation() {
-    this.context.RightSlideOutAnimation(
+    this.context.leftSlideOutAnimation(
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,

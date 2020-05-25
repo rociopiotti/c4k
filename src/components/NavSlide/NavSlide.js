@@ -38,7 +38,7 @@ class NavSlide extends React.Component {
   }
 
   executeAnimation(nextSlide) {
-    this.context.RightSlideOutAnimation(
+    this.context.leftSlideOutAnimation(
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,

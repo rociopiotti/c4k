@@ -39,7 +39,7 @@ class SortSlide extends React.Component {
     this.executeAnimation = this.executeAnimation.bind(this);
   }
   executeAnimation() {
-    this.context.leftSlideOutAnimation(
+    this.context.rightSlideOutAnimation(
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,
