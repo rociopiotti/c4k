@@ -89,9 +89,8 @@ class App extends React.Component {
   hanldeCartItem(newItem) {
     const newCart = [...this.state.cart, newItem];
     this.setState({
-      cart: newCart
-    })
-    
+      cart: newCart,
+    });
   }
 
   componentDidMount() {
@@ -117,7 +116,7 @@ class App extends React.Component {
           // PASSES CART HANLDER
           hanldeCartItem: this.hanldeCartItem.bind(this),
           // PASSES STATE CART
-          cart: this.state.cart
+          cart: this.state.cart,
         }}>
         <div className='app'>
           <Routes></Routes>

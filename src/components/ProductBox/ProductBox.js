@@ -38,9 +38,10 @@ class ProductBox extends React.Component {
     const currentPathSplitted = currentPath.split("/");
     const sectionId = currentPathSplitted[2];
     const itemId = currentPathSplitted[3];
-    const { itemsData } = this.context;
-
+    
     // Recibir la data "cruda" del context
+    const { itemsData } = this.context;
+    
     const rawData = itemsData[sectionId];
 
     const itemData = rawData.filter((element) => element.id === itemId);
@@ -60,7 +61,6 @@ class ProductBox extends React.Component {
     // Separar un array con items sugeridos
 
     //--------------------------------------------------------
-    // const suggested = [...itemData[0].suggested];
     let allProducts = [];
 
     // 1. Iterar sobre el objecto database completo.

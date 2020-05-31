@@ -30,8 +30,8 @@ class CartSlide extends React.Component {
     this.executeAnimation = this.executeAnimation.bind(this);
 
     this.state = {
-      cartList: []
-    }
+      // cartListItems: [],
+    };
   }
 
   executeAnimation() {
@@ -53,29 +53,39 @@ class CartSlide extends React.Component {
   }
 
   createList() {
-    const { cart, itemsData } = this.context;       
-    
+    const { cart, itemsData } = this.context;
+
+    console.log("CART FROM APP:", cart);
 
     if (cart.length === 0) {
       return <CartEmpty />;
     }
 
-    // let newCartList = [];
+    //--------------------------------------------------------
+    const cartIds = cart.map((cartEl) => {
+      return cartEl.id;
+    });
 
-    // for ( let key in itemsData){
-    //   newCartList = [...newCartList, itemsData[key]];
-    // }
+    //--------------------------------------------------------
+    let allProducts = [];
 
+    // 1. Iterar sobre el objecto database completo.
+    // 2. Iterar sobre el array de cada categoria.
+    for (let key in itemsData) {
+      // base de datos > ingresar en bags > extraer el array
+      // mergearlos en un nuevo array:
+      allProducts = [...allProducts, ...itemsData[key]];
+    }
 
-    // const cartList = newCartList.filter((product)=>{
-    //   return cart[].cartList.includes(product.id);
-    // })
-    
-    
+    // 2.1. Buscar coincidedncias y guardalas.
+    const tempCartListItems = allProducts.filter((product) => {
+      return cartIds.includes(product.id);
+    });
 
-    const listItems = cart.map((item) => (
+    //--------------------------------------------------------
+    const listItems = tempCartListItems.map((item) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem onCartItemClick={this.executeAnimation} />
+        <CartItem  onCartItemClick={this.executeAnimation} />
       </li>
     ));
 
@@ -83,7 +93,6 @@ class CartSlide extends React.Component {
   }
 
   render() {
-    
     return (
       <div
         className='cartSlideBackground'
