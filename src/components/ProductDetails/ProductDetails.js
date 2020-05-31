@@ -3,8 +3,8 @@ import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
 import DropdownSize from "../DropdownSize/DropdownSize";
 import DropdownColor from "../DropdownColor/DropdownColor";
-import DropDown from "../DropDown/DropDown";
-import Dropdown from "../DropDown/DropDown";
+
+// import Dropdown from "../DropDown/DropDown";
 
 class ProductDetails extends React.Component {
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
@@ -23,7 +23,7 @@ class ProductDetails extends React.Component {
           <h3 className='titleProductDetails'>#ITEM TITLE</h3>
           <h4 className='priceProductDetails'>PRICE</h4>
           <div className='dropdownsContainer'>
-            <Dropdown />
+            {/* <Dropdown /> */}
             <DropdownColor />
             <DropdownSize />
           </div>

@@ -39,8 +39,8 @@ class SectionTransition extends React.Component {
     return (
       <div
         ref={(div) => (this.myElement = div)}
-        className="sectionTransitionBox">
-        <div className="sectionTransition"></div>
+        className='sectionTransitionBox'>
+        <div className='sectionTransition'></div>
       </div>
     );
   }

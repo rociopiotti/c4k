@@ -13,10 +13,10 @@ class ProductBox extends React.Component {
 
     return (
       <div className='productBoxBox'>
-        {/* <SectionTransition /> */}
-        <div className='productBox'>
+        <SectionTransition />
+        <div className='productBox'>          
           <ItemImageGallery sectionId={sectionId} />
-          <ProductDetails />
+          <ProductDetails  />
         </div>
         <SuggestedItemGallery />
       </div>

@@ -24,30 +24,22 @@ class App extends React.Component {
     this.handleSlide = this.handleSlide.bind(this);
   }
 
-  //--------RIGHT SLIDE ANIMATION EXIT
-  rightSlideOutAnimation(refs, onComplete) {
-    const { backgroundRef, wrapperRef } = refs;
-    const tl = new Timeline({
-      onComplete,
-      ease: ease,
-    });
-    tl.to(backgroundRef, { opacity: 0 });
-    tl.to(wrapperRef, { left: "100vw" }, 0.4);
-  }
+  //--------ANIMATION SLIDE EXIT
+  slideOutAnimation(type, refs, onComplete, newSlide) {
+    let direction = type === "left" ? "-100vw" : "100vw";
 
-  //--------LEFT SLIDE ANIMATION EXIT
-  leftSlideOutAnimation(refs, onComplete, newSlide) {
     const { backgroundRef, wrapperRef } = refs;
+
     const tl = new Timeline({
       onComplete: () => onComplete(newSlide),
       ease: ease,
     });
     tl.to(backgroundRef, { opacity: 0 });
-    tl.to(wrapperRef, { left: "-100vw" }, 0.4);
+    tl.to(wrapperRef, { left: direction }, 0.4);
   }
 
-  //--------LEFT SLIDE ANIMATION ENTER
-  leftSlideInAnimation(refs) {
+  //--------ANIMATION SLIDE ENTER
+  slideInAnimation(refs) {
     const { backgroundRef, wrapperRef } = refs;
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(wrapperRef, { left: 0 });
@@ -72,9 +64,8 @@ class App extends React.Component {
           currentSlide: this.state.currentSlide,
 
           // ANIMATION SLIDE EXIT
-          leftSlideOutAnimation: this.leftSlideOutAnimation,
-          rightSlideOutAnimation: this.rightSlideOutAnimation,
-          leftSlideInAnimation: this.leftSlideInAnimation,
+          slideOutAnimation: this.slideOutAnimation,
+          slideInAnimation: this.slideInAnimation,
         }}>
         <div className='app'>
           <Routes></Routes>

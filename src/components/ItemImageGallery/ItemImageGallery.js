@@ -33,13 +33,13 @@ class ItemImageGallery extends React.Component {
   };
 
   getImages() {
-    const endPoint = this.props.sectionId;
+    const endPoint1 = this.props.sectionId;
 
     axios
       .get(`${URL_PRODUCTS}`)
       .then((response) => {
         this.setState({
-          images: response.data[endPoint],
+          images: response.data[endPoint1],
         });
       })
       .catch((error) => console.log("NOT WORKING", error));
@@ -47,24 +47,6 @@ class ItemImageGallery extends React.Component {
 
   componentDidMount() {
     this.getImages();
-  }
-
-  showImages() {
-    return this.state.images.map((item, index) => (
-      <div key={item.id} className='itemImage'>
-        <img
-          src={`/images/${item.category}/${item.image}`}
-          alt='trousers item'
-          className='galleryItemImg'
-        />
-      </div>
-    ));
-  }
-
-  handleShowImage(newShowImageState) {
-    this.setState({
-      showImageState: newShowImageState,
-    });
   }
 
   render() {
@@ -82,38 +64,6 @@ class ItemImageGallery extends React.Component {
           ))}
         </Slider>
       </div>
-
-      // <div className='itemImageGalleryBox'>
-      //   <div className='imagesBox'>
-      //     {/* <div className='itemImage'>
-      //       <img src={itemImg} alt='trousers item' className='galleryItemImg' />
-      //     </div> */}
-      //     {this.showImages()}
-      //   </div>
-      //   {/* <div className='btnGalleryBox'>
-      //     <button
-      //       onClick={() => {
-      //         this.handleShowImage("indexImage1");
-      //       }}
-      //       className='btnGallery'>
-      //       <div className='buttonRectangle'></div>
-      //     </button>
-      //     <button
-      //       onClick={() => {
-      //         this.handleShowImage("indexImage2");
-      //       }}
-      //       className='btnGallery'>
-      //       <div className='buttonRectangle'></div>
-      //     </button>
-      //     <button
-      //       onClick={() => {
-      //         this.handleShowImage("indexImage3");
-      //       }}
-      //       className='btnGallery'>
-      //       <div className='buttonRectangle'></div>
-      //     </button>
-      //   </div> */}
-      // </div>
     );
   }
 }

@@ -39,7 +39,8 @@ class SortSlide extends React.Component {
     this.executeAnimation = this.executeAnimation.bind(this);
   }
   executeAnimation() {
-    this.context.rightSlideOutAnimation(
+    this.context.slideOutAnimation(
+      "right",
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,
@@ -53,11 +54,10 @@ class SortSlide extends React.Component {
   }
 
   componentDidMount() {
-    const tl = new Timeline({
-      ease: ease,
+    this.context.slideInAnimation({
+      backgroundRef: this.NavCloseBackground,
+      wrapperRef: this.SlideBackground,
     });
-    tl.to(this.SlideBackground, { left: 0 });
-    tl.to(this.NavCloseBackground, { opacity: 0.8 }, 0.4);
   }
   createList() {
     return sortList.map((element, index) => {

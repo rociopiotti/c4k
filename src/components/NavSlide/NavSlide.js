@@ -17,7 +17,7 @@ const ease = Back.easeInOut;
 //JSONS
 const navList = [
   { id: "0", name: "TROUSERS", label: "trousers" },
-  { id: "1", name: "T-SHIRT", label: "t-shirts" },
+  { id: "1", name: "T-SHIRT", label: "tshirts" },
   { id: "2", name: "BAGS", label: "bags" },
   { id: "3", name: "SHOES", label: "shoes" },
   { id: "4", name: "NEW ARRIVALS", label: "newArrivals" },
@@ -38,7 +38,8 @@ class NavSlide extends React.Component {
   }
 
   executeAnimation(nextSlide) {
-    this.context.leftSlideOutAnimation(
+    this.context.slideOutAnimation(
+      "left",
       {
         backgroundRef: this.NavCloseBackground,
         wrapperRef: this.SlideBackground,
@@ -49,7 +50,7 @@ class NavSlide extends React.Component {
   }
 
   componentDidMount() {
-    this.context.leftSlideInAnimation({
+    this.context.slideInAnimation({
       backgroundRef: this.NavCloseBackground,
       wrapperRef: this.SlideBackground,
     });

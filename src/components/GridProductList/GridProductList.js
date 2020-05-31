@@ -6,7 +6,7 @@ import ProductListItem from "../ProductListItem/ProductListItem";
 import PageManagerContext from "../../context/pageManager-context";
 
 // ROUTER
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // DATABASE
 import { URL_PRODUCTS } from "../../utils/path";
@@ -14,42 +14,49 @@ import { URL_PRODUCTS } from "../../utils/path";
 // AXIOS
 import axios from "axios";
 
-//JSONS
-const navList = [
-  { id: "0", name: "TROUSERS", label: "trousers" },
-  { id: "1", name: "T-SHIRT", label: "tshirts" },
-  { id: "2", name: "BAGS", label: "bags" },
-  { id: "3", name: "SHOES", label: "shoes" },
-  { id: "4", name: "NEW ARRIVALS", label: "newArrivals" },
-];
-
 class GridProductList extends React.Component {
   static contextType = PageManagerContext;
+
+  state = {
+    product: [],
+    error: false,
+  };
 
   handleClickItem() {
     this.context.onSectionBtn("productDetails");
   }
- 
+
   createProductsList() {
-    return navList.map((element, i) => {
-      const { id, name, label } = element;
+    if (!this.props.data) {
+      return;
+    }
+
+    return this.props.data.map((element, i) => {
+      console.log(element);
+
+      const { category, id, image, price, title } = element;
       return (
         <li key={i} className='listItem'>
-          <Link key={i} to={`/products/${label}/${id}`}>
-            <ProductListItem />
+          <Link key={i} to={`/products/${category}/${id}`}>
+            <ProductListItem
+              category={category}
+              title={title || "N/A"}
+              price={price}
+              image={image}
+            />
           </Link>
         </li>
       );
     });
   }
+
   render() {
+    console.log("LIST:::", this.props.data);
+
     return (
       <div className='gridProductListBox'>
         <div className='gridListBox'>
-          <ul className='grisList'>
-            {this.createProductsList()}
-            
-          </ul>
+          <ul className='grisList'>{this.createProductsList()}</ul>
         </div>
       </div>
     );

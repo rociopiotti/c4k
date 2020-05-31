@@ -1,21 +1,33 @@
-import React from "react"
-import "./ProductListItem.scss"
+import React from "react";
+import "./ProductListItem.scss";
 
-import itemImg from "../../img/NIN EX4.png"
+const imagesFolder = "http://localhost:3000/images/";
 
 class ProductListItem extends React.Component {
-    render () { 
-        return (
-            <div className= "productListItemBox"> 
-            <div className="listItemImage"> 
-            <img src={itemImg} alt="trousers item" className="cartItemImg" /></div>
-            <div className="listItemDescription">
-                <h3>#ITEM TITLE</h3>
-                <p>PRICE</p>
-            </div>
-            </div>
-        )
-    }
+  state = {
+    images: [],
+    error: false,
+  };
+
+  render() {
+    const { category, title, image, price } = this.props;
+
+    return (
+      <div className='productListItemBox'>
+        <div className='listItemImage'>
+          <img
+            src={imagesFolder + category + "/" + image}
+            alt='trousers item'
+            className='cartItemImg'
+          />
+        </div>
+        <div className='listItemDescription'>
+          <h3>{title}</h3>
+          <p>EURO {price}</p>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default ProductListItem
+export default ProductListItem;
