@@ -21,8 +21,6 @@ class ItemImageGallery extends React.Component {
     const { sectionId } = this.props;
     const imageData = this.props.images;
 
-    // console.log("IMAGES PROPS", imageData);
-    // console.log("SECTION ID", sectionId);
     return (
       <div className='itemImageGalleryBox'>
         <Slider {...settings}>

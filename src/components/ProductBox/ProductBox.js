@@ -79,6 +79,7 @@ class ProductBox extends React.Component {
     //--------------------------------------------------------
 
     this.setState({
+      itemId,
       sectionId,
       images,
       details,
@@ -87,13 +88,13 @@ class ProductBox extends React.Component {
   }
 
   render() {
-    const { suggested, images, details, sectionId } = this.state;
+    const { suggested, images, details, itemId, sectionId } = this.state;
     return (
       <div className='productBoxBox'>
         <SectionTransition />
         <div className='productBox'>
-          <ItemImageGallery images={images} sectionId={sectionId} />
-          <ProductDetails details={details} />
+          <ItemImageGallery images={images} sectionId={sectionId}/>
+          <ProductDetails itemId={itemId} details={details} />
         </div>
         <SuggestedItemGallery suggested={suggested} sectionId={sectionId} />
       </div>

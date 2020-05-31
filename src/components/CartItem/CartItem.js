@@ -35,6 +35,7 @@ class CartItem extends React.Component {
   }
 
   render() {
+    console.log(this.context.cart)
     return (
       <div className='cartItemBox'>
         <div className='column1'>

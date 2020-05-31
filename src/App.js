@@ -27,6 +27,19 @@ class App extends React.Component {
     this.state = {
       currentSlide: null,
       data: null,
+      // FORMATO DE LA CART: { id: "asdasd1", quantity: 1 }
+
+      // Setear un handler para guardar los productos en el state.cart
+
+      // Pasar ese handler por context
+
+      // En cada boton "add to cart" ejecutar el handler y agrergar el item a la cart. //
+      // [...this.state.cart, {id: "asdadsad", q}]
+
+      // CartSlide tiene que levantar por context el this.state.cart,
+
+      // y mostrar el listado de productos seleccionados.
+      cart: [],
     };
 
     this.handleSlide = this.handleSlide.bind(this);
@@ -62,7 +75,6 @@ class App extends React.Component {
   }
 
   //--------- GET DATABASE
-
   handleGetDatabase() {
     axios
       .get(URL_PRODUCTS)
@@ -72,6 +84,14 @@ class App extends React.Component {
         });
       })
       .catch((error) => console.log("NOT WORKING", error));
+  }
+
+  hanldeCartItem(newItem) {
+    const newCart = [...this.state.cart, newItem];
+    this.setState({
+      cart: newCart
+    })
+    
   }
 
   componentDidMount() {
@@ -94,6 +114,10 @@ class App extends React.Component {
           slideInAnimation: this.slideInAnimation,
           // PASSES DATA BASE
           itemsData: this.state.data,
+          // PASSES CART HANLDER
+          hanldeCartItem: this.hanldeCartItem.bind(this),
+          // PASSES STATE CART
+          cart: this.state.cart
         }}>
         <div className='app'>
           <Routes></Routes>

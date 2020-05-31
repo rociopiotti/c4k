@@ -13,7 +13,7 @@ class SuggestedItemGallery extends React.Component {
     this.context.onSectionBtn("productDetails");
   }
   render() {
-    const { sectionId, suggested } = this.props;
+    const { suggested } = this.props;
 
     return (
       <div className='suggestedItemGalleryBox'>

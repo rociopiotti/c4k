@@ -3,7 +3,7 @@ import "./CartSlide.scss";
 import CartItem from "../CartItem/CartItem";
 
 // COMPONENTS
-// import CartEmpty from "../CartEmpty/CartEmpty";
+import CartEmpty from "../CartEmpty/CartEmpty";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
@@ -27,8 +27,11 @@ class CartSlide extends React.Component {
     super(props);
     this.SlideBackground = null;
     this.NavCloseBackground = null;
-
     this.executeAnimation = this.executeAnimation.bind(this);
+
+    this.state = {
+      cartList: []
+    }
   }
 
   executeAnimation() {
@@ -50,24 +53,34 @@ class CartSlide extends React.Component {
   }
 
   createList() {
-    return (
-      <div className='cartItemListBox'>
-        <ul className='cartItemList'>
-          <li className='cartItemElement'>
-            <CartItem onCartItemClick={this.executeAnimation} />
-          </li>
-          <li className='cartItemElement'>
-            <CartItem onCartItemClick={this.executeAnimation} />
-          </li>
-          <li className='cartItemElement'>
-            <CartItem onCartItemClick={this.executeAnimation} />
-          </li>
-          {/* <li className="cartItemElement">
-            <CartItem />
-          </li> */}
-        </ul>
-      </div>
-    );
+    const { cart, itemsData } = this.context;       
+    
+
+    if (cart.length === 0) {
+      return <CartEmpty />;
+    }
+
+    // let newCartList = [];
+
+    // for ( let key in itemsData){
+    //   newCartList = [...newCartList, itemsData[key]];
+    // }
+
+
+    // const cartList = newCartList.filter((product)=>{
+    //   return cart[].cartList.includes(product.id);
+    // })
+    
+    // console.log(itemData)
+
+
+    const listItems = cart.map((item) => (
+      <li key={item.id} className='cartItemElement'>
+        <CartItem onCartItemClick={this.executeAnimation} />
+      </li>
+    ));
+
+    return <ul className='cartItemList'>{listItems}</ul>;
   }
 
   render() {
@@ -83,8 +96,7 @@ class CartSlide extends React.Component {
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
-            {/* <CartEmpty/> */}
-            {this.createList()}
+            <div className='cartItemListBox'>{this.createList()}</div>
             <BtnPromoCode />
             <EstimatedTotal />
             <Link

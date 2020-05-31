@@ -18,21 +18,23 @@ class ProductDetails extends React.Component {
   }
 
   render() {
+
+    const { itemId , details } = this.props
     
-    const detailsData = this.props.details
+    // const detailsData = this.props.details
     // console.log("DETAILS PROPS", detailsData);
 
     return (
       <div className='productDetailsBox'>
         <div className='productDetails'>
-          <h3 className='titleProductDetails'>{detailsData.title}</h3>
-          <h4 className='priceProductDetails'> €{detailsData.price}</h4>
+          <h3 className='titleProductDetails'>{details.title}</h3>
+          <h4 className='priceProductDetails'> €{details.price}</h4>
           <div className='dropdownsContainer'>
             {/* <Dropdown /> */}
             <DropdownColor />
             <DropdownSize />
           </div>
-          <BtnAddToBag />
+          <BtnAddToBag itemData={itemId}/>
           <button
             onClick={() => {
               this.handleFreeShippingModal("ModalFreeShipping");
