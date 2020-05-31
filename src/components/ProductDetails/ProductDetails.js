@@ -7,6 +7,7 @@ import DropdownColor from "../DropdownColor/DropdownColor";
 // import Dropdown from "../DropDown/DropDown";
 
 class ProductDetails extends React.Component {
+
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
@@ -17,11 +18,15 @@ class ProductDetails extends React.Component {
   }
 
   render() {
+    
+    const detailsData = this.props.details
+    // console.log("DETAILS PROPS", detailsData);
+
     return (
       <div className='productDetailsBox'>
         <div className='productDetails'>
-          <h3 className='titleProductDetails'>#ITEM TITLE</h3>
-          <h4 className='priceProductDetails'>PRICE</h4>
+          <h3 className='titleProductDetails'>{detailsData.title}</h3>
+          <h4 className='priceProductDetails'> €{detailsData.price}</h4>
           <div className='dropdownsContainer'>
             {/* <Dropdown /> */}
             <DropdownColor />

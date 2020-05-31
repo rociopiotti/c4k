@@ -56,6 +56,12 @@ class CartSlide extends React.Component {
           <li className='cartItemElement'>
             <CartItem onCartItemClick={this.executeAnimation} />
           </li>
+          <li className='cartItemElement'>
+            <CartItem onCartItemClick={this.executeAnimation} />
+          </li>
+          <li className='cartItemElement'>
+            <CartItem onCartItemClick={this.executeAnimation} />
+          </li>
           {/* <li className="cartItemElement">
             <CartItem />
           </li> */}

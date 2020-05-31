@@ -13,19 +13,25 @@ class SuggestedItemGallery extends React.Component {
     this.context.onSectionBtn("productDetails");
   }
   render() {
+    const { sectionId, suggested } = this.props;
+
     return (
       <div className='suggestedItemGalleryBox'>
         <h2 className='titleSuggestedItemGallery'>#COMPLETE THE LOOK</h2>
         <div className='suggestedItemGallery'>
-          <Link to='/products/trousers/1' className='suggestedItem'>
-            <ProductListItem />
-          </Link>
-          <Link to='/products/shoes/1' className='suggestedItem'>
-            <ProductListItem />
-          </Link>
-          <Link to='/products/tshirts/1' className='suggestedItem'>
-            <ProductListItem />
-          </Link>
+          {suggested.map((element) => (
+            <Link
+              key={element.id}
+              to={`/products/${element.category}/${element.id}`}
+              className='suggestedItem'>
+              <ProductListItem
+                category={element.category}
+                title={element.title || "N/A"}
+                price={element.price}
+                image={element.image}
+              />
+            </Link>
+          ))}
         </div>
       </div>
     );

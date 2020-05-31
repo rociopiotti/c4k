@@ -3,21 +3,15 @@ import "./GridContainer.scss";
 import GridContainerHeader from "./GridContainerHeader/GridContainerHeader";
 import GridProductList from "../GridProductList/GridProductList";
 import SectionTransition from "../SectionTransition/SectionTransition";
-import axios from "axios";
+
+// CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
 
 class GridContainer extends React.Component {
-  state = {
-    data: null,
-  };
+  static contextType = PageManagerContext;
 
   componentDidMount() {
     window.scrollTo(0, 0);
-
-    axios.get(`http://localhost:3000/db.json`).then((res) => {
-      this.setState({
-        data: res.data,
-      });
-    });
   }
 
   render() {
@@ -25,17 +19,13 @@ class GridContainer extends React.Component {
     const currentPathSplitted = currentPath.split("/");
     const productId = currentPathSplitted[2];
 
-    if (!this.state.data) {
-      return <div>... loading</div>;
-    }
-
     return (
       <div className='gridContainerBox'>
         <SectionTransition />
         <GridContainerHeader />
         <GridProductList
           productId={productId}
-          data={this.state.data[productId]}
+          data={this.context.itemsData[productId]}
         />
       </div>
     );

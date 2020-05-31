@@ -43,7 +43,6 @@ class GridProductList extends React.Component {
   }
 
   render() {
-    console.log("LIST:::", this.props.data);
 
     return (
       <div className='gridProductListBox'>

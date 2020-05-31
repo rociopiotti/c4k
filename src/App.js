@@ -7,6 +7,13 @@ import PageManagerContext from "./context/pageManager-context";
 // ROUTES
 import Routes from "./router/Routes";
 
+// AXIOS
+import axios from "axios";
+
+// DATABASE PATH
+
+import { URL_PRODUCTS } from "./utils/path";
+
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
@@ -19,12 +26,13 @@ class App extends React.Component {
 
     this.state = {
       currentSlide: null,
+      data: null,
     };
 
     this.handleSlide = this.handleSlide.bind(this);
   }
 
-  //--------ANIMATION SLIDE EXIT
+  //-------- ANIMATION SLIDE EXIT
   slideOutAnimation(type, refs, onComplete, newSlide) {
     let direction = type === "left" ? "-100vw" : "100vw";
 
@@ -38,7 +46,7 @@ class App extends React.Component {
     tl.to(wrapperRef, { left: direction }, 0.4);
   }
 
-  //--------ANIMATION SLIDE ENTER
+  //-------- ANIMATION SLIDE ENTER
   slideInAnimation(refs) {
     const { backgroundRef, wrapperRef } = refs;
     const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
@@ -48,13 +56,32 @@ class App extends React.Component {
 
   //--------- CHANGES SLIDE STATE
   handleSlide(newSlide) {
-    console.log("handleSlide");
     this.setState({
       currentSlide: newSlide,
     });
   }
 
+  //--------- GET DATABASE
+
+  handleGetDatabase() {
+    axios
+      .get(URL_PRODUCTS)
+      .then((res) => {
+        this.setState({
+          data: res.data,
+        });
+      })
+      .catch((error) => console.log("NOT WORKING", error));
+  }
+
+  componentDidMount() {
+    this.handleGetDatabase();
+  }
+
   render() {
+    if (!this.state.data) {
+      return <div>... loading</div>;
+    }
     return (
       <PageManagerContext.Provider
         value={{
@@ -62,10 +89,11 @@ class App extends React.Component {
           onSlideBtn: this.handleSlide.bind(this),
           // PASSES STATE CURRENT SLIDE
           currentSlide: this.state.currentSlide,
-
-          // ANIMATION SLIDE EXIT
+          // ANIMATION SLIDE
           slideOutAnimation: this.slideOutAnimation,
           slideInAnimation: this.slideInAnimation,
+          // PASSES DATA BASE
+          itemsData: this.state.data,
         }}>
         <div className='app'>
           <Routes></Routes>

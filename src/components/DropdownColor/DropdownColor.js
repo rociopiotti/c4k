@@ -5,8 +5,6 @@ import Icon from "../Icon/Icon";
 //ANIMATION
 import { Timeline } from "gsap/gsap-core";
 
-import axios from "axios";
-
 
 //JSON
 const provider = [

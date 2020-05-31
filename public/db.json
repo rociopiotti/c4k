@@ -2,168 +2,528 @@
   "bags": [
     {
       "id": "1",
+      "title": "KITTY",
       "image": "kitty.png",
       "category": "bags",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"kitty.png"
+          "id": "black",
+          "image": "kitty.png"
         },
         {
-          "id":"blue",
-          "image":"kitty.png"
+          "id": "blue",
+          "image": "kitty.png"
         },
         {
-          "id":"grey",
-          "image":"kitty.png"
+          "id": "grey",
+          "image": "kitty.png"
         }
+      ],
+      "size": {
+        "id": "kittysize",
+        "height": "10",
+        "width": "25",
+        "lenght": "5"
+      },
+      "suggested": [
+        "3",
+        "7",
+        "5"
       ]
     },
     {
       "id": "2",
+      "title": "RUNNN",
       "image": "runnn.png",
       "category": "bags",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"runnn.png"
+          "id": "black",
+          "image": "runnn.png"
         },
         {
-          "id":"blue",
-          "image":"runnn.png"
+          "id": "blue",
+          "image": "runnn.png"
         },
         {
-          "id":"grey",
-          "image":"runnn.png"
+          "id": "grey",
+          "image": "runnn.png"
         }
+      ],
+      "size": {
+        "id": "runnsize",
+        "height": "15",
+        "width": "55",
+        "lenght": "5"
+      },
+      "suggested": [
+        "5",
+        "8",
+        "3"
       ]
     }
   ],
   "trousers": [
     {
-      "id": "1",
+      "id": "3",
+      "title": "NINE X4",
       "image": "ninex4.png",
       "category": "trousers",
       "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"ninex4.png"
+          "id": "black",
+          "image": "ninex4.png"
         },
         {
-          "id":"blue",
-          "image":"ninex4blue.png"
+          "id": "blue",
+          "image": "ninex4blue.png"
         },
         {
-          "id":"grey",
-          "image":"ninex4grey.png"
+          "id": "grey",
+          "image": "ninex4grey.png"
         }
+      ],
+      "size": [
+        {
+          "id": "xxs",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xs",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "s",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "m",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "l",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xl",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xxl",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "5",
+        "7",
+        "1"
       ]
     },
     {
-      "id": "2",
+      "id": "4",
+      "title": "TRASH ASH",
       "image": "trashash.png",
       "category": "trousers",
       "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"trashash.png"
+          "id": "black",
+          "image": "trashash.png"
         },
         {
-          "id":"blue",
-          "image":"trashash.png"
+          "id": "blue",
+          "image": "trashash.png"
         },
         {
-          "id":"grey",
-          "image":"trashash.png"
+          "id": "grey",
+          "image": "trashash.png"
         }
+      ],
+      "size": [
+        {
+          "id": "xxs",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xs",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "s",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "m",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "l",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xl",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xxl",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
       ]
     }
   ],
   "shoes": [
     {
-      "id": "1",
+      "id": "5",
+      "title": "BBOGG",
       "image": "bboogg.png",
       "category": "shoes",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"bboogg.png"
+          "id": "black",
+          "image": "bboogg.png"
         },
         {
-          "id":"blue",
-          "image":"bboogg.png"
+          "id": "blue",
+          "image": "bboogg.png"
         },
         {
-          "id":"grey",
-          "image":"bboogg.png"
+          "id": "grey",
+          "image": "bboogg.png"
         }
-      ]      
+      ],
+      "size": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "2"
+      ]
     },
     {
-      "id": "2",
+      "id": "6",
+      "title": "PUNC CUNP",
       "image": "punccunp.png",
       "category": "shoes",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"punccunp.png"
+          "id": "black",
+          "image": "punccunp.png"
         },
         {
-          "id":"blue",
-          "image":"punccunp.png"
+          "id": "blue",
+          "image": "punccunp.png"
         },
         {
-          "id":"grey",
-          "image":"punccunp.png"
+          "id": "grey",
+          "image": "punccunp.png"
         }
-      ]      
+      ],
+      "size": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "suggested": [
+        "2",
+        "4",
+        "8"
+      ]
     }
   ],
   "tshirts": [
     {
-      "id": "1",
+      "id": "7",
+      "title": "PEACYL",
       "image": "peacyl.png",
       "category": "tshirts",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"peacyl.png"
+          "id": "black",
+          "image": "peacyl.png"
         },
         {
-          "id":"blue",
-          "image":"peacyl.png"
+          "id": "blue",
+          "image": "peacyl.png"
         },
         {
-          "id":"grey",
-          "image":"peacyl.png"
+          "id": "grey",
+          "image": "peacyl.png"
         }
+      ],
+      "size": [
+        {
+          "id": "xxs",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xs",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "s",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "m",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "l",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xl",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xxl",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "6",
+        "1"
       ]
     },
     {
-      "id": "2",
+      "id": "8",
+      "title": "SHOUT",
       "image": "shoutt.png",
       "category": "tshirts",
       "price": " € 156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "colors": [
         {
-          "id":"black",
-          "image":"shoutt.png"
+          "id": "black",
+          "image": "shoutt.png"
         },
         {
-          "id":"blue",
-          "image":"shoutt.png"
+          "id": "blue",
+          "image": "shoutt.png"
         },
         {
-          "id":"grey",
-          "image":"shoutt.png"
+          "id": "grey",
+          "image": "shoutt.png"
         }
+      ],
+      "size": [
+        {
+          "id": "xxs",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xs",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "s",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "m",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "l",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xl",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "xxl",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "2",
+        "7"
       ]
     }
   ]

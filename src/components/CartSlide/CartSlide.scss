@@ -17,7 +17,7 @@
     opacity: 0;
   }
   .cartSlide {
-    position: absolute;
+    position: relative;
     width: 30vw;
     height: auto;
     min-height: 100vh;
@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow: auto;
 
     .cartSlideBox {
       width: 80%;
