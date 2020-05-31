@@ -7,7 +7,7 @@ import axios from "axios";
 
 class GridContainer extends React.Component {
   state = {
-    data: {},
+    data: null,
   };
 
   componentDidMount() {
@@ -25,7 +25,9 @@ class GridContainer extends React.Component {
     const currentPathSplitted = currentPath.split("/");
     const productId = currentPathSplitted[2];
 
-    console.log(productId);
+    if (!this.state.data) {
+      return <div>... loading</div>;
+    }
 
     return (
       <div className='gridContainerBox'>

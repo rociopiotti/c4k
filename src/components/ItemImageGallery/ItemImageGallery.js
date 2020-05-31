@@ -3,10 +3,6 @@ import React from "react";
 import "./ItemImageGallery.scss";
 // DATABASE
 import { URL_PRODUCTS } from "../../utils/path";
-import { URL_TROUSERS } from "../../utils/path";
-import { URL_BAGS } from "../../utils/path";
-import { URL_SHOES } from "../../utils/path";
-import { URL_TSHIRTS } from "../../utils/path";
 
 // AXIOS
 import axios from "axios";
@@ -33,13 +29,17 @@ class ItemImageGallery extends React.Component {
   };
 
   getImages() {
-    const endPoint1 = this.props.sectionId;
+    const { sectionId, itemId } = this.props;
 
     axios
       .get(`${URL_PRODUCTS}`)
       .then((response) => {
+        const rawData = response.data[sectionId];
+        const itemData = rawData.filter((element) => element.id === itemId);
+        const _images = itemData[0].colors;
+
         this.setState({
-          images: response.data[endPoint1],
+          images: _images,
         });
       })
       .catch((error) => console.log("NOT WORKING", error));
@@ -50,14 +50,16 @@ class ItemImageGallery extends React.Component {
   }
 
   render() {
+    const { images } = this.state;
+    const { sectionId } = this.props;
     return (
       <div className='itemImageGalleryBox'>
         <Slider {...settings}>
-          {this.state.images.map((item, index) => (
-            <div key={item.id} className='itemImage'>
+          {images.map(({ id, image }) => (
+            <div key={id} className='itemImage'>
               <img
-                src={`/images/${item.category}/${item.image}`}
-                alt='trousers item'
+                src={`/images/${sectionId}/${image}`}
+                alt={sectionId}
                 className='galleryItemImg'
               />
             </div>

@@ -10,13 +10,14 @@ class ProductBox extends React.Component {
     const currentPath = this.props.location.pathname;
     const currentPathSplitted = currentPath.split("/");
     const sectionId = currentPathSplitted[2];
+    const itemId = currentPathSplitted[3];
 
     return (
       <div className='productBoxBox'>
         <SectionTransition />
-        <div className='productBox'>          
-          <ItemImageGallery sectionId={sectionId} />
-          <ProductDetails  />
+        <div className='productBox'>
+          <ItemImageGallery sectionId={sectionId} itemId={itemId} />
+          <ProductDetails />
         </div>
         <SuggestedItemGallery />
       </div>
