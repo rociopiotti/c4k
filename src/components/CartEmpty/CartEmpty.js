@@ -8,7 +8,7 @@ class CartEmpty extends React.Component {
 
             <div className="cartEmptyBox">
             <div className="emptyBagIcon">
-            <Icon /></div>
+            <Icon type="myBag"/></div>
             <p>YOUR BAR IS EMPTY</p>
             </div>
         )
