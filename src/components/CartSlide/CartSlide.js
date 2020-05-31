@@ -29,9 +29,6 @@ class CartSlide extends React.Component {
     this.NavCloseBackground = null;
     this.executeAnimation = this.executeAnimation.bind(this);
 
-    this.state = {
-      // cartListItems: [],
-    };
   }
 
   executeAnimation() {
@@ -55,7 +52,6 @@ class CartSlide extends React.Component {
   createList() {
     const { cart, itemsData } = this.context;
 
-    console.log("CART FROM APP:", cart);
 
     if (cart.length === 0) {
       return <CartEmpty />;
@@ -78,14 +74,16 @@ class CartSlide extends React.Component {
     }
 
     // 2.1. Buscar coincidedncias y guardalas.
-    const tempCartListItems = allProducts.filter((product) => {
+    const cartListItems = allProducts.filter((product) => {
       return cartIds.includes(product.id);
     });
 
+    
+
     //--------------------------------------------------------
-    const listItems = tempCartListItems.map((item) => (
+    const listItems = cartListItems.map((item) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem  onCartItemClick={this.executeAnimation} />
+        <CartItem   onCartItemClick={this.executeAnimation} />
       </li>
     ));
 
