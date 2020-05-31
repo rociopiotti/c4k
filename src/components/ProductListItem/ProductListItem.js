@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductListItem.scss";
 
-const imagesFolder = "http://localhost:3000/images/";
+import { IMAGES_FOLDER } from "../../utils/path"
 
 class ProductListItem extends React.Component {
   state = {
@@ -16,7 +16,7 @@ class ProductListItem extends React.Component {
       <div className='productListItemBox'>
         <div className='listItemImage'>
           <img
-            src={imagesFolder + category + "/" + image}
+            src={IMAGES_FOLDER + category + "/" + image}
             alt='trousers item'
             className='cartItemImg'
           />

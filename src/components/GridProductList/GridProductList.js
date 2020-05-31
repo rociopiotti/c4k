@@ -8,12 +8,6 @@ import PageManagerContext from "../../context/pageManager-context";
 // ROUTER
 import { Link } from "react-router-dom";
 
-// DATABASE
-import { URL_PRODUCTS } from "../../utils/path";
-
-// AXIOS
-import axios from "axios";
-
 class GridProductList extends React.Component {
   static contextType = PageManagerContext;
 
@@ -32,8 +26,6 @@ class GridProductList extends React.Component {
     }
 
     return this.props.data.map((element, i) => {
-      console.log(element);
-
       const { category, id, image, price, title } = element;
       return (
         <li key={i} className='listItem'>
