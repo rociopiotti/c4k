@@ -71,8 +71,7 @@ class CartSlide extends React.Component {
     //   return cart[].cartList.includes(product.id);
     // })
     
-    // console.log(itemData)
-
+    
 
     const listItems = cart.map((item) => (
       <li key={item.id} className='cartItemElement'>
@@ -84,6 +83,7 @@ class CartSlide extends React.Component {
   }
 
   render() {
+    
     return (
       <div
         className='cartSlideBackground'
