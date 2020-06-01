@@ -1,10 +1,6 @@
 import React from "react";
 import "./DropDown.scss";
 
-import Icon from "../Icon/Icon";
-
-//ANIMATION
-import { Timeline } from "gsap/gsap-core";
 
 //JSON
 const provider = [

@@ -6,10 +6,6 @@ import Icon from "../Icon/Icon";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-//ANMATION
-import { Timeline, Back } from "gsap/gsap-core";
-
-const ease = Back.easeInOut;
 //JSON
 const sortList = [
   { id: "0", name: "NAME [A-Z]", icon: "sortAZ", label: "NAME [A-Z]" },

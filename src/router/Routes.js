@@ -1,7 +1,7 @@
 import React from "react";
 
 // ROUTER
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // CONTEXT
 import PageManagerContext from "../context/pageManager-context";

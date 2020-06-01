@@ -20,12 +20,12 @@ class FooterMenu extends React.Component {
     this.context.onSectionBtn("home");
   }
   createList() {
-    return footerMenu.map((element, index) => {
+    return footerMenu.map((element) => {
       const { id, name, label } = element;
 
       return (
         <li className='listItem' key={id}>
-          <Link to={`/${element.label}`}>{element.name}</Link>
+          <Link to={`/${label}`}>{name}</Link>
         </li>
       );
     });

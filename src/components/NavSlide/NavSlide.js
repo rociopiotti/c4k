@@ -8,12 +8,6 @@ import PageManagerContext from "../../context/pageManager-context";
 // ROUTER
 import { Link } from "react-router-dom";
 
-//ANMATION
-import { Timeline, Back } from "gsap/gsap-core";
-
-// EASING
-const ease = Back.easeInOut;
-
 //JSONS
 const navList = [
   { id: "0", name: "TROUSERS", label: "trousers" },
@@ -58,7 +52,7 @@ class NavSlide extends React.Component {
 
   createList() {
     return navList.map((element, i) => {
-      const { id, name, label } = element;
+      const { name, label } = element;
       return (
         <li key={i} className='listItem'>
           <Link
@@ -73,11 +67,11 @@ class NavSlide extends React.Component {
   }
 
   createMenuList() {
-    return menu.map((element, index) => {
+    return menu.map((element) => {
       const { id, name, label } = element;
       return (
         <li className='listItem' key={id}>
-          <a onClick={() => this.executeAnimation(label)}>{name}</a>
+          <button onClick={() => this.executeAnimation(label)}>{name}</button>
         </li>
       );
     });

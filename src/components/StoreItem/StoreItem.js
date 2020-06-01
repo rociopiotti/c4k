@@ -9,7 +9,7 @@ const StoreItem = (props) => {
         <p className="streetData">152 Madison Avenue</p>
         <p className="cityData">New York City , New York</p>
         <p className="postCodeData">10065</p>
-        <a href="#" className="phoneData">### ### ###</a>
+        <a href="tel:111-111-1111" className="phoneData">### ### ###</a>
       </div>
     )
   

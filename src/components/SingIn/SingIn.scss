@@ -78,6 +78,11 @@
       }
 
       .forgotPasswordLink {
+        background-color: transparent;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         color: #fff;
         cursor: pointer;
         &:hover {

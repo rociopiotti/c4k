@@ -19,7 +19,7 @@ class FooterLinks extends React.Component {
   static contextType = PageManagerContext;
   createList() {
     return footerMenu.map((element, index) => {
-      const { id, name, label } = element;
+      const { id, name } = element;
 
       return (
         <li className='listItem' key={id}>

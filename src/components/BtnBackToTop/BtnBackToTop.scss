@@ -9,6 +9,9 @@
   font-size: 0.9em;
   letter-spacing: 0.1em;
   margin-top: 15vh;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
   &:hover {
     color: #c7c7c7;

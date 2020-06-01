@@ -24,8 +24,8 @@ const socialMenu = [
 ];
 const SocialLinksMenu = (props) => {
   const createList = () => {
-    return socialMenu.map((element, index) => {
-      const { id, link, icon, label } = element;
+    return socialMenu.map((element) => {
+      const { id, link, icon } = element;
 
       return (
         <li key={id}>

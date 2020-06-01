@@ -5,7 +5,7 @@ import "./MenuCategories.scss";
 import PageManagerContext from "../../context/pageManager-context";
 
 // ROUTER
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //JSON
 const menuCategories = [

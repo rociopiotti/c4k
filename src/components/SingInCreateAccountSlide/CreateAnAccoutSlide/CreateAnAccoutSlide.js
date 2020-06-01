@@ -139,7 +139,7 @@ class CreateAnAccountSlide extends React.Component {
             onClick={() => {
               this.handleSingInFacebook("SingInFacebook")
             }}
-            href="#">
+            href="https://www.facebook.com/">
             FACEBOOK
           </a>
           OR
@@ -147,7 +147,7 @@ class CreateAnAccountSlide extends React.Component {
             onClick={() => {
               this.handleSingInGoogle("SingInGoogle")
             }}
-            href="#">
+            href="https://developers.google.com/identity/sign-in/web">
             GOOGLE
           </a>
         </p>

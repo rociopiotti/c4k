@@ -7,10 +7,6 @@ import SingInSlide from "./SingInSlide/SingInSlide";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-//ANMATION
-import { Timeline, Back } from "gsap/gsap-core";
-
-const ease = Back.easeInOut;
 
 class SingInCreateAccountSlide extends React.Component {
   static contextType = PageManagerContext;

@@ -48,14 +48,14 @@ class SingIn extends React.Component {
               REMEMBER ME
             </label>
 
-            <a
+            <button
               onClick={() => {
                 this.handleForgotPassword("ForgotPassword");
               }}
               href="#"
               className="forgotPasswordLink">
               FORGOT PASSWORD?
-            </a>
+            </button>
           </div>
 
           <BtnSingIn />

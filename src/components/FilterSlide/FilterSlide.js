@@ -5,11 +5,6 @@ import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-//ANMATION
-import { Timeline, Back } from "gsap/gsap-core";
-
-const ease = Back.easeInOut;
-
 //JSON
 const filsterList = [
   { id: "0", name: "FILTRO A", label: "FILTRO A" },

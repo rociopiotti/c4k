@@ -9,7 +9,7 @@ import BillingSummary from "../BillingSummary/BillingSummary";
 import FooterLinks from "../FooterLinks/FooterLinks";
 import ShippingMethod from "../ShippingMethod/ShippingMethod";
 import SectionTransition from "../SectionTransition/SectionTransition";
-import CartItem from "../CartItem/CartItem";
+// import CartItem from "../CartItem/CartItem";
 
 class PaymentGateway extends React.Component {
   componentDidMount() {

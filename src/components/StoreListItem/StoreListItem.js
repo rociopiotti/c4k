@@ -1,7 +1,6 @@
 import React from "react"
 import "./StoreListItem.scss"
 import StoreItem from "../StoreItem/StoreItem"
-import SectionTransition from "../SectionTransition/SectionTransition"
 
 class StoreListItem extends React.Component {
   handleShowStore (ID)  {
