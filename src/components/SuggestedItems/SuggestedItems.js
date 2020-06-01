@@ -5,6 +5,9 @@ import ProductListItem from "../ProductListItem/ProductListItem";
 import { Link } from "react-router-dom";
 
 class SuggestedItems extends React.Component {
+  goToTop() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const { suggested } = this.props;
 
@@ -16,7 +19,8 @@ class SuggestedItems extends React.Component {
             <Link
               key={id}
               to={`/products/${category}/${id}`}
-              className='suggestedItem'>
+              className='suggestedItem'
+              onClick={this.goToTop}>
               <ProductListItem
                 category={category}
                 title={title || "N/A"}
