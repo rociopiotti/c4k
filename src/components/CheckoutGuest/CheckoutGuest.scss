@@ -10,48 +10,50 @@
   align-items: center;
   justify-content: center;
   margin-top: 5vh;
-  .checkoutGuest {
-    width: 100%;
-    h3 {
-      font-size: 1em;
-      font-weight: 400;
-      padding: 1vh 2vw;
-    }
-    .separationLineCheckoutGuest {
-      width: 99.8%;
-      border: thin solid #ffffff;
-    }
 
-    p {
-      font-size: 0.8em;
-      padding: 1vh 2vw;
-    }
+  h3 {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1vh 2vw;
+  }
+  .separationLineCheckoutGuest {
+    width: 99.8%;
+    border: thin solid #ffffff;
+  }
 
-    .btnCheckoutGuest {
-      width: 90%;
-      background-color: #ffffff;
-      border: none;
+  p {
+    font-size: 0.8em;
+    padding: 1vh 2vw;
+  }
+
+  .btnCheckoutGuest {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #484848;
+    font-size: 0.9em;
+    padding: 3vh 0;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2vh;
+    a {
       color: #484848;
-      font-size: 0.9em;
-      padding: 3vh 0;
-      letter-spacing: 0.1em;
-      -webkit-appearance: none;
-      border-radius: 0;
-      margin: 5vh 0vw 5vh 5%;
-      &:hover {
-        background-color: #c7c7c7;
-      }
+    }
+    &:hover {
+      background-color: #c7c7c7;
     }
   }
 }
 
 @media all and (max-width: 754px) {
   .checkoutGuestBox {
-    .checkoutGuest {
-      p {
-        font-size: 0.7em;
-        padding: 1vh 2vw;
-      }
+    p {
+      font-size: 0.7em;
+      padding: 1vh 2vw;
     }
   }
 }

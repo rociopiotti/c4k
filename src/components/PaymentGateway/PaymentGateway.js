@@ -19,15 +19,7 @@ class PaymentGateway extends React.Component {
   createList() {
     return (
       <div className='cartItemListBox'>
-        <ul className='cartItemList'>
-          <li className='cartItemElement'>
-            <CartItem />
-          </li>
-
-          {/* <li className="cartItemElement">
-            <CartItem />
-          </li> */}
-        </ul>
+       
       </div>
     );
   }

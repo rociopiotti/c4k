@@ -11,14 +11,9 @@ import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-//ANIMATION
-import { Timeline, Back } from "gsap/gsap-core";
-
 //ROUTER
 import { Link } from "react-router-dom";
 
-// EASING
-const ease = Back.easeInOut;
 
 class CartSlide extends React.Component {
   static contextType = PageManagerContext;
@@ -90,9 +85,6 @@ class CartSlide extends React.Component {
     return <ul className='cartItemList'>{listItems}</ul>;
   }
 
-  createList() {
-    
-  }
 
   render() {
     return (
