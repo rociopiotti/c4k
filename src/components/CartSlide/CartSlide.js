@@ -70,8 +70,9 @@ class CartSlide extends React.Component {
 
     return <ul className='cartItemList'>{listItems}</ul>;
   }
-
+/// TESTEADO PUSH
   render() {
+
     return (
       <div
         className='cartSlideBackground'
