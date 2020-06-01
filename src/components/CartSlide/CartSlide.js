@@ -43,7 +43,7 @@ class CartSlide extends React.Component {
   }
 
   handleCartData() {
-    const { cart, itemsData } = this.context;
+    const { cart } = this.context;
 
     if (cart.length === 0) {
       return <CartEmpty />;
@@ -54,19 +54,10 @@ class CartSlide extends React.Component {
       return cartEl.id;
     });
 
-    //--------------------------------------------------------
-    let allProducts = [];
-
-    // 1. Iterar sobre el objecto database completo.
-    // 2. Iterar sobre el array de cada categoria.
-    for (let key in itemsData) {
-      // base de datos > ingresar en bags > extraer el array
-      // mergearlos en un nuevo array:
-      allProducts = [...allProducts, ...itemsData[key]];
-    }
+    const { handleDataBase } = this.context;
 
     // 2.1. Buscar coincidedncias y guardalas.
-    const cartListItems = allProducts.filter((product) => {
+    const cartListItems = handleDataBase.filter((product) => {
       return cartIds.includes(product.id);
     });
 
