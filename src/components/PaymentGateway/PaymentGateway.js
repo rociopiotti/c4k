@@ -9,6 +9,7 @@ import BillingSummary from "../BillingSummary/BillingSummary";
 import FooterLinks from "../FooterLinks/FooterLinks";
 import ShippingMethod from "../ShippingMethod/ShippingMethod";
 import SectionTransition from "../SectionTransition/SectionTransition";
+import CartList from "../CartList/CartList";
 // import CartItem from "../CartItem/CartItem";
 
 class PaymentGateway extends React.Component {
@@ -16,13 +17,6 @@ class PaymentGateway extends React.Component {
     window.scrollTo(0, 0);
   }
 
-  createList() {
-    return (
-      <div className='cartItemListBox'>
-       
-      </div>
-    );
-  }
   render() {
     return (
       <div className='paymentGatewayBox'>
@@ -30,7 +24,9 @@ class PaymentGateway extends React.Component {
         <div className='paymentGateway'>
           <h2>#ORDER SUMMARY</h2>
           <div className='orderSummaryBox'>
-            <div className='column1'>{this.createList()}</div>
+            <div className='column1'>
+              <CartList />
+            </div>
             <div className='column2'>
               <BtnPromoCode />
               <EstimatedTotal />

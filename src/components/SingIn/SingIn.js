@@ -1,6 +1,9 @@
 import React from "react";
 import "./SingIn.scss";
-import BtnSingIn from "../BtnSingIn/BtnSingIn";
+// import BtnSingIn from "../BtnSingIn/BtnSingIn";
+
+// ROUTER
+import { Link } from "react-router-dom";
 
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
@@ -21,30 +24,30 @@ class SingIn extends React.Component {
   }
   render() {
     return (
-      <div className="signInBox">
-        <div className="singIn">
+      <div className='signInBox'>
+        <div className='singIn'>
           <h3>C-4K MEMBERS</h3>
-          <hr className="separationLineSingIn"></hr>
+          <hr className='separationLineSingIn'></hr>
           <input
-            type="text"
-            id="email"
-            placeholder="EMAIL"
-            className="signInInput"
+            type='text'
+            id='email'
+            placeholder='EMAIL'
+            className='signInInput'
             onChange={this.handleInputChange}
           />
           <input
-            type="text"
-            id="signInPassword"
-            placeholder="PASSWORD"
-            className="signInInput"
+            type='text'
+            id='signInPassword'
+            placeholder='PASSWORD'
+            className='signInInput'
             onChange={this.handleInputChange}
           />
           <br></br>
-          <div className="passSettingsBox">
-            <label className="rememberMe">
+          <div className='passSettingsBox'>
+            <label className='rememberMe'>
               <input
                 onChange={this.handleCheckboxChange}
-                type="checkbox"></input>{" "}
+                type='checkbox'></input>{" "}
               REMEMBER ME
             </label>
 
@@ -52,13 +55,14 @@ class SingIn extends React.Component {
               onClick={() => {
                 this.handleForgotPassword("ForgotPassword");
               }}
-              href="#"
-              className="forgotPasswordLink">
+              href='#'
+              className='forgotPasswordLink'>
               FORGOT PASSWORD?
             </button>
           </div>
-
-          <BtnSingIn />
+          <Link className='btnSingIn' to='/paymentgateway'>
+            SING IN
+          </Link>
         </div>
       </div>
     );
