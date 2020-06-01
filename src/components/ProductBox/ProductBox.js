@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductBox.scss";
 import ItemImageGallery from "../ItemImageGallery/ItemImageGallery";
 import ProductDetails from "../ProductDetails/ProductDetails";
-import SuggestedItemGallery from "../SuggestedItemGallery/SuggestedItemGallery";
+import SuggestedItems from "../SuggestedItems/SuggestedItems";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
 // CONTEXT
@@ -96,7 +96,7 @@ class ProductBox extends React.Component {
           <ItemImageGallery images={images} sectionId={sectionId}/>
           <ProductDetails itemId={itemId} details={details} />
         </div>
-        <SuggestedItemGallery suggested={suggested} sectionId={sectionId} />
+        <SuggestedItems suggested={suggested} sectionId={sectionId} />
       </div>
     );
   }

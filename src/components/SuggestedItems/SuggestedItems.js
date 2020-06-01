@@ -1,10 +1,10 @@
 import React from "react";
-import "./SuggestedItemGallery.scss";
+import "./SuggestedItems.scss";
 import ProductListItem from "../ProductListItem/ProductListItem";
 
 import { Link } from "react-router-dom";
 
-class SuggestedItemGallery extends React.Component {
+class SuggestedItems extends React.Component {
   render() {
     const { suggested } = this.props;
 
@@ -31,4 +31,4 @@ class SuggestedItemGallery extends React.Component {
   }
 }
 
-export default SuggestedItemGallery;
+export default SuggestedItems;
