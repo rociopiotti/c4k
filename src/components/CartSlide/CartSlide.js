@@ -49,7 +49,7 @@ class CartSlide extends React.Component {
     });
   }
 
-  handleData() {
+  handleCartData() {
     const { cart, itemsData } = this.context;
 
 
@@ -107,7 +107,7 @@ class CartSlide extends React.Component {
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
-            <div className='cartItemListBox'>{this.handleData()}</div>
+            <div className='cartItemListBox'>{this.handleCartData()}</div>
             <BtnPromoCode />
             <EstimatedTotal />
             <Link
