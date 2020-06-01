@@ -1,8 +1,8 @@
 import React from "react";
 import "./CartSlide.scss";
-import CartItem from "../CartItem/CartItem";
 
 // COMPONENTS
+import CartItem from "../CartItem/CartItem";
 import CartEmpty from "../CartEmpty/CartEmpty";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
@@ -14,7 +14,6 @@ import PageManagerContext from "../../context/pageManager-context";
 //ROUTER
 import { Link } from "react-router-dom";
 
-
 class CartSlide extends React.Component {
   static contextType = PageManagerContext;
 
@@ -23,7 +22,6 @@ class CartSlide extends React.Component {
     this.SlideBackground = null;
     this.NavCloseBackground = null;
     this.executeAnimation = this.executeAnimation.bind(this);
-
   }
 
   executeAnimation() {
@@ -46,7 +44,6 @@ class CartSlide extends React.Component {
 
   handleCartData() {
     const { cart, itemsData } = this.context;
-
 
     if (cart.length === 0) {
       return <CartEmpty />;
@@ -73,18 +70,15 @@ class CartSlide extends React.Component {
       return cartIds.includes(product.id);
     });
 
-    
-
     //--------------------------------------------------------
     const listItems = cartListItems.map((item) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem data={item}  onCartItemClick={this.executeAnimation} />
+        <CartItem data={item} onCartItemClick={this.executeAnimation} />
       </li>
     ));
 
     return <ul className='cartItemList'>{listItems}</ul>;
   }
-
 
   render() {
     return (

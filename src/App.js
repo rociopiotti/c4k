@@ -11,7 +11,6 @@ import Routes from "./router/Routes";
 import axios from "axios";
 
 // DATABASE PATH
-
 import { URL_PRODUCTS } from "./utils/path";
 
 //ANMATION
@@ -27,18 +26,6 @@ class App extends React.Component {
     this.state = {
       currentSlide: null,
       data: null,
-      // FORMATO DE LA CART: { id: "asdasd1", quantity: 1 }
-
-      // Setear un handler para guardar los productos en el state.cart
-
-      // Pasar ese handler por context
-
-      // En cada boton "add to cart" ejecutar el handler y agrergar el item a la cart. //
-      // [...this.state.cart, {id: "asdadsad", q}]
-
-      // CartSlide tiene que levantar por context el this.state.cart,
-
-      // y mostrar el listado de productos seleccionados.
       cart: [],
     };
 
@@ -86,6 +73,7 @@ class App extends React.Component {
       .catch((error) => console.log("NOT WORKING", error));
   }
 
+  //--------- ADDS ITEM TO CART ARRAY
   hanldeCartItem(newItem) {
     const newCart = [...this.state.cart, newItem];
     this.setState({
@@ -97,10 +85,28 @@ class App extends React.Component {
     this.handleGetDatabase();
   }
 
+  handleDataBase() {
+    //--------------------------------------------------------
+    let allProducts = [];
+
+    // 1. Iterar sobre el objecto database completo.
+    // 2. Iterar sobre el array de cada categoria.
+    for (let key in this.state.data) {
+      // base de datos > ingresar en bags > extraer el array
+      // mergearlos en un nuevo array:
+      allProducts = [...allProducts, ...this.state.data[key]];
+    }
+
+    return allProducts;
+  }
+
   render() {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
+    
+      // console.log(this.handleDataBase());
+    
     return (
       <PageManagerContext.Provider
         value={{
@@ -117,6 +123,8 @@ class App extends React.Component {
           hanldeCartItem: this.hanldeCartItem.bind(this),
           // PASSES STATE CART
           cart: this.state.cart,
+          // PASSES DATABASE CONVERTED INTO AN ARRAY
+          handleDataBase: this.handleDataBase()
         }}>
         <div className='app'>
           <Routes></Routes>

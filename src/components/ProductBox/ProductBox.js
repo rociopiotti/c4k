@@ -38,10 +38,10 @@ class ProductBox extends React.Component {
     const currentPathSplitted = currentPath.split("/");
     const sectionId = currentPathSplitted[2];
     const itemId = currentPathSplitted[3];
-    
+
     // Recibir la data "cruda" del context
     const { itemsData } = this.context;
-    
+
     const rawData = itemsData[sectionId];
 
     const itemData = rawData.filter((element) => element.id === itemId);
@@ -60,23 +60,10 @@ class ProductBox extends React.Component {
     };
     // Separar un array con items sugeridos
 
-    //--------------------------------------------------------
-    let allProducts = [];
-
-    // 1. Iterar sobre el objecto database completo.
-    // 2. Iterar sobre el array de cada categoria.
-    for (let key in itemsData) {
-      // base de datos > ingresar en bags > extraer el array
-      // mergearlos en un nuevo array:
-      allProducts = [...allProducts, ...itemsData[key]];
-    }
-
-    // 2.1. Buscar coincidedncias y guardalas.
-    const suggested = allProducts.filter((product) => {
+    const { handleDataBase } = this.context;
+    const suggested = handleDataBase.filter((product) => {
       return itemData[0].suggested.includes(product.id);
     });
-
-    //--------------------------------------------------------
 
     this.setState({
       itemId,
@@ -93,7 +80,7 @@ class ProductBox extends React.Component {
       <div className='productBoxBox'>
         <SectionTransition />
         <div className='productBox'>
-          <ItemImageGallery images={images} sectionId={sectionId}/>
+          <ItemImageGallery images={images} sectionId={sectionId} />
           <ProductDetails itemId={itemId} details={details} />
         </div>
         <SuggestedItems suggested={suggested} sectionId={sectionId} />
