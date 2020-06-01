@@ -2,8 +2,6 @@ import React from "react";
 import "./CartSlide.scss";
 
 // COMPONENTS
-import CartItem from "../CartItem/CartItem";
-import CartEmpty from "../CartEmpty/CartEmpty";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
@@ -13,6 +11,7 @@ import PageManagerContext from "../../context/pageManager-context";
 
 //ROUTER
 import { Link } from "react-router-dom";
+import CartList from "../CartList/CartList";
 
 class CartSlide extends React.Component {
   static contextType = PageManagerContext;
@@ -42,37 +41,7 @@ class CartSlide extends React.Component {
     });
   }
 
-  handleCartData() {
-    const { cart } = this.context;
-
-    if (cart.length === 0) {
-      return <CartEmpty />;
-    }
-
-    //--------------------------------------------------------
-    const cartIds = cart.map((cartEl) => {
-      return cartEl.id;
-    });
-
-    const { handleDataBase } = this.context;
-
-    // 2.1. Buscar coincidedncias y guardalas.
-    const cartListItems = handleDataBase.filter((product) => {
-      return cartIds.includes(product.id);
-    });
-
-    //--------------------------------------------------------
-    const listItems = cartListItems.map((item) => (
-      <li key={item.id} className='cartItemElement'>
-        <CartItem data={item} onCartItemClick={this.executeAnimation} />
-      </li>
-    ));
-
-    return <ul className='cartItemList'>{listItems}</ul>;
-  }
-/// TESTEADO PUSH
   render() {
-
     return (
       <div
         className='cartSlideBackground'
@@ -85,7 +54,7 @@ class CartSlide extends React.Component {
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
-            <div className='cartItemListBox'>{this.handleCartData()}</div>
+            <CartList onCartItemClick={this.executeAnimation} />
             <BtnPromoCode />
             <EstimatedTotal />
             <Link
