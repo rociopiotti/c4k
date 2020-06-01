@@ -9,7 +9,7 @@ import NavSlide from "../NavSlide/NavSlide";
 import CartSlide from "../CartSlide/CartSlide";
 import FilterSlide from "../FilterSlide/FilterSlide";
 import SortSlide from "../SortSlide/SortSlide";
-import SingInCreateAccountNavslide from "../SingInCreateAccountNavSlide/SingInCreateAccountNavSlide";
+import SingInCreateAccountSlide from "../SingInCreateAccountSlide/SingInCreateAccountSlide";
 import ForgotPasswordSlide from "../ForgotPasswordSlide/ForgotPasswordSlide";
 import ForgotPasswordModal from "../ForgotPasswordModal/ForgotPasswordModal";
 
@@ -32,7 +32,7 @@ class SlideManager extends Component {
         slide = <CartSlide />;
         break;
       case "singInSlide":
-        slide = <SingInCreateAccountNavslide />;
+        slide = <SingInCreateAccountSlide />;
         break;
       case "filter":
         slide = <FilterSlide />;

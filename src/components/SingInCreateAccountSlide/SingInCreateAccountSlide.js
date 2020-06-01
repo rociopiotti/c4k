@@ -1,5 +1,5 @@
 import React from "react";
-import "./SingInCreateAccountNavSlide.scss";
+import "./SingInCreateAccountSlide.scss";
 import Icon from "../Icon/Icon";
 import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide";
 import SingInSlide from "./SingInSlide/SingInSlide";
@@ -12,7 +12,7 @@ import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
-class SingInCreateAccountNavslide extends React.Component {
+class SingInCreateAccountSlide extends React.Component {
   static contextType = PageManagerContext;
 
   constructor(props) {
@@ -105,4 +105,4 @@ class SingInCreateAccountNavslide extends React.Component {
   }
 }
 
-export default SingInCreateAccountNavslide;
+export default SingInCreateAccountSlide;
