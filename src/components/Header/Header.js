@@ -46,9 +46,9 @@ class Header extends React.Component {
         <span className='spacer'></span>
 
         <Link to='/'>
-          <button className='logo'>
+          <div className='logo'>
             <Logo />
-          </button>
+          </div>
         </Link>
 
         <span></span>
