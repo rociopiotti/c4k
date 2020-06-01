@@ -49,7 +49,7 @@ class CartSlide extends React.Component {
     });
   }
 
-  createList() {
+  handleData() {
     const { cart, itemsData } = this.context;
 
 
@@ -83,11 +83,15 @@ class CartSlide extends React.Component {
     //--------------------------------------------------------
     const listItems = cartListItems.map((item) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem   onCartItemClick={this.executeAnimation} />
+        <CartItem data={item}  onCartItemClick={this.executeAnimation} />
       </li>
     ));
 
     return <ul className='cartItemList'>{listItems}</ul>;
+  }
+
+  createList() {
+    
   }
 
   render() {
@@ -103,7 +107,7 @@ class CartSlide extends React.Component {
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
-            <div className='cartItemListBox'>{this.createList()}</div>
+            <div className='cartItemListBox'>{this.handleData()}</div>
             <BtnPromoCode />
             <EstimatedTotal />
             <Link

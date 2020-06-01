@@ -35,15 +35,20 @@ class CartItem extends React.Component {
   }
 
   render() {
-    console.log(this.context.cartItemsDetails)
+    
+    const { data , onCartItemClick} = this.props;
+
+    const { id , category, image, title, price } = data;
+
+    console.log(this.props.data);
     return (
       <div className='cartItemBox'>
         <div className='column1'>
           <Link
-            to='/products/trousers/1'
+            to={`products/${category}/${id}`}
             className='cartItemImgBox'
-            onClick={this.props.onCartItemClick}>
-            <img src={itemImg} alt='trousers item' className='cartItemImg' />
+            onClick={onCartItemClick}>
+            <img src={`/images/${category}/${image}`} alt={title} className='cartItemImg' />
           </Link>
           <button
             onClick={() => {
@@ -61,10 +66,10 @@ class CartItem extends React.Component {
             className='btnRemoveItem'>
             <Icon type='remove' />
           </button>
-          <h3 className='cartItemTitle'>#ITEM TITLE</h3>
+          <h3 className='cartItemTitle'>{title}</h3>
           <div className='cartItemDescription'>
             <p className='itemNumber'>
-              Art N°: <span></span>14575
+              Art N°: <span></span>{id}
             </p>
             <p className='itemColor'>
               Color: <span></span> Grey
@@ -73,7 +78,7 @@ class CartItem extends React.Component {
               Size: <span></span> M
             </p>
             <p className='itemTotal'>
-              Total: <span></span> €145
+              Total: <span></span> €{price}
             </p>
           </div>
           {/* TO DO: CORREGIR SUPERPOSICION DE DROPDOWNS */}
