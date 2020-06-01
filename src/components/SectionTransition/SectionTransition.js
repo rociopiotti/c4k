@@ -22,6 +22,7 @@ class SectionTransition extends React.Component {
     }
     this.setState({
       mode: newMode,
+      _isMounted: false,
     });
   }
 
@@ -38,10 +39,6 @@ class SectionTransition extends React.Component {
         this.toggle();
       });
     }
-  }
-
-  componentWillMount() {
-   this._isMounted = false;
   }
 
   render() {

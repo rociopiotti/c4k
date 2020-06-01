@@ -28,17 +28,15 @@ class CartItem extends React.Component {
 
   render() {
     const { data, onCartItemClick } = this.props;
-
     const { id, category, image, title, price } = data;
 
-    console.log(this.props.data);
     return (
       <div className='cartItemBox'>
         <div className='column1'>
-          <Link 
-          to={`/products/${category}/${id}`} 
-          onClick= {onCartItemClick}
-          className='cartItemImgBox'>
+          <Link
+            to={`/products/${category}/${id}`}
+            onClick={onCartItemClick}
+            className='cartItemImgBox'>
             <img
               src={`/images/${category}/${image}`}
               alt={title}
