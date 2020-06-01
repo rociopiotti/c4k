@@ -1,15 +1,32 @@
 .dropDownBox {
   width: 100%;
   overflow: hidden;
-  .dropdownColorBox {
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .colorIcon {
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: #333333;
+  }
+  
+  .dropdown {
+    width: 100% !important;
+  }
+  .colorDropdown {
+    width: 100% !important;
+  }
+  .dropdown,
+  .colorDropdown {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    margin-top: 2vh;
     margin-left: 0%;
     padding: 1vh 0;
     background-color: transparent;
@@ -19,6 +36,7 @@
     &:focus {
       border: transparent;
     }
+
     option {
       color: #fff;
       border: none;

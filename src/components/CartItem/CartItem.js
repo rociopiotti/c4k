@@ -1,12 +1,10 @@
 import React from "react";
 import "./CartItem.scss";
 import Icon from "../Icon/Icon";
-import DropdownSize from "../DropdownSize/DropdownSize";
-import DropdownQuantity from "../DropdownQuantity/DropdownQuantity";
+import Dropdown from "../../utils/DropDown/DropDown";
 
 //ROUTER
 import { Link } from "react-router-dom";
-import Dropdown from "../DropDown/DropDown";
 
 class CartItem extends React.Component {
   state = {
@@ -28,8 +26,8 @@ class CartItem extends React.Component {
 
   render() {
     const { data, onCartItemClick } = this.props;
-    const { id, category, image, title, price } = data;
-
+    const { id, category, image, title, price, size, colors } = data;
+    
     return (
       <div className='cartItemBox'>
         <div className='column1'>
@@ -76,10 +74,9 @@ class CartItem extends React.Component {
               Total: <span></span> €{price}
             </p>
           </div>
-          {/* TO DO: CORREGIR SUPERPOSICION DE DROPDOWNS */}
-          <Dropdown />
-          <DropdownSize />
-          <DropdownQuantity />
+          <Dropdown dropdownType={"color"} data={colors} />
+          <Dropdown dropdownType={"size"} data={size} />
+          <Dropdown dropdownType={"quantity"}  />
         </div>
       </div>
     );
