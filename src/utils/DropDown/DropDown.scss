@@ -6,13 +6,17 @@
   align-items: center;
   justify-content: space-around;
 
+  label {
+    margin-right: 2vw;
+  }
+
   .colorIcon {
     width: 15px;
     height: 15px;
     border-radius: 30px;
     background-color: #333333;
   }
-  
+
   .dropdown {
     width: 100% !important;
   }

@@ -24,10 +24,14 @@ class CartItem extends React.Component {
     });
   }
 
+  updatenewItem(element) {
+    console.log(element);
+  }
+
   render() {
     const { data, onCartItemClick } = this.props;
     const { id, category, image, title, price, size, colors } = data;
-    
+
     return (
       <div className='cartItemBox'>
         <div className='column1'>
@@ -74,9 +78,23 @@ class CartItem extends React.Component {
               Total: <span></span> €{price}
             </p>
           </div>
-          <Dropdown dropdownType={"color"} data={colors} />
-          <Dropdown dropdownType={"size"} data={size} />
-          <Dropdown dropdownType={"quantity"}  />
+          <Dropdown
+            dropdownType={"color"}
+            data={colors}
+            id={"color"}
+            change={(element) => this.updatenewItem(element)}
+          />
+          <Dropdown
+            dropdownType={"size"}
+            data={size}
+            id={"size"}
+            change={(element) => this.updatenewItem(element)}
+          />
+          <Dropdown
+            dropdownType={"quantity"}
+            id={"quantity"}
+            change={(element) => this.updatenewItem(element)}
+          />
         </div>
       </div>
     );

@@ -8,6 +8,11 @@ import PageManagerContext from "../../context/pageManager-context";
 
 class ProductDetails extends React.Component {
   static contextType = PageManagerContext;
+
+  state = {
+    size: null,
+    colors: null,
+  };
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
@@ -17,27 +22,44 @@ class ProductDetails extends React.Component {
     // console.log("Click en el botón que muestra", SizeGuide);
   }
 
+  updatenewItem(dropdownType, selectedOption) {
+    const newSize = selectedOption;
+
+    this.setState({
+      dropdownType: selectedOption,
+      size: newSize,
+    });
+  }
+  
   handleAddToBag() {
     const itemId = this.props.itemId;
-    const newItem = { id: itemId, quantity: "1" };
+    const newItem = { id: itemId, quantity: "", size: "", colors: "" };
     this.context.hanldeCartItem(newItem);
     this.context.onSlideBtn("cartSlide");
   }
-
+  
   render() {
     const { details } = this.props;
-
+    
     const { title, price, size, colors, description, features } = details;
-
+    
+    console.log(this.state.size);
     return (
       <div className='productDetailsBox'>
         <div className='productDetails'>
           <h3 className='titleProductDetails'>{title}</h3>
           <h4 className='priceProductDetails'> €{price}</h4>
           <div className='dropdownsContainer'>
-            <Dropdown dropdownType={"color"} data={colors} />
-            <Dropdown dropdownType={"size"} data={size} />
-            <Dropdown dropdownType={"quantity"} data={size} />
+            <Dropdown
+              dropdownType={"color"}
+              data={colors}
+              change={this.updatenewItem.bind(this)}
+            />
+            <Dropdown
+              dropdownType={"size"}
+              data={size}
+              change={this.updatenewItem.bind(this)}
+            />
           </div>
           <BtnAddToBag onClickAddToBag={this.handleAddToBag.bind(this)} />
           <button

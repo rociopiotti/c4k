@@ -1,7 +1,7 @@
 import React from "react";
 import "./DropDown.scss";
 
-const Dropdown = ({ data, dropdownType }) => {
+const Dropdown = ({ data, dropdownType, change }) => {
   const createSizeList = () => {
     if (!data) {
       return null;
@@ -12,12 +12,20 @@ const Dropdown = ({ data, dropdownType }) => {
     const sizeList = data.map((element, index) => (
       <option
         key={index}
+        value={element.id}
         style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
         {element.id}
       </option>
     ));
 
-    return <select className='dropdown'>{sizeList}</select>;
+    return (
+      <select
+        onChange={(event) => change(dropdownType, event.target.value)}
+        className='dropdown'
+        defaultValue="M">
+        {sizeList}
+      </select>
+    );
   };
 
   const createColorList = () => {
@@ -27,22 +35,33 @@ const Dropdown = ({ data, dropdownType }) => {
     const colorList = data.map((element, index) => (
       <option
         key={index}
+        value={element.id}
         style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
         {element.id}
       </option>
     ));
 
-    return <select className='colorDropdown'> {colorList} </select>;
+    return (
+      <select onChange={(event) => change(event)} className='colorDropdown' defaultValue="BLACK">
+        {colorList}
+      </select>
+    );
   };
 
   const createQuantityList = () => {
     const quantityList = [];
 
-    for (let i = 1; i < 11; i++) {
-      quantityList.push(<option key={i}> {i}</option>);
+    for (let i = 1; i <= 10; i++) {
+      quantityList.push(i);
     }
 
-    return <select className='colorDropdown'> {quantityList} </select>;
+    return quantityList.map((value, i) => {
+      return (
+        <option key={i} value={value}>
+          {value}
+        </option>
+      );
+    });
   };
 
   const renderTemplate = () => {
@@ -63,7 +82,10 @@ const Dropdown = ({ data, dropdownType }) => {
         break;
       case "quantity":
         dropdownTemplate = (
-          <div className='dropDownBox'>{createQuantityList()}</div>
+          <div className='dropDownBox'>
+            <label>Quantity</label>
+            <select className='colorDropdown'>{createQuantityList()}</select>
+          </div>
         );
         break;
       default:
