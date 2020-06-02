@@ -19,7 +19,9 @@ class ProductDetails extends React.Component {
   render() {
     const { itemId, details } = this.props;
 
-    const { title, price, size, colors } = details;
+    const { title, price, size, colors, description, features } = details;
+
+    console.log(details);
 
     return (
       <div className='productDetailsBox'>
@@ -29,7 +31,7 @@ class ProductDetails extends React.Component {
           <div className='dropdownsContainer'>
             <Dropdown dropdownType={"color"} data={colors} />
             <Dropdown dropdownType={"size"} data={size} />
-            <Dropdown dropdownType={"quantity"} data={size} />            
+            <Dropdown dropdownType={"quantity"} data={size} />
           </div>
           <BtnAddToBag itemData={itemId} />
           <button
@@ -41,17 +43,11 @@ class ProductDetails extends React.Component {
           </button>
           <div className='descriptionProductDetail'>
             <h4>DESCRIPTION</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has.
-            </p>
+            <p>{description}</p>
           </div>
           <div className='featuresProductDetail'>
             <h4>FEATURES</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has.
-            </p>
+            <p>{features}</p>
           </div>
           <div className='sizeProductDetail'>
             <h4>SIZE</h4>

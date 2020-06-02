@@ -6,6 +6,9 @@ const Dropdown = ({ data, dropdownType }) => {
     if (!data) {
       return null;
     }
+    if (data.length === 1) {
+      return <></>;
+    }
     const sizeList = data.map((element, index) => (
       <option
         key={index}
@@ -71,6 +74,5 @@ const Dropdown = ({ data, dropdownType }) => {
   };
 
   return <>{renderTemplate()}</>;
-  
 };
 export default Dropdown;
