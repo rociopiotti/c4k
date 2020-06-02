@@ -1,12 +1,13 @@
 import React from "react";
 import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
-// import DropdownSize from "../DropdownSize/DropdownSize";
-// import DropdownColor from "../DropdownColor/DropdownColor";
-
 import Dropdown from "../../utils/DropDown/DropDown";
 
+// CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
+
 class ProductDetails extends React.Component {
+  static contextType = PageManagerContext;
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
   handleFreeShippingModal(ModalFreeShipping) {
     // console.log("Click en el botón que muestra", ModalFreeShipping);
@@ -16,12 +17,17 @@ class ProductDetails extends React.Component {
     // console.log("Click en el botón que muestra", SizeGuide);
   }
 
+  handleAddToBag() {
+    const itemId = this.props.itemId;
+    const newItem = { id: itemId, quantity: "1" };
+    this.context.hanldeCartItem(newItem);
+    this.context.onSlideBtn("cartSlide");
+  }
+
   render() {
-    const { itemId, details } = this.props;
+    const { details } = this.props;
 
     const { title, price, size, colors, description, features } = details;
-
-    console.log(details);
 
     return (
       <div className='productDetailsBox'>
@@ -33,7 +39,7 @@ class ProductDetails extends React.Component {
             <Dropdown dropdownType={"size"} data={size} />
             <Dropdown dropdownType={"quantity"} data={size} />
           </div>
-          <BtnAddToBag itemData={itemId} />
+          <BtnAddToBag onClickAddToBag={this.handleAddToBag.bind(this)} />
           <button
             onClick={() => {
               this.handleFreeShippingModal("ModalFreeShipping");
