@@ -2,8 +2,6 @@ import React from "react";
 import "./DropDown.scss";
 
 const Dropdown = ({ data, dropdownType }) => {
-  
-
   const createSizeList = () => {
     if (!data) {
       return null;
@@ -18,6 +16,7 @@ const Dropdown = ({ data, dropdownType }) => {
 
     return <select className='dropdown'>{sizeList}</select>;
   };
+  
   const createColorList = () => {
     if (!data) {
       return null;

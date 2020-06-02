@@ -23,7 +23,7 @@ class ProductListItem extends React.Component {
         </div>
         <div className='listItemDescription'>
           <h3>{title}</h3>
-          <p>EURO {price}</p>
+          <p>€{price}</p>
         </div>
       </div>
     );

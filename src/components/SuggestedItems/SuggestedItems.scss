@@ -24,10 +24,11 @@
     justify-content: flex-start;
     overflow-x: hidden;
 
-    .suggestedItem {
+    .suggestedItem{
       background-color: transparent;
       border: none;
       color: #fff;
+      text-decoration: none;
       &:hover {
         color: #c7c7c7;
       }
