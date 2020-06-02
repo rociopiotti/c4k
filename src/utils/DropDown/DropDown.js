@@ -16,7 +16,7 @@ const Dropdown = ({ data, dropdownType }) => {
 
     return <select className='dropdown'>{sizeList}</select>;
   };
-  
+
   const createColorList = () => {
     if (!data) {
       return null;
@@ -71,5 +71,6 @@ const Dropdown = ({ data, dropdownType }) => {
   };
 
   return <>{renderTemplate()}</>;
+  
 };
 export default Dropdown;
