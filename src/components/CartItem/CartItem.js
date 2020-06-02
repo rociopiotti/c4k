@@ -10,6 +10,8 @@ class CartItem extends React.Component {
   state = {
     wishList: false,
     removeFromCart: false,
+    color: "BLACK",
+    quantity: "1",
   };
 
   handleAddToWishList() {
@@ -24,13 +26,17 @@ class CartItem extends React.Component {
     });
   }
 
-  updatenewItem(element) {
-    console.log(element);
-  }
-
   render() {
     const { data, onCartItemClick } = this.props;
-    const { id, category, image, title, price, size, colors } = data;
+    const {
+      id,
+      category,
+      image,
+      title,
+      price,
+
+      userSelection,
+    } = data;
 
     return (
       <div className='cartItemBox'>
@@ -65,36 +71,19 @@ class CartItem extends React.Component {
           <h3 className='cartItemTitle'>{title}</h3>
           <div className='cartItemDescription'>
             <p className='itemNumber'>
-              Art N°: <span></span>
-              {id}
+              Art N°: <span> {id} </span>
             </p>
             <p className='itemColor'>
-              Color: <span></span> Grey
+              Color: <span>{userSelection.color}</span>
             </p>
             <p className='itemSize'>
-              Size: <span></span> M
+              Size: <span>{userSelection.size}</span>
             </p>
             <p className='itemTotal'>
               Total: <span></span> €{price}
             </p>
           </div>
-          <Dropdown
-            dropdownType={"color"}
-            data={colors}
-            id={"color"}
-            change={(element) => this.updatenewItem(element)}
-          />
-          <Dropdown
-            dropdownType={"size"}
-            data={size}
-            id={"size"}
-            change={(element) => this.updatenewItem(element)}
-          />
-          <Dropdown
-            dropdownType={"quantity"}
-            id={"quantity"}
-            change={(element) => this.updatenewItem(element)}
-          />
+          <Dropdown dropdownType={"quantity"} />
         </div>
       </div>
     );

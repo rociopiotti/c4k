@@ -21,8 +21,7 @@ const Dropdown = ({ data, dropdownType, change }) => {
     return (
       <select
         onChange={(event) => change(dropdownType, event.target.value)}
-        className='dropdown'
-        defaultValue="M">
+        className='dropdown'>
         {sizeList}
       </select>
     );
@@ -42,7 +41,9 @@ const Dropdown = ({ data, dropdownType, change }) => {
     ));
 
     return (
-      <select onChange={(event) => change(event)} className='colorDropdown' defaultValue="BLACK">
+      <select
+        className='colorDropdown'
+        onChange={(event) => change(dropdownType, event.target.value)}>
         {colorList}
       </select>
     );
@@ -84,7 +85,11 @@ const Dropdown = ({ data, dropdownType, change }) => {
         dropdownTemplate = (
           <div className='dropDownBox'>
             <label>Quantity</label>
-            <select className='colorDropdown'>{createQuantityList()}</select>
+            <select
+             
+              className='colorDropdown'>
+              {createQuantityList()}
+            </select>
           </div>
         );
         break;

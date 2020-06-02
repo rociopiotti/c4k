@@ -93,16 +93,16 @@ class App extends React.Component {
     // 2. Iterar sobre el array de cada categoria.
     for (let key in this.state.data) {
       // base de datos > ingresar en bags > extraer el array
-      // mergearlos en un nuevo array:   
-      if( key === "settings") {
-       break
+      // mergearlos en un nuevo array:
+      if (key === "settings") {
+        break;
       }
       allProducts = [...allProducts, ...this.state.data[key]];
     }
 
     return allProducts;
   }
-  
+
   render() {
     if (!this.state.data) {
       return <div>... loading</div>;
