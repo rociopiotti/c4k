@@ -93,20 +93,20 @@ class App extends React.Component {
     // 2. Iterar sobre el array de cada categoria.
     for (let key in this.state.data) {
       // base de datos > ingresar en bags > extraer el array
-      // mergearlos en un nuevo array:
+      // mergearlos en un nuevo array:   
+      if( key === "settings") {
+       break
+      }
       allProducts = [...allProducts, ...this.state.data[key]];
     }
 
     return allProducts;
   }
-
+  
   render() {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
-    
-      // console.log(this.handleDataBase());
-    
     return (
       <PageManagerContext.Provider
         value={{
@@ -124,7 +124,7 @@ class App extends React.Component {
           // PASSES STATE CART
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
-          handleDataBase: this.handleDataBase()
+          handleDataBase: this.handleDataBase(),
         }}>
         <div className='app'>
           <Routes></Routes>
