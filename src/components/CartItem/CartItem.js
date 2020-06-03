@@ -6,7 +6,19 @@ import Dropdown from "../../utils/DropDown/DropDown";
 //ROUTER
 import { Link } from "react-router-dom";
 
+//CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
 class CartItem extends React.Component {
+  static contextType = PageManagerContext;
+
+  removeFromList() {
+    const data = this.props.data;
+    const index = this.props.index;
+    const { id } = data;
+    const productId = id;
+    this.context.handleDeleteFromCart(productId, index);
+  }
+
   render() {
     const { data, onCartItemClick } = this.props;
     const { id, category, image, title, price, userSelection } = data;
@@ -30,7 +42,9 @@ class CartItem extends React.Component {
           </button>
         </div>
         <div className='column2'>
-          <button className='btnRemoveItem'>
+          <button
+            className='btnRemoveItem'
+            onClick={this.removeFromList.bind(this)}>
             <Icon type='remove' />
           </button>
           <h3 className='cartItemTitle'>{title}</h3>

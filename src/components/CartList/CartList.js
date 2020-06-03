@@ -37,14 +37,9 @@ class CartList extends Component {
       };
     });
 
-    const listItems = finalItems.map((item) => (
+    const listItems = finalItems.map((item, index) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem
-          data={item}
-          onCartItemClick={this.props.onCartItemClick}
-          onRemoveClick={this.handleRemoveFromCart.bind(this)}
-          onAddClick={this.handleAddToWishList.bind(this)}
-        />
+        <CartItem data={item} index= {index} onCartItemClick={this.props.onCartItemClick} />
       </li>
     ));
 
@@ -52,10 +47,6 @@ class CartList extends Component {
   }
 
   render() {
-    console.log("-----ADD TO WISH LIST", this.state.wishList);
-
-    console.log("-----REMOVE FROM LIST", this.state.removeFromCart);
-
     return <div className='cartItemListBox'>{this.createList()}</div>;
   }
 }

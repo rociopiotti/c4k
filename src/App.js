@@ -81,16 +81,18 @@ class App extends React.Component {
     });
   }
 
-  // handleDeleteFromCart(productId) {
-  //   let productIndex = -1;
+  handleDeleteFromCart(productId, index) {
+    let productIndex = index;
+    let newCart = [];
+    this.state.cart.forEach((element, index) => {
+      if (productId === element.id) {
+        productIndex = index;
+        return;
+      }
+    });
 
-  //   this.state.cart.forEach((element, index) => {
-  //     if (productId === element.id) {
-  //       productIndex = index;
-  //       return;
-  //     }
-  //   });
-  // }
+    newCart = [...this.state.cart].slice([...this.state.cart], -productIndex);
+  }
 
   componentDidMount() {
     this.handleGetDatabase();
@@ -118,6 +120,8 @@ class App extends React.Component {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
+
+    // console.log(this.state.cart);
     return (
       <PageManagerContext.Provider
         value={{
@@ -136,6 +140,8 @@ class App extends React.Component {
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
           handleDataBase: this.handleDataBase(),
+          // REMOVE CART ITEM
+          handleDeleteFromCart: this.handleDeleteFromCart.bind(this),
         }}>
         <div className='app'>
           <Routes></Routes>

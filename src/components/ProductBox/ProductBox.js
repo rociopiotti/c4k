@@ -61,6 +61,7 @@ class ProductBox extends React.Component {
     // Separar un array con items sugeridos
 
     const { handleDataBase } = this.context;
+
     const suggested = handleDataBase.filter((product) => {
       return itemData[0].suggested.includes(product.id);
     });

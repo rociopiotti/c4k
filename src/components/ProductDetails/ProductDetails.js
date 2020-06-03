@@ -13,7 +13,7 @@ class ProductDetails extends React.Component {
     this.state = {
       size: "SIZE",
       color: "BLACK",
-      quantity: "1"
+      quantity: "1",
     };
   }
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
@@ -25,28 +25,31 @@ class ProductDetails extends React.Component {
     // console.log("Click en el botón que muestra", SizeGuide);
   }
 
-  updatenewItem(dropdownType, selectedOption) {   
+  updatenewItem(dropdownType, selectedOption) {
     this.setState({
-      [dropdownType]: selectedOption,    
+      [dropdownType]: selectedOption,
     });
   }
 
   handleAddToBag() {
-    const newSize = this.state.size
-    const newColor = this.state.color
+    const newSize = this.state.size;
+    const newColor = this.state.color;
     const itemId = this.props.itemId;
-    const newItem = { id: itemId, quantity: "1", size: newSize, colors: newColor };
+    const newItem = {
+      id: itemId,
+      quantity: "1",
+      size: newSize,
+      colors: newColor,
+    };
     this.context.handleAddToCart(newItem);
     this.context.onSlideBtn("cartSlide");
-    
-   
   }
 
+
   render() {
-    const { details } = this.props;
+    const { details} = this.props;
 
     const { title, price, size, colors, description, features } = details;
-    
 
     return (
       <div className='productDetailsBox'>
