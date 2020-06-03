@@ -36,7 +36,7 @@ class ProductDetails extends React.Component {
     const newColor = this.state.color
     const itemId = this.props.itemId;
     const newItem = { id: itemId, quantity: "1", size: newSize, colors: newColor };
-    this.context.hanldeCartItem(newItem);
+    this.context.handleAddToCart(newItem);
     this.context.onSlideBtn("cartSlide");
     
    

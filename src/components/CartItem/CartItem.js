@@ -7,36 +7,9 @@ import Dropdown from "../../utils/DropDown/DropDown";
 import { Link } from "react-router-dom";
 
 class CartItem extends React.Component {
-  state = {
-    wishList: false,
-    removeFromCart: false,
-    color: "BLACK",
-    quantity: "1",
-  };
-
-  handleAddToWishList() {
-    this.setState({
-      wishList: true,
-    });
-  }
-
-  handleRemoveFromCart() {
-    this.setState({
-      removeFromCart: true,
-    });
-  }
-
   render() {
     const { data, onCartItemClick } = this.props;
-    const {
-      id,
-      category,
-      image,
-      title,
-      price,
-
-      userSelection,
-    } = data;
+    const { id, category, image, title, price, userSelection } = data;
 
     return (
       <div className='cartItemBox'>
@@ -52,20 +25,12 @@ class CartItem extends React.Component {
             />
           </Link>
 
-          <button
-            onClick={() => {
-              this.handleAddToWishList();
-            }}
-            className='btnAddItemWishList'>
+          <button className='btnAddItemWishList'>
             <Icon type='heart' />
           </button>
         </div>
         <div className='column2'>
-          <button
-            onClick={() => {
-              this.handleRemoveFromCart();
-            }}
-            className='btnRemoveItem'>
+          <button className='btnRemoveItem'>
             <Icon type='remove' />
           </button>
           <h3 className='cartItemTitle'>{title}</h3>

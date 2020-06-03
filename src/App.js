@@ -74,12 +74,23 @@ class App extends React.Component {
   }
 
   //--------- ADDS ITEM TO CART ARRAY
-  hanldeCartItem(newItem) {
+  handleAddToCart(newItem) {
     const newCart = [...this.state.cart, newItem];
     this.setState({
       cart: newCart,
     });
   }
+
+  // handleDeleteFromCart(productId) {
+  //   let productIndex = -1;
+
+  //   this.state.cart.forEach((element, index) => {
+  //     if (productId === element.id) {
+  //       productIndex = index;
+  //       return;
+  //     }
+  //   });
+  // }
 
   componentDidMount() {
     this.handleGetDatabase();
@@ -120,7 +131,7 @@ class App extends React.Component {
           // PASSES DATA BASE
           itemsData: this.state.data,
           // PASSES CART HANLDER
-          hanldeCartItem: this.hanldeCartItem.bind(this),
+          handleAddToCart: this.handleAddToCart.bind(this),
           // PASSES STATE CART
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
