@@ -36,6 +36,7 @@ class CartSlide extends React.Component {
 
   componentDidMount() {
     document.body.style.overflowY = "hidden";
+
     this.context.slideInAnimation({
       backgroundRef: this.NavCloseBackground,
       wrapperRef: this.SlideBackground,

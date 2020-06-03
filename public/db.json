@@ -79,11 +79,171 @@
         "8",
         "3"
       ]
+    },
+    {
+      "id": "3",
+      "title": "KITTY",
+      "image": "kitty.png",
+      "alt-text": "Kitty bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag blue"
+        },
+        {
+          "id": "GREY",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "RUNNN",
+      "image": "runnn.png",
+      "alt-text": "Runnn bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag blue"
+        },
+        {
+          "id": "GREY",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "5",
+        "8",
+        "3"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "KITTY",
+      "image": "kitty.png",
+      "alt-text": "Kitty bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag blue"
+        },
+        {
+          "id": "GREY",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "RUNNN",
+      "image": "runnn.png",
+      "alt-text": "Runnn bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag blue"
+        },
+        {
+          "id": "GREY",
+          "image": "runnn.png",
+          "alt-text": "Kitty bag grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "5",
+        "8",
+        "3"
+      ]
     }
   ],
   "trousers": [
     {
-      "id": "3",
+      "id": "7",
       "title": "NINE X4",
       "image": "ninex4.png",
       "alt-text": "Nine x4 trousers",
@@ -180,7 +340,387 @@
       ]
     },
     {
-      "id": "4",
+      "id": "8",
+      "title": "TRASH ASH",
+      "image": "trashash.png",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "trashash.png"
+        },
+        {
+          "id": "BLUE",
+          "image": "trashash.png"
+        },
+        {
+          "id": "GREY",
+          "image": "trashash.png"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "NINE X4",
+      "image": "ninex4.png",
+      "alt-text": "Nine x4 trousers",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "ninex4.png",
+          "alt-text": "Nine x4 trousers black"
+        },
+        {
+          "id": "BLUE",
+          "image": "ninex4blue.png",
+          "alt-text": "Nine x4 trousers blue"
+        },
+        {
+          "id": "GREY",
+          "image": "ninex4grey.png",
+          "alt-text": "Nine x4 trousers grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "5",
+        "7",
+        "1"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "TRASH ASH",
+      "image": "trashash.png",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "trashash.png"
+        },
+        {
+          "id": "BLUE",
+          "image": "trashash.png"
+        },
+        {
+          "id": "GREY",
+          "image": "trashash.png"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "NINE X4",
+      "image": "ninex4.png",
+      "alt-text": "Nine x4 trousers",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "ninex4.png",
+          "alt-text": "Nine x4 trousers black"
+        },
+        {
+          "id": "BLUE",
+          "image": "ninex4blue.png",
+          "alt-text": "Nine x4 trousers blue"
+        },
+        {
+          "id": "GREY",
+          "image": "ninex4grey.png",
+          "alt-text": "Nine x4 trousers grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "5",
+        "7",
+        "1"
+      ]
+    },
+    {
+      "id": "12",
       "title": "TRASH ASH",
       "image": "trashash.png",
       "category": "trousers",
@@ -275,7 +815,7 @@
   ],
   "shoes": [
     {
-      "id": "5",
+      "id": "13",
       "title": "BBOGG",
       "image": "bboogg.png",
       "alt-text": "Bbogg shoes",
@@ -339,7 +879,263 @@
       ]
     },
     {
-      "id": "6",
+      "id": "14",
+      "title": "PUNC CUNP",
+      "image": "punccunp.png",
+      "alt-text": "Punc cunp shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes black"
+        },
+        {
+          "id": "BLUE",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes blue"
+        },
+        {
+          "id": "GREY",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "2",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "BBOGG",
+      "image": "bboogg.png",
+      "alt-text": "Bbogg shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes"
+        },
+        {
+          "id": "BLUE",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes blue"
+        },
+        {
+          "id": "GREY",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "PUNC CUNP",
+      "image": "punccunp.png",
+      "alt-text": "Punc cunp shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes black"
+        },
+        {
+          "id": "BLUE",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes blue"
+        },
+        {
+          "id": "GREY",
+          "image": "punccunp.png",
+          "alt-text": "Punc cunp shoes grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "2",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "BBOGG",
+      "image": "bboogg.png",
+      "alt-text": "Bbogg shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes"
+        },
+        {
+          "id": "BLUE",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes blue"
+        },
+        {
+          "id": "GREY",
+          "image": "bboogg.png",
+          "alt-text": "Bbogg shoes grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "id": "18",
       "title": "PUNC CUNP",
       "image": "punccunp.png",
       "alt-text": "Punc cunp shoes",
@@ -405,7 +1201,7 @@
   ],
   "tshirts": [
     {
-      "id": "7",
+      "id": "19",
       "title": "PEACYL",
       "image": "peacyl.png",
       "alt-text": "Peacyl t-shirt",
@@ -502,7 +1298,395 @@
       ]
     },
     {
-      "id": "8",
+      "id": "20",
+      "title": "SHOUT",
+      "image": "shoutt.png",
+      "alt-text": "Shoutt t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt blue"
+        },
+        {
+          "id": "GREY",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "PEACYL",
+      "image": "peacyl.png",
+      "alt-text": "Peacyl t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt blue"
+        },
+        {
+          "id": "GREY",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "6",
+        "1"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "SHOUT",
+      "image": "shoutt.png",
+      "alt-text": "Shoutt t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt blue"
+        },
+        {
+          "id": "GREY",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "PEACYL",
+      "image": "peacyl.png",
+      "alt-text": "Peacyl t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt blue"
+        },
+        {
+          "id": "GREY",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "6",
+        "1"
+      ]
+    },
+    {
+      "id": "24",
       "title": "SHOUT",
       "image": "shoutt.png",
       "alt-text": "Shoutt t-shirt",

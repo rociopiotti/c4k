@@ -60,6 +60,15 @@
   }
 }
 
+@media all and  (max-width: 1200px) {
+  .suscribeBox {
+    .suscribeInnerBox {
+      .suscribeInput {
+        padding: 1vh 5%;
+      }
+    }
+  }
+}
 @media all and (max-width: 1024px) and (orientation: landscape) {
   .suscribeBox {
     width: 50vw;
@@ -73,7 +82,6 @@
       }
       .btnSuscribe {
         height: 6vh;
-
         padding: 2vh 0 2.5vh 0;
         width: 100%;
         margin: 1vh 0;
