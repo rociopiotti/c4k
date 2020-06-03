@@ -44,12 +44,15 @@ class NavSlide extends React.Component {
   }
 
   componentDidMount() {
+    document.body.style.overflow = "hidden";
     this.context.slideInAnimation({
       backgroundRef: this.NavCloseBackground,
       wrapperRef: this.SlideBackground,
     });
   }
-
+  componentWillUnmount() {
+    document.body.style.overflow = "unset";
+  }
   createList() {
     return navList.map((element, i) => {
       const { name, label } = element;

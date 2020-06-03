@@ -3,6 +3,7 @@ import "./About.scss";
 
 // IMG
 import AboutPhoto from "../../img/aboutPhoto.png";
+import AboutPhotoLowRes from "../../img/aboutPhotoLowRes.png";
 
 // TRANSITION COMPONENT
 import SectionTransition from "../SectionTransition/SectionTransition";
@@ -25,24 +26,33 @@ class About extends React.Component {
       .from(this.textAbout2, 0, { x: "-150vw" }, 5)
       .to(this.textAbout2, 45, { x: "150vw" }, 5);
   }
-  
+
+  renderImage() {
+    const viewportWidth = window.innerWidth;
+
+    if (viewportWidth <= 754) {
+      return <img src={AboutPhotoLowRes} alt='About' className='aboutPhoto' />;
+    } else {
+      return <img src={AboutPhoto} alt='About' className='aboutPhoto' />;
+    }
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
     this.animation();
   }
   render() {
     return (
-      <div className="aboutBackground">
+      <div className='aboutBackground'>
         <SectionTransition />
 
-        <img src={AboutPhoto} alt="About" className="aboutPhoto" />
-        <div className="aboutBox">
-          <p className="aboutText1" ref={(p) => (this.textAbout1 = p)}>
+        {this.renderImage()}
+        <div className='aboutBox'>
+          <p className='aboutText1' ref={(p) => (this.textAbout1 = p)}>
             C4K IS POST ## CIBER <br></br>## PUNK ## NO GENDER CLOTHES<br></br>{" "}
             ## CRUELTY FREE PROCESS ## EQUAL RIGHTS WORK <br></br>## FARE TRADE
             PRODUCTS<br></br> ## KEEP IN IT TRUE TO OURSELVES ###
           </p>
-          <p className="aboutText2" ref={(p) => (this.textAbout2 = p)}>
+          <p className='aboutText2' ref={(p) => (this.textAbout2 = p)}>
             C4K IS POST<br></br> ## CIBER ## PUNK<br></br> ## NO GENDER CLOTHES
             ## CRUELTY FREE PROCESS<br></br> ## EQUAL RIGHTS WORK ## FARE TRADE
             PRODUCTS<br></br> ## KEEP IN IT TRUE TO OURSELVES ###

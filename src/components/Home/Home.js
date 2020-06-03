@@ -15,13 +15,13 @@ class Home extends React.Component {
     let windowsWidth = window.innerWidth;
     if (windowsWidth > 850) {
       window.scrollTo({
-        top: 2000,
+        top: 1000,
         behavior: "smooth",
       });
     }
     if (windowsWidth > 800 && windowsWidth <= 1024) {
       window.scrollTo({
-        top: 500,
+        top: 400,
         behavior: "smooth",
       });
     }
@@ -33,7 +33,7 @@ class Home extends React.Component {
     }
     if (windowsWidth <= 754) {
       window.scrollTo({
-        top: 1200,
+        top: 1100,
         behavior: "smooth",
       });
     }

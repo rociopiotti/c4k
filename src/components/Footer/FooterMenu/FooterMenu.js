@@ -1,7 +1,6 @@
 import React from "react";
 import "./FooterMenu.scss";
 import Logo from "../../Logo/Logo";
-import PageManagerContext from "../../../context/pageManager-context";
 
 import { Link } from "react-router-dom";
 
@@ -14,11 +13,6 @@ const footerMenu = [
   { id: "4", name: "PRIVACY POLICY", label: "privacyPolicy" },
 ];
 class FooterMenu extends React.Component {
-  static contextType = PageManagerContext;
-
-  handleHome() {
-    this.context.onSectionBtn("home");
-  }
   createList() {
     return footerMenu.map((element) => {
       const { id, name, label } = element;
@@ -34,13 +28,12 @@ class FooterMenu extends React.Component {
     return (
       <div className='footerMenuBox'>
         <div className='footerMenuInnerBox'>
-          <button
-            onClick={() => {
-              this.handleHome();
-            }}
-            className='logoFooter'>
-            <Logo />
-          </button>
+          <div className='logoFooter'>
+            <Link to='/'>
+              <Logo />
+            </Link>
+          </div>
+
           <ul className='footerMenu'>{this.createList()}</ul>
         </div>
       </div>

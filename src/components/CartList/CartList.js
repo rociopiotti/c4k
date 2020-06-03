@@ -39,7 +39,7 @@ class CartList extends Component {
 
     const listItems = finalItems.map((item, index) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem data={item} index= {index} onCartItemClick={this.props.onCartItemClick} />
+        <CartItem data={item} index= {index}onCartItemClick={this.props.onCartItemClick} />
       </li>
     ));
 

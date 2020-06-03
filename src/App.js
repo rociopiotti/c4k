@@ -83,7 +83,7 @@ class App extends React.Component {
 
   handleDeleteFromCart(productId, index) {
     let productIndex = index;
-    let newCart = [];
+    // let newCart = [];
     this.state.cart.forEach((element, index) => {
       if (productId === element.id) {
         productIndex = index;
@@ -91,7 +91,9 @@ class App extends React.Component {
       }
     });
 
-    newCart = [...this.state.cart].slice([...this.state.cart], -productIndex);
+    console.log(productIndex)
+
+    // let newCart = [...this.state.cart].slice([...this.state.cart], -productIndex);
   }
 
   componentDidMount() {

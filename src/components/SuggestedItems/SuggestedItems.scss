@@ -45,7 +45,6 @@
   .suggestedItemGalleryBox {
     position: relative;
     background-color: #000;
-    z-index: 50;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -53,10 +52,13 @@
     justify-content: center;
     margin-top: 10vh;
     overflow-x: hidden;
+    z-index: 50;
+
     .suggestedItemGallery {
       width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-evenly;
       overflow-x: hidden;
       .productListItemBox {
