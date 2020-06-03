@@ -2,14 +2,20 @@ import React from "react";
 import "./DropDown.scss";
 
 const Dropdown = ({ data, dropdownType, change }) => {
-  const createSizeList = () => {
+  const createDropdown = () => {
     if (!data) {
       return null;
     }
+
     if (data.length === 1) {
-      return <></>;
+      return (
+        <option style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
+          SIZE
+        </option>
+      );
     }
-    const sizeList = data.map((element, index) => (
+
+    const list = data.map((element, index) => (
       <option
         key={index}
         value={element.id}
@@ -18,35 +24,7 @@ const Dropdown = ({ data, dropdownType, change }) => {
       </option>
     ));
 
-    return (
-      <select
-        onChange={(event) => change(dropdownType, event.target.value)}
-        className='dropdown'>
-        {sizeList}
-      </select>
-    );
-  };
-
-  const createColorList = () => {
-    if (!data) {
-      return null;
-    }
-    const colorList = data.map((element, index) => (
-      <option
-        key={index}
-        value={element.id}
-        style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
-        {element.id}
-      </option>
-    ));
-
-    return (
-      <select
-        className='colorDropdown'
-        onChange={(event) => change(dropdownType, event.target.value)}>
-        {colorList}
-      </select>
-    );
+    return <>{list}</>;
   };
 
   const createQuantityList = () => {
@@ -71,25 +49,32 @@ const Dropdown = ({ data, dropdownType, change }) => {
     switch (dropdownType) {
       case "size":
         dropdownTemplate = (
-          <div className='dropDownBox'>{createSizeList()} </div>
+          <div className='dropDownBox'>
+            <select
+              className='colorDropdown'
+              onChange={(event) => change(dropdownType, event.target.value)}>
+              {createDropdown()}
+            </select>
+          </div>
         );
         break;
       case "color":
         dropdownTemplate = (
           <div className='dropDownBox'>
-            <span className='colorIcon'></span> {createColorList()}
+            <select
+              className='colorDropdown'
+              onChange={(event) => change(dropdownType, event.target.value)}>
+              {createDropdown()}
+            </select>
           </div>
         );
         break;
+
       case "quantity":
         dropdownTemplate = (
           <div className='dropDownBox'>
             <label>Quantity</label>
-            <select
-             
-              className='colorDropdown'>
-              {createQuantityList()}
-            </select>
+            <select className='colorDropdown'>{createQuantityList()}</select>
           </div>
         );
         break;

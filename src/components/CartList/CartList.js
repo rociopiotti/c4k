@@ -22,12 +22,10 @@ class CartList extends Component {
       return cartEl.id;
     });
 
-    // 2.1. Buscar coincidedncias y guardalas.
     const cartListItems = handleDataBase.filter((product) => {
       return cartIds.includes(product.id);
     });
 
-    // A cartListItems inyectarle el size y color elegido por el usuario.
     const finalItems = cartListItems.map((element, index) => {
       return {
         ...element,

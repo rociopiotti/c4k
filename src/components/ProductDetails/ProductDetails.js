@@ -11,7 +11,7 @@ class ProductDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      size: "M",
+      size: "SIZE",
       color: "BLACK",
       quantity: "1"
     };
@@ -34,7 +34,6 @@ class ProductDetails extends React.Component {
   handleAddToBag() {
     const newSize = this.state.size
     const newColor = this.state.color
-
     const itemId = this.props.itemId;
     const newItem = { id: itemId, quantity: "1", size: newSize, colors: newColor };
     this.context.hanldeCartItem(newItem);
