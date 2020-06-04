@@ -270,8 +270,8 @@
     {
       "id": "7",
       "title": "NINE X4",
-      "image": "ninex4.png",
-      "alt-text": "Nine x4 trousers",
+      "image": "ninex4black.png",
+      "alt-text": "Nine x4 trousers black",
       "category": "trousers",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -279,7 +279,7 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "ninex4.png",
+          "image": "ninex4black.png",
           "alt-text": "Nine x4 trousers black"
         },
         {
@@ -291,6 +291,11 @@
           "id": "GREY",
           "image": "ninex4grey.png",
           "alt-text": "Nine x4 trousers grey"
+        },
+        {
+          "id": "RED",
+          "image": "ninex4red.png",
+          "alt-text": "Nine x4 trousers red"
         }
       ],
       "size": [
@@ -367,7 +372,8 @@
     {
       "id": "8",
       "title": "TRASH ASH",
-      "image": "trashash.png",
+      "image": "trashashblack.png",
+      "alt-text": "Nine x4 trousers black",
       "category": "trousers",
       "price": "256",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -375,15 +381,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "trashash.png"
+          "image": "trashashblack.png",
+          "alt-text": "Nine x4 trousers black"
         },
         {
           "id": "BLUE",
-          "image": "trashash.png"
+          "image": "trashashblue.png",
+          "alt-text": "Nine x4 trousers blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "trashashgreen.png",
+          "alt-text": "Nine x4 trousers green"
         },
         {
           "id": "GREY",
-          "image": "trashash.png"
+          "image": "trashash.png",
+          "alt-text": "Nine x4 trousers grey"
         }
       ],
       "size": [
@@ -459,9 +473,9 @@
     },
     {
       "id": "9",
-      "title": "NINE X4",
-      "image": "ninex4.png",
-      "alt-text": "Nine x4 trousers",
+      "title": "B4K",
+      "image": "b4kblack.png",
+      "alt-text": "b4k black trousers",
       "category": "trousers",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -469,18 +483,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "ninex4.png",
-          "alt-text": "Nine x4 trousers black"
+          "image": "b4kblack.png",
+          "alt-text": "b4k blue trousers"
         },
         {
           "id": "BLUE",
-          "image": "ninex4blue.png",
-          "alt-text": "Nine x4 trousers blue"
+          "image": "b4kblue.png",
+          "alt-text": "b4k blue trousers"
         },
         {
           "id": "GREY",
-          "image": "ninex4grey.png",
-          "alt-text": "Nine x4 trousers grey"
+          "image": "b4kgrey.png",
+          "alt-text": "b4k grey trousers"
+        },
+        {
+          "id": "RED",
+          "image": "b4kred.png",
+          "alt-text": "b4k red trousers"
         }
       ],
       "size": [
@@ -556,8 +575,9 @@
     },
     {
       "id": "10",
-      "title": "TRASH ASH",
-      "image": "trashash.png",
+      "title": "GRAFFITTI",
+      "image": "graffitti.png",
+      "alt-text": "b4k black trousers",
       "category": "trousers",
       "price": "256",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -565,15 +585,13 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "trashash.png"
+          "image": "graffitti.png",
+          "alt-text": "b4k black trousers"
         },
         {
-          "id": "BLUE",
-          "image": "trashash.png"
-        },
-        {
-          "id": "GREY",
-          "image": "trashash.png"
+          "id": "GREEN",
+          "image": "graffittigreen.png",
+          "alt-text": "b4k green trousers"
         }
       ],
       "size": [
@@ -650,8 +668,8 @@
     {
       "id": "11",
       "title": "NINE X4",
-      "image": "ninex4.png",
-      "alt-text": "Nine x4 trousers",
+      "image": "joggerkapblack.png",
+      "alt-text": "Jogger black trousers",
       "category": "trousers",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -659,18 +677,18 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "ninex4.png",
-          "alt-text": "Nine x4 trousers black"
-        },
-        {
-          "id": "BLUE",
-          "image": "ninex4blue.png",
-          "alt-text": "Nine x4 trousers blue"
+          "image": "joggerkapblack.png",
+          "alt-text": "Jogger black trousers"
         },
         {
           "id": "GREY",
-          "image": "ninex4grey.png",
-          "alt-text": "Nine x4 trousers grey"
+          "image": "joggerkapgrey.png",
+          "alt-text": "Jogger grey trousers"
+        },
+        {
+          "id": "RED",
+          "image": "joggerkapred.png",
+          "alt-text": "Jogger red trousers"
         }
       ],
       "size": [
@@ -746,8 +764,9 @@
     },
     {
       "id": "12",
-      "title": "TRASH ASH",
-      "image": "trashash.png",
+      "title": "LEATHER STEVE",
+      "image": "leathersteve.png",
+      "alt-text": "Leather black trousers",
       "category": "trousers",
       "price": "256",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -755,15 +774,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "trashash.png"
+          "image": "leathersteve.png",
+          "alt-text": "Leather black trousers"
         },
         {
           "id": "BLUE",
-          "image": "trashash.png"
+          "image": "leathersteveblue.png",
+          "alt-text": "Leather blue trousers"
         },
         {
-          "id": "GREY",
-          "image": "trashash.png"
+          "id": "GOLD",
+          "image": "leatherstevegold.png",
+          "alt-text": "Leather gold trousers"
+        },
+        {
+          "id": "VIOLET",
+          "image": "leathersteveviolet.png",
+          "alt-text": "Leather violet trousers"
         }
       ],
       "size": [
@@ -843,7 +870,7 @@
       "id": "13",
       "title": "BBOGG",
       "image": "bboogg.png",
-      "alt-text": "Bbogg shoes",
+      "alt-text": "Bbogg shoes black",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -852,17 +879,17 @@
         {
           "id": "BLACK",
           "image": "bboogg.png",
-          "alt-text": "Bbogg shoes"
+          "alt-text": "Bbogg shoes black"
         },
         {
-          "id": "BLUE",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes blue"
+          "id": "COPPER",
+          "image": "bbooggcopper.png",
+          "alt-text": "Bbogg shoes copper"
         },
         {
-          "id": "GREY",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes grey"
+          "id": "SILVER BLUE",
+          "image": "bbooggsilverblue.png",
+          "alt-text": "Bbogg shoes silver blue"
         }
       ],
       "size": [
@@ -905,9 +932,9 @@
     },
     {
       "id": "14",
-      "title": "PUNC CUNP",
-      "image": "punccunp.png",
-      "alt-text": "Punc cunp shoes",
+      "title": "ADIDAS",
+      "image": "addidasblackside.png",
+      "alt-text": "Adidas black shoes",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -915,18 +942,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes black"
+          "image": "addidasblackside.png",
+          "alt-text": "Adidas black shoes"
         },
         {
-          "id": "BLUE",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes blue"
+          "id": "GOLD",
+          "image": "addidasgold.png",
+          "alt-text": "Adidas black shoes"
         },
         {
-          "id": "GREY",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes grey"
+          "id": "SILVER BLUE",
+          "image": "addidassilverblue.png",
+          "alt-text": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER",
+          "image": "addidassilver.png",
+          "alt-text": "Adidas black shoes"
         }
       ],
       "size": [
@@ -969,9 +1001,9 @@
     },
     {
       "id": "15",
-      "title": "BBOGG",
-      "image": "bboogg.png",
-      "alt-text": "Bbogg shoes",
+      "title": "BIG BOOTS",
+      "image": "bigboots.png",
+      "alt-text": "Big boots black",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -979,18 +1011,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes"
+          "image": "bigboots.png",
+          "alt-text": "Big boots black"
         },
         {
           "id": "BLUE",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes blue"
+          "image": "bigbootsfrontblue.png",
+          "alt-text": "Big boots blue"
         },
         {
-          "id": "GREY",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes grey"
+          "id": "GREEN",
+          "image": "bigbootsfrontgreen.png",
+          "alt-text": "Big boots green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "bigbootsfrontviolet.png",
+          "alt-text": "Big boots violet"
         }
       ],
       "size": [
@@ -1033,9 +1070,9 @@
     },
     {
       "id": "16",
-      "title": "PUNC CUNP",
-      "image": "punccunp.png",
-      "alt-text": "Punc cunp shoes",
+      "title": "BUFFALO",
+      "image": "buffaloblack.png",
+      "alt-text": "Buffalo black shoes",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1043,18 +1080,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes black"
+          "image": "buffaloblack.png",
+          "alt-text": "Buffalo black shoes"
         },
         {
-          "id": "BLUE",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes blue"
+          "id": "RED",
+          "image": "buffalored.png",
+          "alt-text": "Buffalo red shoes"
         },
         {
-          "id": "GREY",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes grey"
+          "id": "WHITE",
+          "image": "buffalowhite.png",
+          "alt-text": "Buffalo white shoes"
+        },
+        {
+          "id": "YELLOW",
+          "image": "buffaloyellow.png",
+          "alt-text": "Buffalo yellow shoes"
         }
       ],
       "size": [
@@ -1098,8 +1140,8 @@
     {
       "id": "17",
       "title": "BBOGG",
-      "image": "bboogg.png",
-      "alt-text": "Bbogg shoes",
+      "image": "punccunp.png",
+      "alt-text": "Punccunp black shoes",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1107,18 +1149,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "bboogg.png",
+          "image": "punccunp.png",
           "alt-text": "Bbogg shoes"
         },
         {
           "id": "BLUE",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes blue"
+          "image": "punccunpblue.png",
+          "alt-text": "Punccunp blue shoes"
         },
         {
           "id": "GREY",
-          "image": "bboogg.png",
-          "alt-text": "Bbogg shoes grey"
+          "image": "punccunpgrey.png",
+          "alt-text": "Punccunp grey shoes"
+        },
+        {
+          "id": "RED",
+          "image": "punccunpred.png",
+          "alt-text": "Punccunp red shoes"
         }
       ],
       "size": [
@@ -1161,9 +1208,9 @@
     },
     {
       "id": "18",
-      "title": "PUNC CUNP",
-      "image": "punccunp.png",
-      "alt-text": "Punc cunp shoes",
+      "title": "STUD",
+      "image": "studsblack.png",
+      "alt-text": "Stud black shoes",
       "category": "shoes",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1171,18 +1218,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes black"
+          "image": "studsblack.png",
+          "alt-text": "Stud shoes black"
         },
         {
           "id": "BLUE",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes blue"
+          "image": "studsblue.png",
+          "alt-text": "Stud shoes blue"
         },
         {
-          "id": "GREY",
-          "image": "punccunp.png",
-          "alt-text": "Punc cunp shoes grey"
+          "id": "SILVER",
+          "image": "studssilver.png",
+          "alt-text": "Stud shoes silver"
+        },
+        {
+          "id": "vIOLET",
+          "image": "studsviolet.png",
+          "alt-text": "Stud shoes violet"
         }
       ],
       "size": [
@@ -1229,7 +1281,7 @@
       "id": "19",
       "title": "PEACYL",
       "image": "peacyl.png",
-      "alt-text": "Peacyl t-shirt",
+      "alt-text": "Peacyl t-shirt black",
       "category": "tshirts",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1241,14 +1293,19 @@
           "alt-text": "Peacyl t-shirt black"
         },
         {
-          "id": "BLUE",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt blue"
+          "id": "GREEN",
+          "image": "peacyldarkgreen.png",
+          "alt-text": "Peacyl t-shirt green"
         },
         {
-          "id": "GREY",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt grey"
+          "id": "RED",
+          "image": "peacylred.png",
+          "alt-text": "Peacyl t-shirt red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "peacylviolet.png",
+          "alt-text": "Peacyl t-shirt violet"
         }
       ],
       "size": [
@@ -1326,7 +1383,7 @@
       "id": "20",
       "title": "SHOUT",
       "image": "shoutt.png",
-      "alt-text": "Shoutt t-shirt",
+      "alt-text": "Shoutt t-shirt black",
       "category": "tshirts",
       "price": "156",
       "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -1339,13 +1396,18 @@
         },
         {
           "id": "BLUE",
-          "image": "shoutt.png",
+          "image": "shouttblue.png",
           "alt-text": "Shoutt t-shirt blue"
         },
         {
-          "id": "GREY",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt grey"
+          "id": "GREEN",
+          "image": "shouttgreen.png",
+          "alt-text": "Shoutt t-shirt green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "shouttviolet.png",
+          "alt-text": "Shoutt t-shirt violet"
         }
       ],
       "size": [
@@ -1421,9 +1483,9 @@
     },
     {
       "id": "21",
-      "title": "PEACYL",
-      "image": "peacyl.png",
-      "alt-text": "Peacyl t-shirt",
+      "title": "AKIRA",
+      "image": "akirablack.png",
+      "alt-text": "Akira t-shirt",
       "category": "tshirts",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1431,18 +1493,18 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt black"
+          "image": "akirablack.png",
+          "alt-text": "Akira t-shirt black"
         },
         {
-          "id": "BLUE",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt blue"
+          "id": "WHITE",
+          "image": "akiratt.png",
+          "alt-text": "Akira t-shirt white"
         },
         {
-          "id": "GREY",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt grey"
+          "id": "RED",
+          "image": "akirattwithred.png",
+          "alt-text": "Akira t-shirt with red"
         }
       ],
       "size": [
@@ -1518,9 +1580,9 @@
     },
     {
       "id": "22",
-      "title": "SHOUT",
-      "image": "shoutt.png",
-      "alt-text": "Shoutt t-shirt",
+      "title": "COWBOY BEBOP",
+      "image": "cowboybebop.png",
+      "alt-text": "Cowboy bebop black t-shirt",
       "category": "tshirts",
       "price": "156",
       "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -1528,18 +1590,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt black"
+          "image": "cowboybebop.png",
+          "alt-text": "Cowboy bebop black t-shirt"
         },
         {
-          "id": "BLUE",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt blue"
+          "id": "GREEN",
+          "image": "cowboybebopgreen.png",
+          "alt-text": "Cowboy bebop green t-shirt"
         },
         {
           "id": "GREY",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt grey"
+          "image": "cowboybebopgrey.png",
+          "alt-text": "Cowboy bebop grey t-shirt"
+        },
+        {
+          "id": "BLUE",
+          "image": "cowboybebopblue.png",
+          "alt-text": "Cowboy bebop blue t-shirt"
         }
       ],
       "size": [
@@ -1615,28 +1682,33 @@
     },
     {
       "id": "23",
-      "title": "PEACYL",
-      "image": "peacyl.png",
-      "alt-text": "Peacyl t-shirt",
+      "title": "DEATH ROW RECORDS",
+      "image": "deathrowrecords.png",
+      "alt-text": "Death row recors white t-shirt",
       "category": "tshirts",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "colors": [
         {
-          "id": "BLACK",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt black"
+          "id": "WHITE",
+          "image": "deathrowrecords.png",
+          "alt-text": "Death row recors t-shirt black"
         },
         {
-          "id": "BLUE",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt blue"
+          "id": "BLACK",
+          "image": "deathrowrecordsblack.png",
+          "alt-text": "Death row recors t-shirt black"
+        },
+        {
+          "id": "RED",
+          "image": "deathrowrecordsred.png",
+          "alt-text": "Death row recors t-shirt red"
         },
         {
           "id": "GREY",
-          "image": "peacyl.png",
-          "alt-text": "Peacyl t-shirt grey"
+          "image": "deathrowrecordsgrey.png",
+          "alt-text": "Death row recors t-shirt grey"
         }
       ],
       "size": [
@@ -1712,28 +1784,33 @@
     },
     {
       "id": "24",
-      "title": "SHOUT",
-      "image": "shoutt.png",
-      "alt-text": "Shoutt t-shirt",
+      "title": "JOAN CORNELLA",
+      "image": "joancornellagrey.png",
+      "alt-text": "Joan cornella grey t-shirt",
       "category": "tshirts",
       "price": "156",
       "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "colors": [
         {
-          "id": "BLACK",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt black"
-        },
-        {
-          "id": "BLUE",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt blue"
-        },
-        {
           "id": "GREY",
-          "image": "shoutt.png",
-          "alt-text": "Shoutt t-shirt grey"
+          "image": "joancornellagrey.png",
+          "alt-text": "Joan cornella grey"
+        },
+        {
+          "id": "ORANGE",
+          "image": "joancornellaorange.png",
+          "alt-text": "Joan cornella orange"
+        },
+        {
+          "id": "RED",
+          "image": "joancornellared.png",
+          "alt-text": "Joan cornella red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "joancornellaviolet.png",
+          "alt-text": "Joan cornella violet"
         }
       ],
       "size": [
