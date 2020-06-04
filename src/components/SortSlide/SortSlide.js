@@ -50,10 +50,14 @@ class SortSlide extends React.Component {
   }
 
   componentDidMount() {
+    document.body.style.overflowY = "hidden";
     this.context.slideInAnimation({
       backgroundRef: this.NavCloseBackground,
       wrapperRef: this.SlideBackground,
     });
+  }
+  componentWillUnmount() {
+    document.body.style.overflow = "unset";
   }
   createList() {
     return sortList.map((element, index) => {

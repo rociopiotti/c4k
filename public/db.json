@@ -17,13 +17,18 @@
         },
         {
           "id": "BLUE",
-          "image": "kitty.png",
+          "image": "kittyblue.png",
           "alt-text": "Kitty bag blue"
         },
         {
-          "id": "GREY",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag grey"
+          "id": "GOLDEN",
+          "image": "kittygolden.png",
+          "alt-text": "Kitty bag golden"
+        },
+        {
+          "id": "VIOLET",
+          "image": "kittyviolet.png",
+          "alt-text": "Kitty bag violet"
         }
       ],
       "size": [
@@ -42,9 +47,9 @@
     },
     {
       "id": "2",
-      "title": "RUNNN",
-      "image": "runnn.png",
-      "alt-text": "Runnn bag",
+      "title": "MOON CHILD",
+      "image": "moonchildblack.png",
+      "alt-text": "Moon child bag",
       "category": "bags",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -52,23 +57,23 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag black"
+          "image": "moonchildblack.png",
+          "alt-text": "Moon child black"
         },
         {
-          "id": "BLUE",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag blue"
+          "id": "GREEN",
+          "image": "moonchildgreen.png",
+          "alt-text": "Moon child green"
         },
         {
-          "id": "GREY",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag grey"
+          "id": "VIOLET",
+          "image": "moonchildviolet.png",
+          "alt-text": "Moon child violet"
         }
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "moonchildsize",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -82,9 +87,9 @@
     },
     {
       "id": "3",
-      "title": "KITTY",
-      "image": "kitty.png",
-      "alt-text": "Kitty bag",
+      "title": "CHEST",
+      "image": "chestblack.png",
+      "alt-text": "Chest black bag",
       "category": "bags",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -92,23 +97,28 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag black"
+          "image": "chestblack.png",
+          "alt-text": "Chest black bag"
         },
         {
-          "id": "BLUE",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag blue"
+          "id": "CAMOUFLAGE",
+          "image": "chestcamouflage.png",
+          "alt-text": "Chest brown bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "chestviolet.png",
+          "alt-text": "Chest green bag"
         },
         {
           "id": "GREY",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag grey"
+          "image": "chestgrey.png",
+          "alt-text": "Chest grey bag"
         }
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "chestsize",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -122,9 +132,9 @@
     },
     {
       "id": "4",
-      "title": "RUNNN",
-      "image": "runnn.png",
-      "alt-text": "Runnn bag",
+      "title": "CAMPAING",
+      "image": "campaingblack.png",
+      "alt-text": "Campaign black bag",
       "category": "bags",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -132,23 +142,28 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag black"
+          "image": "campaingblack.png",
+          "alt-text": "Campaign black bag"
         },
         {
-          "id": "BLUE",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag blue"
+          "id": "BROWN",
+          "image": "campaingbrown.png",
+          "alt-text": "Campaign brown bag"
+        },
+        {
+          "id": "GREEN",
+          "image": "campainggreen.png",
+          "alt-text": "Campaign green bag"
         },
         {
           "id": "GREY",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag grey"
+          "image": "campainggrey.png",
+          "alt-text": "Campaign grey bag"
         }
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "campaingsize",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -162,9 +177,9 @@
     },
     {
       "id": "5",
-      "title": "KITTY",
-      "image": "kitty.png",
-      "alt-text": "Kitty bag",
+      "title": "SUPREME",
+      "image": "supremeblack.png",
+      "alt-text": "Supreme black bag",
       "category": "bags",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -172,23 +187,28 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag black"
+          "image": "supremeblack.png",
+          "alt-text": "supreme black bag"
         },
         {
-          "id": "BLUE",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag blue"
+          "id": "BLUE NAVY",
+          "image": "supremeblue.png",
+          "alt-text": "supreme blue navy bag"
         },
         {
-          "id": "GREY",
-          "image": "kitty.png",
-          "alt-text": "Kitty bag grey"
+          "id": "RED",
+          "image": "supremered.png",
+          "alt-text": "supreme red bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "supremewhite.png",
+          "alt-text": "supreme violet bag"
         }
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "supremesize",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -202,9 +222,9 @@
     },
     {
       "id": "6",
-      "title": "RUNNN",
-      "image": "runnn.png",
-      "alt-text": "Runnn bag",
+      "title": "CROSSSIDE",
+      "image": "crosssideblack.png",
+      "alt-text": "Crosside black bag",
       "category": "bags",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -212,23 +232,28 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag black"
+          "image": "crosssideblack.png",
+          "alt-text": "Crosside bag black"
         },
         {
           "id": "BLUE",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag blue"
+          "image": "crosssidebluenavy.png",
+          "alt-text": "Crosside bag blue"
         },
         {
           "id": "GREY",
-          "image": "runnn.png",
-          "alt-text": "Kitty bag grey"
+          "image": "crosssidered.png",
+          "alt-text": "Crosside bag grey"
+        },
+        {
+          "id": "VIOLET",
+          "image": "crosssideviolet.png",
+          "alt-text": "Crosside bag violet"
         }
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "crossidesize",
           "height": "10",
           "width": "25",
           "lenght": "5"

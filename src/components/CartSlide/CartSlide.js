@@ -3,15 +3,10 @@ import "./CartSlide.scss";
 
 // COMPONENTS
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
-import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
+import CartList from "../CartList/CartList";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
-
-//ROUTER
-import { Link } from "react-router-dom";
-import CartList from "../CartList/CartList";
 
 class CartSlide extends React.Component {
   static contextType = PageManagerContext;
@@ -59,14 +54,6 @@ class CartSlide extends React.Component {
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
             <CartList onCartItemClick={this.executeAnimation} />
-            <BtnPromoCode />
-            <EstimatedTotal />
-            <Link
-              to='/checkout'
-              className='btnCheckout'
-              onClick={this.executeAnimation}>
-              CHECKOUT
-            </Link>
           </div>
         </div>
       </div>

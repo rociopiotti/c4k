@@ -11,7 +11,7 @@ class GridContainer extends React.Component {
   static contextType = PageManagerContext;
 
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo("15vh", 0);
   }
 
   render() {

@@ -11,7 +11,7 @@ class ProductDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      size: "SIZE",
+      size: "M",
       color: "BLACK",
       quantity: "1",
     };

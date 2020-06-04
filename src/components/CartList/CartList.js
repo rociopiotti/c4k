@@ -4,6 +4,11 @@ import "./CartList.scss";
 // COMPONENTS
 import CartItem from "../CartItem/CartItem";
 import CartEmpty from "../CartEmpty/CartEmpty";
+import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
+import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
+
+//ROUTER
+import { Link } from "react-router-dom";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
@@ -39,7 +44,11 @@ class CartList extends Component {
 
     const listItems = finalItems.map((item, index) => (
       <li key={item.id} className='cartItemElement'>
-        <CartItem data={item} index= {index}onCartItemClick={this.props.onCartItemClick} />
+        <CartItem
+          data={item}
+          index={index}
+          onCartItemClick={this.props.onCartItemClick}
+        />
       </li>
     ));
 
@@ -47,7 +56,21 @@ class CartList extends Component {
   }
 
   render() {
-    return <div className='cartItemListBox'>{this.createList()}</div>;
+    return (
+      <>
+        <div className='cartItemListBox'>
+          {this.createList()}
+          <BtnPromoCode />
+          <EstimatedTotal />
+          <Link
+            to='/checkout'
+            className='btnCheckout'
+            onClick={this.executeAnimation}>
+            CHECKOUT
+          </Link>
+        </div>
+      </>
+    );
   }
 }
 export default CartList;
