@@ -24,7 +24,6 @@ export class QuestionAnswerBox extends React.Component {
     this.setState({
       mode: newMode,
     });
-    // console.log("TOGGLE", mode);
   }
 
   handleQuestionClick() {
