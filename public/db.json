@@ -1884,5 +1884,730 @@
         "7"
       ]
     }
+  ],
+  "newarrivals": [
+    {
+      "id": "19",
+      "title": "PEACYL",
+      "image": "peacyl.png",
+      "alt-text": "Peacyl t-shirt black",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "peacyl.png",
+          "alt-text": "Peacyl t-shirt black"
+        },
+        {
+          "id": "GREEN",
+          "image": "peacyldarkgreen.png",
+          "alt-text": "Peacyl t-shirt green"
+        },
+        {
+          "id": "RED",
+          "image": "peacylred.png",
+          "alt-text": "Peacyl t-shirt red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "peacylviolet.png",
+          "alt-text": "Peacyl t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "6",
+        "1"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "SHOUT",
+      "image": "shoutt.png",
+      "alt-text": "Shoutt t-shirt black",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "shoutt.png",
+          "alt-text": "Shoutt t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "shouttblue.png",
+          "alt-text": "Shoutt t-shirt blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "shouttgreen.png",
+          "alt-text": "Shoutt t-shirt green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "shouttviolet.png",
+          "alt-text": "Shoutt t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "2",
+        "7"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "ADIDAS",
+      "image": "addidasblackside.png",
+      "alt-text": "Adidas black shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "addidasblackside.png",
+          "alt-text": "Adidas black shoes"
+        },
+        {
+          "id": "GOLD",
+          "image": "addidasgold.png",
+          "alt-text": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER BLUE",
+          "image": "addidassilverblue.png",
+          "alt-text": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER",
+          "image": "addidassilver.png",
+          "alt-text": "Adidas black shoes"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "2",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "BIG BOOTS",
+      "image": "bigboots.png",
+      "alt-text": "Big boots black",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bigboots.png",
+          "alt-text": "Big boots black"
+        },
+        {
+          "id": "BLUE",
+          "image": "bigbootsfrontblue.png",
+          "alt-text": "Big boots blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "bigbootsfrontgreen.png",
+          "alt-text": "Big boots green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "bigbootsfrontviolet.png",
+          "alt-text": "Big boots violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "2"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "GRAFFITTI",
+      "image": "graffitti.png",
+      "alt-text": "b4k black trousers",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "graffitti.png",
+          "alt-text": "b4k black trousers"
+        },
+        {
+          "id": "GREEN",
+          "image": "graffittigreen.png",
+          "alt-text": "b4k green trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "LEATHER STEVE",
+      "image": "leathersteve.png",
+      "alt-text": "Leather black trousers",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "leathersteve.png",
+          "alt-text": "Leather black trousers"
+        },
+        {
+          "id": "BLUE",
+          "image": "leathersteveblue.png",
+          "alt-text": "Leather blue trousers"
+        },
+        {
+          "id": "GOLD",
+          "image": "leatherstevegold.png",
+          "alt-text": "Leather gold trousers"
+        },
+        {
+          "id": "VIOLET",
+          "image": "leathersteveviolet.png",
+          "alt-text": "Leather violet trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "id": "1",
+      "title": "KITTY",
+      "image": "kitty.png",
+      "alt-text": "Kitty bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "kitty.png",
+          "alt-text": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "kittyblue.png",
+          "alt-text": "Kitty bag blue"
+        },
+        {
+          "id": "GOLDEN",
+          "image": "kittygolden.png",
+          "alt-text": "Kitty bag golden"
+        },
+        {
+          "id": "VIOLET",
+          "image": "kittyviolet.png",
+          "alt-text": "Kitty bag violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "SUPREME",
+      "image": "supremeblack.png",
+      "alt-text": "Supreme black bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "supremeblack.png",
+          "alt-text": "supreme black bag"
+        },
+        {
+          "id": "BLUE NAVY",
+          "image": "supremeblue.png",
+          "alt-text": "supreme blue navy bag"
+        },
+        {
+          "id": "RED",
+          "image": "supremered.png",
+          "alt-text": "supreme red bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "supremewhite.png",
+          "alt-text": "supreme violet bag"
+        }
+      ],
+      "size": [
+        {
+          "id": "supremesize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "NINE X4",
+      "image": "joggerkapblack.png",
+      "alt-text": "Jogger black trousers",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "joggerkapblack.png",
+          "alt-text": "Jogger black trousers"
+        },
+        {
+          "id": "GREY",
+          "image": "joggerkapgrey.png",
+          "alt-text": "Jogger grey trousers"
+        },
+        {
+          "id": "RED",
+          "image": "joggerkapred.png",
+          "alt-text": "Jogger red trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "5",
+        "7",
+        "1"
+      ]
+    }
   ]
 }
