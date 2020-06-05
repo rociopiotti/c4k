@@ -12,12 +12,16 @@ import axios from "axios";
 
 // DATABASE PATH
 import { URL_PRODUCTS } from "./utils/path";
+import { FAQ_DB } from "./utils/path";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 // EASING
 const ease = Back.easeInOut;
+
+let one = URL_PRODUCTS;
+let two = FAQ_DB;
 
 class App extends React.Component {
   constructor(props) {
@@ -26,6 +30,7 @@ class App extends React.Component {
     this.state = {
       currentSlide: null,
       data: null,
+      faqData: null,
       cart: [],
     };
 
@@ -61,16 +66,50 @@ class App extends React.Component {
     });
   }
 
+  // //--------- GET DATABASE
+  // handleGetDatabase() {
+  //   axios
+  //     .get(URL_PRODUCTS)
+  //     .then((res) => {
+  //       this.setState({
+  //         data: res.data,
+  //       });
+  //     })
+  //     .catch((error) => console.log("NOT WORKING", error));
+
+  // }
+
   //--------- GET DATABASE
   handleGetDatabase() {
+    const requestOne = axios.get(one);
+    const requestTwo = axios.get(two);
+
     axios
-      .get(URL_PRODUCTS)
-      .then((res) => {
-        this.setState({
-          data: res.data,
-        });
-      })
+      .all([requestOne, requestTwo])
+      .then(
+        axios.spread((...res) => {
+          const responseOne = res[0];
+          const responseTwo = res[1];
+          this.setState({
+            data: responseOne.data,
+            faqData: responseTwo.faqData,
+          });
+        })
+      )
       .catch((error) => console.log("NOT WORKING", error));
+  }
+
+  //--------- GET DATABASE
+  handleFaqDatabase() {
+    // axios
+    //   .get(FAQ_DB)
+    //   .then((response) => {
+    //     this.setState({
+    //       faqData: response.faqData,
+    //     });
+    //   })
+    //   .catch((error) => console.log("FAQ DATA NOT WORKING", error));
+    // console.log (this.state.faqData)
   }
 
   //--------- ADDS ITEM TO CART ARRAY
@@ -91,7 +130,7 @@ class App extends React.Component {
       }
     });
 
-    console.log(productIndex)
+    console.log(productIndex);
 
     // let newCart = [...this.state.cart].slice([...this.state.cart], -productIndex);
   }
@@ -118,12 +157,31 @@ class App extends React.Component {
     return allProducts;
   }
 
+  handleFaqDataBase() {
+    let allFaq = [];
+
+    for (let key in this.state.faqData) {
+      allFaq = [...allFaq, ...this.state.faqData[key]];
+    }
+
+    console.log(allFaq);
+    return allFaq;
+  }
+
   render() {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
 
-    // console.log(this.state.cart);
+    console.log(this.handleFaqDataBase());
+    console.log(this.state.data);
+    console.log(this.state.faqData);
+
+
+    // if (!this.state.faqData) {
+    //   return <div>... faq loading</div>;
+    // }
+
     return (
       <PageManagerContext.Provider
         value={{
@@ -142,6 +200,8 @@ class App extends React.Component {
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
           handleDataBase: this.handleDataBase(),
+          //PASSES FAQ DATA BASE
+          handleFaqDatabase: this.handleFaqDatabase(),
           // REMOVE CART ITEM
           handleDeleteFromCart: this.handleDeleteFromCart.bind(this),
         }}>

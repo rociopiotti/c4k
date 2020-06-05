@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import "./QuestionAnswerBox.scss";
 
 import Icon from "../../Icon/Icon";
+
+//CONTEXT
+import PageManagerContext from "../../../context/pageManager-context";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
-export class QuestionAnswerBox extends React.Component {
+
+class QuestionAnswerBox extends Component {
+
+  static contextType = PageManagerContext;
+
   constructor(props) {
     super(props);
     this.FaqBox = null;
@@ -65,17 +72,17 @@ export class QuestionAnswerBox extends React.Component {
 
   render() {
     return (
-      <div className="questionAnswerBox">
+      <div className='questionAnswerBox'>
         <button
           onClick={() => {
             this.handleQuestionClick();
           }}>
-          <h4 className="question">
-            How can I contact a C4K?<span></span> <Icon type="arrowDown" />
+          <h4 className='question'>
+            How can I contact a C4K?<span></span> <Icon type='arrowDown' />
           </h4>
         </button>
-        <div className="answerBox">
-          <div ref={(div) => (this.FaqBox = div)} className="answer">
+        <div className='answerBox'>
+          <div ref={(div) => (this.FaqBox = div)} className='answer'>
             <p>
               Lorem ipsum dolor sit amet, mauris ipsum iaculis porttitor
               vestibulum primis, amet duis varius dolor egestas nunc, et
@@ -89,3 +96,5 @@ export class QuestionAnswerBox extends React.Component {
     );
   }
 }
+
+export default QuestionAnswerBox;

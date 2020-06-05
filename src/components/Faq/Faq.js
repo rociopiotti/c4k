@@ -2,7 +2,7 @@ import React from "react";
 import "./Faq.scss";
 import Icon from "../Icon/Icon";
 import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
-import { QuestionAnswerBox } from "./QuestionAnswerBox/QuestionAnswerBox";
+import  QuestionAnswerBox  from "./QuestionAnswerBox/QuestionAnswerBox";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
 class Faq extends React.Component {
