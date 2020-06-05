@@ -7,13 +7,13 @@ const Dropdown = ({ data, dropdownType, change }) => {
       return null;
     }
 
-    if (data.length === 1) {
-      return (
-        <option style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
-          SIZE
-        </option>
-      );
-    }
+    // if (data.length === 1) {
+    //   return (
+    //     <option style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
+    //      {data[0]}
+    //     </option>
+    //   );
+    // }
 
     const list = data.map((element, index) => (
       <option

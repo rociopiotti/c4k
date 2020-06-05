@@ -12,7 +12,7 @@ import axios from "axios";
 
 // DATABASE PATH
 import { URL_PRODUCTS } from "./utils/path";
-import { FAQ_DB } from "./utils/path";
+// import { FAQ_DB } from "./utils/path";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
@@ -20,8 +20,8 @@ import { Timeline, Back } from "gsap/gsap-core";
 // EASING
 const ease = Back.easeInOut;
 
-let one = URL_PRODUCTS;
-let two = FAQ_DB;
+// let one = URL_PRODUCTS;
+// let two = FAQ_DB;
 
 class App extends React.Component {
   constructor(props) {
@@ -66,38 +66,38 @@ class App extends React.Component {
     });
   }
 
-  // //--------- GET DATABASE
-  // handleGetDatabase() {
-  //   axios
-  //     .get(URL_PRODUCTS)
-  //     .then((res) => {
-  //       this.setState({
-  //         data: res.data,
-  //       });
-  //     })
-  //     .catch((error) => console.log("NOT WORKING", error));
-
-  // }
-
   //--------- GET DATABASE
   handleGetDatabase() {
-    const requestOne = axios.get(one);
-    const requestTwo = axios.get(two);
-
     axios
-      .all([requestOne, requestTwo])
-      .then(
-        axios.spread((...res) => {
-          const responseOne = res[0];
-          const responseTwo = res[1];
-          this.setState({
-            data: responseOne.data,
-            faqData: responseTwo.faqData,
-          });
-        })
-      )
+      .get(URL_PRODUCTS)
+      .then((res) => {
+        this.setState({
+          data: res.data,
+        });
+      })
       .catch((error) => console.log("NOT WORKING", error));
+
   }
+
+  // //--------- GET DATABASE
+  // handleGetDatabase() {
+  //   const requestOne = axios.get(one);
+  //   const requestTwo = axios.get(two);
+
+  //   axios
+  //     .all([requestOne, requestTwo])
+  //     .then(
+  //       axios.spread((...res) => {
+  //         const responseOne = res[0];
+  //         const responseTwo = res[1];
+  //         this.setState({
+  //           data: responseOne.data,
+  //           faqData: responseTwo.faqData,
+  //         });
+  //       })
+  //     )
+  //     .catch((error) => console.log("NOT WORKING", error));
+  // }
 
   //--------- GET DATABASE
   handleFaqDatabase() {
@@ -157,25 +157,22 @@ class App extends React.Component {
     return allProducts;
   }
 
-  handleFaqDataBase() {
-    let allFaq = [];
+  // handleFaqDataBase() {
+  //   let allFaq = [];
 
-    for (let key in this.state.faqData) {
-      allFaq = [...allFaq, ...this.state.faqData[key]];
-    }
+  //   for (let key in this.state.faqData) {
+  //     allFaq = [...allFaq, ...this.state.faqData[key]];
+  //   }
 
-    console.log(allFaq);
-    return allFaq;
-  }
+  //   console.log(allFaq);
+  //   return allFaq;
+  // }
 
   render() {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
 
-    console.log(this.handleFaqDataBase());
-    console.log(this.state.data);
-    console.log(this.state.faqData);
 
 
     // if (!this.state.faqData) {

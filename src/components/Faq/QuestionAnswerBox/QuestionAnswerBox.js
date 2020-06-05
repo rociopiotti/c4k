@@ -4,23 +4,21 @@ import "./QuestionAnswerBox.scss";
 import Icon from "../../Icon/Icon";
 
 //CONTEXT
-import PageManagerContext from "../../../context/pageManager-context";
+// import PageManagerContext from "../../../context/pageManager-context";
 
-//ANMATION
+//ANIMATION
 import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
 class QuestionAnswerBox extends Component {
-
-  static contextType = PageManagerContext;
+//   static contextType = PageManagerContext;
 
   constructor(props) {
     super(props);
     this.FaqBox = null;
 
     this.state = {
-      searchState: false,
       mode: "OPEN",
     };
   }
@@ -36,7 +34,7 @@ class QuestionAnswerBox extends Component {
   handleQuestionClick() {
     let windowsWidth = window.innerWidth;
     const { mode } = this.state;
-    if (windowsWidth > 850) {
+    if (windowsWidth > 1024) {
       const marginInput = mode === "OPEN" ? "+=11vh" : "-=11vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { ease: ease, marginTop: marginInput }, 0);
@@ -44,7 +42,7 @@ class QuestionAnswerBox extends Component {
         this.toggle();
       });
     }
-    if (windowsWidth > 800 && windowsWidth <= 1024) {
+    if (windowsWidth > 800 && windowsWidth < 1024) {
       const marginInput = mode === "OPEN" ? "+=35vh" : "-=35vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { marginTop: marginInput }, 0);
@@ -70,7 +68,9 @@ class QuestionAnswerBox extends Component {
     }
   }
 
+
   render() {
+
     return (
       <div className='questionAnswerBox'>
         <button

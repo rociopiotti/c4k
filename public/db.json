@@ -33,7 +33,7 @@
       ],
       "size": [
         {
-          "id": "kittysize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -73,7 +73,7 @@
       ],
       "size": [
         {
-          "id": "moonchildsize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -118,7 +118,7 @@
       ],
       "size": [
         {
-          "id": "chestsize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -163,7 +163,7 @@
       ],
       "size": [
         {
-          "id": "campaingsize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -208,7 +208,7 @@
       ],
       "size": [
         {
-          "id": "supremesize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
@@ -253,7 +253,7 @@
       ],
       "size": [
         {
-          "id": "crossidesize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"
