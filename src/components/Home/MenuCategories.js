@@ -13,7 +13,7 @@ const menuCategories = [
   { id: "1", name: "T-SHIRT", label: "tshirts" },
   { id: "2", name: "BAGS", label: "bags" },
   { id: "3", name: "SHOES", label: "shoes" },
-  { id: "4", name: "NEW ARRIVALS", label: "newArrivals" },
+  { id: "4", name: "NEW ARRIVALS", label: "newarrivals" },
 ];
 
 const MenuCategories = (props) => {
