@@ -21,14 +21,13 @@ class Faq extends React.Component {
       searchState: true,
     });
   }
+  handleInputChange(event) {}
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.handlegetFaqDb();
+    this.getFaqDb();
   }
 
-  handleInputChange(event) {}
-
-  handlegetFaqDb() {
+  getFaqDb() {
     axios
       .get(FAQ_DB)
       .then((res) => {
@@ -40,22 +39,25 @@ class Faq extends React.Component {
   }
 
   handleFaqDataBase() {
-    let allfaq = [];
-    if (!this.state.dataFaq) {
-      return;
-    } else {
-      for (let key in this.state.dataFaq) {
-        allfaq = [...allfaq, ...this.state.dataFaq[key]];
-      }
-      console.log(allfaq);
-      return allfaq;
-    }
+    // return this.state.dataFaq.map((item) => (
+    //   <QuestionAnswerBox key={item.id} title={item.title} items={item.items} />
+    // ));
+    return this.state.dataFaq.map((item) => {
+      return (
+        <QuestionAnswerBox
+          key={item.id}
+          title={item.title}
+          items={item.items}
+        />
+      );
+    });
   }
 
   render() {
     if (!this.state.dataFaq) {
       return <div>... loading</div>;
     }
+
     return (
       <div className='FaqBox'>
         <SectionTransition />
@@ -68,16 +70,13 @@ class Faq extends React.Component {
               className='searchFaq'
               onChange={this.handleInputChange}></input>
             <span></span>
-            <button onClick={this.handleSearchFaq.bind(this)} className='faqSearchBoxIcon'>
+            <button
+              onClick={this.handleSearchFaq.bind(this)}
+              className='faqSearchBoxIcon'>
               <Icon type='search' />
             </button>
           </div>
-          <h3>GENERAL</h3>
-          <QuestionAnswerBox  />
-          <QuestionAnswerBox />
-
-          <h3>SHIPPING</h3>
-          <QuestionAnswerBox />
+          {this.handleFaqDataBase()}
           <BtnBackToTop />
         </div>
       </div>

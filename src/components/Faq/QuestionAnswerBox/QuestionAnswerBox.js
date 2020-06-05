@@ -12,11 +12,11 @@ import { Timeline, Back } from "gsap/gsap-core";
 const ease = Back.easeInOut;
 
 class QuestionAnswerBox extends Component {
-//   static contextType = PageManagerContext;
+  //   static contextType = PageManagerContext;
 
   constructor(props) {
     super(props);
-    this.FaqBox = null;
+    this.FaqBox = [];
 
     this.state = {
       mode: "OPEN",
@@ -29,13 +29,17 @@ class QuestionAnswerBox extends Component {
     this.setState({
       mode: newMode,
     });
+    console.log("HERE 5");
   }
 
   handleQuestionClick() {
     let windowsWidth = window.innerWidth;
     const { mode } = this.state;
+    console.log("HERE");
     if (windowsWidth > 1024) {
-      const marginInput = mode === "OPEN" ? "+=11vh" : "-=11vh";
+      console.log("HERE 1");
+
+      const marginInput = mode === "OPEN" ? "+=16vh" : "-=16vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { ease: ease, marginTop: marginInput }, 0);
       tl.eventCallback("onComplete", () => {
@@ -43,6 +47,8 @@ class QuestionAnswerBox extends Component {
       });
     }
     if (windowsWidth > 800 && windowsWidth < 1024) {
+      console.log("HERE 2");
+
       const marginInput = mode === "OPEN" ? "+=35vh" : "-=35vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { marginTop: marginInput }, 0);
@@ -51,6 +57,8 @@ class QuestionAnswerBox extends Component {
       });
     }
     if (windowsWidth > 754 && windowsWidth <= 800) {
+      console.log("HERE 3");
+
       const marginInput = mode === "OPEN" ? "+=30vh" : "-=30vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { marginTop: marginInput }, 0);
@@ -59,6 +67,8 @@ class QuestionAnswerBox extends Component {
       });
     }
     if (windowsWidth <= 754) {
+      console.log("HERE 4");
+
       const marginInput = mode === "OPEN" ? "+=45vh" : "-=45vh";
       const tl = new Timeline();
       tl.to(this.FaqBox, { marginTop: marginInput }, 0);
@@ -68,31 +78,34 @@ class QuestionAnswerBox extends Component {
     }
   }
 
-
   render() {
+    const { title, items } = this.props;
 
     return (
-      <div className='questionAnswerBox'>
-        <button
-          onClick={() => {
-            this.handleQuestionClick();
-          }}>
-          <h4 className='question'>
-            How can I contact a C4K?<span></span> <Icon type='arrowDown' />
-          </h4>
-        </button>
-        <div className='answerBox'>
-          <div ref={(div) => (this.FaqBox = div)} className='answer'>
-            <p>
-              Lorem ipsum dolor sit amet, mauris ipsum iaculis porttitor
-              vestibulum primis, amet duis varius dolor egestas nunc, et
-              placerat sapien urna natoque augue, gravida sagittis. Metus morbi
-              sed, eros libero non id risus, diam porttitor risus magnis, ipsum
-              varius, pellentesque consectetu
-            </p>
-          </div>
-        </div>
-      </div>
+      <>
+        <h3>{title}</h3>
+        {items.map((QA, index) => {
+          return (
+            <div key={index} className='questionAnswerBox'>
+              <button
+                onClick={() => {
+                  this.handleQuestionClick();
+                }}>
+                <h4 key={index} className='question'>
+                  {QA.question}
+                  <span></span> <Icon type='arrowDown' />
+                </h4>
+              </button>
+              <div
+                key={index}
+                
+                className='answerBox'>
+                <p className='answer' ref={(e) => (this.FaqBox[index] = e)}>{QA.answer}</p>
+              </div>
+            </div>
+          );
+        })}
+      </>
     );
   }
 }

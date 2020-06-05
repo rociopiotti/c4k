@@ -1,7 +1,16 @@
 .questionAnswerBox {
   width: 100%;
   overflow: hidden;
-
+  h3 {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+  h4 {
+    font-weight: 400;
+  }
   button {
     border: none;
     background-color: transparent;
@@ -22,9 +31,7 @@
     &:hover {
       color: #c7c7c7;
     }
-    h4 {
-      font-weight: 400;
-    }
+    
   }
   .answerBox {
     width: 100%;
@@ -33,12 +40,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 
     .answer {
       width: 100%;
       height: auto;
       display: flex;
-      margin-top: -12vh;
+      margin-top: -16vh;
 
       p {
         height: auto;

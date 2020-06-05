@@ -76,7 +76,6 @@ class App extends React.Component {
         });
       })
       .catch((error) => console.log("NOT WORKING", error));
-
   }
 
   // //--------- GET DATABASE
@@ -140,7 +139,6 @@ class App extends React.Component {
   }
 
   handleDataBase() {
-    //--------------------------------------------------------
     let allProducts = [];
 
     // 1. Iterar sobre el objecto database completo.
@@ -172,12 +170,6 @@ class App extends React.Component {
     if (!this.state.data) {
       return <div>... loading</div>;
     }
-
-
-
-    // if (!this.state.faqData) {
-    //   return <div>... faq loading</div>;
-    // }
 
     return (
       <PageManagerContext.Provider

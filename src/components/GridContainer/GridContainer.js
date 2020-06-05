@@ -24,7 +24,6 @@ class GridContainer extends React.Component {
         <SectionTransition />
         <GridContainerHeader />
         <GridProductList
-          productId={productId}
           data={this.context.itemsData[productId]}
         />
       </div>
