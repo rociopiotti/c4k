@@ -65,7 +65,7 @@ class CartList extends Component {
           <Link
             to='/checkout'
             className='btnCheckout'
-            onClick={this.executeAnimation}>
+            onClick={this.props.onCartItemClick}>
             CHECKOUT
           </Link>
         </div>
