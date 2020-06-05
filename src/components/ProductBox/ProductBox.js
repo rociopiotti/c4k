@@ -40,17 +40,14 @@ class ProductBox extends React.Component {
     const sectionId = currentPathSplitted[2];
     const itemId = currentPathSplitted[3];
 
-    // Recibir la data "cruda" del context
     const { itemsData } = this.context;
 
     const rawData = itemsData[sectionId];
 
     const itemData = rawData.filter((element) => element.id === itemId);
 
-    // Separar un array con las imagenes
     const images = itemData[0].colors;
 
-    // Separar un objecto con los datos del producto.
     const details = {
       title: itemData[0].title,
       price: itemData[0].price,
@@ -59,7 +56,6 @@ class ProductBox extends React.Component {
       description: itemData[0].description,
       features: itemData[0].features,
     };
-    // Separar un array con items sugeridos
 
     const { handleDataBase } = this.context;
 
@@ -67,17 +63,20 @@ class ProductBox extends React.Component {
       return itemData[0].suggested.includes(product.id);
     });
 
+    const suggestedFiltered = suggested.slice(0, 3);
+
     this.setState({
       itemId,
       sectionId,
       images,
       details,
-      suggested,
+      suggested: suggestedFiltered,
     });
   }
 
   render() {
     const { suggested, images, details, itemId, sectionId } = this.state;
+
     return (
       <div className='productBoxBox'>
         <SectionTransition />

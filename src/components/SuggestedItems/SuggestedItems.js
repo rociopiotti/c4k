@@ -10,14 +10,14 @@ class SuggestedItems extends React.Component {
   }
   render() {
     const { suggested } = this.props;
-
+    
     return (
       <div className='suggestedItemGalleryBox'>
         <h2 className='titleSuggestedItemGallery'>#COMPLETE THE LOOK</h2>
         <div className='suggestedItemGallery'>
-          {suggested.map(({ id, category, title, price, image }) => (
+          {suggested.map(({ id, category, title, price, image }, index) => (
             <Link
-              key={id}
+              key={index}
               to={`/products/${category}/${id}`}
               className='suggestedItem'
               onClick={this.goToTop}>
