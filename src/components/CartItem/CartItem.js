@@ -21,7 +21,7 @@ class CartItem extends React.Component {
 
   render() {
     const { data, onCartItemClick } = this.props;
-    const { id, category, image, title, price, userSelection } = data;
+    const { id, category, image, title, price, userSelection, alttext } = data;
 
     return (
       <div className='cartItemBox'>
@@ -32,7 +32,7 @@ class CartItem extends React.Component {
             className='cartItemImgBox'>
             <img
               src={`/images/${category}/${image}`}
-              alt={title}
+              alt={alttext}
               className='cartItemImg'
             />
           </Link>

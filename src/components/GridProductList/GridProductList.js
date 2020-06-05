@@ -26,7 +26,7 @@ class GridProductList extends React.Component {
     }
 
     return this.props.data.map((element, i) => {
-      const { category, id, image, price, title } = element;
+      const { category, id, image, price, title, alttext } = element;
       return (
         <li key={i} className='listItem'>
           <Link key={i} to={`/products/${category}/${id}`}>
@@ -35,6 +35,7 @@ class GridProductList extends React.Component {
               title={title || "N/A"}
               price={price}
               image={image}
+              alttext={alttext}
             />
           </Link>
         </li>

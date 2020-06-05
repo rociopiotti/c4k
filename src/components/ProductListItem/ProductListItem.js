@@ -10,14 +10,14 @@ class ProductListItem extends React.Component {
   };
 
   render() {
-    const { category, title, image, price } = this.props;
+    const { category, title, image, price, alttext } = this.props;
 
     return (
       <div className='productListItemBox'>
         <div className='listItemImage'>
           <img
             src={IMAGES_FOLDER + category + "/" + image}
-            alt='trousers item'
+            alt={alttext}
             className='cartItemImg'
           />
         </div>
