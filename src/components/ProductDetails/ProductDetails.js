@@ -11,8 +11,8 @@ class ProductDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      size: "M",
-      color: "BLACK",
+      size: null,
+      color: null,
       quantity: "1",
     };
   }
@@ -45,9 +45,25 @@ class ProductDetails extends React.Component {
     this.context.onSlideBtn("cartSlide");
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevProps.title", prevProps.title);
+
+    if (!prevState.color) {
+      const { details } = this.props;
+
+      const color = details.colors ? details.colors[0].id : "";
+      const size = details.size ? details.size[0].id : "";
+
+      this.setState({
+        color,
+        size,
+      });
+    }
+  }
 
   render() {
-    const { details} = this.props;
+    console.log("render", this.props.details);
+    const { details } = this.props;
 
     const { title, price, size, colors, description, features } = details;
 

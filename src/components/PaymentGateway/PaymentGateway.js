@@ -26,10 +26,7 @@ class PaymentGateway extends React.Component {
             <div className='column1'>
               <CartList showCheckoutButton={false} />
             </div>
-            <div className='column2'>
-              <BtnPromoCode />
-              {/* <EstimatedTotal /> */}
-            </div>
+            <div className='column2'></div>
           </div>
           <div className='adressDataBox'>
             <div className='column1'>
