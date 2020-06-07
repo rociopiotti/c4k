@@ -1887,7 +1887,7 @@
   ],
   "newarrivals": [
     {
-      "id": "19",
+      "id": "na-01",
       "title": "PEACYL",
       "image": "peacyl.png",
       "alttext": "Peacyl t-shirt black",
@@ -1989,7 +1989,7 @@
       ]
     },
     {
-      "id": "20",
+      "id": "na-02",
       "title": "SHOUT",
       "image": "shoutt.png",
       "alttext": "Shoutt t-shirt black",
@@ -2091,7 +2091,7 @@
       ]
     },
     {
-      "id": "14",
+      "id": "na-03",
       "title": "ADIDAS",
       "image": "addidasblackside.png",
       "alttext": "Adidas black shoes",
@@ -2160,7 +2160,7 @@
       ]
     },
     {
-      "id": "15",
+      "id": "na-04",
       "title": "BIG BOOTS",
       "image": "bigboots.png",
       "alttext": "Big boots black",
@@ -2229,7 +2229,7 @@
       ]
     },
     {
-      "id": "10",
+      "id": "na-05",
       "title": "GRAFFITTI",
       "image": "graffitti.png",
       "alttext": "graffitti black trousers",
@@ -2321,7 +2321,7 @@
       ]
     },
     {
-      "id": "12",
+      "id": "na-06",
       "title": "LEATHER STEVE",
       "image": "leathersteve.png",
       "alttext": "Leather black trousers",
@@ -2423,7 +2423,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "na-07",
       "title": "KITTY",
       "image": "kitty.png",
       "alttext": "Kitty bag",
@@ -2468,7 +2468,7 @@
       ]
     },
     {
-      "id": "5",
+      "id": "na-08",
       "title": "SUPREME",
       "image": "supremeblack.png",
       "alttext": "Supreme black bag",
@@ -2513,7 +2513,7 @@
       ]
     },
     {
-      "id": "11",
+      "id": "na-09",
       "title": "NINE X4",
       "image": "joggerkapblack.png",
       "alttext": "Jogger black trousers",
