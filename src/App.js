@@ -119,19 +119,13 @@ class App extends React.Component {
     });
   }
 
-  handleDeleteFromCart(productId, index) {
-    let productIndex = index;
-    // let newCart = [];
-    this.state.cart.forEach((element, index) => {
-      if (productId === element.id) {
-        productIndex = index;
-        return;
-      }
+  handleDeleteFromCart(index) {
+    const { cart } = this.state;
+    const cartCloned = [...cart];
+    cartCloned.splice(index, 1);
+    this.setState({
+      cart: cartCloned,
     });
-
-    console.log(productIndex);
-
-    // let newCart = [...this.state.cart].slice([...this.state.cart], -productIndex);
   }
 
   componentDidMount() {

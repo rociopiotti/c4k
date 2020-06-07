@@ -12,11 +12,8 @@ class CartItem extends React.Component {
   static contextType = PageManagerContext;
 
   removeFromList() {
-    const data = this.props.data;
-    const index = this.props.index;
-    const { id } = data;
-    const productId = id;
-    this.context.handleDeleteFromCart(productId, index);
+    const { index } = this.props;
+    this.context.handleDeleteFromCart(index);
   }
 
   render() {
