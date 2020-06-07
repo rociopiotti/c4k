@@ -12,6 +12,7 @@ class SectionTransition extends React.Component {
       mode: "CLOSE",
       _isMounted: false,
     };
+    this.toggle = this.toggle.bind(this);
   }
   toggle() {
     let newMode;
@@ -35,10 +36,12 @@ class SectionTransition extends React.Component {
       this.myTween = TweenLite.to(this.myElement, 1, {
         opacity: destY,
       });
-      this.myTween.eventCallback("onComplete", () => {
-        this.toggle();
-      });
+      this.myTween.eventCallback("onComplete", this.toggle);
     }
+  }
+
+  componentWillUnmount() {
+    this.myTween.eventCallback("onComplete", null);
   }
 
   render() {
