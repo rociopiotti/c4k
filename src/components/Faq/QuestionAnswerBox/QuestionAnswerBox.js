@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { isMobile } from "react-device-detect";
 import "./QuestionAnswerBox.scss";
 
 import Icon from "../../Icon/Icon";
@@ -7,7 +8,7 @@ import Icon from "../../Icon/Icon";
 // import PageManagerContext from "../../../context/pageManager-context";
 
 //ANIMATION
-import { Timeline, Back } from "gsap/gsap-core";
+import { TweenLite, Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
@@ -17,65 +18,18 @@ class QuestionAnswerBox extends Component {
   constructor(props) {
     super(props);
     this.FaqBox = [];
-
-    this.state = {
-      mode: "OPEN",
-    };
   }
 
-  toggle() {
-    const { mode } = this.state;
-    const newMode = mode === "OPEN" ? "CLOSE" : "OPEN";
-    this.setState({
-      mode: newMode,
+  handleQuestionClick(index) {
+    const expandedH = isMobile ? "400px" : "200px";
+    const height = this.FaqBox[index].clientHeight === 0 ? expandedH : 0;
+    
+    TweenLite.to(this.FaqBox[index], {
+      height,
+      onComplete: this.setState({
+        currentIndex: index,
+      }),
     });
-    console.log("HERE 5");
-  }
-
-  handleQuestionClick() {
-    let windowsWidth = window.innerWidth;
-    const { mode } = this.state;
-    console.log("HERE");
-    if (windowsWidth > 1024) {
-      console.log("HERE 1");
-
-      const marginInput = mode === "OPEN" ? "+=16vh" : "-=16vh";
-      const tl = new Timeline();
-      tl.to(this.FaqBox, { ease: ease, marginTop: marginInput }, 0);
-      tl.eventCallback("onComplete", () => {
-        this.toggle();
-      });
-    }
-    if (windowsWidth > 800 && windowsWidth < 1024) {
-      console.log("HERE 2");
-
-      const marginInput = mode === "OPEN" ? "+=35vh" : "-=35vh";
-      const tl = new Timeline();
-      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-      tl.eventCallback("onComplete", () => {
-        this.toggle();
-      });
-    }
-    if (windowsWidth > 754 && windowsWidth <= 800) {
-      console.log("HERE 3");
-
-      const marginInput = mode === "OPEN" ? "+=30vh" : "-=30vh";
-      const tl = new Timeline();
-      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-      tl.eventCallback("onComplete", () => {
-        this.toggle();
-      });
-    }
-    if (windowsWidth <= 754) {
-      console.log("HERE 4");
-
-      const marginInput = mode === "OPEN" ? "+=45vh" : "-=45vh";
-      const tl = new Timeline();
-      tl.to(this.FaqBox, { marginTop: marginInput }, 0);
-      tl.eventCallback("onComplete", () => {
-        this.toggle();
-      });
-    }
   }
 
   render() {
@@ -89,7 +43,7 @@ class QuestionAnswerBox extends Component {
             <div key={index} className='questionAnswerBox'>
               <button
                 onClick={() => {
-                  this.handleQuestionClick();
+                  this.handleQuestionClick(index);
                 }}>
                 <h4 key={index} className='question'>
                   {QA.question}
@@ -98,9 +52,9 @@ class QuestionAnswerBox extends Component {
               </button>
               <div
                 key={index}
-                
-                className='answerBox'>
-                <p className='answer' ref={(e) => (this.FaqBox[index] = e)}>{QA.answer}</p>
+                className='answerBox'
+                ref={(e) => (this.FaqBox[index] = e)}>
+                <p className='answer'>{QA.answer}</p>
               </div>
             </div>
           );

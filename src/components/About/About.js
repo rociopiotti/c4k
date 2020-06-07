@@ -11,6 +11,8 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 //ANIMATION
 import { TimelineMax } from "gsap";
 
+import { isMobile } from "react-device-detect";
+
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -28,9 +30,7 @@ class About extends React.Component {
   }
 
   renderImage() {
-    const viewportWidth = window.innerWidth;
-
-    if (viewportWidth <= 754) {
+    if (isMobile) {
       return <img src={AboutPhotoLowRes} alt='About' className='aboutPhoto' />;
     } else {
       return <img src={AboutPhoto} alt='About' className='aboutPhoto' />;
