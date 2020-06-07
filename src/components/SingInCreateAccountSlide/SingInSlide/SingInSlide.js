@@ -1,10 +1,9 @@
-import React from "react"
-import "./SingInSlide.scss"
-import SingIn from "../../SingIn/SingIn"
+import React from "react";
+import "./SingInSlide.scss";
+import SingIn from "../../SingIn/SingIn";
 
-import BtnSingInGoogle from "../../BtnSingInGoogle/BtnSingInGoogle"
-import BtnSingInFacebook from "../../BtnSingInFacebook/BtnSingInFacebook"
-
+import BtnSingInGoogle from "../../BtnSingInGoogle/BtnSingInGoogle";
+import BtnSingInFacebook from "../../BtnSingInFacebook/BtnSingInFacebook";
 
 import { TweenLite } from "gsap";
 
@@ -19,7 +18,7 @@ class SingInSlide extends React.Component {
       mode: "CLOSE",
     };
   }
-  
+
   toggle() {
     let newMode;
     if (this.state.mode === "CLOSE") {
@@ -40,24 +39,22 @@ class SingInSlide extends React.Component {
     });
     this.myTween.eventCallback("onComplete", () => {
       this.toggle();
-     
     });
   }
   render() {
     return (
-      <div 
-      ref={(div) => (this.myElement = div)} className="singInSlideBox">
-        <SingIn />
-        <div className="separationLineCheckout">
-          <hr className="separationLine1"></hr>
+      <div ref={(div) => (this.myElement = div)} className='singInSlideBox'>
+        <SingIn redirection='/' />
+        <div className='separationLineCheckout'>
+          <hr className='separationLine1'></hr>
           <p>OR </p>
-          <hr className="separationLine2"></hr>
+          <hr className='separationLine2'></hr>
         </div>
         <BtnSingInGoogle />
         <BtnSingInFacebook />
       </div>
-    )
+    );
   }
 }
 
-export default SingInSlide
+export default SingInSlide;

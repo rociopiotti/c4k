@@ -1,6 +1,6 @@
 import React from "react";
 import "./PaymentGateway.scss";
-import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
+// import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
 import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 import BillingAddress from "../BillingAddress/BillingAddress";
 import DeliveryAddress from "../DeliveryAddress/DeliveryAddress";
@@ -10,7 +10,6 @@ import FooterLinks from "../FooterLinks/FooterLinks";
 import ShippingMethod from "../ShippingMethod/ShippingMethod";
 import SectionTransition from "../SectionTransition/SectionTransition";
 import CartList from "../CartList/CartList";
-// import CartItem from "../CartItem/CartItem";
 
 class PaymentGateway extends React.Component {
   componentDidMount() {
@@ -29,7 +28,7 @@ class PaymentGateway extends React.Component {
             </div>
             <div className='column2'>
               <BtnPromoCode />
-              <EstimatedTotal />
+              {/* <EstimatedTotal /> */}
             </div>
           </div>
           <div className='adressDataBox'>

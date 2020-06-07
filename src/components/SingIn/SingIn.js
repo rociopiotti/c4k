@@ -22,7 +22,10 @@ class SingIn extends React.Component {
   handleInputChange(event) {
     // console.log("Ingreso texto")
   }
+
   render() {
+    const { redirection } = this.props;
+
     return (
       <div className='signInBox'>
         <div className='singIn'>
@@ -60,7 +63,7 @@ class SingIn extends React.Component {
               FORGOT PASSWORD?
             </button>
           </div>
-          <Link className='btnSingIn' to='/paymentgateway'>
+          <Link className='btnSingIn' to={redirection}>
             SING IN
           </Link>
         </div>

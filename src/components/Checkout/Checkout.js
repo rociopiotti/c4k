@@ -23,14 +23,12 @@ class Checkout extends React.Component {
         <div className='checkout'>
           <div className='headerCheckoutBox'>
             <h2>#CHECKOUT </h2>
-            <Link
-             to = {"/"}
-              className='btnCloseCheckout'>
+            <Link to={"/"} className='btnCloseCheckout'>
               <Icon type='arrowRight' />
             </Link>
           </div>
           <CheckoutGuest />
-          <SingIn />
+          <SingIn redirection='/paymentgateway' />
           <div className='separationLineCheckout'>
             <hr className='separationLine1'></hr>
             <p>OR </p>
