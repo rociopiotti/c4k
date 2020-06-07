@@ -16,33 +16,12 @@ import PageManagerContext from "../../context/pageManager-context";
 class CartList extends Component {
   static contextType = PageManagerContext;
 
+  state = {
+    items: [],
+  };
+
   createList() {
-    const { cart, handleDataBase } = this.context;
-
-    if (cart.length === 0) {
-      return <CartEmpty />;
-    }
-
-    const cartIds = cart.map((cartEl) => {
-      return cartEl.id;
-    });
-
-    const cartListItems = handleDataBase.filter((product) => {
-      return cartIds.includes(product.id);
-    });
-
-    const finalItems = cartListItems.map((element, index) => {
-      return {
-        ...element,
-        userSelection: {
-          size: cart[index].size,
-          color: cart[index].colors,
-          quantity: cart[index].quantity,
-        },
-      };
-    });
-
-    const listItems = finalItems.map((item, index) => (
+    const listItems = this.state.items.map((item, index) => (
       <li key={item.id} className='cartItemElement'>
         <CartItem
           data={item}
@@ -55,13 +34,56 @@ class CartList extends Component {
     return <ul className='cartItemList'>{listItems}</ul>;
   }
 
+  setItems() {
+    const { cart, handleDataBase } = this.context;
+
+    const cartIds = cart.map((cartEl) => {
+      return cartEl.id;
+    });
+
+    const cartListItems = handleDataBase.filter((product) => {
+      return cartIds.includes(product.id);
+    });
+
+    const items = cartListItems.map((element, index) => {
+      return {
+        ...element,
+        userSelection: {
+          size: cart[index].size,
+          color: cart[index].colors,
+          quantity: cart[index].quantity,
+        },
+      };
+    });
+
+    this.setState({
+      items,
+    });
+  }
+
+  componentDidMount() {
+    this.setItems();
+  }
+
+  componentDidUpdate(nextProps, nextState) {
+    if (this.context.cart.length !== this.state.items.length) {
+      this.setItems();
+    }
+  }
+
   render() {
+    const { items } = this.state;
+
+    if (items.length === 0) {
+      return <CartEmpty />;
+    }
+
     return (
       <>
         <div className='cartItemListBox'>
           {this.createList()}
           <BtnPromoCode />
-          <EstimatedTotal />
+          <EstimatedTotal items={items} />
           <Link
             to='/checkout'
             className='btnCheckout'
