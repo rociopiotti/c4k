@@ -4,27 +4,23 @@ import "./QuestionAnswerBox.scss";
 
 import Icon from "../../Icon/Icon";
 
-//CONTEXT
-// import PageManagerContext from "../../../context/pageManager-context";
-
 //ANIMATION
-import { TweenLite, Timeline, Back } from "gsap/gsap-core";
+import { TweenLite, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
 class QuestionAnswerBox extends Component {
-  //   static contextType = PageManagerContext;
-
   constructor(props) {
     super(props);
     this.FaqBox = [];
   }
 
   handleQuestionClick(index) {
-    const expandedH = isMobile ? "400px" : "200px";
+    const expandedH = isMobile ? "300px" : "210px";
     const height = this.FaqBox[index].clientHeight === 0 ? expandedH : 0;
-    
+
     TweenLite.to(this.FaqBox[index], {
+      ease,
       height,
       onComplete: this.setState({
         currentIndex: index,
