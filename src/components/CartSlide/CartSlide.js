@@ -53,7 +53,10 @@ class CartSlide extends React.Component {
           <div className='cartSlideBox'>
             <HeaderSlideCloseLeft onCloseArrow={this.executeAnimation} />
             <h2 className='cartSlideTitle'>#MY BAG</h2>
-            <CartList onCartItemClick={this.executeAnimation} />
+            <CartList
+              showCheckoutButton={true}
+              onCartItemClick={this.executeAnimation}
+            />
           </div>
         </div>
       </div>

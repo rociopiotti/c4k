@@ -73,10 +73,20 @@ class CartList extends Component {
 
   render() {
     const { items } = this.state;
+    const { showCheckoutButton } = this.props;
 
     if (items.length === 0) {
       return <CartEmpty />;
     }
+
+    const checkoutButton = showCheckoutButton ? (
+      <Link
+        to='/checkout'
+        className='btnCheckout'
+        onClick={this.props.onCartItemClick}>
+        CHECKOUT
+      </Link>
+    ) : null;
 
     return (
       <>
@@ -84,12 +94,7 @@ class CartList extends Component {
           {this.createList()}
           <BtnPromoCode />
           <EstimatedTotal items={items} />
-          <Link
-            to='/checkout'
-            className='btnCheckout'
-            onClick={this.props.onCartItemClick}>
-            CHECKOUT
-          </Link>
+          {checkoutButton}
         </div>
       </>
     );
