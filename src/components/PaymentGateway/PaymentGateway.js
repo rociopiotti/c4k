@@ -1,7 +1,5 @@
 import React from "react";
 import "./PaymentGateway.scss";
-// import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
 import BillingAddress from "../BillingAddress/BillingAddress";
 import DeliveryAddress from "../DeliveryAddress/DeliveryAddress";
 import PaymentSettings from "../PaymentSettings/PaymentSettings";

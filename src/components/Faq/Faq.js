@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component} from "react";
 import "./Faq.scss";
 import Icon from "../Icon/Icon";
 import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
@@ -10,7 +10,7 @@ import axios from "axios";
 
 import { FAQ_DB } from "../../utils/path";
 
-class Faq extends React.Component {
+class Faq extends Component {
   state = {
     dataFaq: null,
     searchState: false,
