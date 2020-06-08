@@ -115,10 +115,13 @@
 @media all and (max-width: 375px) {
   .home {
     .title {
-      left: 6.5vw;
+      top: 25vh;
+      left: 5vw;
     }
     .btnShop {
-      left: 3.5vw;
+      width: 115px;
+      top: 52vh;
+      left: 0vw;
     }
   }
 }
@@ -130,9 +133,10 @@
       font-size: 1.1em;
     }
     .btnShop {
+      width: 60px;
       position: absolute;
       top: 50vh;
-      left: 2vw;
+      left: 4vw;
       font-size: 0.8em;
     }
   }
