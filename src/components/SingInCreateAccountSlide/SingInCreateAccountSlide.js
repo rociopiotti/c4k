@@ -21,6 +21,7 @@ class SingInCreateAccountSlide extends React.Component {
       activeBtn: true,
     };
   }
+  
   executeAnimation() {
     this.context.slideOutAnimation(
       "left",

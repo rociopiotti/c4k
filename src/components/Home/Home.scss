@@ -9,7 +9,7 @@
   .title {
     position: absolute;
     top: 40vh;
-    left: 4.5vw;;
+    left: 4.5vw;
     color: white;
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
@@ -27,7 +27,9 @@
 
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    
+  }
+  .btnShop {
+    left: 3.5vw;
   }
 }
 
@@ -35,6 +37,9 @@
   .home {
     width: 100%;
     height: auto;
+    .btnShop {
+      top: 75vh;
+    }
   }
 }
 
@@ -43,34 +48,37 @@
     .title {
       top: 30vh;
       left: 8vw;
-      font-size: 1.8em;
     }
-
     .btnShop {
-      position: absolute;
-      top: 50vh;
-      left: 7vw;
       font-size: 1.2em;
+      width: 100px;
+      left: 6vw;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      span {
+        flex-grow: 1;
+      }
     }
   }
 }
+
 @media all and (max-width: 768px) and (orientation: portrait) {
   .home {
     width: 100%;
     height: auto;
-
     .title {
       top: 30vh;
-      left: 10vw;
+      left: 7vw;
       font-size: 1.8em;
     }
-
     .btnShop {
-      position: absolute;
-      top: 50vh;
-      left: 7vw;
-      font-size: 1.2em;
-     
+      width: 115px;
+      top: 60vh;
+      left: 5vw;
+      span {
+        flex-grow: 1;
+      }
     }
   }
 }
@@ -79,15 +87,11 @@
   .home {
     width: 100%;
     height: auto;
-
     .title {
       top: 25vh;
       left: 10vw;
-      font-size: 1em;
     }
-
     .btnShop {
-      position: absolute;
       top: 60vh;
       left: 8vw;
       font-size: 0.8em;
@@ -99,18 +103,36 @@
   .home {
     width: 100%;
     height: auto;
-
     .title {
-      font-size: 1em;
-      top: 25vh;
       left: 6vw;
+    }
+    .btnShop {
+      left: 4vw;
+    }
+  }
+}
+
+@media all and (max-width: 375px) {
+  .home {
+    .title {
+      left: 6.5vw;
+    }
+    .btnShop {
+      left: 3.5vw;
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .home {
+    .title {
+      left: 5.8vw;
       font-size: 1.1em;
     }
-
     .btnShop {
       position: absolute;
       top: 50vh;
-      left: 4vw;
+      left: 2vw;
       font-size: 0.8em;
     }
   }

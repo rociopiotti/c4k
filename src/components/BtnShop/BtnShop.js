@@ -1,22 +1,24 @@
-import React from "react"
-import "./BtnShop.scss"
-import Icon from "../Icon/Icon"
+import React from "react";
+import "./BtnShop.scss";
+import Icon from "../Icon/Icon";
 
 class BtnShop extends React.Component {
   handleShowMenuCategories() {
-    this.props.onClickBtnShop()
+    this.props.onClickBtnShop();
   }
   render() {
     return (
       <button
         onClick={() => {
-          this.handleShowMenuCategories()
+          this.handleShowMenuCategories();
         }}
-        className="btnShop">
-        <Icon type="arrowLeftChevron" className="arrowIcon" /> SHOP
+        className='btnShop'>
+        <Icon type='arrowLeftChevron' className='arrowIcon' />
+        <span></span>
+        SHOP
       </button>
-    )
+    );
   }
 }
 
-export default BtnShop
+export default BtnShop;
