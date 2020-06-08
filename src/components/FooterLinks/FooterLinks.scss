@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
     li {
       margin: 0;
       a {
@@ -25,6 +26,42 @@
         cursor: pointer;
         &:hover {
           color: #c7c7c7;
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 1024px) { 
+  .footerLinksBox {
+    width: 100%;
+    margin: 0;
+  
+    .footerLinksList {
+      width: 100%;
+      list-style: none;
+      margin: 5vh 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      li {
+        a {
+          color: #ffffff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.7em;
+          letter-spacing: 0.1em;
+          text-decoration: none;
+          font-weight: 300;
+          margin-left: 0.5vw;
+          cursor: pointer;
+          &:hover {
+            color: #c7c7c7;
+          }
         }
       }
     }

@@ -65,6 +65,24 @@
 
     .footerMenuInnerBox {
       width: 50vw;
+
+      .footerMenu li {
+        a {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .footerMenuBox {
+    .footerMenuInnerBox {
+      .footerMenu li {
+        width: 30vw;
+        a {
+          font-size: 0.8em;
+        }
+      }
     }
   }
 }
