@@ -16,7 +16,7 @@ class QuestionAnswerBox extends Component {
   }
 
   handleQuestionClick(index) {
-    const expandedH = isMobile ? "300px" : "210px";
+    const expandedH = isMobile ? "200px" : "100px";
     const height = this.FaqBox[index].clientHeight === 0 ? expandedH : 0;
 
     TweenLite.to(this.FaqBox[index], {

@@ -1,6 +1,6 @@
 h3 {
   width: 100%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 0.1em;
 }
@@ -8,11 +8,12 @@ h3 {
 .questionAnswerBox {
   width: 100%;
   overflow: hidden;
-
+  font-size: 1em;
   h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
   }
+
   button {
     border: none;
     background-color: transparent;
@@ -22,7 +23,7 @@ h3 {
     padding: 0;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
-    font-size: 1em;
+ 
     letter-spacing: 0.1em;
     overflow: hidden;
     height: auto;
@@ -49,6 +50,28 @@ h3 {
       height: auto;
       font-weight: 300;
       letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  h3 {
+    margin-top: 5vh;
+  }
+
+  .questionAnswerBox {
+    h4 {
+      font-size: 0.9em;
+    }
+
+    button {
+      font-size: 0.9em;
+    }
+
+    .answerBox {
+      .answer {
+        font-size: 0.8em;
+      }
     }
   }
 }

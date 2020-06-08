@@ -46,7 +46,7 @@
             {
                 "id": "gqn9",
                 "question": "How is tax calculated?",
-                "answer": "State laws require that we charge applicable sales tax on orders shipped to the following states, where C4K has a retail presence: CA, FL, IL, KY, MA, NJ, NV, NY. Orders shipped to Canada will be subject to duties, customs tariffs, value added taxes and similar taxes that are levied are required in the applicable jurisdiction by local authorities, which will be in addition to the prices for the merchandise listed on our website and will be collected during Checkout. When placing an order on marcjacobs.com, you (the customer) are considered the importer of record and must comply with all applicable laws and regulations. All charges for duties, taxes and the carrier's collection fee are in addition to your shipping charge and shall be paid exclusively by you and will be reflected on your invoice. You should contact your local customs office for further information. The amount of any applicable duties, tariffs and taxes will vary based on a multitude of factors, including items such as the destination of origin or the classification of the merchandise being purchased."
+                "answer": "State laws require that we charge applicable sales tax on orders. When placing an order on c4k.com, you (the customer) are considered the importer of record and must comply with all applicable laws and regulations. All charges for duties, taxes and the carrier's collection fee are in addition to your shipping charge and shall be paid exclusively by you and will be reflected on your invoice. You should contact your local customs office for further information. "
             },
             {
                 "id": "gqn10",
@@ -61,12 +61,12 @@
             {
                 "id": "gqn12",
                 "question": "Inaccuracy Disclaimer",
-                "answer": "From time to time there may be information on Our Site(s) that contains typographical or visual errors, inaccuracies or omissions that may relate to product descriptions, pricing or availability. While We endeavor to display Our products and their colors as accurately as possible, the displayed colors of the products will depend upon the technical specifications and settings of the computer and monitor of the user, and We do not guarantee that the actual colors of the products will be accurately displayed on the user’s monitor. Products displayed may be out-of-stock, discontinued or otherwise unavailable, and prices are subject to change. MJI is not responsible for, and reserves the right to correct, any errors, inaccuracies or omissions and to change or update information at any time without prior notice (including after You have submitted Your order)."
+                "answer": "From time to time there may be information on Our Site(s) that contains typographical or visual errors, inaccuracies or omissions that may relate to product descriptions, pricing or availability. While We endeavor to display Our products and their colors as accurately as possible, the displayed colors of the products will depend upon the technical specifications and settings of the computer and monitor of the user, and We do not guarantee that the actual colors of the products will be accurately displayed on the user’s monitor."
             },
             {
                 "id": "gqn13",
                 "question": "Product Information and Orders for Products",
-                "answer": "Many products displayed on the Site are available in Our stores, but in some cases products available on the Site(s) are not available in stores, or vice versa. Similarly, prices for a product may vary between the Site(s) and stores or between geographies. You may only order products if, and You hereby represent and warrant that, You are 18 years old or older. You agree to pay in full the prices for any purchases You make either by credit/debit card concurrent with Your online order or by other payment means acceptable to MJI. You agree to pay all applicable taxes. If payment is not received by Us from Your credit or debit card issuer or its agents, You agree to pay all amounts due upon demand by Us. You agree that You are not permitted to resell any products purchased through or via any of the Site(s) for commercial purposes."
+                "answer": "Many products displayed on the Site are available in Our stores, but in some cases products available on the Site(s) are not available in stores, or vice versa. Similarly, prices for a product may vary between the Site(s) and stores or between geographies. You may only order products if, and You hereby represent and warrant that, You are 18 years old or older."
             }
         ]
     },
