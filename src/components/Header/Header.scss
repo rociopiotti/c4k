@@ -8,7 +8,7 @@
   justify-content: flex-start;
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 2;
   .burger {
     border: none;
     background-color: transparent;
@@ -40,7 +40,7 @@
     align-items: center;
     width: 2vw;
     height: 2vw;
-    z-index: 10;
+    z-index: 3;
 
     &:hover {
       color: #c7c7c7;

@@ -10,7 +10,7 @@
   font-size: 0.8em;
   font-weight: 300;
   letter-spacing: 0.1em;
-  z-index: 19;
+  z-index: 13;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -23,7 +23,7 @@
   }
 
   .singInCreateAccountBoxBackground {
-    z-index: 20;
+    z-index: 14;
     position: relative;
     width: 50vw;
     height: auto;
@@ -39,7 +39,7 @@
     min-height: 100vh;
 
     .BtnCloseNav {
-      z-index: 21;
+      z-index: 15;
       width: 3vw;
       height: 3vw;
       position: absolute;
@@ -157,8 +157,7 @@
             font-size: 1em;
           }
         }
-        .singInCreateAccountBox {
-        }
+        
         .btnCreateAccountSlide {
           width: 150px;
           min-width: 150px;
@@ -174,7 +173,7 @@
 @media all and (max-width: 823px) and (orientation: landscape) {
   .singInCreateAccountBackground {
     .singInCreateAccountBoxBackground {
-      z-index: 22;
+      z-index: 16;
       position: absolute;
       width: 100vw;
     }
