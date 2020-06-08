@@ -46,7 +46,7 @@ class ProductDetails extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("prevProps.title", prevProps.title);
+    // console.log("prevProps.title", prevProps.title);
 
     if (!prevState.color) {
       const { details } = this.props;
@@ -62,7 +62,7 @@ class ProductDetails extends React.Component {
   }
 
   render() {
-    console.log("render", this.props.details);
+    // console.log("render", this.props.details);
     const { details } = this.props;
 
     const { title, price, size, colors, description, features } = details;

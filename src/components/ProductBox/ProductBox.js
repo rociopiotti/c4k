@@ -43,10 +43,13 @@ class ProductBox extends React.Component {
     const { itemsData } = this.context;
 
     const rawData = itemsData[sectionId];
+    console.log("rawData",rawData);
 
     const itemData = rawData.filter((element) => element.id === itemId);
+    console.log("itemData",itemData);
 
     const images = itemData[0].colors;
+    console.log("images",images);
 
     const details = {
       title: itemData[0].title,

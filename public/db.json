@@ -1891,7 +1891,7 @@
       "title": "PEACYL",
       "image": "peacyl.png",
       "alttext": "Peacyl t-shirt black",
-      "category": "tshirts",
+      "category": "newarrivals",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -1993,7 +1993,7 @@
       "title": "SHOUT",
       "image": "shoutt.png",
       "alttext": "Shoutt t-shirt black",
-      "category": "tshirts",
+      "category": "newarrivals",
       "price": "156",
       "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2095,7 +2095,7 @@
       "title": "ADIDAS",
       "image": "addidasblackside.png",
       "alttext": "Adidas black shoes",
-      "category": "shoes",
+      "category": "newarrivals",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2164,7 +2164,7 @@
       "title": "BIG BOOTS",
       "image": "bigboots.png",
       "alttext": "Big boots black",
-      "category": "shoes",
+      "category": "newarrivals",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2233,7 +2233,7 @@
       "title": "GRAFFITTI",
       "image": "graffitti.png",
       "alttext": "graffitti black trousers",
-      "category": "trousers",
+      "category": "newarrivals",
       "price": "256",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2325,7 +2325,7 @@
       "title": "LEATHER STEVE",
       "image": "leathersteve.png",
       "alttext": "Leather black trousers",
-      "category": "trousers",
+      "category": "newarrivals",
       "price": "256",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2427,7 +2427,7 @@
       "title": "KITTY",
       "image": "kitty.png",
       "alttext": "Kitty bag",
-      "category": "bags",
+      "category": "newarrivals",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2472,7 +2472,7 @@
       "title": "SUPREME",
       "image": "supremeblack.png",
       "alttext": "Supreme black bag",
-      "category": "bags",
+      "category": "newarrivals",
       "price": "156",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -2510,103 +2510,6 @@
         "3",
         "7",
         "5"
-      ]
-    },
-    {
-      "id": "na-09",
-      "title": "NINE X4",
-      "image": "joggerkapblack.png",
-      "alttext": "Jogger black trousers",
-      "category": "trousers",
-      "price": "156",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "colors": [
-        {
-          "id": "BLACK",
-          "image": "joggerkapblack.png",
-          "alttext": "Jogger black trousers"
-        },
-        {
-          "id": "GREY",
-          "image": "joggerkapgrey.png",
-          "alttext": "Jogger grey trousers"
-        },
-        {
-          "id": "RED",
-          "image": "joggerkapred.png",
-          "alttext": "Jogger red trousers"
-        }
-      ],
-      "size": [
-        {
-          "id": "XXS",
-          "height": "5´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "XS",
-          "height": "6´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "S",
-          "height": "7´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "M",
-          "height": "8´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "L",
-          "height": "9´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "XL",
-          "height": "10´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        },
-        {
-          "id": "XXL",
-          "height": "11´10",
-          "width": "25",
-          "lenght": "5",
-          "bust": "31",
-          "waist": "23",
-          "hips": "33"
-        }
-      ],
-      "suggested": [
-        "5",
-        "7",
-        "1"
       ]
     }
   ]
