@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5vh;
 
   .gridListBox {
     width: 80vw;
@@ -31,6 +32,7 @@
         justify-content: center;
 
         a {
+          height: 50vh;
           text-decoration: none;
           color: #ffffff;
           &:hover {
@@ -44,14 +46,35 @@
 
 @media all and (max-width: 800px) {
   .gridProductListBox {
+    margin-top: 0;
+
     .gridListBox {
       .grisList {
+        li {
+          width: 50%;
+          a {
+            height: 50vh;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 754px) {
+  .gridProductListBox {
+    margin-top: 0;
+    .gridListBox {
+      .grisList {
+        height: auto;
         li {
           width: 50%;
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
+          a {
+            height: 55vh;
+          }
         }
       }
     }

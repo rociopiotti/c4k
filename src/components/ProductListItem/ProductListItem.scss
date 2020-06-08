@@ -1,5 +1,5 @@
 .productListItemBox {
-  width: 18vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,15 +30,22 @@
     }
   }
 }
-@media all and (max-width: 823px) and (orientation: landscape) {
-}
 
-@media all and (max-width: 754px) and (orientation: landscape) {
+@media all and (max-width: 768px) {
+  .productListItemBox {
+    .listItemImage {
+      width: 30vw;
+      height: 30vw;
+    }
+    .listItemDescription {
+      width: 100%;
+    }
+  }
 }
 
 @media all and (max-width: 754px) {
   .productListItemBox {
-    width: 30vw;
+    width: 100%;
     .listItemImage {
       width: 35vw;
       height: 35vw;
@@ -48,7 +55,7 @@
       h3,
       p {
         font-family: "Open Sans", sans-serif;
-        font-size: 0.9em;
+        font-size: 0.8em;
         letter-spacing: 0.1em;
         font-weight: 300;
       }
