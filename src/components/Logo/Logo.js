@@ -4,11 +4,7 @@ import logo from "../../img/logo.svg";
 
 class Logo extends React.Component {
   render() {
-    return (
-      <div  className="logo" >
-        <img src={logo} alt="Logo"/>
-      </div>
-    );
+    return <img src={logo} className='logo' alt='Logo' />;
   }
 }
 

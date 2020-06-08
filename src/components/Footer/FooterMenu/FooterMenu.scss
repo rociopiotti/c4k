@@ -14,16 +14,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    a {
-      cursor: pointer;
-    }
 
-    .logoFooter  {
-      background-color: transparent;
-      border: none;
+    .logoFooter {
+      width: 3vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 6vw;
       margin-bottom: 2vh;
       cursor: pointer;
+      a {
+        cursor: pointer;
+      }
     }
 
     .footerMenu {
@@ -81,10 +83,8 @@
       justify-content: center;
 
       .logoFooter {
-        margin-top: 0;
         margin-left: 0;
       }
-
       .footerMenu {
         display: flex;
         flex-direction: column;
@@ -110,12 +110,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       .logoFooter {
-        margin-top: 0;
+        width: 5vw;
         margin-left: 0;
+        .logo {
+          width: 4vw;
+        }
       }
-
       .footerMenu {
         display: flex;
         flex-direction: column;
