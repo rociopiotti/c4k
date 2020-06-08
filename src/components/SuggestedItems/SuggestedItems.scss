@@ -24,7 +24,7 @@
     justify-content: flex-start;
     overflow-x: hidden;
 
-    .suggestedItem{
+    .suggestedItem {
       background-color: transparent;
       border: none;
       color: #fff;
@@ -62,8 +62,13 @@
       justify-content: space-evenly;
       overflow-x: hidden;
       .productListItemBox {
-        width: 33vw;
+        width: 50vw;
+        height: 40vh;
         padding: 0vh 0vw;
+        .listItemImage {
+          width: 35vw;
+          height: 35vw;
+        }
       }
     }
   }
@@ -78,6 +83,7 @@
     }
     .suggestedItemGallery {
       justify-content: flex-start;
+
       .productListItemBox {
         width: 50vw;
         padding: 2vh 5vw;
