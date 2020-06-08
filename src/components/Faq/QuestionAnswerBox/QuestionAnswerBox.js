@@ -34,6 +34,7 @@ class QuestionAnswerBox extends Component {
     return (
       <>
         <h3>{title}</h3>
+        
         {items.map((QA, index) => {
           return (
             <div key={index} className='questionAnswerBox'>

@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import "./Faq.scss";
 import Icon from "../Icon/Icon";
 import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
@@ -39,9 +39,6 @@ class Faq extends Component {
   }
 
   handleFaqDataBase() {
-    // return this.state.dataFaq.map((item) => (
-    //   <QuestionAnswerBox key={item.id} title={item.title} items={item.items} />
-    // ));
     return this.state.dataFaq.map((item) => {
       return (
         <QuestionAnswerBox

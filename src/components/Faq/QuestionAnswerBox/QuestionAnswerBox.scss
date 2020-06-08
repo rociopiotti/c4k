@@ -1,14 +1,16 @@
+h3 {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
 .questionAnswerBox {
   width: 100%;
   overflow: hidden;
-  h3 {
-    width: 100%;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-align: left;
-  }
+
   h4 {
+    font-size: 1em;
     font-weight: 400;
   }
   button {
@@ -45,39 +47,8 @@
 
     .answer {
       height: auto;
-
-      // p {
-      //   height: auto;
-      //   font-size: 1em;
-      //   font-weight: 300;
-      //   letter-spacing: 0.1em;
-      // }
-    }
-  }
-}
-
-@media all and (max-width: 1024px) {
-  .questionAnswerBox {
-    .answerBox {
-      .answer {
-      }
-    }
-  }
-}
-@media all and (max-width: 768px) {
-  .questionAnswerBox {
-    .answerBox {
-      .answer {
-      }
-    }
-  }
-}
-
-@media all and (max-width: 754px) {
-  .questionAnswerBox {
-    .answerBox {
-      .answer {
-      }
+      font-weight: 300;
+      letter-spacing: 0.1em;
     }
   }
 }
