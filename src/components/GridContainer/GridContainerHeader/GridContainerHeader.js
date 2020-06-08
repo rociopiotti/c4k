@@ -16,18 +16,25 @@ class GridContainerHeader extends React.Component {
   }
 
   createTitle() {
-    const title = this.props.title;
+    const titles = {
+      trousers: "TROUSERS",
+      tshirts: "T-SHIRTS",
+      bags: "BAGS",
+      shoes: "SHOES",
+      newarrivals: "NEW ARRIVALS",
+    };
 
-    title.toUpperCase();
-    
-    console.log(title);
+    const cleanTitle = this.props.title;
 
+    const title = titles[cleanTitle];
+
+    return title;
   }
   render() {
     return (
       <div className='gridContainerHeaderBox'>
         <div className='gridTitle'>
-          <h2>#{this.props.title.toUpperCase()}</h2>
+          <h2>#{this.createTitle()}</h2>
         </div>
         <button
           onClick={() => {
