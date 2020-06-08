@@ -20,6 +20,7 @@ import {
   faChevronDown,
   faChevronLeft,
   faInfoCircle,
+  faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -32,6 +33,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Icon = (props) => {
   // DEFINIR ICONS:
   let faIcon;
+  let iconClass = "";
 
   switch (props.type) {
     case "burger":
@@ -91,14 +93,18 @@ const Icon = (props) => {
     case "linkedin":
       faIcon = faLinkedin;
       break;
-      case "info":
-        faIcon = faInfoCircle;
-        break;
+    case "info":
+      faIcon = faInfoCircle;
+      break;
+    case "location":
+      faIcon = faMapMarkerAlt;
+      iconClass = "locationIcon"
+      break;
     default:
       faIcon = null;
       break;
   }
-  return <FontAwesomeIcon className={"Icon"} icon={faIcon} />;
+  return <FontAwesomeIcon className={"Icon " + iconClass} icon={faIcon} />;
 };
 
 export default Icon;
