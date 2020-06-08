@@ -16,13 +16,16 @@
     justify-content: flex-start;
 
     .logoFooter {
-      width: 3vw;
+      width: 2vw;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-left: 6vw;
       margin-bottom: 2vh;
       cursor: pointer;
+      .logo {
+        width: 1.5vw;
+      }
       a {
         cursor: pointer;
       }
