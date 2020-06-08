@@ -2500,7 +2500,7 @@
       ],
       "size": [
         {
-          "id": "supremesize",
+          "id": "SIZE",
           "height": "10",
           "width": "25",
           "lenght": "5"

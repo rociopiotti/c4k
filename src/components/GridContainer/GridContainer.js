@@ -22,7 +22,7 @@ class GridContainer extends React.Component {
     return (
       <div className='gridContainerBox'>
         <SectionTransition />
-        <GridContainerHeader />
+        <GridContainerHeader title={productId} />
         <GridProductList
           data={this.context.itemsData[productId]}
         />
