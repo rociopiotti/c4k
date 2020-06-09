@@ -12,7 +12,7 @@ import axios from "axios";
 
 // DATABASE PATH
 import { URL_PRODUCTS } from "./utils/path";
-// import { FAQ_DB } from "./utils/path";
+import { FAQ_DB } from "./utils/path";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
@@ -20,8 +20,9 @@ import { Timeline, Back } from "gsap/gsap-core";
 // EASING
 const ease = Back.easeInOut;
 
-// let one = URL_PRODUCTS;
-// let two = FAQ_DB;
+// DATABASE VARIABLES
+let one = URL_PRODUCTS;
+let two = FAQ_DB;
 
 class App extends React.Component {
   constructor(props) {
@@ -66,49 +67,24 @@ class App extends React.Component {
     });
   }
 
-  //--------- GET DATABASE
+  //--------- GET DATABASES
   handleGetDatabase() {
+    const requestOne = axios.get(one);
+    const requestTwo = axios.get(two);
+
     axios
-      .get(URL_PRODUCTS)
-      .then((res) => {
-        this.setState({
-          data: res.data,
-        });
-      })
+      .all([requestOne, requestTwo])
+      .then(
+        axios.spread((...res) => {
+          const responseOne = res[0];
+          const responseTwo = res[1];
+          this.setState({
+            data: responseOne.data,
+            faqData: responseTwo.data,
+          });
+        })
+      )
       .catch((error) => console.log("NOT WORKING", error));
-  }
-
-  // //--------- GET DATABASE
-  // handleGetDatabase() {
-  //   const requestOne = axios.get(one);
-  //   const requestTwo = axios.get(two);
-
-  //   axios
-  //     .all([requestOne, requestTwo])
-  //     .then(
-  //       axios.spread((...res) => {
-  //         const responseOne = res[0];
-  //         const responseTwo = res[1];
-  //         this.setState({
-  //           data: responseOne.data,
-  //           faqData: responseTwo.faqData,
-  //         });
-  //       })
-  //     )
-  //     .catch((error) => console.log("NOT WORKING", error));
-  // }
-
-  //--------- GET DATABASE
-  handleFaqDatabase() {
-    // axios
-    //   .get(FAQ_DB)
-    //   .then((response) => {
-    //     this.setState({
-    //       faqData: response.faqData,
-    //     });
-    //   })
-    //   .catch((error) => console.log("FAQ DATA NOT WORKING", error));
-    // console.log (this.state.faqData)
   }
 
   //--------- ADDS ITEM TO CART ARRAY
@@ -119,6 +95,7 @@ class App extends React.Component {
     });
   }
 
+  //--------- DELETES ITEM CART ARRAY
   handleDeleteFromCart(index) {
     const { cart } = this.state;
     const cartCloned = [...cart];
@@ -135,8 +112,6 @@ class App extends React.Component {
   handleDataBase() {
     let allProducts = [];
 
-    // 1. Iterar sobre el objecto database completo.
-    // 2. Iterar sobre el array de cada categoria.
     for (let key in this.state.data) {
       // base de datos > ingresar en bags > extraer el array
       // mergearlos en un nuevo array:
@@ -149,19 +124,8 @@ class App extends React.Component {
     return allProducts;
   }
 
-  // handleFaqDataBase() {
-  //   let allFaq = [];
-
-  //   for (let key in this.state.faqData) {
-  //     allFaq = [...allFaq, ...this.state.faqData[key]];
-  //   }
-
-  //   console.log(allFaq);
-  //   return allFaq;
-  // }
-
   render() {
-    if (!this.state.data) {
+    if (!this.state.data && !this.state.faqData) {
       return <div>... loading</div>;
     }
 
@@ -175,8 +139,10 @@ class App extends React.Component {
           // ANIMATION SLIDE
           slideOutAnimation: this.slideOutAnimation,
           slideInAnimation: this.slideInAnimation,
-          // PASSES DATA BASE
+          // PASSES PRODUCTS DATA BASE
           itemsData: this.state.data,
+          // FAQ DATABASE
+          faqData: this.state.faqData,
           // PASSES CART HANLDER
           handleAddToCart: this.handleAddToCart.bind(this),
           // PASSES STATE CART
@@ -184,7 +150,7 @@ class App extends React.Component {
           // PASSES DATABASE CONVERTED INTO AN ARRAY
           handleDataBase: this.handleDataBase(),
           //PASSES FAQ DATA BASE
-          handleFaqDatabase: this.handleFaqDatabase(),
+          // handleFaqDatabase: this.handleFaqDatabase(),
           // REMOVE CART ITEM
           handleDeleteFromCart: this.handleDeleteFromCart.bind(this),
         }}>

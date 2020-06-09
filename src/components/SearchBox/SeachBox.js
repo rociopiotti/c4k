@@ -45,7 +45,7 @@ class SearchBox extends React.Component {
   }
 
   handleInputChange(event) {
-    // console.log("Ingreso texto");
+    console.log("Ingreso texto");
   }
 
   render() {

@@ -5,14 +5,13 @@ import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
 import QuestionAnswerBox from "./QuestionAnswerBox/QuestionAnswerBox";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-// AXIOS
-import axios from "axios";
-
-import { FAQ_DB } from "../../utils/path";
+//CONTEXT
+import PageManagerContext from "../../context/pageManager-context";
 
 class Faq extends Component {
+  static contextType = PageManagerContext;
+
   state = {
-    dataFaq: null,
     searchState: false,
   };
 
@@ -21,25 +20,16 @@ class Faq extends Component {
       searchState: true,
     });
   }
+
   handleInputChange(event) {}
+
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.getFaqDb();
-  }
-
-  getFaqDb() {
-    axios
-      .get(FAQ_DB)
-      .then((res) => {
-        this.setState({
-          dataFaq: res.data,
-        });
-      })
-      .catch((error) => console.log("NOT WORKING", error));
   }
 
   handleFaqDataBase() {
-    return this.state.dataFaq.map((item) => {
+    const { faqData } = this.context;
+    return faqData.map((item) => {
       return (
         <QuestionAnswerBox
           key={item.id}
@@ -51,10 +41,6 @@ class Faq extends Component {
   }
 
   render() {
-    if (!this.state.dataFaq) {
-      return <div>... loading</div>;
-    }
-
     return (
       <div className='FaqBox'>
         <SectionTransition />

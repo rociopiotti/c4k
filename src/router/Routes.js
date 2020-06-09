@@ -19,7 +19,8 @@ import Checkout from "../components/Checkout/Checkout";
 import PaymentGateway from "../components/PaymentGateway/PaymentGateway";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import SlideManager from "../components/SlideManager/SlideManager"
+import SlideManager from "../components/SlideManager/SlideManager";
+import SearchResults from "../components/SearchResults/SearchResults";
 
 const Routes = () => {
   return (
@@ -39,6 +40,8 @@ const Routes = () => {
             <Route path='/help' component={Faq} />
             <Route path='/privacypolicy' component={PrivacyPolicy} />
             <Route path='/termsandconditions' component={TermsAndConditions} />
+            <Route path='/searchresults' component={SearchResults} />
+            <Route path='/home' component={Home} />
             <Route path='/' component={Home} />
           </Switch>
           <Footer />
