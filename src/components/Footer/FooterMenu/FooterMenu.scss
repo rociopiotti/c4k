@@ -131,6 +131,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
+
       .logoFooter {
         width: 5vw;
         margin-left: 0;
@@ -144,6 +146,9 @@
         align-items: center;
         justify-content: center;
         margin-left: 0vw;
+        li {
+          width: 100vw;
+        }
       }
     }
   }
