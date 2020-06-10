@@ -7,7 +7,7 @@ const MIN_COST = 170;
 class EstimatedTotal extends React.Component {
   calculateCost() {
     const { items } = this.props;
-
+    
     let cost = 0;
     items.forEach((element) => {
       cost += parseInt(element.price);
@@ -19,7 +19,7 @@ class EstimatedTotal extends React.Component {
     const cost = this.calculateCost();
     const shipping = cost < MIN_COST ? SHIPPING_COST : 0;
     const total = cost + shipping;
-
+   
     return (
       <div className='estimatedTotalBox'>
         <p>

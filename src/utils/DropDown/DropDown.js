@@ -1,19 +1,11 @@
 import React from "react";
 import "./DropDown.scss";
 
-const Dropdown = ({ data, dropdownType, change }) => {
+const Dropdown = ({ data, dropdownType, change,selectQuantity }) => {
   const createDropdown = () => {
     if (!data) {
       return null;
     }
-
-    // if (data.length === 1) {
-    //   return (
-    //     <option style={{ width: "10px", maxWidth: "10px", color: "#fff" }}>
-    //      {data[0]}
-    //     </option>
-    //   );
-    // }
 
     const list = data.map((element, index) => (
       <option
@@ -74,7 +66,7 @@ const Dropdown = ({ data, dropdownType, change }) => {
         dropdownTemplate = (
           <div className='dropDownBox'>
             <label>Quantity</label>
-            <select className='colorDropdown'>{createQuantityList()}</select>
+            <select className='colorDropdown' onChange={(event) => selectQuantity(dropdownType, event.target.value)}>{createQuantityList()}</select>
           </div>
         );
         break;

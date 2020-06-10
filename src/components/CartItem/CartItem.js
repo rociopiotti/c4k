@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
+
 class CartItem extends React.Component {
   static contextType = PageManagerContext;
 
@@ -43,10 +44,20 @@ class CartItem extends React.Component {
     );
   }
 
+  selectQuantity(dropdownType, selectedOption) {
+    const { data } = this.props;
+
+    const { userSelection } = data;
+
+    const quantitySelected = userSelection.quantity;
+
+    this.props.handleQuantity(selectedOption, quantitySelected);
+  }
+
   render() {
     const { data } = this.props;
     const { id, title, price, userSelection } = data;
-
+  
     return (
       <div className='cartItemBox'>
         <div className='column1'>
@@ -76,7 +87,10 @@ class CartItem extends React.Component {
               Total: <span></span> €{price}
             </p>
           </div>
-          <Dropdown dropdownType={"quantity"} />
+          <Dropdown
+            dropdownType={"quantity"}
+            selectQuantity={this.selectQuantity.bind(this)}
+          />
         </div>
       </div>
     );

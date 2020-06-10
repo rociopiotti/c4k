@@ -62,7 +62,6 @@ class ProductDetails extends React.Component {
   }
 
   render() {
-    // console.log("render", this.props.details);
     const { details } = this.props;
 
     const { title, price, size, colors, description, features } = details;

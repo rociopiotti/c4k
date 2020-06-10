@@ -18,7 +18,12 @@ class CartList extends Component {
 
   state = {
     items: [],
+    quantity: [],
   };
+
+  handleQuantity(value, userSelection) {
+    return value;
+  }
 
   createList() {
     const listItems = this.state.items.map((item, index) => (
@@ -26,6 +31,7 @@ class CartList extends Component {
         <CartItem
           data={item}
           index={index}
+          handleQuantity={this.handleQuantity}
           onCartItemClick={this.props.onCartItemClick}
         />
       </li>
