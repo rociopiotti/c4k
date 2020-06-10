@@ -5,6 +5,9 @@ import Icon from "../Icon/Icon";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
+// ROUTER
+import { Link } from "react-router-dom";
+
 //ANMATION
 import { TweenLite, Back } from "gsap";
 
@@ -85,14 +88,14 @@ class SearchBox extends React.Component {
     return (
       <div className='searchBoxBackground'>
         <div className='searchBox' ref={(div) => (this.SearchBox = div)}>
-          <button
+          <Link
             onClick={() => {
               this.handleAnimation("open");
               this.handleSearchContent();
             }}
             className='searchIcon'>
             <Icon type='search' />
-          </button>
+          </Link>
           <input
             type='text'
             value={this.state.keyword}
