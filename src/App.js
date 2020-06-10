@@ -149,8 +149,7 @@ class App extends React.Component {
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
           handleDataBase: this.handleDataBase(),
-          //PASSES FAQ DATA BASE
-          // handleFaqDatabase: this.handleFaqDatabase(),
+
           // REMOVE CART ITEM
           handleDeleteFromCart: this.handleDeleteFromCart.bind(this),
         }}>

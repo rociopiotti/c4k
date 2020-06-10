@@ -89,6 +89,7 @@ class SearchBox extends React.Component {
       <div className='searchBoxBackground'>
         <div className='searchBox' ref={(div) => (this.SearchBox = div)}>
           <Link
+            to={"/searchresults"}
             onClick={() => {
               this.handleAnimation("open");
               this.handleSearchContent();

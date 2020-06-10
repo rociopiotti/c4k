@@ -5,11 +5,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
 
   .btnCloseCartSlide {
-    position: absolute;
+    position: relative;
     background-color: transparent;
     width: 3vw;
     height: 3vw;
@@ -38,13 +38,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3vw;
-    height: 3vw;
+    width: 1vw;
+    height: 1vw;
 
     .logo img {
       position: relative;
-      width: 3vw;
-      height: 3vw;
+      width: 1vw;
+      height: 1vw;
     }
   }
 }
