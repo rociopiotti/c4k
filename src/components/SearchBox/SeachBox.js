@@ -23,9 +23,9 @@ class SearchBox extends React.Component {
       mode: "OPEN",
       keyword: "",
       searchResult: [],
-      filteredData: [],
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSearchContent = this.handleSearchContent.bind(this);
   }
 
   toggle() {
@@ -36,18 +36,10 @@ class SearchBox extends React.Component {
     });
   }
 
-  handleOpenSearchBox() {
+  handleAnimation(value) {
+    const currentState = value === "open" ? "-86%" : "+=86%";
     const delayAnimation = 0.3;
-    const posAnimation = "-86%";
-    this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
-      ease: ease,
-      x: posAnimation,
-    });
-  }
-
-  handleCloseSearchBox() {
-    const delayAnimation = 0.3;
-    const posAnimation = "+=86%";
+    const posAnimation = currentState;
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
       ease: ease,
       x: posAnimation,
@@ -59,52 +51,44 @@ class SearchBox extends React.Component {
     this.setState({
       keyword,
     });
-    console.log(keyword);
   }
 
   handleSearchContent() {
-    const wordToSearch = "trouser";
+    if (this.state.keyword === "" || this.state.keyword.length < 3) {
+      return;
+    } else {
+      const wordToSearch = this.state.keyword;
 
-    // pasar palabra a buscar a lowercase
-    const wordToSearchLowerCase = wordToSearch.toLowerCase();
-    // PRODUCT DATABASE
-    const productDB = this.context.handleDataBase;
+      const wordToSearchLowerCase = wordToSearch.toLowerCase();
 
-    const productTags = productDB.filter((element) => {
-      // se unen los tags en un mismo string con un espacio entre tag
-      const tagsJoined = element.tags.join(" ");
+      const productDB = this.context.handleDataBase;
 
-      // pasar todos los tags a lower case
-      tagsJoined.toLowerCase();
+      const searchResult = productDB.filter((element) => {
+        const tagsJoined = element.tags.join(" ");
 
-      // comparar entre la palabra buscada y los tags unidos.
-      const result = tagsJoined.includes(wordToSearchLowerCase);
+        tagsJoined.toLowerCase();
 
-      // Hacer un array con los resultados true si es false return
-      return result;
-    });
+        const result = tagsJoined.includes(wordToSearchLowerCase);
 
-    const searchResult = productTags.map((element, index) => {
-      return element;
-    });
+        return result;
+      });
 
-    this.setState({
-      searchResult,
-    });
-  }
-
-  componentDidMount() {
-    this.handleSearchContent();
+      this.setState({
+        searchResult,
+      });
+    }
   }
 
   render() {
-    console.log(this.state.searchResult);
+    console.log("this.state.searchResult", this.state.searchResult);
+
     return (
       <div className='searchBoxBackground'>
         <div className='searchBox' ref={(div) => (this.SearchBox = div)}>
           <button
             onClick={() => {
-              this.handleOpenSearchBox();
+              this.handleAnimation("open");
+              this.handleSearchContent();
             }}
             className='searchIcon'>
             <Icon type='search' />
@@ -114,10 +98,11 @@ class SearchBox extends React.Component {
             value={this.state.keyword}
             placeholder='SEARCH PRODUCTS'
             className='searchField'
-            onChange={this.handleInputChange}></input>
+            onChange={this.handleInputChange}
+            onKeyDown={this.handleSearchContent}></input>
           <button
             onClick={() => {
-              this.handleCloseSearchBox(null);
+              this.handleAnimation("close");
             }}
             className='closeIcon'>
             <Icon type='remove' />
