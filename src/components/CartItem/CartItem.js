@@ -16,24 +16,41 @@ class CartItem extends React.Component {
     this.context.handleDeleteFromCart(index);
   }
 
-  render() {
+  handleColorItemImage() {
     const { data, onCartItemClick } = this.props;
-    const { id, category, image, title, price, userSelection, alttext } = data;
+    const { id, category, userSelection, alttext } = data;
+
+    const itemColor = data.colors.filter((item) => {
+      const image = item.id.includes(userSelection.color);
+      return image;
+    });
+
+    const colorItemImage = itemColor.map((element) => {
+      return element.image;
+    });
+
+    return (
+      <Link
+        to={`/products/${category}/${id}`}
+        onClick={onCartItemClick}
+        className='cartItemImgBox'>
+        <img
+          src={`/images/${category}/${colorItemImage}`}
+          alt={alttext}
+          className='cartItemImg'
+        />
+      </Link>
+    );
+  }
+
+  render() {
+    const { data } = this.props;
+    const { id, title, price, userSelection } = data;
 
     return (
       <div className='cartItemBox'>
         <div className='column1'>
-          <Link
-            to={`/products/${category}/${id}`}
-            onClick={onCartItemClick}
-            className='cartItemImgBox'>
-            <img
-              src={`/images/${category}/${image}`}
-              alt={alttext}
-              className='cartItemImg'
-            />
-          </Link>
-
+          {this.handleColorItemImage()}
           <button className='btnAddItemWishList'>
             <Icon type='heart' />
           </button>
