@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import "./PaymentSettings.scss"
 import Icon from "../Icon/Icon"
 
@@ -10,7 +10,7 @@ import paypalImg from "../../img/paypal.svg"
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class PaymentSettings extends React.Component {
+class PaymentSettings extends Component {
   static contextType = PageManagerContext;
 
   handlePaymentMethod(ID) {

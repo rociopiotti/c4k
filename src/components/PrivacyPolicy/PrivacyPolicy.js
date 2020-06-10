@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./PrivacyPolicy.scss";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-class PrivacyPolicy extends React.Component {
+class PrivacyPolicy extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

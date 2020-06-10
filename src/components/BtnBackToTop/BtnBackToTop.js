@@ -1,24 +1,24 @@
-import React from "react"
-import "./BtnBackToTop.scss"
+import React, { Component } from "react";
+import "./BtnBackToTop.scss";
 
-class BtnBackToTop extends React.Component {
+class BtnBackToTop extends Component {
   scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
+    });
   }
   render() {
     return (
       <button
         onClick={() => {
-          this.scrollToTop()
+          this.scrollToTop();
         }}
-        className="btnBackToTop">
+        className='btnBackToTop'>
         BACK TO TOP
       </button>
-    )
+    );
   }
 }
 
-export default BtnBackToTop
+export default BtnBackToTop;

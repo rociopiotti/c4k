@@ -1,11 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import "./GridContainerHeader.scss";
-import GridFilter from "../../GridFilter/GridFliter";
-import GridSort from "../../GridSort/GridSort";
+import Icon from "../../Icon/Icon";
 
 import PageManagerContext from "../../../context/pageManager-context";
 
-class GridContainerHeader extends React.Component {
+class GridContainerHeader extends Component {
   static contextType = PageManagerContext;
 
   handleFilterSlide() {
@@ -41,14 +40,14 @@ class GridContainerHeader extends React.Component {
             this.handleFilterSlide();
           }}
           className='gridFilter'>
-          <GridFilter />
+          <Icon type='filter' /> FILTER
         </button>
         <button
           onClick={() => {
             this.handleSortSlide();
           }}
           className='gridSort'>
-          <GridSort />
+          <Icon type='sort' /> SORT
         </button>
       </div>
     );

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SectionTransition.scss";
 
 //ANIMATION
 import { TweenLite } from "gsap";
-class SectionTransition extends React.Component {
+class SectionTransition extends Component {
   constructor(props) {
     super(props);
     this.myElement = null;

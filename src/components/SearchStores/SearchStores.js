@@ -1,56 +1,55 @@
-import React from "react"
-import "./SearchStores.scss"
-import Icon from "../Icon/Icon"
-
+import React, { Component } from "react";
+import "./SearchStores.scss";
+import Icon from "../Icon/Icon";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class SearchStores extends React.Component {
+class SearchStores extends Component {
   static contextType = PageManagerContext;
 
   handleSearchStore() {
-    this.context.onSearcBtnClick()
+    this.context.onSearcBtnClick();
   }
   handleShowStoreList() {
-    this.context.onSearchDisplayClick("storeList")
+    this.context.onSearchDisplayClick("storeList");
   }
   handleShowStoreMap() {
-    this.context.onSearchDisplayClick("storeMap")
+    this.context.onSearchDisplayClick("storeMap");
   }
   render() {
     return (
-      <div className="searchStoresBox">
+      <div className='searchStoresBox'>
         <button
           onClick={() => {
-            this.handleSearchStore()
+            this.handleSearchStore();
           }}
-          className="btnSearchStores">
-          <Icon  type="search"/>
+          className='btnSearchStores'>
+          <Icon type='search' />
         </button>
         <input
-          type="text"
-          id="searchStoreInput"
-          placeholder="SEARCH STORES"
-          className="searchStoreInput"
+          type='text'
+          id='searchStoreInput'
+          placeholder='SEARCH STORES'
+          className='searchStoreInput'
         />
         <button
           onClick={() => {
-            this.handleShowStoreList()
+            this.handleShowStoreList();
           }}
-          className="btnListStores">
-          <Icon type="list" />
+          className='btnListStores'>
+          <Icon type='list' />
         </button>
         <button
           onClick={() => {
-            this.handleShowStoreMap()
+            this.handleShowStoreMap();
           }}
-          className="btnMapStores">
-          <Icon type="map"/>
+          className='btnMapStores'>
+          <Icon type='map' />
         </button>
       </div>
-    )
+    );
   }
 }
 
-export default SearchStores
+export default SearchStores;

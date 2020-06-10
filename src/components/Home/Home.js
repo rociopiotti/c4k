@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Home.scss";
 import MenuCategories from "./MenuCategories";
 import BackgroundImg from "./BackgroundImg";
@@ -7,7 +7,7 @@ import BtnShop from "../BtnShop/BtnShop";
 // TRANSITION COMPONENT
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-class Home extends React.Component {
+class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

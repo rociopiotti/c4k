@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./CartItem.scss";
 import Icon from "../Icon/Icon";
 import Dropdown from "../../utils/DropDown/DropDown";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class CartItem extends React.Component {
+class CartItem extends Component {
   static contextType = PageManagerContext;
 
   removeFromList() {
@@ -57,7 +57,7 @@ class CartItem extends React.Component {
   render() {
     const { data } = this.props;
     const { id, title, price, userSelection } = data;
-  
+
     return (
       <div className='cartItemBox'>
         <div className='column1'>

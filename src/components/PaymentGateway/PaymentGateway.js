@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./PaymentGateway.scss";
 import BillingAddress from "../BillingAddress/BillingAddress";
 import DeliveryAddress from "../DeliveryAddress/DeliveryAddress";
@@ -9,7 +9,7 @@ import ShippingMethod from "../ShippingMethod/ShippingMethod";
 import SectionTransition from "../SectionTransition/SectionTransition";
 import CartList from "../CartList/CartList";
 
-class PaymentGateway extends React.Component {
+class PaymentGateway extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

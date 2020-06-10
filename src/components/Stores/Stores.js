@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Stores.scss";
 import SearchStore from "../SearchStores/SearchStores";
 import StoreListItem from "../StoreListItem/StoreListItem";
@@ -8,7 +8,7 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class Stores extends React.Component {
+class Stores extends Component {
   state = {
     currentMode: "storeAndMap",
     currentSearchState: false,

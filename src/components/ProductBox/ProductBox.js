@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ProductBox.scss";
 import ItemImageGallery from "../ItemImageGallery/ItemImageGallery";
 import ProductDetails from "../ProductDetails/ProductDetails";
@@ -8,7 +8,7 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class ProductBox extends React.Component {
+class ProductBox extends Component {
   static contextType = PageManagerContext;
   state = {
     images: [],

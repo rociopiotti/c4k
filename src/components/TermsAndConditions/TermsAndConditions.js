@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Component} from "react";
 import "./TermsAndConditions.scss";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
-class TermsAndConditions extends React.Component {
+class TermsAndConditions extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

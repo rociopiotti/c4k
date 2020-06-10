@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Component } from "react"
 import "./ShippingMethod.scss"
 
-class ShippingMethod extends React.Component {
+class ShippingMethod extends Component {
   handleCheckboxChange() {
     // console.log("Checked")
   }

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import "./CheckoutGuest.scss";
 
 import { Link } from "react-router-dom";
 
-class CheckoutGuest extends React.Component {
+class CheckoutGuest extends Component {
   render() {
     return (
       <div className='checkoutGuestBox'>

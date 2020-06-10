@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import "./BtnPromoCode.scss";
 
 //ANMATION
 import { Timeline } from "gsap/gsap-core";
 
-class BtnPromoCode extends React.Component {
+class BtnPromoCode extends Component {
   constructor(props) {
     super(props);
     this.inputPromoCode = null;
@@ -39,21 +39,21 @@ class BtnPromoCode extends React.Component {
 
   render() {
     return (
-      <div className="btnPromoCodeBox">
+      <div className='btnPromoCodeBox'>
         <button
           onClick={() => {
             this.clickPromoCode();
           }}
-          className="btnPromoCode">
+          className='btnPromoCode'>
           DO YOU HAVE PROMO CODE?
         </button>
-        <div className="promoCodeBox">
+        <div className='promoCodeBox'>
           <input
             ref={(div) => (this.inputPromoCode = div)}
-            type="text"
-            className="promoCode"
-            name="promoCode"
-            placeholder="ENTER CODE"></input>
+            type='text'
+            className='promoCode'
+            name='promoCode'
+            placeholder='ENTER CODE'></input>
         </div>
       </div>
     );

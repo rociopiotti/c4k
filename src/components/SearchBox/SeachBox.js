@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SearchBox.scss";
 import Icon from "../Icon/Icon";
 
@@ -14,7 +14,7 @@ import { TweenLite, Back } from "gsap";
 // EASING
 const ease = Back.easeOut.config(1);
 
-class SearchBox extends React.Component {
+class SearchBox extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

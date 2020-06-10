@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./HeaderSlideCloseLeft.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
@@ -6,12 +6,8 @@ import Logo from "../Logo/Logo";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class HeaderSlideCloseLeft extends React.Component {
+class HeaderSlideCloseLeft extends Component {
   static contextType = PageManagerContext;
-
-  // handleCloseCartSlide() {
-  //   this.props.onCloseArrow;
-  // }
 
   render() {
     return (

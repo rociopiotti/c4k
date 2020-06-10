@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./BtnShop.scss";
 import Icon from "../Icon/Icon";
 
-class BtnShop extends React.Component {
+class BtnShop extends Component {
   handleShowMenuCategories() {
     this.props.onClickBtnShop();
   }

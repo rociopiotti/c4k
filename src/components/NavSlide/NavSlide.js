@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./NavSlide.scss";
 import Icon from "../Icon/Icon";
 
@@ -21,7 +21,7 @@ const menu = [
   { id: "1", name: "MY BAG", label: "cartSlide" },
 ];
 
-class NavSlide extends React.Component {
+class NavSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

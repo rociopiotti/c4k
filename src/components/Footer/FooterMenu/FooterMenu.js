@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./FooterMenu.scss";
 import Logo from "../../Logo/Logo";
 
@@ -12,7 +12,7 @@ const footerMenu = [
   { id: "3", name: "TERMS AND CONDITIONS", label: "termsandconditions" },
   { id: "4", name: "PRIVACY POLICY", label: "privacyPolicy" },
 ];
-class FooterMenu extends React.Component {
+class FooterMenu extends Component {
   createList() {
     return footerMenu.map((element) => {
       const { id, name, label } = element;

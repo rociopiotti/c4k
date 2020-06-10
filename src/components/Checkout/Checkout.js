@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Checkout.scss";
 import Icon from "../Icon/Icon";
 import CheckoutGuest from "../CheckoutGuest/CheckoutGuest";
@@ -12,7 +12,7 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 // ROUTER
 import { Link } from "react-router-dom";
 
-class Checkout extends React.Component {
+class Checkout extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ForgotPasswordSlide.scss";
 import Icon from "../Icon/Icon";
 
@@ -10,7 +10,7 @@ import { Timeline, Back } from "gsap/gsap-core";
 
 const ease = Back.easeInOut;
 
-class ForgotPasswordSlide extends React.Component {
+class ForgotPasswordSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {
@@ -40,7 +40,7 @@ class ForgotPasswordSlide extends React.Component {
     // console.log("Click en botón que envia mail:", SumbmitMailSlide)
   }
   componentDidMount() {
-    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });    
+    const tl = new Timeline({ ease: ease, repeat: 0, repeatDelay: 0 });
     tl.to(this.ContentBackground, { opacity: "1" }, 0.4);
   }
 
@@ -48,32 +48,32 @@ class ForgotPasswordSlide extends React.Component {
     return (
       <div
         ref={(div) => (this.SlideBackground = div)}
-        className="forgotPasswordSlideBackground">
-        <div className="forgotPasswordSlideBox">
+        className='forgotPasswordSlideBackground'>
+        <div className='forgotPasswordSlideBox'>
           <button
             onClick={() => {
               this.handleClose();
             }}
-            className="btnCloseCartSlide">
-            <Icon type="arrowRight" />
+            className='btnCloseCartSlide'>
+            <Icon type='arrowRight' />
           </button>
           <div
             ref={(div) => (this.ContentBackground = div)}
-            className="forgotPasswordSlide">
+            className='forgotPasswordSlide'>
             <h2>FORGOT PASSWORD?</h2>
             <p>WE WILL SEND A PASSWORD RESET LINK TO YOUR EMAIL</p>
             <p>PLEASE ENTER A VALID EMAIL ADDRESS.</p>
             <input
-              type="text"
-              id="email"
-              placeholder="EMAIL"
-              className="forgotPasswordSlideEmail"
+              type='text'
+              id='email'
+              placeholder='EMAIL'
+              className='forgotPasswordSlideEmail'
             />
             <button
               onClick={() => {
                 this.handleSubmitMailSlide("SumbmitMailSlide");
               }}
-              className="btnSubtmitMail">
+              className='btnSubtmitMail'>
               SUBMIT
             </button>
           </div>
@@ -83,7 +83,7 @@ class ForgotPasswordSlide extends React.Component {
           onClick={() => {
             this.handleClose();
           }}
-          className="forgotPassCloseBackground"></div>
+          className='forgotPassCloseBackground'></div>
       </div>
     );
   }

@@ -1,10 +1,10 @@
-import React from "react";
+import React, {Component} from "react";
 import "./SuggestedItems.scss";
 import ProductListItem from "../ProductListItem/ProductListItem";
 
 import { Link } from "react-router-dom";
 
-class SuggestedItems extends React.Component {
+class SuggestedItems extends Component {
   goToTop() {
     window.scrollTo(0, 0);
   }

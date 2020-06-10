@@ -1,8 +1,8 @@
-import React from "react"
-import "./ForgotPasswordModal.scss"
-import Icon from "../Icon/Icon"
+import React, { Component } from "react";
+import "./ForgotPasswordModal.scss";
+import Icon from "../Icon/Icon";
 
-class ForgotPasswordmodal extends React.Component {
+class ForgotPasswordmodal extends Component {
   handleCloseSlide(SumbmitMailSlide) {
     // console.log("Click en botón que cierra slide", SumbmitMailSlide)
   }
@@ -11,31 +11,37 @@ class ForgotPasswordmodal extends React.Component {
   }
   render() {
     return (
-      <div className="forgotPasswordBackground">
-        <div className="forgotPasswordBox">
-          <div className="forgotPassword">
-            <button  onClick={() => {
-              this.handleCloseSlide("SumbmitMailSlide")
-            }} className="btnCloseCartSlide">
-              <Icon className="iconBtnCloseCartSlide" />
+      <div className='forgotPasswordBackground'>
+        <div className='forgotPasswordBox'>
+          <div className='forgotPassword'>
+            <button
+              onClick={() => {
+                this.handleCloseSlide("SumbmitMailSlide");
+              }}
+              className='btnCloseCartSlide'>
+              <Icon className='iconBtnCloseCartSlide' />
             </button>
             <h2>FORGOT PASSWORD?</h2>
             <p>WE WILL SEND A PASSWORD RESET LINK TO YOUR EMAIL</p>
             <p>PLEASE ENTER A VALID EMAIL ADDRESS.</p>
             <input
-              type="text"
-              id="email"
-              placeholder="EMAIL"
-              className="forgotPasswordModalEmail"
+              type='text'
+              id='email'
+              placeholder='EMAIL'
+              className='forgotPasswordModalEmail'
             />
-            <button onClick={() => {
-                this.handleSubmitMailSlide("SumbmitMailSlide")
-              }} className="btnSubtmitMail">SUBMIT</button>
+            <button
+              onClick={() => {
+                this.handleSubmitMailSlide("SumbmitMailSlide");
+              }}
+              className='btnSubtmitMail'>
+              SUBMIT
+            </button>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default ForgotPasswordmodal
+export default ForgotPasswordmodal;

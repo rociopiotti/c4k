@@ -1,12 +1,12 @@
-import React from "react"
-import "./CreateAnAccoutSlide.scss"
+import React, { Component } from "react";
+import "./CreateAnAccoutSlide.scss";
 
 // CONTEXT
 import PageManagerContext from "../../../context/pageManager-context";
 
 // ANIMATION
 import { TweenLite } from "gsap";
-class CreateAnAccountSlide extends React.Component {
+class CreateAnAccountSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {
@@ -17,7 +17,7 @@ class CreateAnAccountSlide extends React.Component {
       mode: "CLOSE",
     };
   }
-  
+
   toggle() {
     let newMode;
     if (this.state.mode === "CLOSE") {
@@ -29,7 +29,7 @@ class CreateAnAccountSlide extends React.Component {
       mode: newMode,
     });
   }
-  
+
   componentDidMount() {
     const { mode } = this.state;
     const destY = mode === "CLOSE" ? 1 : 0;
@@ -38,7 +38,6 @@ class CreateAnAccountSlide extends React.Component {
     });
     this.myTween.eventCallback("onComplete", () => {
       this.toggle();
-     
     });
   }
   handleCreateAccount(value) {
@@ -58,102 +57,101 @@ class CreateAnAccountSlide extends React.Component {
   }
   render() {
     return (
-      <div  ref={(div) => (this.myElement = div)}  className="createAccountBox">
-     
+      <div ref={(div) => (this.myElement = div)} className='createAccountBox'>
         <input
-          type="text"
-          id="email"
-          placeholder="EMAIL"
-          className="createAccountInput"
+          type='text'
+          id='email'
+          placeholder='EMAIL'
+          className='createAccountInput'
           onChange={this.handleInputChange}
         />
         <input
-          type="text"
-          id="passwordCreateAccount"
-          placeholder="PASSWORD"
-          className="createAccountInput"
+          type='text'
+          id='passwordCreateAccount'
+          placeholder='PASSWORD'
+          className='createAccountInput'
           onChange={this.handleInputChange}
         />
         <input
-          type="text"
-          id="confirmPasswordCreateAccount"
-          placeholder="CONFIRM PASSWORD"
-          className="createAccountInput"
+          type='text'
+          id='confirmPasswordCreateAccount'
+          placeholder='CONFIRM PASSWORD'
+          className='createAccountInput'
           onChange={this.handleInputChange}
         />
 
-        <div className="nameAndLastNameCreateAccount">
+        <div className='nameAndLastNameCreateAccount'>
           <input
-            type="text"
-            id="firstNameCreateAccount"
-            placeholder="FIRST NAME"
-            className="createAccountInput smallInput"
+            type='text'
+            id='firstNameCreateAccount'
+            placeholder='FIRST NAME'
+            className='createAccountInput smallInput'
             onChange={this.handleInputChange}
           />
           <input
-            type="text"
-            id="lastNameCreateAccount"
-            placeholder="LAST NAME"
-            className="createAccountInput smallInput"
+            type='text'
+            id='lastNameCreateAccount'
+            placeholder='LAST NAME'
+            className='createAccountInput smallInput'
             onChange={this.handleInputChange}
           />
         </div>
 
         <p>BIRTHDAY PROMOS!</p>
 
-        <div className="birthDataCreateAccount">
+        <div className='birthDataCreateAccount'>
           <input
-            type="text"
-            id="monthBirthDate"
-            placeholder="MONTH"
-            className="createAccountInput smallInput"
+            type='text'
+            id='monthBirthDate'
+            placeholder='MONTH'
+            className='createAccountInput smallInput'
             onChange={this.handleInputChange}
           />
           <input
-            type="text"
-            id="yearBirthDate"
-            placeholder="YEAR"
-            className="createAccountInput smallInput"
+            type='text'
+            id='yearBirthDate'
+            placeholder='YEAR'
+            className='createAccountInput smallInput'
             onChange={this.handleInputChange}
           />
         </div>
 
-        <label className="emailMarketing">
-          <input onChange={this.handleCheckboxChange} type="checkbox"></input>{" "}
+        <label className='emailMarketing'>
+          <input onChange={this.handleCheckboxChange} type='checkbox'></input>{" "}
           REMEMBER ME
         </label>
-        <label className="termsAndConditions">
-          <input onChange={this.handleCheckboxChange} type="checkbox"></input> I
+        <label className='termsAndConditions'>
+          <input onChange={this.handleCheckboxChange} type='checkbox'></input> I
           AGREE TERMS & CONDITIONS
         </label>
         <button
           onClick={() => {
-            this.handleCreateAccount(null)
+            this.handleCreateAccount(null);
           }}
-          className="btnCreateAccount">
+          className='btnCreateAccount'>
           CREATE AN ACCOUNT
         </button>
-        <p className="singInWithFaceOrGoogle">
+        <p className='singInWithFaceOrGoogle'>
           SING IN WITH
           <a
             onClick={() => {
-              this.handleSingInFacebook("SingInFacebook")
+              this.handleSingInFacebook("SingInFacebook");
             }}
-            href="https://www.facebook.com/">
+            href='https://www.facebook.com/'>
             FACEBOOK
           </a>
           OR
           <a
             onClick={() => {
-              this.handleSingInGoogle("SingInGoogle")
+              this.handleSingInGoogle("SingInGoogle");
             }}
-            href="https://developers.google.com/identity/sign-in/web">
+            href='https://developers.google.com/identity/sign-in/web'>
             GOOGLE
           </a>
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default CreateAnAccountSlide
+export default CreateAnAccountSlide;

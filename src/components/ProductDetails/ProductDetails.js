@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ProductDetails.scss";
 import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
 import Dropdown from "../../utils/DropDown/DropDown";
@@ -6,7 +6,7 @@ import Dropdown from "../../utils/DropDown/DropDown";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class ProductDetails extends React.Component {
+class ProductDetails extends Component {
   static contextType = PageManagerContext;
   constructor(props) {
     super(props);

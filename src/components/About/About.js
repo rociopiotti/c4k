@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import "./About.scss";
 
 // IMG
@@ -13,7 +13,7 @@ import { TimelineMax } from "gsap";
 
 import { isMobile } from "react-device-detect";
 
-class About extends React.Component {
+class About extends Component {
   constructor(props) {
     super(props);
     this.textAbout1 = null;

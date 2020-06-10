@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SortSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 import Icon from "../Icon/Icon";
@@ -24,7 +24,7 @@ const sortList = [
   },
   { id: "4", name: "POPULAR", icon: "heart", label: "POPULAR" },
 ];
-class SortSlide extends React.Component {
+class SortSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SingInCreateAccountSlide.scss";
 import Icon from "../Icon/Icon";
 import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide";
@@ -8,7 +8,7 @@ import SingInSlide from "./SingInSlide/SingInSlide";
 import PageManagerContext from "../../context/pageManager-context";
 
 
-class SingInCreateAccountSlide extends React.Component {
+class SingInCreateAccountSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

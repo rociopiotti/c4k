@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./GridContainer.scss";
 import GridContainerHeader from "./GridContainerHeader/GridContainerHeader";
 import GridProductList from "../GridProductList/GridProductList";
@@ -7,7 +7,7 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class GridContainer extends React.Component {
+class GridContainer extends Component {
   static contextType = PageManagerContext;
 
   componentDidMount() {
@@ -23,9 +23,7 @@ class GridContainer extends React.Component {
       <div className='gridContainerBox'>
         <SectionTransition />
         <GridContainerHeader title={productId} />
-        <GridProductList
-          data={this.context.itemsData[productId]}
-        />
+        <GridProductList data={this.context.itemsData[productId]} />
       </div>
     );
   }

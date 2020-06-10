@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Header.scss";
 import Icon from "../Icon/Icon";
 import Logo from "../Logo/Logo";
@@ -10,7 +10,7 @@ import PageManagerContext from "../../context/pageManager-context";
 // ROUTER
 import { Link } from "react-router-dom";
 
-class Header extends React.Component {
+class Header extends Component {
   static contextType = PageManagerContext;
 
   handleNavSlide() {

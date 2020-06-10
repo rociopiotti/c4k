@@ -1,12 +1,11 @@
-import React from "react"
-import "./BillingSummary.scss"
+import React, { Component } from "react";
+import "./BillingSummary.scss";
 
-class BillingSummary extends React.Component {
+class BillingSummary extends Component {
   render() {
     return (
-      <div className="billingSummaryBox">
+      <div className='billingSummaryBox'>
         <h3>BILLING SUMMARY</h3>
-        
         <hr></hr>
         <p>
           ITEMS TOTAL: <span></span> €145
@@ -23,8 +22,8 @@ class BillingSummary extends React.Component {
           taxes. We guarantee no additional charges on delivery
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default BillingSummary
+export default BillingSummary;

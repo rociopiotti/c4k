@@ -1,8 +1,8 @@
-import React from "react"
+import React, {Component} from "react"
 import "./StoreListItem.scss"
 import StoreItem from "../StoreItem/StoreItem"
 
-class StoreListItem extends React.Component {
+class StoreListItem extends Component {
   handleShowStore (ID)  {
     // console.log("Click en el boton que muestra en mapa store con n°:", ID)
   }

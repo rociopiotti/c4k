@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SingIn.scss";
-// import BtnSingIn from "../BtnSingIn/BtnSingIn";
 
 // ROUTER
 import { Link } from "react-router-dom";
@@ -8,11 +7,10 @@ import { Link } from "react-router-dom";
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class SingIn extends React.Component {
+class SingIn extends Component {
   static contextType = PageManagerContext;
 
   handleForgotPassword() {
-    /// TO DO: HACER QUE CUANDO SE ESTA EN CHECKOUT APAREZCA UN MODAL EN VEZ DEL SLIDE
     this.context.onSlideBtn("forgotPassworSlide");
   }
   handleCheckboxChange() {

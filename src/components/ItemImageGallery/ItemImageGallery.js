@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "./ItemImageGallery.scss";
 
@@ -16,11 +16,10 @@ const settings = {
   focusOnSelect: true,
 };
 
-class ItemImageGallery extends React.Component {
+class ItemImageGallery extends Component {
   render() {
     const { sectionId, images } = this.props;
     const imageData = images;
-
 
     return (
       <div className='itemImageGalleryBox'>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./CartSlide.scss";
 
 // COMPONENTS
@@ -8,7 +8,7 @@ import CartList from "../CartList/CartList";
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
 
-class CartSlide extends React.Component {
+class CartSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

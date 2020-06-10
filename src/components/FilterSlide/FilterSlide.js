@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./FilterSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
 
@@ -14,7 +14,7 @@ const filsterList = [
   { id: "4", name: "FILTRO E", label: "FILTRO E" },
 ];
 
-class FilterSlide extends React.Component {
+class FilterSlide extends Component {
   static contextType = PageManagerContext;
 
   constructor(props) {

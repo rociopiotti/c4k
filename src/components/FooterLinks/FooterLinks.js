@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import "./FooterLinks.scss";
 
-// import CartEmpty from "../CartEmpty/CartEmpty";
 import PageManagerContext from "../../context/pageManager-context";
 
 // ROUTER
@@ -15,7 +14,7 @@ const footerMenu = [
   { id: "3", name: "PRIVACY POLICY", label: "privacypolicy" },
 ];
 
-class FooterLinks extends React.Component {
+class FooterLinks extends Component {
   static contextType = PageManagerContext;
   createList() {
     return footerMenu.map((element, index) => {

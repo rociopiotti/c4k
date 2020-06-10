@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import "./ProductListItem.scss";
 
 import { IMAGES_FOLDER } from "../../utils/path"
 
-class ProductListItem extends React.Component {
+class ProductListItem extends Component {
   state = {
     images: [],
     error: false,

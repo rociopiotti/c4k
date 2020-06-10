@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./SingInSlide.scss";
 import SingIn from "../../SingIn/SingIn";
 
@@ -7,7 +7,7 @@ import BtnSingInFacebook from "../../BtnSingInFacebook/BtnSingInFacebook";
 
 import { TweenLite } from "gsap";
 
-class SingInSlide extends React.Component {
+class SingInSlide extends Component {
   constructor(props) {
     super(props);
     // reference to the DOM node
