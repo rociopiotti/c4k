@@ -33,6 +33,7 @@ class App extends React.Component {
       data: null,
       faqData: null,
       cart: [],
+      searchResultList: [],
     };
 
     this.handleSlide = this.handleSlide.bind(this);
@@ -124,7 +125,15 @@ class App extends React.Component {
     return allProducts;
   }
 
+  handleSearchProducts(value) {
+    const newResult = value;
+    this.setState({
+      searchResultList: newResult,
+    });
+  }
+
   render() {
+
     if (!this.state.data && !this.state.faqData) {
       return <div>... loading</div>;
     }
@@ -152,6 +161,11 @@ class App extends React.Component {
 
           // REMOVE CART ITEM
           handleDeleteFromCart: this.handleDeleteFromCart.bind(this),
+
+          // SEARCH
+          handleSearchProducts: this.handleSearchProducts.bind(this),
+          //searchResultList
+          searchResultList: this.state.searchResultList
         }}>
         <div className='app'>
           <Routes></Routes>

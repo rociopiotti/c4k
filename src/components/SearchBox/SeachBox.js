@@ -80,39 +80,43 @@ class SearchBox extends React.Component {
         searchResult,
       });
     }
+    this.context.handleSearchProducts(this.state.searchResult);
   }
 
   render() {
-    console.log("this.state.searchResult", this.state.searchResult);
+    // console.log("this.state.searchResult", this.state.searchResult);
 
     return (
-      <div className='searchBoxBackground'>
-        <div className='searchBox' ref={(div) => (this.SearchBox = div)}>
-          <Link
-            to={"/searchresults"}
-            onClick={() => {
-              this.handleAnimation("open");
-              this.handleSearchContent();
-            }}
-            className='searchIcon'>
-            <Icon type='search' />
-          </Link>
-          <input
-            type='text'
-            value={this.state.keyword}
-            placeholder='SEARCH PRODUCTS'
-            className='searchField'
-            onChange={this.handleInputChange}
-            onKeyDown={this.handleSearchContent}></input>
-          <button
-            onClick={() => {
-              this.handleAnimation("close");
-            }}
-            className='closeIcon'>
-            <Icon type='remove' />
-          </button>
+      <>
+        <div className='searchBoxBackground'>
+          <div className='searchBox' ref={(div) => (this.SearchBox = div)}>
+            <Link
+              to={"/searchresults"}
+              onClick={() => {
+                this.handleAnimation("open");
+                this.handleSearchContent();
+              }}
+              className='searchIcon'>
+              <Icon type='search' />
+            </Link>
+            <input
+              type='text'
+              value={this.state.keyword}
+              placeholder='SEARCH PRODUCTS'
+              className='searchField'
+              onChange={this.handleInputChange}
+              onKeyDown={this.handleSearchContent}></input>
+            <Link
+              to={"/"}
+              onClick={() => {
+                this.handleAnimation("close");
+              }}
+              className='closeIcon'>
+              <Icon type='remove' />
+            </Link>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
