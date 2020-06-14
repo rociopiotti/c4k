@@ -90,7 +90,18 @@ class App extends React.Component {
 
   //--------- ADDS ITEM TO CART ARRAY
   handleAddToCart(newItem) {
-    const newCart = [...this.state.cart, newItem];
+    const { cart } = this.state;
+
+    const alreadyInCart = cart.filter((cartItem) => {
+      return newItem.id === cartItem.id;
+    });
+
+    if (alreadyInCart.length > 0) {
+      // TODO: Mostar aviso de item in cart.
+      return;
+    }
+
+    const newCart = [...cart, newItem];
     this.setState({
       cart: newCart,
     });
