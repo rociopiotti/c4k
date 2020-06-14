@@ -84,6 +84,11 @@ class CartList extends Component {
     const { items } = this.state;
     const { showCheckoutButton } = this.props;
 
+    console.log(
+      "crdlist.",
+      document.getElementsByClassName("cartItemListBox").clientHeight
+    );
+
     if (items.length === 0) {
       return <CartEmpty />;
     }
@@ -98,14 +103,12 @@ class CartList extends Component {
     ) : null;
 
     return (
-      <>
-        <div className='cartItemListBox'>
-          {this.createList()}
-          <BtnPromoCode />
-          <EstimatedTotal items={items} />
-          {checkoutButton}
-        </div>
-      </>
+      <div className='cartItemListBox'>
+        {this.createList()}
+        <BtnPromoCode />
+        <EstimatedTotal items={items} />
+        {checkoutButton}
+      </div>
     );
   }
 }

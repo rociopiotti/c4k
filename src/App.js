@@ -32,7 +32,19 @@ class App extends React.Component {
       currentSlide: null,
       data: null,
       faqData: null,
-      cart: [],
+      cart: [
+        {
+          colors: "BLACK",
+          id: "21",
+          quantity: 1,
+          size: "XXS",
+        },
+        { colors: "BLACK", id: "20", quantity: 1, size: "XXS" },
+
+        { colors: "BLACK", id: "7", quantity: 1, size: "XXS" },
+
+        { colors: "BLACK", id: "19", quantity: 1, size: "XXS" },
+      ],
       searchResultList: [],
     };
 
@@ -164,6 +176,7 @@ class App extends React.Component {
     if (!this.state.data && !this.state.faqData) {
       return <div>... loading</div>;
     }
+    console.log(this.state.cart);
 
     return (
       <PageManagerContext.Provider
