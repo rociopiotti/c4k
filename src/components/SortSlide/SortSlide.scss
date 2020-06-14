@@ -80,19 +80,7 @@
   }
 }
 
-@media all and (max-width: 768px) and (orientation: portrait) {
-  .sortSlideBackground {
-    .sortSlideBackgroundBox {
-      position: absolute;
-      width: 60vw;
-      min-height: 100vh;
 
-      .headerSlideCloseLeftBox {
-        width: 95%;
-      }
-    }
-  }
-}
 
 @media all and (max-width: 823px) and (orientation: landscape) {
 }
@@ -100,7 +88,7 @@
 @media all and (max-width: 754px) and (orientation: landscape) {
 }
 
-@media all and (max-width: 754px) {
+@media all and (max-width: 768px) {
   .sortSlideBackground {
     .sortSlideBackgroundBox {
       position: absolute;
