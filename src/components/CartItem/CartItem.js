@@ -19,9 +19,9 @@ class CartItem extends Component {
 
   handleColorItemImage() {
     const { data, onCartItemClick } = this.props;
-    const { id, category, userSelection, alttext } = data;
+    const { id, category, userSelection, alttext, colors } = data;
 
-    const itemColor = data.colors.filter((item) => {
+    const itemColor = colors.filter((item) => {
       const image = item.id.includes(userSelection.color);
       return image;
     });
