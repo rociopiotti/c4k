@@ -19,12 +19,11 @@ const settings = {
 class ItemImageGallery extends Component {
   render() {
     const { sectionId, images } = this.props;
-    const imageData = images;
 
     return (
       <div className='itemImageGalleryBox'>
         <Slider {...settings}>
-          {imageData.map(({ id, image, alttext }) => (
+          {images.map(({ id, image, alttext }) => (
             <div key={id} className='itemImage'>
               <img
                 src={`/images/${sectionId}/${image}`}

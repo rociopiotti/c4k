@@ -18,7 +18,7 @@ const menuCategories = [
 
 const MenuCategories = (props) => {
   const createList = (context) => {
-    return menuCategories.map((element, index) => {
+    return menuCategories.map((element) => {
       const { id, name, label } = element;
       return (
         <li className='listItem' key={id}>
