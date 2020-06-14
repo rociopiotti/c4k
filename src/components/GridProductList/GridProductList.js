@@ -21,11 +21,13 @@ class GridProductList extends React.Component {
   }
 
   createProductsList() {
-    if (!this.props.data) {
+
+    const { data } = this.props
+    if (!data) {
       return;
     }
 
-    return this.props.data.map((element, i) => {
+    return data.map((element, i) => {
       const { category, id, image, price, title, alttext } = element;
       return (
         <li key={i} className='listItem'>

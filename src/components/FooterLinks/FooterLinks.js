@@ -17,7 +17,7 @@ const footerMenu = [
 class FooterLinks extends Component {
   static contextType = PageManagerContext;
   createList() {
-    return footerMenu.map((element, index) => {
+    return footerMenu.map((element) => {
       const { id, name } = element;
 
       return (
