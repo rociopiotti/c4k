@@ -44,14 +44,9 @@ class CartItem extends Component {
     );
   }
 
-  selectQuantity(dropdownType, selectedOption) {
-    const { data } = this.props;
-
-    const { userSelection } = data;
-
-    const quantitySelected = userSelection.quantity;
-
-    this.props.handleQuantity(selectedOption, quantitySelected);
+  selectQuantity(dropdownType, itemsNumber) {
+    const { id } = this.props.data;
+    this.context.handleUpdateQuantity(id, parseInt(itemsNumber));
   }
 
   render() {

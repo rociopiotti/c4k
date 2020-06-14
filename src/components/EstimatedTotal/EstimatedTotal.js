@@ -10,7 +10,11 @@ class EstimatedTotal extends Component {
 
     let cost = 0;
     items.forEach((element) => {
-      cost += parseInt(element.price);
+      const { price, userSelection } = element;
+      const { quantity } = userSelection;
+      const multiPrice = quantity * parseInt(price);
+
+      cost += multiPrice;
     });
     return cost;
   }

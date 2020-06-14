@@ -106,6 +106,23 @@ class App extends React.Component {
     });
   }
 
+  handleUpdateQuantity(itemId, quantity) {
+    const { cart } = this.state;
+    const updatedCart = cart.map((item) => {
+      if (item.id === itemId) {
+        return {
+          ...item,
+          quantity,
+        };
+      }
+      return item;
+    });
+
+    this.setState({
+      cart: updatedCart,
+    });
+  }
+
   componentDidMount() {
     this.handleGetDatabase();
   }
@@ -133,7 +150,6 @@ class App extends React.Component {
   }
 
   render() {
-
     if (!this.state.data && !this.state.faqData) {
       return <div>... loading</div>;
     }
@@ -142,7 +158,7 @@ class App extends React.Component {
       <PageManagerContext.Provider
         value={{
           // SETS STATE CURRENT SLIDE
-          onSlideBtn: this.handleSlide.bind(this),
+          onSlideBtn: this.handleSlide.bind(this), // TODO: Pasar binds al constructor.
           // PASSES STATE CURRENT SLIDE
           currentSlide: this.state.currentSlide,
           // ANIMATION SLIDE
@@ -154,6 +170,7 @@ class App extends React.Component {
           faqData: this.state.faqData,
           // PASSES CART HANLDER
           handleAddToCart: this.handleAddToCart.bind(this),
+          handleUpdateQuantity: this.handleUpdateQuantity.bind(this),
           // PASSES STATE CART
           cart: this.state.cart,
           // PASSES DATABASE CONVERTED INTO AN ARRAY
@@ -165,7 +182,7 @@ class App extends React.Component {
           // SEARCH
           handleSearchProducts: this.handleSearchProducts.bind(this),
           //searchResultList
-          searchResultList: this.state.searchResultList
+          searchResultList: this.state.searchResultList,
         }}>
         <div className='app'>
           <Routes></Routes>

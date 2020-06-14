@@ -13,7 +13,7 @@ class ProductDetails extends Component {
     this.state = {
       size: null,
       color: null,
-      quantity: "1",
+      quantity: 1,
     };
   }
   // TO DO - ADD SIZE GUIDE Y FRE SHIPPING MODAL CASE
@@ -32,14 +32,14 @@ class ProductDetails extends Component {
   }
 
   handleAddToBag() {
-    const newSize = this.state.size;
-    const newColor = this.state.color;
-    const itemId = this.props.itemId;
+    const { size, color, quantity } = this.state;
+    const { itemId } = this.props;
+
     const newItem = {
       id: itemId,
-      quantity: "1",
-      size: newSize,
-      colors: newColor,
+      quantity,
+      size,
+      colors: color,
     };
     this.context.handleAddToCart(newItem);
     this.context.onSlideBtn("cartSlide");

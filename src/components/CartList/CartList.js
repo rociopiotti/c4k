@@ -18,12 +18,7 @@ class CartList extends Component {
 
   state = {
     items: [],
-    quantity: [],
   };
-
-  handleQuantity(value, userSelection) {
-    return value;
-  }
 
   createList() {
     const listItems = this.state.items.map((item, index) => (
@@ -57,7 +52,7 @@ class CartList extends Component {
         userSelection: {
           size: cart[index].size,
           color: cart[index].colors,
-          quantity: cart[index].quantity,
+          quantity: parseInt(cart[index].quantity),
         },
       };
     });
@@ -73,8 +68,16 @@ class CartList extends Component {
 
   componentDidUpdate(nextProps, nextState) {
     if (this.context.cart.length !== this.state.items.length) {
-      this.setItems();
+      return this.setItems();
     }
+
+    const { items } = this.state;
+    this.context.cart.forEach((appCartItem, index) => {
+      const userSelectionQuantity = items[index].userSelection.quantity;
+      if (appCartItem.quantity !== userSelectionQuantity) {
+        return this.setItems();
+      }
+    });
   }
 
   render() {

@@ -37,9 +37,11 @@ class CartSlide extends Component {
       wrapperRef: this.SlideBackground,
     });
   }
+
   componentWillUnmount() {
     document.body.style.overflow = "unset";
   }
+  
   render() {
     return (
       <div
