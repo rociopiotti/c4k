@@ -54,8 +54,7 @@ class NavSlide extends Component {
     document.body.style.overflow = "unset";
   }
   createList() {
-    return navList.map((element, i) => {
-      const { name, label } = element;
+    return navList.map(({ name, label }, i) => {
       return (
         <li key={i} className='listItem'>
           <Link
