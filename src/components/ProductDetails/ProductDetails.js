@@ -46,8 +46,6 @@ class ProductDetails extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    // console.log("prevProps.title", prevProps.title);
-
     if (!prevState.color) {
       const { details } = this.props;
 

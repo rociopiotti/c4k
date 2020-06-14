@@ -12,14 +12,15 @@ class SearchResults extends Component {
   createList() {
     const { searchResultList } = this.context;
 
-    const resultList = searchResultList.map((element, index) => {
-      const { id, category } = element;
-      return (
-        <li key={index}>
-          <Link to={`/products/${category}/${id}`}>{element.title}</Link>
-        </li>
-      );
-    });
+    const resultList = searchResultList.map(
+      ({ id, category, title }, index) => {
+        return (
+          <li key={index}>
+            <Link to={`/products/${category}/${id}`}>{title}</Link>
+          </li>
+        );
+      }
+    );
 
     return <ul className='searchResults'>{resultList}</ul>;
   }
