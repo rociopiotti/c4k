@@ -40,7 +40,7 @@ class SearchBox extends Component {
   }
 
   handleAnimation(value) {
-    const currentState = value === "open" ? "-86%" : "+=86%";
+    const currentState = value === "open" ? "-92%" : "+=92%";
     const delayAnimation = 0.3;
     const posAnimation = currentState;
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {

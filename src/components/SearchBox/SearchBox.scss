@@ -82,14 +82,14 @@
 }
 @media all and (max-width: 768px) {
   .searchBoxBackground {
-    width: 35%;
+    width: 37%;
     height: 15vh;
     top: 0;
     .searchBox {
       position: relative;
       width: 100%;
       height: 10vh;
-      left: 88%;
+      left: 93%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -101,10 +101,8 @@
         margin: 0;
       }
       .searchField {
-        width: 60vw;
         height: 3vh;
         font-size: 0.8em;
-        margin: 0 1vw;
         padding-left: 2vw;
         -webkit-appearance: none;
         border-radius: 0;
