@@ -46,6 +46,11 @@ class SearchBox extends Component {
     this.myTween = TweenLite.to(this.SearchBox, delayAnimation, {
       ease: ease,
       x: posAnimation,
+      onComplete: () => {
+        this.setState({
+          keyword: "",
+        });
+      },
     });
   }
 
@@ -84,8 +89,6 @@ class SearchBox extends Component {
   }
 
   render() {
-    // console.log("this.state.searchResult", this.state.searchResult);
-
     return (
       <>
         <div className='searchBoxBackground'>
