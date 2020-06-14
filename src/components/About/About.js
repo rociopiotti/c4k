@@ -11,6 +11,7 @@ import SectionTransition from "../SectionTransition/SectionTransition";
 //ANIMATION
 import { TimelineMax } from "gsap";
 
+// MOBILE
 import { isMobile } from "react-device-detect";
 
 class About extends Component {
