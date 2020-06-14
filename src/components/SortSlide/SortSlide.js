@@ -60,7 +60,7 @@ class SortSlide extends Component {
     document.body.style.overflow = "unset";
   }
   createList() {
-    return sortList.map((element, index) => {
+    return sortList.map((element) => {
       const { id, name, icon, label } = element;
 
       return (
