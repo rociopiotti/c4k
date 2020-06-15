@@ -43,7 +43,28 @@
   }
 }
 
-@media all and (max-width: 754px) {
+@media all and (max-width: 414px) {
+  .productListItemBox {
+    width: 100%;
+    .listItemImage {
+      width: 35vw;
+      height: 35vw;
+    }
+    .listItemDescription {
+      width: 100%;
+      h3,
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 823px) and (orientation:landscape) {
   .productListItemBox {
     width: 100%;
     .listItemImage {

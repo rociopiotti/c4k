@@ -44,7 +44,7 @@
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
   .gridProductListBox {
     margin-top: 0;
 
@@ -60,7 +60,7 @@
     }
   }
 }
-@media all and (max-width: 754px) {
+@media all and (max-width: 414px) {
   .gridProductListBox {
     margin-top: 0;
     .gridListBox {
@@ -74,6 +74,22 @@
           justify-content: center;
           a {
             height: 55vh;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 823px) and (orientation:landscape) { 
+  .gridProductListBox {
+    margin-top: 0;
+
+    .gridListBox {
+      .grisList {
+        li {
+          width: 50%;
+          a {
+            height: 90vh;
           }
         }
       }
