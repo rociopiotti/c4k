@@ -26,7 +26,6 @@ class CartList extends Component {
         <CartItem
           data={item}
           index={index}
-          handleQuantity={this.handleQuantity}
           onCartItemClick={this.props.onCartItemClick}
         />
       </li>
@@ -84,10 +83,10 @@ class CartList extends Component {
     const { items } = this.state;
     const { showCheckoutButton } = this.props;
 
-    console.log(
-      "crdlist.",
-      document.getElementsByClassName("cartItemListBox").clientHeight
-    );
+    // console.log(
+    //   "crdlist.",
+    //   document.getElementsByClassName("cartItemListBox").clientHeight
+    // );
 
     if (items.length === 0) {
       return <CartEmpty />;
