@@ -75,7 +75,6 @@
 @media all and (max-width: 754px) {
   .checkoutBox {
     width: 100%;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +82,6 @@
 
     .checkout {
       width: 80%;
-      color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -113,7 +111,6 @@
         margin-top: 5vh;
         .separationLine1 {
           width: 40%;
-          border: thin solid #ffffff;
         }
         p {
           font-size: 0.7em;
@@ -121,7 +118,6 @@
         }
         .separationLine2 {
           width: 40%;
-          border: thin solid #ffffff;
         }
       }
     }

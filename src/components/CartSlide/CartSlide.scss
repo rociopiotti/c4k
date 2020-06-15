@@ -88,19 +88,7 @@
   }
 }
 
-@media all and (max-width: 754px) and (orientation: landscape) {
-  .cartSlideBackground {
-    .cartSlide {
-      position: absolute;
-      width: 100vw;
-
-      .cartSlideBox {
-        margin-top: 15vh;
-      }
-    }
-  }
-}
-@media all and (max-width: 754px) {
+@media all and (max-width: 414px) {
   .cartSlideBackground {
     .cartSlide {
       position: absolute;
