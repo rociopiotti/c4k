@@ -17,12 +17,14 @@ const footerMenu = [
 class FooterLinks extends Component {
   static contextType = PageManagerContext;
   createList() {
-    return footerMenu.map((element) => {
+    return footerMenu.map((element, index) => {
       const { id, name } = element;
+
+      const separator = index !== footerMenu.length -1 ? " | " : ""
 
       return (
         <li className='listItem' key={id}>
-        <Link to={`${element.label}`}>{name}{"  "}|</Link>
+        <Link to={`${element.label}`}>{name}{separator}</Link>
         </li>
       );
     });
