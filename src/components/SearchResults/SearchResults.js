@@ -24,7 +24,9 @@ class SearchResults extends Component {
 
     return <ul className='searchResults'>{resultList}</ul>;
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className='searchResultsBox'>

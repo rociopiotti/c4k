@@ -60,7 +60,7 @@
   }
 }
 
-@media all and  (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   .suscribeBox {
     .suscribeInnerBox {
       .suscribeInput {
@@ -114,24 +114,43 @@
   }
 }
 
-@media all and (max-width: 823px) and (orientation: landscape) {
+@media all and (max-width: 414px) {
   .suscribeBox {
+    order: -2;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .suscribeInnerBox {
+      width: 80vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      text-align: right;
+      margin-right: 0vw;
+      .suscribeinfoText {
+        font-size: 0.7em;
+      }
       .suscribeInput {
-        padding: 2vh 0vw 2vh 1vw;
-        font-size: 0.8em;
+        padding: 2% 5%;
+        font-size: 0.6em;
       }
       .btnSuscribe {
-        width: 100%;
-        font-size: 0.8em;
         height: 6vh;
-        padding: 2vh 0 5.5vh 0;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        padding: 2.5vh 0 5vh 0;
         margin: 1vh 0;
       }
     }
   }
 }
-@media all and (max-width: 754px) {
+
+@media all and (max-width: 823px) and (orientation: landscape) {
   .suscribeBox {
     order: -2;
     width: 100vw;
