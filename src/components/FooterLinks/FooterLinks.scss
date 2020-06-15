@@ -22,7 +22,7 @@
         letter-spacing: 0.1em;
         text-decoration: none;
         font-weight: 300;
-        margin-left: 0.5vw;
+        margin-left: 1vw;
         cursor: pointer;
         &:hover {
           color: #c7c7c7;
@@ -58,6 +58,28 @@
           text-decoration: none;
           font-weight: 300;
           margin-left: 0.5vw;
+          cursor: pointer;
+          &:hover {
+            color: #c7c7c7;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 414px) { 
+  .footerLinksBox {
+  
+  
+    .footerLinksList {
+   
+  
+      li {
+        a {
+        margin-left: 2vw;
+         margin-right: 0vw;
           cursor: pointer;
           &:hover {
             color: #c7c7c7;

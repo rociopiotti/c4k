@@ -22,7 +22,7 @@ class FooterLinks extends Component {
 
       return (
         <li className='listItem' key={id}>
-          <Link to={`${element.label}`}>{name}</Link>
+        <Link to={`${element.label}`}>{name}{"  "}|</Link>
         </li>
       );
     });
