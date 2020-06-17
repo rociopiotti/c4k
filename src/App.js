@@ -30,8 +30,8 @@ class App extends React.Component {
 
     this.state = {
       currentSlide: null,
-      data: null,
       faqData: null,
+      data: null,
       cart: [],
       searchResultList: [],
     };
@@ -105,10 +105,6 @@ class App extends React.Component {
     this.setState({
       cart: newCart,
     });
-
-    console.log(newCart);
-    console.log(newItem);
-
   }
 
   //--------- DELETES ITEM CART ARRAY

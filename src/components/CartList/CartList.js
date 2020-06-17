@@ -37,27 +37,27 @@ class CartList extends Component {
   setItems() {
     const { cart, handleDataBase } = this.context;
 
-    const cartIds = cart.map((cartEl) => {
-      return cartEl.id;
-    });
+    const holder = [];
 
-    const cartListItems = handleDataBase.filter((product) => {
-      return cartIds.includes(product.id);
-    });
+    const cartIds = cart.forEach((cartItem) => {
+      handleDataBase.forEach((dbEl) => {
+        if (dbEl.id === cartItem.id) {
+          holder.push({
+            ...dbEl,
+            userSelection: {
+              size: cartItem.size,
+              color: cartItem.colors,
+              quantity: parseInt(cartItem.quantity),
+            },
+          });
 
-    const items = cartListItems.map((element, index) => {
-      return {
-        ...element,
-        userSelection: {
-          size: cart[index].size,
-          color: cart[index].colors,
-          quantity: parseInt(cart[index].quantity),
-        },
-      };
+          return;
+        }
+      });
     });
 
     this.setState({
-      items,
+      items: holder,
     });
   }
 
@@ -82,11 +82,6 @@ class CartList extends Component {
   render() {
     const { items } = this.state;
     const { showCheckoutButton } = this.props;
-
-    // console.log(
-    //   "crdlist.",
-    //   document.getElementsByClassName("cartItemListBox").clientHeight
-    // );
 
     if (items.length === 0) {
       return <CartEmpty />;
