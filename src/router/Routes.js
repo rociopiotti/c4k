@@ -26,7 +26,7 @@ const Routes = () => {
   return (
     <PageManagerContext.Consumer>
       {(context) => (
-        <BrowserRouter>
+        <BrowserRouter basename="/c4k">
           <SlideManager />
           <Header />
           <Switch>
