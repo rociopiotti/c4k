@@ -122,17 +122,25 @@
   }
   .btnPayAndOrder {
     width: 100%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     border: none;
     color: #212121;
     background-color: #fff;
     font-size: 0.9em;
     padding: 2vh 0;
     letter-spacing: 0.1em;
-    -webkit-appearance: none;
-    border-radius: 0;
+    margin-top: 2vh;
+
     cursor: pointer;
-    &:hover {
-      background-color: #c7c7c7;
+    text-decoration: none;
+    a {
+      color: #484848;
+      &:hover {
+        background-color: #c7c7c7;
+      }
     }
   }
 }

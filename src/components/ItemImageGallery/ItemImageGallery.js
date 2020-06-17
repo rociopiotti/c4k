@@ -26,7 +26,7 @@ class ItemImageGallery extends Component {
           {images.map(({ id, image, alttext }) => (
             <div key={id} className='itemImage'>
               <img
-                src={`/images/${sectionId}/${image}`}
+                src={`/public/webdesign/c4k/images/${sectionId}/${image}`}
                 alt={alttext}
                 className='galleryItemImg'
               />

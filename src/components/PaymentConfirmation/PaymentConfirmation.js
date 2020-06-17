@@ -1,13 +1,17 @@
-import React from "react"
-import "./PaymentConfirmation.scss"
-import SectionTransition from "../SectionTransition/SectionTransition"
+import React, { Component } from "react";
+import "./PaymentConfirmation.scss";
+import SectionTransition from "../SectionTransition/SectionTransition";
 
-const PaymentConfirmation = (props) => {
-  
+class PaymentConfirmation extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
     return (
-      <div className="paymentConfirmationBox">
-      <SectionTransition/>
-        <div className="paymentConfirmation">
+      <div className='paymentConfirmationBox'>
+        <SectionTransition />
+        <div className='paymentConfirmation'>
           <h3>#THANKS FOR YOU ORDER</h3>
           <h4>YOU ORDER ID IS 4578866</h4>
           <p>
@@ -16,8 +20,8 @@ const PaymentConfirmation = (props) => {
           </p>
         </div>
       </div>
-    )
+    );
   }
+}
 
-
-export default PaymentConfirmation
+export default PaymentConfirmation;

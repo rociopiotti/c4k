@@ -286,7 +286,7 @@
     {
       "id": "6",
       "title": "CROSSSIDE",
-      "image": "crosssideblack.png",
+      "image": "crosssideblack.PNG",
       "alttext": "Crosside black bag",
       "category": "bags",
       "price": "156",
@@ -295,22 +295,22 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "crosssideblack.png",
+          "image": "crosssideblack.PNG",
           "alttext": "Crosside bag black"
         },
         {
           "id": "BLUE",
-          "image": "crosssidebluenavy.png",
+          "image": "crosssidebluenavy.PNG",
           "alttext": "Crosside bag blue"
         },
         {
           "id": "GREY",
-          "image": "crosssidered.png",
+          "image": "crosssidered.PNG",
           "alttext": "Crosside bag grey"
         },
         {
           "id": "VIOLET",
-          "image": "crosssideviolet.png",
+          "image": "crosssideviolet.PNG",
           "alttext": "Crosside bag violet"
         }
       ],
@@ -687,7 +687,7 @@
     {
       "id": "10",
       "title": "GRAFFITTI",
-      "image": "graffitti.png",
+      "image": "graffitti.PNG",
       "alttext": "graffitti black trousers",
       "category": "trousers",
       "price": "256",
@@ -696,12 +696,12 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "graffitti.png",
+          "image": "graffitti.PNG",
           "alttext": "graffitti black trousers"
         },
         {
           "id": "GREEN",
-          "image": "graffittigreen.png",
+          "image": "graffittigreen.PNG",
           "alttext": "graffitti green trousers"
         }
       ],
@@ -1090,7 +1090,7 @@
     {
       "id": "14",
       "title": "ADIDAS",
-      "image": "addidasblackside.png",
+      "image": "addidasblackside.PNG",
       "alttext": "Adidas black shoes",
       "category": "shoes",
       "price": "156",
@@ -1099,22 +1099,22 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "addidasblackside.png",
+          "image": "addidasblackside.PNG",
           "alttext": "Adidas black shoes"
         },
         {
           "id": "GOLD",
-          "image": "addidasgold.png",
+          "image": "addidasgold.PNG",
           "alttext": "Adidas black shoes"
         },
         {
           "id": "SILVER BLUE",
-          "image": "addidassilverblue.png",
+          "image": "addidassilverblue.PNG",
           "alttext": "Adidas black shoes"
         },
         {
           "id": "SILVER",
-          "image": "addidassilver.png",
+          "image": "addidassilver.PNG",
           "alttext": "Adidas black shoes"
         }
       ],
@@ -1172,7 +1172,7 @@
     {
       "id": "15",
       "title": "BIG BOOTS",
-      "image": "bigboots.png",
+      "image": "bigboots.PNG",
       "alttext": "Big boots black",
       "category": "shoes",
       "price": "156",
@@ -1181,22 +1181,22 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "bigboots.png",
+          "image": "bigboots.PNG",
           "alttext": "Big boots black"
         },
         {
           "id": "BLUE",
-          "image": "bigbootsfrontblue.png",
+          "image": "bigbootsfrontblue.PNG",
           "alttext": "Big boots blue"
         },
         {
           "id": "GREEN",
-          "image": "bigbootsfrontgreen.png",
+          "image": "bigbootsfrontgreen.PNG",
           "alttext": "Big boots green"
         },
         {
           "id": "VIOLET",
-          "image": "bigbootsfrontviolet.png",
+          "image": "bigbootsfrontviolet.PNG",
           "alttext": "Big boots violet"
         }
       ],
@@ -2511,7 +2511,7 @@
     {
       "id": "na-04",
       "title": "BIG BOOTS",
-      "image": "bigboots.png",
+      "image": "bigboots.PNG",
       "alttext": "Big boots black",
       "category": "newarrivals",
       "price": "156",
@@ -2520,22 +2520,22 @@
       "colors": [
         {
           "id": "BLACK",
-          "image": "bigboots.png",
+          "image": "bigboots.PNG",
           "alttext": "Big boots black"
         },
         {
           "id": "BLUE",
-          "image": "bigbootsfrontblue.png",
+          "image": "bigbootsfrontblue.PNG",
           "alttext": "Big boots blue"
         },
         {
           "id": "GREEN",
-          "image": "bigbootsfrontgreen.png",
+          "image": "bigbootsfrontgreen.PNG",
           "alttext": "Big boots green"
         },
         {
           "id": "VIOLET",
-          "image": "bigbootsfrontviolet.png",
+          "image": "bigbootsfrontviolet.PNG",
           "alttext": "Big boots violet"
         }
       ],

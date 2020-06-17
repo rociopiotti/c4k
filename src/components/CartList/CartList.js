@@ -39,7 +39,7 @@ class CartList extends Component {
 
     const holder = [];
 
-    const cartIds = cart.forEach((cartItem) => {
+    cart.forEach((cartItem) => {
       handleDataBase.forEach((dbEl) => {
         if (dbEl.id === cartItem.id) {
           holder.push({

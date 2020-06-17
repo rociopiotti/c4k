@@ -1,4 +1,4 @@
-export const URL_PRODUCTS = "http://192.168.1.37:3000/db.json";
- export const IMAGES_FOLDER = "http://192.168.1.37:3000/images/";
- export const FAQ_DB = "http://192.168.1.37:3000/faq.json";
+export const URL_PRODUCTS = "http://www.rociopiotti.com/public/webdesign/c4k/db.json";
+ export const IMAGES_FOLDER = "http://www.rociopiotti.com/public/webdesign/c4k/images/";
+ export const FAQ_DB = "http://www.rociopiotti.com/public/webdesign/c4k/faq.json";
 

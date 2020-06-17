@@ -21,18 +21,20 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import SlideManager from "../components/SlideManager/SlideManager";
 import SearchResults from "../components/SearchResults/SearchResults";
+import PaymentConfirmation from "../components/PaymentConfirmation/PaymentConfirmation";
 
 const Routes = () => {
   return (
     <PageManagerContext.Consumer>
       {(context) => (
-        <BrowserRouter basename="/c4k">
+        <BrowserRouter basename="/public/webdesign/c4k">
           <SlideManager />
           <Header />
           <Switch>
             <Route path='/products/:category/:name' component={ProductBox} />
             <Route path='/products/:category' component={GridContainer} />
             <Route path='/products' component={GridContainer} />
+            <Route path='/paymentgateway/orderconfirmation' component={PaymentConfirmation} />
             <Route path='/paymentgateway' component={PaymentGateway} />
             <Route path='/checkout' component={Checkout} />
             <Route path='/about' component={About} />
