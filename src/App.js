@@ -165,11 +165,12 @@ class App extends React.Component {
       return (
         <div
           style={{
-            background: "#000",
+            backgroundColor: "#000",
             width: "100vw",
             heigh: "100vh",
             color: "#fff",
             textAlign: "center",
+            display: "flex",
           }}>
           <p style={{ marginTop: "15vh" }}> ... loading</p>
         </div>
