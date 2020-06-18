@@ -166,8 +166,8 @@ class App extends React.Component {
         <div
           style={{
             background: "#000",
-            width: "100%",
-            heigh: "100%",
+            width: "100vw",
+            heigh: "100vh",
             color: "#fff",
             textAlign: "center",
           }}>
