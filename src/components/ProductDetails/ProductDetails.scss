@@ -277,6 +277,13 @@
         position: fixed;
         bottom: 0;
         margin: 0;
+        z-index: 1;
+
+      }
+      
+      .btnFreeShipping {
+        z-index: 0;
+
       }
       .dropdownsContainer {
         .dropdownBox {
