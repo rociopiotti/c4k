@@ -43,8 +43,8 @@ Testeado en dispositivos: Iphone, Ipad, Android.
 - Motor de animación [Gsap](https://www.npmjs.com/package/gsap/v/3.2.6)
 - Google Maps API
 - Servidor PHP
-- Create React App, [
-- React Router](https://www.npmjs.com/package/react-router-dom)
+- Create React App
+- [React Router](https://www.npmjs.com/package/react-router-dom)
 - [Axios](https://www.npmjs.com/package/axios)
 - [Fortawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
 - [Google Map React](https://www.npmjs.com/package/google-map-react)
