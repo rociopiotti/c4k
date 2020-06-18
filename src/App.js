@@ -162,7 +162,11 @@ class App extends React.Component {
 
   render() {
     if (!this.state.data && !this.state.faqData) {
-      return <div>... loading</div>;
+      return (
+        <div style={{ background: "#000", color: "#fff", textAlign: "center" }}>
+          ... loading
+        </div>
+      );
     }
 
     return (
