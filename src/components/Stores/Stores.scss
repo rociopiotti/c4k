@@ -49,13 +49,15 @@
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 5vh;
+      
+      height: 350px;
     }
     .storeListBox {
       width: 45%;
     }
     .storeMapBox {
       width: 45%;
-      height: 50vh;
+      height: 350px;
     }
   }
 }

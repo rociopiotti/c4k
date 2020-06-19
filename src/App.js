@@ -171,10 +171,10 @@ class App extends React.Component {
             color: "#fff",
             textAlign: "center",
             display: "flex",
-            alignContent: "flex-start",
+            alignContent: "center",
             justifyContent: "center",
           }}>
-          <p style={{ marginTop: "15vh", height: "100vh" }}> ... loading</p>
+          <p style={{ marginTop: "15vh",  width: "100vw", height: "100vh" }}> ... loading</p>
         </div>
       );
     }
