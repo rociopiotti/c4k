@@ -1,48 +1,31 @@
 # C4K
- 
 
-Diseño y desarrollo de portal de compras.
+Design and development of shopping site.
 
-   
-  ## Demo
+## Demo
 
-Para ver el demo [click aquí](https://www.rociopiotti.com/public/webdesign/c4k/) 
+To see demo [click aquí](https://www.rociopiotti.com/public/webdesign/c4k/)
 
-### Desarrollado por
+## Work done
 
-:  Rocío Piotti  
-: [rociopiotti.com](https://www.rociopiotti.com/)  
-: ropiotti@gmail.com  
+Develop ReactJS
+Layout with JSX and Sass.
+Design in AdobeXD.
+Images edited with Adobe PS.
+Content creation.
+Tested in browsers: Chrome, Opera, Safari, Microsoft Edge.
+Tested in devices: Iphone, Ipad, Android.
 
+## Technologies used
 
-
-## Trabajos realizados
-  
-
-Programación con ReactJs.
-
-Maquetación con JSX y Sass.
-
-Diseño en Adobe XD.
-
-Edición de imágenes con Adobe Photoshop.
-
-Creación de contenido.
-
-Testeado en navegadores: Chrome, Opera, Safari, Microsoft Edge.
-
-Testeado en dispositivos: Iphone, Ipad, Android.
-
-## Tecnologías utilizadas
-  
 - Javascript
 - ReactJs
 - Html5
 - Css3
 - Sass
-- Motor de animación [Gsap](https://www.npmjs.com/package/gsap/v/3.2.6)
+- Animation [Gsap](https://www.npmjs.com/package/gsap/v/3.2.6)
 - Google Maps API
-- Servidor PHP
+- Server PHP
 - Create React App
 - [React Router](https://www.npmjs.com/package/react-router-dom)
 - [Axios](https://www.npmjs.com/package/axios)
@@ -50,13 +33,10 @@ Testeado en dispositivos: Iphone, Ipad, Android.
 - [Google Map React](https://www.npmjs.com/package/google-map-react)
 - [Slick Carrousel](https://www.npmjs.com/package/react-slick)
 - [React Device Detect](https://www.npmjs.com/package/react-device-detect)
-  
-  
 
-## Concepto
 
-C4K está pensada como una marca de diseño de ropa sin género. Con un estilo que entrecruza el punk con el anime y la escena techno de Berlín. 
-
- <hr>
- <br>
 #ReactJs #JSX #Sass #Node #ReactRouter #axios #Gsap #mobileFirst  #layout #webdesign #responsivedesign #git #Github
+
+### Developed by
+
+:  Rocío Piotti
