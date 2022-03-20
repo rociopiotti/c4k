@@ -26,7 +26,7 @@ class ItemImageGallery extends Component {
           {images.map(({ id, image, alttext }) => (
             <div key={id} className='itemImage'>
               <img
-                src={`${sectionId}/${image}`}
+                src={`/${sectionId}/${image}`}
                 alt={alttext}
                 className='galleryItemImg'
               />
