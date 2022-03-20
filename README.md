@@ -8,13 +8,13 @@ To see demo [click here](https://www.rociopiotti.com/public/webdesign/c4k/)
 
 ## Work done
 
-Develop ReactJS
-Layout with JSX and Sass.
-Design in AdobeXD.
-Images edited with Adobe PS.
-Content creation.
-Tested in browsers: Chrome, Opera, Safari, Microsoft Edge.
-Tested in devices: Iphone, Ipad, Android.
+- Develop ReactJS
+- Layout with JSX and Sass.
+- Design in AdobeXD.
+- Images edited with Adobe PS.
+- Content creation.
+- Tested in browsers: Chrome, Opera, Safari, Microsoft Edge.
+- Tested in devices: Iphone, Ipad, Android.
 
 ## Technologies used
 
