@@ -1,0 +1,146 @@
+[
+    {
+        "id": "general",
+        "title": "GENERAL",
+        "items": [
+            {
+                "id": "gqn1",
+                "question": "How can I contact a C4K representative?",
+                "answer": "C4K customer service representatives are available 24 hours a day to answer your questions at 877-707-6272 or by email at customerservice@c4k.com."
+            },
+            {
+                "id": "gqn2",
+                "question": "How do I check the status of my order?",
+                "answer": "You can check your order status at any time by clicking on the “Sign In” link at the top of every page and logging into your account. You may also call us at 877-707-6272 or email at customerservice@c4k.com for additional assistance."
+            },
+            {
+                "id": "gqn3",
+                "question": "Can I place an order over the phone?",
+                "answer": "C4k Customer Service representatives are available 24 hours a day to help you with your purchase. Please call us at 877-707-6272."
+            },
+            {
+                "id": "gqn4",
+                "question": "The price has changed since I placed my order, can it be adjusted?",
+                "answer": "In the event a product sees its price lowered in the 30 days following the purchase, our customer service team will gladly assist you with a refund of the difference.Please note:The item needs to still be in stock at the time the request is made;Only one price adjustment can be done per order."
+            },
+            {
+                "id": "gqn5",
+                "question": "When will I be charged?",
+                "answer": "Your credit card card will be charged as soon as the order ships from our warehouse to your shipping address. If you have multiple items in your order, you will only be charged when each item ships."
+            },
+            {
+                "id": "gqn6",
+                "question": "What forms of payment do you accept on c4k.com?",
+                "answer": "We accept payment via PayPal and the following credit cards:Visa,MasterCard,American Express. We also accept Paypal payment method"
+            },
+            {
+                "id": "gqn7",
+                "question": "In what currency are the prices displayed on c4k.com?",
+                "answer": "All prices of merchandise on c4k.com are shown in Euros (EUR). Please note the final checkout price is also reflected in Euros (EUR)."
+            },
+            {
+                "id": "gqn8",
+                "question": "Is my credit card information safe?",
+                "answer": "C4K uses secure server software over a Secure Socket Layer (SSL) line to protect credit card information. All personal and credit card information is encrypted so that that it cannot be read as it travels to an ordering system. Once it is received, it is stored in a location not accessible via the Internet."
+            },
+            {
+                "id": "gqn9",
+                "question": "How is tax calculated?",
+                "answer": "State laws require that we charge applicable sales tax on orders. When placing an order on c4k.com, you (the customer) are considered the importer of record and must comply with all applicable laws and regulations. All charges for duties, taxes and the carrier's collection fee are in addition to your shipping charge and shall be paid exclusively by you and will be reflected on your invoice. You should contact your local customs office for further information. "
+            },
+            {
+                "id": "gqn10",
+                "question": "What do I do if my item(s) arrived damaged or defective?",
+                "answer": "C4K stands behind the quality and craftsmanship of all of our products. If you believe your item is defective or has been damaged en route, please contact a customer service representative at 877-707-6272 or via email at customerservice@c4k.com, available 24 hours a day"
+            },
+            {
+                "id": "gqn11",
+                "question": "How do I sign up for your email list?",
+                "answer": "You can subscribe to our email list by entering your email address in the field at the bottom of the page. Sign-up for all things C4K -news, exclusive events and insider sales - straight to your inbox."
+            },
+            {
+                "id": "gqn12",
+                "question": "Inaccuracy Disclaimer",
+                "answer": "From time to time there may be information on Our Site(s) that contains typographical or visual errors, inaccuracies or omissions that may relate to product descriptions, pricing or availability. While We endeavor to display Our products and their colors as accurately as possible, the displayed colors of the products will depend upon the technical specifications and settings of the computer and monitor of the user, and We do not guarantee that the actual colors of the products will be accurately displayed on the user’s monitor."
+            },
+            {
+                "id": "gqn13",
+                "question": "Product Information and Orders for Products",
+                "answer": "Many products displayed on the Site are available in Our stores, but in some cases products available on the Site(s) are not available in stores, or vice versa. Similarly, prices for a product may vary between the Site(s) and stores or between geographies. You may only order products if, and You hereby represent and warrant that, You are 18 years old or older."
+            }
+        ]
+    },
+    {
+        "id": "shippingeu",
+        "title": "SHIPPINGS & RETURNS: EUROPEAN UNION",
+        "items": [
+            {
+                "id": "sandrEUAqn1",
+                "question": "How much will shipping cost?",
+                "answer": "We offer complimentary GROUND SHIPPING for all orders over $50 on c4k.com. For orders under $50, a Standard Ground shipping rate of $9.95 will be applied."
+            },
+            {
+                "id": "sandrEUAqn2",
+                "question": "When will my order ship?",
+                "answer": "Most merchandise will ship within 1 to 2 business days after your order is received.Expedited orders must be placed by 1pm EST to be shipped the same day on all business days. Expedited orders placed after 1pm EST will ship the next business day.Business days are Monday - Friday, excluding Federal holidays."
+            },
+            {
+                "id": "sandrEUAqn2",
+                "question": "How long will it take to receive my order?",
+                "answer": "For shipments within the European Union: Overnight: 1 business day.2nd Day: 2 business days.Standard: 3 - 6 business days. Most merchandise will ship within 1 to 2 business days after your order is received.Expedited orders must be placed by 1pm EST to be shipped the same day on all business days. Expedited orders placed after 1pm EST will ship the next business day.Business days are Monday - Friday, excluding Federal holidays."
+            },
+            {
+                "id": "sandrEUAqn2",
+                "question": "Can I gift wrap my order?",
+                "answer": "During the check out process, you can choose to receive a gift box. Please note we are only able to include one gift box per order. You can select this option at the Shipping step and can also add a message: we will print it on a card for you."
+            }
+        ]
+    },
+    {
+        "id": "shippingintenational",
+        "title": "SHIPPINGS & RETURNS: INTERNATIONAL",
+        "items": [
+            {
+                "id": "sandrIAqn1",
+                "question": "How much will shipping cost?",
+                "answer": "We offer complimentary GROUND SHIPPING for all orders over $50 on c4k.com. For orders under $50, a Standard Ground shipping rate of $9.95 will be applied."
+            },
+            {
+                "id": "sandrIAqn2",
+                "question": "When will my order ship?",
+                "answer": "Most merchandise will ship within 1 to 2 business days after your order is received.Expedited orders must be placed by 1pm EST to be shipped the same day on all business days. Expedited orders placed after 1pm EST will ship the next business day.Business days are Monday - Friday, excluding Federal holidays."
+            },
+            {
+                "id": "sandrIAqn3",
+                "question": "How long will it take to receive my order?",
+                "answer": "For shipments within the European Union: Overnight: 1 business day.2nd Day: 2 business days.Standard: 3 - 6 business days. Most merchandise will ship within 1 to 2 business days after your order is received.Expedited orders must be placed by 1pm EST to be shipped the same day on all business days. Expedited orders placed after 1pm EST will ship the next business day.Business days are Monday - Friday, excluding Federal holidays."
+            },
+            {
+                "id": "sandrIAqn4",
+                "question": "Can I gift wrap my order?",
+                "answer": "During the check out process, you can choose to receive a gift box. Please note we are only able to include one gift box per order. You can select this option at the Shipping step and can also add a message: we will print it on a card for you."
+            }
+        ]
+    },
+    {
+        "id": "preorder",
+        "title": "PRE-ORDER",
+        "items": [
+            {
+                "id": "preorderAqn1",
+                "question": "When will my order ship?",
+                "answer": "Your order will ship by the date communicated on the item detail page and the order confirmation email. Please note that your order could ship earlier or later than the expected delivery date.Should the product be delayed, you will be notified by email."
+            },
+            {
+                "id": "preorderAqn2",
+                "question": "When will I be charged?",
+                "answer": "EU orders:Your credit card card will be charged as soon as the order ships from our warehouse to your shipping address.If you have multiple pre-order items in your order, you will only be charged when each item ships.Other countries:Your credit card card will be charged when the order is placed."
+            },
+            {
+                "id": "preorderAqn3",
+                "question": "How do I cancel my pre-order?",
+                "answer": "To cancel your pre-order, please call us at 877-707-6272 or email our Customer Service.Please note: once your pre-order item has shipped, we are unable to cancel or make changes to your order."
+            }
+        ]
+    }
+]

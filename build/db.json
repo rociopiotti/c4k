@@ -1,0 +1,2923 @@
+{
+  "bags": [
+    {
+      "id": "1",
+      "title": "KITTY",
+      "image": "kitty.png",
+      "alttext": "Kitty bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "kitty.png",
+          "alttext": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "kittyblue.png",
+          "alttext": "Kitty bag blue"
+        },
+        {
+          "id": "GOLDEN",
+          "image": "kittygolden.png",
+          "alttext": "Kitty bag golden"
+        },
+        {
+          "id": "VIOLET",
+          "image": "kittyviolet.png",
+          "alttext": "Kitty bag violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "24",
+        "7",
+        "16"
+      ],
+      "tags": [
+        "hola",
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "Sophisticated",
+        "kitty",
+        "blue",
+        "golden"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "MOON CHILD",
+      "image": "moonchildblack.png",
+      "alttext": "Moon child bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "moonchildblack.png",
+          "alttext": "Moon child black"
+        },
+        {
+          "id": "GREEN",
+          "image": "moonchildgreen.png",
+          "alttext": "Moon child green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "moonchildviolet.png",
+          "alttext": "Moon child violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "19",
+        "15",
+        "8"
+      ],
+      "tags": [
+        "hola",
+        "Bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "anime",
+        "Moon child",
+        "blue",
+        "green",
+        "violet"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "CHEST",
+      "image": "chestblack.png",
+      "alttext": "Chest black bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "chestblack.png",
+          "alttext": "Chest black bag"
+        },
+        {
+          "id": "CAMOUFLAGE",
+          "image": "chestcamouflage.png",
+          "alttext": "Chest brown bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "chestviolet.png",
+          "alttext": "Chest green bag"
+        },
+        {
+          "id": "GREY",
+          "image": "chestgrey.png",
+          "alttext": "Chest grey bag"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "15",
+        "23",
+        "9"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "adventure",
+        "Chest",
+        "blue",
+        "green",
+        "violet",
+        "grey",
+        "camouflage"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "CAMPAING",
+      "image": "campaingblack.png",
+      "alttext": "Campaign black bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "campaingblack.png",
+          "alttext": "Campaign black bag"
+        },
+        {
+          "id": "BROWN",
+          "image": "campaingbrown.png",
+          "alttext": "Campaign brown bag"
+        },
+        {
+          "id": "GREEN",
+          "image": "campainggreen.png",
+          "alttext": "Campaign green bag"
+        },
+        {
+          "id": "GREY",
+          "image": "campainggrey.png",
+          "alttext": "Campaign grey bag"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "11",
+        "14",
+        "22"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "adventure",
+        "Campaing",
+        "blue",
+        "brown",
+        "grey"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "SUPREME",
+      "image": "supremeblack.png",
+      "alttext": "Supreme black bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "supremeblack.png",
+          "alttext": "supreme black bag"
+        },
+        {
+          "id": "BLUE NAVY",
+          "image": "supremeblue.png",
+          "alttext": "supreme blue navy bag"
+        },
+        {
+          "id": "RED",
+          "image": "supremered.png",
+          "alttext": "supreme red bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "supremewhite.png",
+          "alttext": "supreme violet bag"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "10",
+        "14",
+        "24"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "casual",
+        "Supreme",
+        "blue",
+        "red",
+        "white"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "CROSSSIDE",
+      "image": "crosssideblack.PNG",
+      "alttext": "Crosside black bag",
+      "category": "bags",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "crosssideblack.PNG",
+          "alttext": "Crosside bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "crosssidebluenavy.PNG",
+          "alttext": "Crosside bag blue"
+        },
+        {
+          "id": "GREY",
+          "image": "crosssidered.PNG",
+          "alttext": "Crosside bag grey"
+        },
+        {
+          "id": "VIOLET",
+          "image": "crosssideviolet.PNG",
+          "alttext": "Crosside bag violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "7",
+        "13",
+        "17"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "casual",
+        "crossside",
+        "blue",
+        "violet",
+        "grey"
+      ]
+    }
+  ],
+  "trousers": [
+    {
+      "id": "7",
+      "title": "NINE X4",
+      "image": "ninex4black.png",
+      "alttext": "Nine x4 trousers black",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "ninex4black.png",
+          "alttext": "Nine x4 trousers black"
+        },
+        {
+          "id": "BLUE",
+          "image": "ninex4blue.png",
+          "alttext": "Nine x4 trousers blue"
+        },
+        {
+          "id": "GREY",
+          "image": "ninex4grey.png",
+          "alttext": "Nine x4 trousers grey"
+        },
+        {
+          "id": "RED",
+          "image": "ninex4red.png",
+          "alttext": "Nine x4 trousers red"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "1",
+        "13",
+        "19"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "casual",
+        "Nine 4",
+        "black",
+        "blue",
+        "grey",
+        "red"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "TRASH ASH",
+      "image": "trashashblack.png",
+      "alttext": "Nine x4 trousers black",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "trashashblack.png",
+          "alttext": "Nine x4 trousers black"
+        },
+        {
+          "id": "BLUE",
+          "image": "trashashblue.png",
+          "alttext": "Nine x4 trousers blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "trashashgreen.png",
+          "alttext": "Nine x4 trousers green"
+        },
+        {
+          "id": "GREY",
+          "image": "trashash.png",
+          "alttext": "Nine x4 trousers grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "2",
+        "14",
+        "20"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "casual",
+        "Trash ash",
+        "black",
+        "blue",
+        "grey",
+        "green"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "B4K",
+      "image": "b4kblack.png",
+      "alttext": "b4k black trousers",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "b4kblack.png",
+          "alttext": "b4k blue trousers"
+        },
+        {
+          "id": "BLUE",
+          "image": "b4kblue.png",
+          "alttext": "b4k blue trousers"
+        },
+        {
+          "id": "GREY",
+          "image": "b4kgrey.png",
+          "alttext": "b4k grey trousers"
+        },
+        {
+          "id": "RED",
+          "image": "b4kred.png",
+          "alttext": "b4k red trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "15",
+        "21"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "adventure",
+        "B4k",
+        "black",
+        "blue",
+        "grey",
+        "red"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "GRAFFITTI",
+      "image": "graffitti.PNG",
+      "alttext": "graffitti black trousers",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "graffitti.PNG",
+          "alttext": "graffitti black trousers"
+        },
+        {
+          "id": "GREEN",
+          "image": "graffittigreen.PNG",
+          "alttext": "graffitti green trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "16",
+        "22"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "rocker",
+        "Graffitti",
+        "black",
+        "green"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "JOGGER KAP",
+      "image": "joggerkapblack.png",
+      "alttext": "Jogger black trousers",
+      "category": "trousers",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "joggerkapblack.png",
+          "alttext": "Jogger black trousers"
+        },
+        {
+          "id": "GREY",
+          "image": "joggerkapgrey.png",
+          "alttext": "Jogger grey trousers"
+        },
+        {
+          "id": "RED",
+          "image": "joggerkapred.png",
+          "alttext": "Jogger red trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "5",
+        "17",
+        "23"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "casual",
+        "Jogger kap",
+        "black",
+        "blue",
+        "grey",
+        "red"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "LEATHER STEVE",
+      "image": "leathersteve.png",
+      "alttext": "Leather black trousers",
+      "category": "trousers",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "leathersteve.png",
+          "alttext": "Leather black trousers"
+        },
+        {
+          "id": "BLUE",
+          "image": "leathersteveblue.png",
+          "alttext": "Leather blue trousers"
+        },
+        {
+          "id": "GOLD",
+          "image": "leatherstevegold.png",
+          "alttext": "Leather gold trousers"
+        },
+        {
+          "id": "VIOLET",
+          "image": "leathersteveviolet.png",
+          "alttext": "Leather violet trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "18",
+        "24"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "rocker",
+        "Leather",
+        "black",
+        "blue",
+        "gold",
+        "violet"
+      ]
+    }
+  ],
+  "shoes": [
+    {
+      "id": "13",
+      "title": "BBOGG",
+      "image": "bboogg.png",
+      "alttext": "Bbogg shoes black",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bboogg.png",
+          "alttext": "Bbogg shoes black"
+        },
+        {
+          "id": "COPPER",
+          "image": "bbooggcopper.png",
+          "alttext": "Bbogg shoes copper"
+        },
+        {
+          "id": "SILVER BLUE",
+          "image": "bbooggsilverblue.png",
+          "alttext": "Bbogg shoes silver blue"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "7",
+        "1",
+        "19"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "botas",
+        "negro",
+        "rocker",
+        "bbogg",
+        "black",
+        "copper",
+        "silver"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "ADIDAS",
+      "image": "addidasblackside.PNG",
+      "alttext": "Adidas black shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "addidasblackside.PNG",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "GOLD",
+          "image": "addidasgold.PNG",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER BLUE",
+          "image": "addidassilverblue.PNG",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER",
+          "image": "addidassilver.PNG",
+          "alttext": "Adidas black shoes"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "2",
+        "8",
+        "20"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatillas",
+        "tennis",
+        "negro",
+        "casual",
+        "adidas",
+        "black",
+        "blue",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "BIG BOOTS",
+      "image": "bigboots.PNG",
+      "alttext": "Big boots black",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bigboots.PNG",
+          "alttext": "Big boots black"
+        },
+        {
+          "id": "BLUE",
+          "image": "bigbootsfrontblue.PNG",
+          "alttext": "Big boots blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "bigbootsfrontgreen.PNG",
+          "alttext": "Big boots green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "bigbootsfrontviolet.PNG",
+          "alttext": "Big boots violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "3",
+        "9",
+        "21"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "botas",
+        "negro",
+        "rocker",
+        "anime",
+        "big boots",
+        "black",
+        "blue",
+        "violet",
+        "green"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "BUFFALO",
+      "image": "buffaloblack.png",
+      "alttext": "Buffalo black shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "buffaloblack.png",
+          "alttext": "Buffalo black shoes"
+        },
+        {
+          "id": "RED",
+          "image": "buffalored.png",
+          "alttext": "Buffalo red shoes"
+        },
+        {
+          "id": "WHITE",
+          "image": "buffalowhite.png",
+          "alttext": "Buffalo white shoes"
+        },
+        {
+          "id": "YELLOW",
+          "image": "buffaloyellow.png",
+          "alttext": "Buffalo yellow shoes"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "4",
+        "10",
+        "22"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "zapatillas",
+        "casual",
+        "buffalo",
+        "negro",
+        "black",
+        "yellow",
+        "red",
+        "white"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "PUNCCUNP",
+      "image": "punccunp.png",
+      "alttext": "Punccunp black shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "punccunp.png",
+          "alttext": "Bbogg shoes"
+        },
+        {
+          "id": "BLUE",
+          "image": "punccunpblue.png",
+          "alttext": "Punccunp blue shoes"
+        },
+        {
+          "id": "GREY",
+          "image": "punccunpgrey.png",
+          "alttext": "Punccunp grey shoes"
+        },
+        {
+          "id": "RED",
+          "image": "punccunpred.png",
+          "alttext": "Punccunp red shoes"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "5",
+        "11",
+        "23"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "zapatillas",
+        "casual",
+        "puncunp",
+        "negro",
+        "black",
+        "blue",
+        "red",
+        "grey"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "STUD",
+      "image": "studsblack.png",
+      "alttext": "Stud black shoes",
+      "category": "shoes",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "studsblack.png",
+          "alttext": "Stud shoes black"
+        },
+        {
+          "id": "BLUE",
+          "image": "studsblue.png",
+          "alttext": "Stud shoes blue"
+        },
+        {
+          "id": "SILVER",
+          "image": "studssilver.png",
+          "alttext": "Stud shoes silver"
+        },
+        {
+          "id": "vIOLET",
+          "image": "studsviolet.png",
+          "alttext": "Stud shoes violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "12",
+        "6",
+        "24"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "zapatillas",
+        "rocker",
+        "stud",
+        "negro",
+        "black",
+        "blue",
+        "silver",
+        "violet"
+      ]
+    }
+  ],
+  "tshirts": [
+    {
+      "id": "19",
+      "title": "PEACYL",
+      "image": "peacyl.png",
+      "alttext": "Peacyl t-shirt black",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "peacyl.png",
+          "alttext": "Peacyl t-shirt black"
+        },
+        {
+          "id": "GREEN",
+          "image": "peacyldarkgreen.png",
+          "alttext": "Peacyl t-shirt green"
+        },
+        {
+          "id": "RED",
+          "image": "peacylred.png",
+          "alttext": "Peacyl t-shirt red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "peacylviolet.png",
+          "alttext": "Peacyl t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "8",
+        "1",
+        "13"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "techno",
+        "casual",
+        "peacyl",
+        "negro",
+        "black",
+        "green",
+        "red",
+        "violet"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "SHOUT",
+      "image": "shoutt.png",
+      "alttext": "Shoutt t-shirt black",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "shoutt.png",
+          "alttext": "Shoutt t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "shouttblue.png",
+          "alttext": "Shoutt t-shirt blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "shouttgreen.png",
+          "alttext": "Shoutt t-shirt green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "shouttviolet.png",
+          "alttext": "Shoutt t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "7",
+        "2",
+        "14"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "rocker",
+        "shout",
+        "negro",
+        "black",
+        "blue",
+        "green",
+        "violet"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "AKIRA",
+      "image": "akirablack.png",
+      "alttext": "Akira t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "akirablack.png",
+          "alttext": "Akira t-shirt black"
+        },
+        {
+          "id": "WHITE",
+          "image": "akiratt.png",
+          "alttext": "Akira t-shirt white"
+        },
+        {
+          "id": "RED",
+          "image": "akirattwithred.png",
+          "alttext": "Akira t-shirt with red"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "9",
+        "3",
+        "15"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "anime",
+        "akira",
+        "negro",
+        "black",
+        "white",
+        "red"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "COWBOY BEBOP",
+      "image": "cowboybebop.png",
+      "alttext": "Cowboy bebop black t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "cowboybebop.png",
+          "alttext": "Cowboy bebop black t-shirt"
+        },
+        {
+          "id": "GREEN",
+          "image": "cowboybebopgreen.png",
+          "alttext": "Cowboy bebop green t-shirt"
+        },
+        {
+          "id": "GREY",
+          "image": "cowboybebopgrey.png",
+          "alttext": "Cowboy bebop grey t-shirt"
+        },
+        {
+          "id": "BLUE",
+          "image": "cowboybebopblue.png",
+          "alttext": "Cowboy bebop blue t-shirt"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "10",
+        "3",
+        "20"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "anime",
+        "cowboy bebop",
+        "negro",
+        "black",
+        "green",
+        "grey",
+        "blue"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "DEATH ROW RECORDS",
+      "image": "deathrowrecords.png",
+      "alttext": "Death row recors white t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "WHITE",
+          "image": "deathrowrecords.png",
+          "alttext": "Death row recors t-shirt black"
+        },
+        {
+          "id": "BLACK",
+          "image": "deathrowrecordsblack.png",
+          "alttext": "Death row recors t-shirt black"
+        },
+        {
+          "id": "RED",
+          "image": "deathrowrecordsred.png",
+          "alttext": "Death row recors t-shirt red"
+        },
+        {
+          "id": "GREY",
+          "image": "deathrowrecordsgrey.png",
+          "alttext": "Death row recors t-shirt grey"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "11",
+        "5",
+        "17"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "rocker",
+        "Death row recors",
+        "negro",
+        "black",
+        "white",
+        "grey",
+        "red"
+      ]
+    },
+    {
+      "id": "24",
+      "title": "JOAN CORNELLA",
+      "image": "joancornellagrey.png",
+      "alttext": "Joan cornella grey t-shirt",
+      "category": "tshirts",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "GREY",
+          "image": "joancornellagrey.png",
+          "alttext": "Joan cornella grey"
+        },
+        {
+          "id": "ORANGE",
+          "image": "joancornellaorange.png",
+          "alttext": "Joan cornella orange"
+        },
+        {
+          "id": "RED",
+          "image": "joancornellared.png",
+          "alttext": "Joan cornella red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "joancornellaviolet.png",
+          "alttext": "Joan cornella violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "12",
+        "6",
+        "18"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "rocker",
+        "Joan cornella",
+        "grey",
+        "orange",
+        "violet",
+        "red"
+      ]
+    }
+  ],
+  "newarrivals": [
+    {
+      "id": "na-01",
+      "title": "PEACYL",
+      "image": "peacyl.png",
+      "alttext": "Peacyl t-shirt black",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "peacyl.png",
+          "alttext": "Peacyl t-shirt black"
+        },
+        {
+          "id": "GREEN",
+          "image": "peacyldarkgreen.png",
+          "alttext": "Peacyl t-shirt green"
+        },
+        {
+          "id": "RED",
+          "image": "peacylred.png",
+          "alttext": "Peacyl t-shirt red"
+        },
+        {
+          "id": "VIOLET",
+          "image": "peacylviolet.png",
+          "alttext": "Peacyl t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "4",
+        "6",
+        "1"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "casual",
+        "techno",
+        "peacyl",
+        "negro",
+        "black",
+        "green",
+        "red",
+        "violet"
+      ]
+    },
+    {
+      "id": "na-02",
+      "title": "SHOUT",
+      "image": "shoutt.png",
+      "alttext": "Shoutt t-shirt black",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "LoreM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "shoutt.png",
+          "alttext": "Shoutt t-shirt black"
+        },
+        {
+          "id": "BLUE",
+          "image": "shouttblue.png",
+          "alttext": "Shoutt t-shirt blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "shouttgreen.png",
+          "alttext": "Shoutt t-shirt green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "shouttviolet.png",
+          "alttext": "Shoutt t-shirt violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "3",
+        "2",
+        "7"
+      ],
+      "tags": [
+        "tshirts",
+        "tshirt",
+        "t-shirt",
+        "remera",
+        "remeras",
+        "casual",
+        "techno",
+        "shout",
+        "negro",
+        "black",
+        "blue",
+        "green",
+        "violet"
+      ]
+    },
+    {
+      "id": "na-03",
+      "title": "ADIDAS",
+      "image": "addidasblackside.png",
+      "alttext": "Adidas black shoes",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "addidasblackside.png",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "GOLD",
+          "image": "addidasgold.png",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER BLUE",
+          "image": "addidassilverblue.png",
+          "alttext": "Adidas black shoes"
+        },
+        {
+          "id": "SILVER",
+          "image": "addidassilver.png",
+          "alttext": "Adidas black shoes"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "2",
+        "4",
+        "8"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatillas",
+        "tennis",
+        "negro",
+        "casual",
+        "adidas",
+        "black",
+        "blue",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "na-04",
+      "title": "BIG BOOTS",
+      "image": "bigboots.PNG",
+      "alttext": "Big boots black",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "bigboots.PNG",
+          "alttext": "Big boots black"
+        },
+        {
+          "id": "BLUE",
+          "image": "bigbootsfrontblue.PNG",
+          "alttext": "Big boots blue"
+        },
+        {
+          "id": "GREEN",
+          "image": "bigbootsfrontgreen.PNG",
+          "alttext": "Big boots green"
+        },
+        {
+          "id": "VIOLET",
+          "image": "bigbootsfrontviolet.PNG",
+          "alttext": "Big boots violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "35"
+        },
+        {
+          "id": "36"
+        },
+        {
+          "id": "37"
+        },
+        {
+          "id": "38"
+        },
+        {
+          "id": "39"
+        },
+        {
+          "id": "40"
+        },
+        {
+          "id": "41"
+        },
+        {
+          "id": "42"
+        },
+        {
+          "id": "43"
+        },
+        {
+          "id": "44"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "2"
+      ],
+      "tags": [
+        "shoe",
+        "shoes",
+        "zapatos",
+        "botas",
+        "negro",
+        "rocker",
+        "big boots",
+        "black",
+        "blue",
+        "violet",
+        "green"
+      ]
+    },
+    {
+      "id": "na-05",
+      "title": "GRAFFITTI",
+      "image": "graffitti.PNG",
+      "alttext": "graffitti black trousers",
+      "category": "newarrivals",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "graffitti.png",
+          "alttext": "graffitti black trousers"
+        },
+        {
+          "id": "GREEN",
+          "image": "graffittigreen.png",
+          "alttext": "graffitti green trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "rocker",
+        "Graffitti",
+        "black",
+        "green"
+      ]
+    },
+    {
+      "id": "na-06",
+      "title": "LEATHER STEVE",
+      "image": "leathersteve.png",
+      "alttext": "Leather black trousers",
+      "category": "newarrivals",
+      "price": "256",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "leathersteve.png",
+          "alttext": "Leather black trousers"
+        },
+        {
+          "id": "BLUE",
+          "image": "leathersteveblue.png",
+          "alttext": "Leather blue trousers"
+        },
+        {
+          "id": "GOLD",
+          "image": "leatherstevegold.png",
+          "alttext": "Leather gold trousers"
+        },
+        {
+          "id": "VIOLET",
+          "image": "leathersteveviolet.png",
+          "alttext": "Leather violet trousers"
+        }
+      ],
+      "size": [
+        {
+          "id": "XXS",
+          "height": "5´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XS",
+          "height": "6´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "S",
+          "height": "7´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "M",
+          "height": "8´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "L",
+          "height": "9´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XL",
+          "height": "10´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        },
+        {
+          "id": "XXL",
+          "height": "11´10",
+          "width": "25",
+          "lenght": "5",
+          "bust": "31",
+          "waist": "23",
+          "hips": "33"
+        }
+      ],
+      "suggested": [
+        "6",
+        "8",
+        "2"
+      ],
+      "tags": [
+        "trouser",
+        "trousers",
+        "pantalon",
+        "negro",
+        "rocker",
+        "Leather",
+        "black",
+        "blue",
+        "gold",
+        "violet"
+      ]
+    },
+    {
+      "id": "na-07",
+      "title": "KITTY",
+      "image": "kitty.png",
+      "alttext": "Kitty bag",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "kitty.png",
+          "alttext": "Kitty bag black"
+        },
+        {
+          "id": "BLUE",
+          "image": "kittyblue.png",
+          "alttext": "Kitty bag blue"
+        },
+        {
+          "id": "GOLDEN",
+          "image": "kittygolden.png",
+          "alttext": "Kitty bag golden"
+        },
+        {
+          "id": "VIOLET",
+          "image": "kittyviolet.png",
+          "alttext": "Kitty bag violet"
+        }
+      ],
+      "size": [
+        {
+          "id": "kittysize",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "Sophisticated",
+        "kitty",
+        "blue",
+        "golden"
+      ]
+    },
+    {
+      "id": "na-08",
+      "title": "SUPREME",
+      "image": "supremeblack.png",
+      "alttext": "Supreme black bag",
+      "category": "newarrivals",
+      "price": "156",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "features": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "colors": [
+        {
+          "id": "BLACK",
+          "image": "supremeblack.png",
+          "alttext": "supreme black bag"
+        },
+        {
+          "id": "BLUE NAVY",
+          "image": "supremeblue.png",
+          "alttext": "supreme blue navy bag"
+        },
+        {
+          "id": "RED",
+          "image": "supremered.png",
+          "alttext": "supreme red bag"
+        },
+        {
+          "id": "VIOLET",
+          "image": "supremewhite.png",
+          "alttext": "supreme violet bag"
+        }
+      ],
+      "size": [
+        {
+          "id": "SIZE",
+          "height": "10",
+          "width": "25",
+          "lenght": "5"
+        }
+      ],
+      "suggested": [
+        "3",
+        "7",
+        "5"
+      ],
+      "tags": [
+        "bag",
+        "bags",
+        "cartera",
+        "black",
+        "negro",
+        "casual",
+        "Supreme",
+        "blue",
+        "red",
+        "white"
+      ]
+    }
+  ]
+}
