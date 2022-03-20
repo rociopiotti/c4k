@@ -4,7 +4,7 @@ Design and development of shopping site.
 
 ## Demo
 
-To see demo [click aquí](https://www.rociopiotti.com/public/webdesign/c4k/)
+To see demo [click here](https://www.rociopiotti.com/public/webdesign/c4k/)
 
 ## Work done
 
