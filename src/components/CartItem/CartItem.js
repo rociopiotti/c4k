@@ -36,7 +36,7 @@ class CartItem extends Component {
         onClick={onCartItemClick}
         className='cartItemImgBox'>
         <img
-          src={`/${category}/${colorItemImage}`}
+          src={`/images/${category}/${colorItemImage}`}
           alt={alttext}
           className='cartItemImg'
         />
