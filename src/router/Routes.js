@@ -27,7 +27,7 @@ const Routes = () => {
   return (
     <PageManagerContext.Consumer>
       {(context) => (
-        <BrowserRouter basename="/public/webdesign/c4k">
+        <BrowserRouter basename="/">
           <SlideManager />
           <Header />
           <Switch>
