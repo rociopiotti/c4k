@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./About.scss";
 
 // IMG
@@ -6,7 +6,7 @@ import AboutPhoto from "../../img/aboutPhoto.png";
 import AboutPhotoLowRes from "../../img/aboutPhotoLowRes.png";
 
 // TRANSITION COMPONENT
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 //ANIMATION
 import { TimelineMax } from "gsap";

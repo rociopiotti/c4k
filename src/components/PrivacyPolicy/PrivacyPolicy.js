@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./PrivacyPolicy.scss";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 class PrivacyPolicy extends Component {
   componentDidMount() {

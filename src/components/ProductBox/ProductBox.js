@@ -3,7 +3,7 @@ import "./ProductBox.scss";
 import ItemImageGallery from "../ItemImageGallery/ItemImageGallery";
 import ProductDetails from "../ProductDetails/ProductDetails";
 import SuggestedItems from "../SuggestedItems/SuggestedItems";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./TermsAndConditions.scss";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 class TermsAndConditions extends Component {
   componentDidMount() {

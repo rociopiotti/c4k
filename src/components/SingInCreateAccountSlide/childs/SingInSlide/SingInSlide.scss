@@ -1,0 +1,62 @@
+.singInSlideBox {
+  height: auto;
+  opacity: 0;
+  
+  .signInBox {
+    margin-top: 0;
+
+    .btnSingIn {
+      padding: 1.5vh 0;
+      margin: 2.5vh 0vw 2.5vh 5%;
+      cursor: pointer;
+      &:hover {
+        background-color: #c7c7c7;
+      }
+    }
+
+    .singIn .passSettingsBox .rememberMe input {
+      margin: 0 1vw 0 0;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 0;
+    }
+  }
+  .separationLineCheckout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5vh;
+    color: #ffffff;
+    .separationLine1 {
+      width: 40%;
+      border: thin solid #ffffff;
+    }
+    p {
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+    }
+    .separationLine2 {
+      width: 40%;
+      border: thin solid #ffffff;
+    }
+  }
+
+  .btnSingInGoogle {
+    margin-top: 2.5vh;
+    padding: 1.5vh 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #c7c7c7;
+    }
+  }
+  .btnSingInFacebook {
+    margin-top: 2.5vh;
+    padding: 1.5vh 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #c7c7c7;
+    }
+  }
+}

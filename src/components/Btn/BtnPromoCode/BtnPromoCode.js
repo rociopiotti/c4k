@@ -4,7 +4,7 @@ import "./BtnPromoCode.scss";
 //ANMATION
 import { Timeline } from "gsap/gsap-core";
 
-class BtnPromoCode extends Component {
+export class BtnPromoCode extends Component {
   constructor(props) {
     super(props);
     this.inputPromoCode = null;
@@ -60,4 +60,3 @@ class BtnPromoCode extends Component {
   }
 }
 
-export default BtnPromoCode;

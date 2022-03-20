@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import "./CartList.scss";
 
 // COMPONENTS
-import CartItem from "../CartItem/CartItem";
-import CartEmpty from "../CartEmpty/CartEmpty";
-import EstimatedTotal from "../EstimatedTotal/EstimatedTotal";
-import BtnPromoCode from "../BtnPromoCode/BtnPromoCode";
+import { CartItem, CartEmpty, EstimatedTotal } from "./childs";
+import { BtnPromoCode } from "../Btn/index";
 
 //ROUTER
 import { Link } from "react-router-dom";

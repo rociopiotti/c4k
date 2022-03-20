@@ -1,0 +1,61 @@
+.storeListBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .storeList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none;
+      margin-right: 2vw;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        &:hover{
+          color: #c7c7c7;
+        }
+      }
+      .btnStoreItem {
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        &:hover{
+          color: #c7c7c7;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .storeListBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .storeList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin-right: 0vw;      
+      }
+    }
+  }
+}

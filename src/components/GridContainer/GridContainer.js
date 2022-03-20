@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./GridContainer.scss";
 import GridContainerHeader from "./GridContainerHeader/GridContainerHeader";
 import GridProductList from "../GridProductList/GridProductList";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

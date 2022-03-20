@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ProductListItem.scss";
 
-import { IMAGES_FOLDER } from "../../utils";
+import { DEV } from "../../utils";
 
 class ProductListItem extends Component {
   state = {
@@ -16,7 +16,7 @@ class ProductListItem extends Component {
       <div className='productListItemBox'>
         <div className='listItemImage'>
           <img
-            src={IMAGES_FOLDER + category + "/" + image}
+            src={DEV.IMAGES_FOLDER + category + "/" + image}
             alt={alttext}
             className='cartItemImg'
           />

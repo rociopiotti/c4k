@@ -1,0 +1,24 @@
+.estimatedTotalBox {
+  width: 100%;
+  margin: 2vh 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+
+  p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    line-height: 0.8em;
+    font-size: 0.8em;
+  }
+  .estimatedTotalBox:last-child {
+    font-size: 0.7em;
+  }
+  hr {
+    border: solid thin #fff;
+  }
+}

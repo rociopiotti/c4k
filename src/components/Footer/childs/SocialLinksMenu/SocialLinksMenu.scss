@@ -1,0 +1,49 @@
+.socialLinkMenuBox {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .socialLinkMenuList {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    li a {
+      color: #fff;
+      text-decoration: none;
+      .Icon {
+        &:hover {
+          transform: scale(1.4);
+          transition: 0.1s ease-in;
+          color: #c7c7c7;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 752px) {
+  .socialLinkMenuBox {
+    margin: 0;
+    padding: 0;
+
+    .socialLinkMenuList {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 5vh 0;
+      li a {
+        margin: 0 5vw;
+      }
+    }
+  }
+}

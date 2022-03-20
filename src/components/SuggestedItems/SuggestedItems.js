@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./SuggestedItems.scss";
 import ProductListItem from "../ProductListItem/ProductListItem";
 
@@ -10,7 +10,7 @@ class SuggestedItems extends Component {
   }
   render() {
     const { suggested } = this.props;
-    
+
     return (
       <div className='suggestedItemGalleryBox'>
         <h2 className='titleSuggestedItemGallery'>#COMPLETE THE LOOK</h2>

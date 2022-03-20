@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./GridContainerHeader.scss";
-import Icon from "../../Icon/Icon";
+import { Icon } from "../../shared-components";
 
 import PageManagerContext from "../../../context/pageManager-context";
 

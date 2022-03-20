@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./PaymentConfirmation.scss";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 class PaymentConfirmation extends Component {
   componentDidMount() {

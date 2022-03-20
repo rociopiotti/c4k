@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "./PaymentGateway.scss";
-import BillingAddress from "../BillingAddress/BillingAddress";
-import DeliveryAddress from "../DeliveryAddress/DeliveryAddress";
-import PaymentSettings from "../PaymentSettings/PaymentSettings";
-import BillingSummary from "../BillingSummary/BillingSummary";
-import FooterLinks from "../FooterLinks/FooterLinks";
-import ShippingMethod from "../ShippingMethod/ShippingMethod";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { BillingSummary, BillingAddress, DeliveryAddress, PaymentSettings, ShippingMethod, FooterLinks } from "./childs";
+import { SectionTransition } from "../shared-components";
 import CartList from "../CartList/CartList";
 
 class PaymentGateway extends Component {
@@ -52,6 +47,6 @@ class PaymentGateway extends Component {
       </div>
     );
   }
-}
+};
 
 export default PaymentGateway;

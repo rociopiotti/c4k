@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./Stores.scss";
-import SearchStore from "../SearchStores/SearchStores";
-import StoreListItem from "../StoreListItem/StoreListItem";
-import StoreMap from "../StoreMap/StoreMap";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SearchStores, StoreListItem, StoreMap } from "./childs";
+import { SectionTransition } from "../shared-components";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
@@ -68,7 +66,7 @@ class Stores extends Component {
 
           <h2>#STORES</h2>
           <div className="storePage">
-            <SearchStore />
+            <SearchStores />
             {this.setMode(this.state.currentMode)}
           </div>
         </div>

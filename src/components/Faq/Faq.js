@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Faq.scss";
-import Icon from "../Icon/Icon";
-import BtnBackToTop from "../Btn/BtnBackToTop/BtnBackToTop"
-import QuestionAnswerBox from "./QuestionAnswerBox/QuestionAnswerBox";
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { Icon } from "../shared-components";
+import { BtnBackToTop } from "../Btn"
+import { QuestionAnswerBox } from "./childs";
+import { SectionTransition } from "../shared-components";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

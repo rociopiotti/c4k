@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ForgotPasswordModal.scss";
-import Icon from "../Icon/Icon";
+import { Icon } from "../shared-components";
 
 class ForgotPasswordmodal extends Component {
   handleCloseSlide(SumbmitMailSlide) {

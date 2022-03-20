@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./BtnAddToBag.scss";
 
-class BtnAddToBag extends Component {
+export class BtnAddToBag extends Component {
   render() {
     return (
       <button
@@ -15,4 +15,3 @@ class BtnAddToBag extends Component {
   }
 }
 
-export default BtnAddToBag;

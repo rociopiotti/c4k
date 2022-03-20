@@ -1,10 +1,8 @@
 import React from "react";
 import "./Footer.scss";
-import FooterMenu from "./FooterMenu/FooterMenu";
-import SuscribeBox from "../SuscribeBox/SuscribeBox";
-import SocialLinksMenu from "../SocialLinksMenu/SocialLinksMenu";
+import { FooterMenu, SuscribeBox, SocialLinksMenu } from "./childs";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div className="footer">
       <FooterMenu />

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./BtnBackToTop.scss";
 
-class BtnBackToTop extends Component {
+export class BtnBackToTop extends Component {
   scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -20,5 +20,3 @@ class BtnBackToTop extends Component {
     );
   }
 }
-
-export default BtnBackToTop;

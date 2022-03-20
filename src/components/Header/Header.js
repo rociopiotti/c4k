@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Header.scss";
-import Icon from "../Icon/Icon";
-import Logo from "../Logo/Logo";
+import { Icon, Logo } from "../shared-components";
 import SearchBox from "../SearchBox/SeachBox";
 
 // CONTEXT

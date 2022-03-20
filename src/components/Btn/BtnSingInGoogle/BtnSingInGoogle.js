@@ -1,7 +1,7 @@
 import React from "react";
 import "./BtnSingInGoogle.scss";
 
-const BtnSingInGoogle = () => {
+export const BtnSingInGoogle = () => {
 
   const handleSingInGoogle = (url) => {
     console.log("Click en botón que lleva a:", url)
@@ -18,4 +18,3 @@ const BtnSingInGoogle = () => {
   );
 };
 
-export default BtnSingInGoogle;

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./Checkout.scss";
-import Icon from "../Icon/Icon";
+import { Icon } from "../shared-components";
 import CheckoutGuest from "../CheckoutGuest/CheckoutGuest";
 import SingIn from "../SingIn/SingIn";
-import BtnSingInGoogle from "../Btn/BtnSingInGoogle/BtnSingInGoogle";
-import BtnSingInFacebook from "../Btn/BtnSingInFacebook/BtnSingInFacebook";
+import { BtnSingInGoogle } from "../Btn/BtnSingInGoogle/BtnSingInGoogle";
+import { BtnSingInFacebook } from "../Btn/BtnSingInFacebook/BtnSingInFacebook";
 
 // TRANSITION
-import SectionTransition from "../SectionTransition/SectionTransition";
+import { SectionTransition } from "../shared-components";
 
 // ROUTER
 import { Link } from "react-router-dom";

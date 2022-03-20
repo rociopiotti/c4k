@@ -11,8 +11,7 @@ import Routes from "./router/Routes";
 import axios from "axios";
 
 // DATABASE PATH
-import { URL_PRODUCTS } from "./utils";
-import { FAQ_DB } from "./utils";
+import { DEV } from "./utils";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";
@@ -21,8 +20,8 @@ import { Timeline, Back } from "gsap/gsap-core";
 const ease = Back.easeInOut;
 
 // DATABASE VARIABLES
-let one = URL_PRODUCTS;
-let two = FAQ_DB;
+let one = DEV.URL_PRODUCTS;
+let two = DEV.FAQ_DB;
 
 class App extends React.Component {
   constructor(props) {

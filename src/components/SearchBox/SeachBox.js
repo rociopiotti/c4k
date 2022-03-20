@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./SearchBox.scss";
-import Icon from "../Icon/Icon";
+import { Icon } from "../shared-components";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

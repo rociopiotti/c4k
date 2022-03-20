@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./BtnShop.scss";
-import Icon from "../../Icon/Icon";
+import { Icon } from "../../shared-components";
 
-class BtnShop extends Component {
+export class BtnShop extends Component {
   handleShowMenuCategories() {
     this.props.onClickBtnShop();
   }
@@ -21,4 +21,3 @@ class BtnShop extends Component {
   }
 }
 
-export default BtnShop;

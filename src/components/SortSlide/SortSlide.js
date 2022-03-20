@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./SortSlide.scss";
 import HeaderSlideCloseLeft from "../HeaderSlideCloseLeft/HeaderSlideCloseLeft";
-import Icon from "../Icon/Icon";
+import { Icon } from "../shared-components";
 
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

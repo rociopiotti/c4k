@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./SingInCreateAccountSlide.scss";
-import Icon from "../Icon/Icon";
-import CreateAnAccountSlide from "./CreateAnAccoutSlide/CreateAnAccoutSlide";
-import SingInSlide from "./SingInSlide/SingInSlide";
+import { Icon } from "../shared-components";
+import { CreateAnAccountSlide, SingInSlide } from "./childs";
 
 //CONTEXT
 import PageManagerContext from "../../context/pageManager-context";
@@ -21,7 +20,7 @@ class SingInCreateAccountSlide extends Component {
       activeBtn: true,
     };
   }
-  
+
   executeAnimation() {
     this.context.slideOutAnimation(
       "left",

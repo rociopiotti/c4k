@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./HeaderSlideCloseLeft.scss";
-import Icon from "../Icon/Icon";
-import Logo from "../Logo/Logo";
+import { Icon, Logo } from "../shared-components";
 
 // CONTEXT
 import PageManagerContext from "../../context/pageManager-context";

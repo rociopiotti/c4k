@@ -1,7 +1,7 @@
 import React from "react";
 import "./BtnSingInFacebook.scss";
 
-const BtnSingInFacebook = () => {
+export const BtnSingInFacebook = () => {
   const handleSingInFacebook = (url) => {
     console.log("Click en botón que lleva a:", url)
   };
@@ -17,4 +17,3 @@ const BtnSingInFacebook = () => {
   );
 };
 
-export default BtnSingInFacebook;
