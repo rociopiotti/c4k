@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ProductListItem.scss";
 
-import { IMAGES_FOLDER } from "../../utils/path"
+import { IMAGES_FOLDER } from "../../utils";
 
 class ProductListItem extends Component {
   state = {

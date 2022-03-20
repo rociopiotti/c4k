@@ -1,0 +1,15 @@
+.btnSingInGoogle {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: #484848;
+  font-size: 0.9em;
+  padding: 3vh 0;
+  letter-spacing: 0.1em;
+  -webkit-appearance: none;
+  border-radius: 0;
+  margin: 5vh 0vw;
+  &:hover {
+    background-color: #c7c7c7;
+  }
+}

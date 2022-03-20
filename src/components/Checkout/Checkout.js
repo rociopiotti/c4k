@@ -3,8 +3,8 @@ import "./Checkout.scss";
 import Icon from "../Icon/Icon";
 import CheckoutGuest from "../CheckoutGuest/CheckoutGuest";
 import SingIn from "../SingIn/SingIn";
-import BtnSingInGoogle from "../BtnSingInGoogle/BtnSingInGoogle";
-import BtnSingInFacebook from "../BtnSingInFacebook/BtnSingInFacebook";
+import BtnSingInGoogle from "../Btn/BtnSingInGoogle/BtnSingInGoogle";
+import BtnSingInFacebook from "../Btn/BtnSingInFacebook/BtnSingInFacebook";
 
 // TRANSITION
 import SectionTransition from "../SectionTransition/SectionTransition";

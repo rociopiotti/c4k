@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Home.scss";
 import MenuCategories from "./MenuCategories";
 import BackgroundImg from "./BackgroundImg";
-import BtnShop from "../BtnShop/BtnShop";
+import BtnShop from "../Btn/BtnShop/BtnShop";
 
 // TRANSITION COMPONENT
 import SectionTransition from "../SectionTransition/SectionTransition";

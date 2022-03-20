@@ -11,8 +11,8 @@ import Routes from "./router/Routes";
 import axios from "axios";
 
 // DATABASE PATH
-import { URL_PRODUCTS } from "./utils/path";
-import { FAQ_DB } from "./utils/path";
+import { URL_PRODUCTS } from "./utils";
+import { FAQ_DB } from "./utils";
 
 //ANMATION
 import { Timeline, Back } from "gsap/gsap-core";

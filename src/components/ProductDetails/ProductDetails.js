@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ProductDetails.scss";
-import BtnAddToBag from "../BtnAddToBag/BtnAddToBag";
+import BtnAddToBag from "../Btn/BtnAddToBag/BtnAddToBag";
 import Dropdown from "../../utils/DropDown/DropDown";
 
 // CONTEXT

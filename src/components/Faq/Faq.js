@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Faq.scss";
 import Icon from "../Icon/Icon";
-import BtnBackToTop from "../BtnBackToTop/BtnBackToTop";
+import BtnBackToTop from "../Btn/BtnBackToTop/BtnBackToTop"
 import QuestionAnswerBox from "./QuestionAnswerBox/QuestionAnswerBox";
 import SectionTransition from "../SectionTransition/SectionTransition";
 
