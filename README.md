@@ -11,7 +11,7 @@ Use cases:
 
 ## Demo
 
-To see demo [click here](https://rociodevelopment.netlify.app/)
+To see demo [click here](https://c4k-shopping-site-demo.netlify.app/)
 
 ## Work done
 
