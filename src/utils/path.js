@@ -1,4 +1,4 @@
-export const URL_PRODUCTS = "https://rociodevelopment.netlify.app/db.json";
-export const IMAGES_FOLDER = "https://rociodevelopment.netlify.app/images/";
-export const FAQ_DB = "https://rociodevelopment.netlify.app/faq.json";
+export const URL_PRODUCTS = "https://c4k-shopping-site-demo.netlify.app/db.json";
+export const IMAGES_FOLDER = "https://c4k-shopping-site-demo.netlify.app/images/";
+export const FAQ_DB = "https://c4k-shopping-site-demo.netlify.app/faq.json";
 
