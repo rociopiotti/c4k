@@ -12,7 +12,6 @@ Use cases:
 ## Demo
 
 To see demo [click here](https://c4k-shopping-site-demo.netlify.app/)
-<a href="https://c4k-shopping-site-demo.netlify.app/" target="_blank">click here</a>
 
 ## Work done
 
